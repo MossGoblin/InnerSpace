@@ -1,0 +1,802 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Open.Numeric.Primes</name>
+    </assembly>
+    <members>
+        <member name="T:Open.Numeric.Primes.Candidates">
+            <summary>
+            A collection of static methods for acquiring all prime candidates.
+            </summary>
+        </member>
+        <member name="M:Open.Numeric.Primes.Candidates.StartingAt(System.UInt32)">
+            <summary>
+            An increasing list of all odd numbers excluding one, but also including two,
+            beginning with the <paramref name="value"/> provided.
+            </summary>
+        </member>
+        <member name="M:Open.Numeric.Primes.Candidates.StartingAt(System.UInt64)">
+            <inheritdoc cref="M:Open.Numeric.Primes.Candidates.StartingAt(System.UInt32)"/>
+        </member>
+        <member name="M:Open.Numeric.Primes.Candidates.StartingAt(System.Numerics.BigInteger@)">
+            <inheritdoc cref="M:Open.Numeric.Primes.Candidates.StartingAt(System.UInt32)"/>
+            <remarks>Results will retain the sign of the <paramref name="value"/>.</remarks>
+        </member>
+        <member name="T:Open.Numeric.Primes.Extensions.PrimeExtensions">
+            <summary>
+            An easily accessible set of extensions for detecting prime numbers as well as factors.
+            </summary>
+        </member>
+        <member name="M:Open.Numeric.Primes.Extensions.PrimeExtensions.IsPrime(System.UInt64@)">
+            <inheritdoc cref="M:Open.Numeric.Primes.Number.IsPrime(System.UInt64@)"/>
+        </member>
+        <member name="M:Open.Numeric.Primes.Extensions.PrimeExtensions.IsPrime(System.Int64@)">
+            <inheritdoc cref="M:Open.Numeric.Primes.Extensions.PrimeExtensions.IsPrime(System.UInt64@)"/>
+        </member>
+        <member name="M:Open.Numeric.Primes.Extensions.PrimeExtensions.IsPrime(System.Int32)">
+            <inheritdoc cref="M:Open.Numeric.Primes.Extensions.PrimeExtensions.IsPrime(System.UInt64@)"/>
+        </member>
+        <member name="M:Open.Numeric.Primes.Extensions.PrimeExtensions.IsPrime(System.UInt32)">
+            <inheritdoc cref="M:Open.Numeric.Primes.Extensions.PrimeExtensions.IsPrime(System.UInt64@)"/>
+        </member>
+        <member name="M:Open.Numeric.Primes.Extensions.PrimeExtensions.IsPrime(System.Int16)">
+            <inheritdoc cref="M:Open.Numeric.Primes.Extensions.PrimeExtensions.IsPrime(System.UInt64@)"/>
+        </member>
+        <member name="M:Open.Numeric.Primes.Extensions.PrimeExtensions.IsPrime(System.UInt16)">
+            <inheritdoc cref="M:Open.Numeric.Primes.Extensions.PrimeExtensions.IsPrime(System.UInt64@)"/>
+        </member>
+        <member name="M:Open.Numeric.Primes.Extensions.PrimeExtensions.IsPrime(System.SByte)">
+            <inheritdoc cref="M:Open.Numeric.Primes.Extensions.PrimeExtensions.IsPrime(System.UInt64@)"/>
+        </member>
+        <member name="M:Open.Numeric.Primes.Extensions.PrimeExtensions.IsPrime(System.Byte)">
+            <inheritdoc cref="M:Open.Numeric.Primes.Extensions.PrimeExtensions.IsPrime(System.UInt64@)"/>
+        </member>
+        <member name="M:Open.Numeric.Primes.Extensions.PrimeExtensions.IsPrime(System.Double@)">
+            <inheritdoc cref="M:Open.Numeric.Primes.Extensions.PrimeExtensions.IsPrime(System.UInt64@)"/>
+        </member>
+        <member name="M:Open.Numeric.Primes.Extensions.PrimeExtensions.IsPrime(System.Decimal@)">
+            <inheritdoc cref="M:Open.Numeric.Primes.Extensions.PrimeExtensions.IsPrime(System.UInt64@)"/>
+        </member>
+        <member name="M:Open.Numeric.Primes.Extensions.PrimeExtensions.IsPrime(System.Numerics.BigInteger@)">
+            <inheritdoc cref="M:Open.Numeric.Primes.Extensions.PrimeExtensions.IsPrime(System.UInt64@)"/>
+        </member>
+        <member name="M:Open.Numeric.Primes.Extensions.PrimeExtensions.NextPrime(System.UInt64@)">
+            <inheritdoc cref="M:Open.Numeric.Primes.PrimalityBase`1.Next(`0@)"/>
+        </member>
+        <member name="M:Open.Numeric.Primes.Extensions.PrimeExtensions.NextPrime(System.Int64@)">
+            <inheritdoc cref="M:Open.Numeric.Primes.Extensions.PrimeExtensions.NextPrime(System.UInt64@)"/>
+        </member>
+        <member name="M:Open.Numeric.Primes.Extensions.PrimeExtensions.NextPrime(System.Single)">
+            <inheritdoc cref="M:Open.Numeric.Primes.Extensions.PrimeExtensions.NextPrime(System.UInt64@)"/>
+        </member>
+        <member name="M:Open.Numeric.Primes.Extensions.PrimeExtensions.NextPrime(System.Double@)">
+            <inheritdoc cref="M:Open.Numeric.Primes.Extensions.PrimeExtensions.NextPrime(System.UInt64@)"/>
+        </member>
+        <member name="M:Open.Numeric.Primes.Extensions.PrimeExtensions.NextPrime(System.Numerics.BigInteger)">
+            <inheritdoc cref="M:Open.Numeric.Primes.Extensions.PrimeExtensions.NextPrime(System.UInt64@)"/>
+        </member>
+        <member name="M:Open.Numeric.Primes.Extensions.PrimeExtensions.PrimeFactors(System.UInt64@,System.Boolean)">
+            <inheritdoc cref="M:Open.Numeric.Primes.Prime.Factors(System.UInt64,System.Boolean)"/>
+        </member>
+        <member name="M:Open.Numeric.Primes.Extensions.PrimeExtensions.PrimeFactors(System.Int64@,System.Boolean)">
+            <inheritdoc cref="M:Open.Numeric.Primes.Extensions.PrimeExtensions.PrimeFactors(System.UInt64@,System.Boolean)"/>
+        </member>
+        <member name="M:Open.Numeric.Primes.Extensions.PrimeExtensions.PrimeFactors(System.Numerics.BigInteger@,System.Boolean)">
+            <summary>
+            Iterates the prime factors of the provided value.
+            If omitOneAndValue==false, first multiple is always 0, 1 or -1.
+            Else if the value is prime, then there will be no results.
+            </summary>
+            <param name="value">The value to factor.</param>
+            <param name="omitOneAndValue">If true, only positive integers greater than 1 and less than the number itself are returned.</param>
+        </member>
+        <member name="M:Open.Numeric.Primes.Extensions.PrimeExtensions.PrimeFactors(System.Double@,System.Boolean)">
+            <summary>
+            Iterates the prime factors of the provided value.
+            If omitOneAndValue==false, first multiple is always 0, 1 or -1.
+            Else if the value is prime or not a whole number, then there will be no results.
+            </summary>
+            <param name="value">The value to factor.</param>
+            <param name="omitOneAndValue">If true, only positive integers greater than 1 and less than the number itself are returned.</param>
+        </member>
+        <member name="M:Open.Numeric.Primes.Extensions.PrimeExtensions.PrimeFactors(System.Single,System.Boolean)">
+            <summary>
+            Iterates the prime factors of the provided value.
+            If omitOneAndValue==false, first multiple is always 0, 1 or -1.
+            Else if the value is prime or not a whole number, then there will be no results.
+            </summary>
+            <param name="value">The value to factor.</param>
+            <param name="omitOneAndValue">If true, only positive integers greater than 1 and less than the number itself are returned.</param>
+        </member>
+        <member name="M:Open.Numeric.Primes.Extensions.PrimeExtensions.CommonPrimeFactors(System.Collections.Generic.IEnumerable{System.Int64})">
+            <summary>
+            Iterates all the possible common prime factors of the provided numbers.
+            </summary>
+            <param name="values">The values to find common prime factors from.</param>
+            <returns>An enumerable of the common prime factors.</returns>
+        </member>
+        <member name="M:Open.Numeric.Primes.Extensions.PrimeExtensions.CommonPrimeFactors(System.Collections.Generic.IEnumerable{System.UInt64})">
+            <summary>
+            Iterates all the possible common prime factors of the provided numbers.
+            </summary>
+            <param name="values">The values to find common prime factors from.</param>
+            <returns>An enumerable of the common prime factors.</returns>
+        </member>
+        <member name="M:Open.Numeric.Primes.Extensions.PrimeExtensions.CommonPrimeFactors(System.Collections.Generic.IEnumerable{System.Numerics.BigInteger})">
+            <summary>
+            Iterates all the possible common prime factors of the provided numbers.
+            </summary>
+            <param name="values">The values to find common prime factors from.</param>
+            <returns>An enumerable of the common prime factors.</returns>
+        </member>
+        <member name="M:Open.Numeric.Primes.Extensions.PrimeExtensions.GreatestPrimeFactor(System.Collections.Generic.IEnumerable{System.Int64})">
+            <summary>
+            Returns the greatest common (positive) factor (GCF) of all the provided values.
+            Returns 1 if none found.
+            </summary>
+            <param name="values">The values to find common prime factors from.</param>
+            <returns>The greatest common factor or 1 if none found.</returns>
+        </member>
+        <member name="M:Open.Numeric.Primes.Extensions.PrimeExtensions.GreatestPrimeFactor(System.Collections.Generic.IEnumerable{System.UInt64})">
+            <summary>
+            Returns the greatest common (positive) factor (GCF) of all the provided values.
+            Returns 1 if none found.
+            </summary>
+            <param name="values">The values to find common prime factors from.</param>
+            <returns>The greatest common factor or 1 if none found.</returns>
+        </member>
+        <member name="M:Open.Numeric.Primes.Extensions.PrimeExtensions.GreatestPrimeFactor(System.Collections.Generic.IEnumerable{System.Numerics.BigInteger})">
+            <summary>
+            Returns the greatest common (positive) factor (GCF) of all the provided values.
+            Returns 1 if none found.
+            </summary>
+            <param name="values">The values to find common prime factors from.</param>
+            <returns>The greatest common factor or 1 if none found.</returns>
+        </member>
+        <member name="T:Open.Numeric.Primes.MillerRabin">
+            <summary>
+            Miller-Rabin prime utility.
+            </summary>
+        </member>
+        <member name="M:Open.Numeric.Primes.MillerRabin.IsPrime(System.UInt64@)">
+            <inheritdoc cref="M:Open.Numeric.Primes.Polynomial.IsPrime(System.UInt64@)"/>
+        </member>
+        <member name="M:Open.Numeric.Primes.MillerRabin.IsProbablePrime(System.Numerics.BigInteger@,System.Int32)">
+            <summary>
+            Determines if a prime number is probably prime.
+            </summary>
+        </member>
+        <member name="T:Open.Numeric.Primes.MillerRabin.U64">
+            <summary>
+            Miller-Rabin prime discovery class for 64 bit unsigned integers (<see cref="T:System.UInt64"/>).
+            </summary>
+        </member>
+        <member name="M:Open.Numeric.Primes.MillerRabin.U64.IsPrimeInternal(System.UInt64@)">
+            <inheritdoc />
+        </member>
+        <member name="T:Open.Numeric.Primes.MillerRabin.BigInt">
+            <summary>
+            Miller-Rabin prime discovery class for <see cref="T:System.Numerics.BigInteger"/>.
+            </summary>
+        </member>
+        <member name="M:Open.Numeric.Primes.MillerRabin.BigInt.IsPrimeInternal(System.Numerics.BigInteger@)">
+            <inheritdoc />
+        </member>
+        <member name="T:Open.Numeric.Primes.Number">
+            <summary>
+            A useful set of prime detection functions.
+            Unique overloads for certain number types including BigInteger in order to ensure efficiency and compiler optimizations.
+            </summary>
+        </member>
+        <member name="M:Open.Numeric.Primes.Number.IsPrime(System.UInt64@)">
+            <summary>
+            Validates if a number is prime.
+            </summary>
+            <param name="value">Value to verify.</param>
+            <returns><see langword="true"/> if the provided value is a prime number; otherwise <see langword="false"/>.</returns>
+        </member>
+        <member name="M:Open.Numeric.Primes.Number.IsPrime(System.UInt64)">
+            <inheritdoc cref="M:Open.Numeric.Primes.Number.IsPrime(System.UInt64)"/>
+        </member>
+        <member name="M:Open.Numeric.Primes.Number.IsPrime(System.Int32)">
+            <inheritdoc cref="M:Open.Numeric.Primes.Number.IsPrime(System.UInt64)"/>
+        </member>
+        <member name="M:Open.Numeric.Primes.Number.IsPrime(System.UInt32)">
+            <inheritdoc cref="M:Open.Numeric.Primes.Number.IsPrime(System.UInt64)"/>
+        </member>
+        <member name="M:Open.Numeric.Primes.Number.IsPrime(System.Numerics.BigInteger@)">
+            <inheritdoc cref="M:Open.Numeric.Primes.Number.IsPrime(System.UInt64)"/>
+        </member>
+        <member name="M:Open.Numeric.Primes.Number.IsPrime(System.Int64@)">
+            <inheritdoc cref="M:Open.Numeric.Primes.Number.IsPrime(System.UInt64)"/>
+        </member>
+        <member name="M:Open.Numeric.Primes.Number.IsPrime(System.Double@)">
+            <inheritdoc cref="M:Open.Numeric.Primes.Number.IsPrime(System.UInt64)"/>
+        </member>
+        <member name="M:Open.Numeric.Primes.Number.IsPrime(System.Decimal@)">
+            <inheritdoc cref="M:Open.Numeric.Primes.Number.IsPrime(System.UInt64)"/>
+        </member>
+        <member name="T:Open.Numeric.Primes.Optimized">
+            <summary>
+            A prime utility that choses the optimal algorithm depending the size of the number.
+            </summary>
+        </member>
+        <member name="M:Open.Numeric.Primes.Optimized.IsPrimeInternal(System.UInt64@)">
+            <inheritdoc />
+        </member>
+        <member name="F:Open.Numeric.Primes.Optimized.Big">
+            <summary>
+            The static instance of <see cref="T:Open.Numeric.Primes.Optimized.BigInt"/>.
+            </summary>
+        </member>
+        <member name="T:Open.Numeric.Primes.Optimized.BigInt">
+            <summary>
+            A prime utility that choses the optimal algorithm depending the size of the number for <see cref="T:System.Numerics.BigInteger"/>.
+            </summary>
+        </member>
+        <member name="M:Open.Numeric.Primes.Optimized.BigInt.IsPrimeInternal(System.Numerics.BigInteger@)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Numeric.Primes.Optimized.BigInt.InParallel(System.Numerics.BigInteger@,System.Nullable{System.Int32})">
+            <inheritdoc />
+        </member>
+        <member name="T:Open.Numeric.Primes.Polynomial">
+            <summary>
+            Polynomial prime utility.
+            </summary>
+        </member>
+        <member name="M:Open.Numeric.Primes.Polynomial.IsPrime(System.UInt32)">
+            <summary>
+            Returns <see langword="true"/> if the <paramref name="value"/> is prime.
+            </summary>
+            <param name="value">The value to validate.</param>
+        </member>
+        <member name="M:Open.Numeric.Primes.Polynomial.IsPrime(System.UInt64@)">
+            <inheritdoc cref="M:Open.Numeric.Primes.Polynomial.IsPrime(System.UInt32)"/>
+        </member>
+        <member name="M:Open.Numeric.Primes.Polynomial.IsPrime(System.Numerics.BigInteger@)">
+            <inheritdoc cref="M:Open.Numeric.Primes.Polynomial.IsPrime(System.UInt32)"/>
+        </member>
+        <member name="T:Open.Numeric.Primes.Polynomial.U32">
+            <summary>
+            Polynomial utility for <see cref="T:System.UInt32"/>.
+            </summary>
+        </member>
+        <member name="M:Open.Numeric.Primes.Polynomial.U32.IsPrimeInternal(System.UInt32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Numeric.Primes.Polynomial.U32.IsPrimeInternal(System.UInt32@)">
+            <inheritdoc />
+        </member>
+        <member name="T:Open.Numeric.Primes.Polynomial.U64">
+            <summary>
+            Polynomial utility for <see cref="T:System.UInt64"/>.
+            </summary>
+        </member>
+        <member name="M:Open.Numeric.Primes.Polynomial.U64.IsPrimeInternal(System.UInt64@)">
+            <inheritdoc />
+        </member>
+        <member name="T:Open.Numeric.Primes.Polynomial.BigInt">
+            <summary>
+            Polynomial utility for <see cref="T:System.Numerics.BigInteger"/>.
+            </summary>
+        </member>
+        <member name="M:Open.Numeric.Primes.Polynomial.BigInt.IsPrimeInternal(System.Numerics.BigInteger@)">
+            <inheritdoc />
+        </member>
+        <member name="T:Open.Numeric.Primes.PrimalityBigIntBase">
+            <inheritdoc/>
+        </member>
+        <member name="M:Open.Numeric.Primes.PrimalityBigIntBase.GetEnumerator">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Numeric.Primes.PrimalityBigIntBase.ValidPrimeTests(System.Numerics.BigInteger@)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Numeric.Primes.PrimalityBigIntBase.Indexed">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Numeric.Primes.PrimalityBigIntBase.Factors(System.Numerics.BigInteger)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Numeric.Primes.PrimalityBigIntBase.Next(System.Numerics.BigInteger@)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Numeric.Primes.PrimalityBigIntBase.Next(System.Single)">
+            <inheritdoc cref="M:Open.Numeric.Primes.PrimalityBase`1.Next(`0@)" />
+        </member>
+        <member name="M:Open.Numeric.Primes.PrimalityBigIntBase.Next(System.Double@)">
+            <inheritdoc cref="M:Open.Numeric.Primes.PrimalityBase`1.Next(`0@)" />
+        </member>
+        <member name="M:Open.Numeric.Primes.PrimalityBigIntBase.IsPrime(System.Numerics.BigInteger@)">
+            <inheritdoc />
+        </member>
+        <member name="T:Open.Numeric.Primes.PrimalityBase`1">
+            <summary>
+            Base class for defining prime tests, prime discovery, and number factorization.
+            </summary>
+        </member>
+        <member name="M:Open.Numeric.Primes.PrimalityBase`1.IsPrime(`0)">
+            <summary>
+            Returns <see langword="true"/> if the value provided is prime.
+            </summary>
+        </member>
+        <member name="M:Open.Numeric.Primes.PrimalityBase`1.IsPrimeInternal(`0@)">
+            <summary>
+            Core method for determining if a number is prime or not.
+            </summary>
+        </member>
+        <member name="M:Open.Numeric.Primes.PrimalityBase`1.ValidPrimeTests(`0@)">
+            <summary>
+            Iterates all possible prime candidates.
+            </summary>
+        </member>
+        <member name="M:Open.Numeric.Primes.PrimalityBase`1.StartingAt(`0@)">
+            <summary>
+            Returns an enumerable that will iterate every prime starting at the starting value.
+            </summary>
+            <param name="value">
+            Allows for skipping ahead any integer
+            before checking for inclusive and subsequent primes.
+            </param>
+        </member>
+        <member name="M:Open.Numeric.Primes.PrimalityBase`1.Indexed">
+            <summary>
+            Returns key-value pairs of every prime starting where the key is the index (starting at 1) of the set.
+            </summary>
+            <remarks>The first entry is always {Key=1, Value=2}.</remarks>
+        </member>
+        <member name="M:Open.Numeric.Primes.PrimalityBase`1.InParallel(`0@,System.Nullable{System.Int32})">
+            <summary>
+            Returns a parallel enumerable that will iterate every prime starting at the starting value.
+            </summary>
+            <param name="startingAt">Allows for skipping ahead any integer before checking for inclusive and subsequent primes.</param>
+            <param name="degreeOfParallelism">The optional maximum degree of parallelism.</param>
+            <returns>An ordered parallel enumerable of primes.</returns>
+        </member>
+        <member name="M:Open.Numeric.Primes.PrimalityBase`1.InParallel(System.Nullable{System.Int32})">
+            <inheritdoc cref="M:Open.Numeric.Primes.PrimalityBase`1.InParallel(`0@,System.Nullable{System.Int32})"/>
+        </member>
+        <member name="M:Open.Numeric.Primes.PrimalityBase`1.IsFactorable(`0@)">
+            <summary>
+            Returns true if the value can be factored. (Is not prime.)
+            </summary>
+        </member>
+        <member name="M:Open.Numeric.Primes.PrimalityBase`1.Factors(`0,System.Boolean)">
+            <summary>
+            Iterates the prime factors of the provided value.
+            If omitOneAndValue==false, first multiple is always 0 or 1.
+            Else if the value is prime, then there will be no results.
+            </summary>
+            <param name="value">The value to factorize.</param>
+            <param name="omitOneAndValue">If true, only positive integers greater than 1 and less than the number itself are returned.</param>
+        </member>
+        <member name="M:Open.Numeric.Primes.PrimalityBase`1.GetEnumerator">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Numeric.Primes.PrimalityBase`1.IsPrime(`0@)">
+            <inheritdoc cref="M:Open.Numeric.Primes.PrimalityBase`1.IsPrime(`0)"/>
+        </member>
+        <member name="M:Open.Numeric.Primes.PrimalityBase`1.Factors(`0)">
+            <summary>
+            Iterates the prime factors of the provided value.
+            First multiple is always 0, 1 or -1.
+            </summary>
+            <param name="value">The value to factorize.</param>
+        </member>
+        <member name="M:Open.Numeric.Primes.PrimalityBase`1.Next(`0@)">
+            <summary>
+            Finds the next prime number after the number given.
+            </summary>
+            <param name="after">The excluded lower boundary to start with.  If this number is negative, then the result will be the next greater magnitude value prime as negative number.</param>
+        </member>
+        <member name="T:Open.Numeric.Primes.PrimalityU32Base">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Numeric.Primes.PrimalityU32Base.ValidPrimeTests(System.UInt32@)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Numeric.Primes.PrimalityU32Base.GetEnumerator">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Numeric.Primes.PrimalityU32Base.StartingAt(System.Int32)">
+            <summary>
+            Returns an enumerable that will iterate every prime starting at the starting value.
+            </summary>
+            <param name="value">Allows for skipping ahead any integer before checking for inclusive and subsequent primes.  Passing a negative number here will produce a negative set of prime numbers.</param>
+        </member>
+        <member name="M:Open.Numeric.Primes.PrimalityU32Base.Indexed">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Numeric.Primes.PrimalityU32Base.Factors(System.UInt32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Numeric.Primes.PrimalityU32Base.Factors(System.Int32)">
+            <summary>
+            Iterates the prime factors of the provided value.
+            First multiple is always 0, 1 or -1.
+            </summary>
+            <param name="value">The value to factorize.</param>
+        </member>
+        <member name="M:Open.Numeric.Primes.PrimalityU32Base.IsFactorable(System.Int32@)">
+            <summary>
+            Returns true if the value can be factored. (Is not prime.)
+            </summary>
+        </member>
+        <member name="M:Open.Numeric.Primes.PrimalityU32Base.Next(System.UInt32@)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Numeric.Primes.PrimalityU32Base.Next(System.Int32@)">
+            <summary>
+            Finds the next prime number after the number given.
+            </summary>
+            <param name="after">The excluded lower boundary to start with.  If this number is negative, then the result will be the next greater magnitude value prime as negative number.</param>
+        </member>
+        <member name="M:Open.Numeric.Primes.PrimalityU32Base.IsPrime(System.UInt32@)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Numeric.Primes.PrimalityU32Base.IsPrime(System.Int32@)">
+            <summary>
+            Returns <see langword="true"/> if the value provided is prime.
+            </summary>
+            <param name="value">The value to validate.</param>
+        </member>
+        <member name="M:Open.Numeric.Primes.PrimalityU32Base.IsPrimeInternal(System.UInt32)">
+            <summary>
+            Should only check for primes that aren't divisible by 2 or 3.
+            </summary>
+        </member>
+        <member name="T:Open.Numeric.Primes.PrimalityU64Base">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Numeric.Primes.PrimalityU64Base.ValidPrimeTests(System.UInt64@)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Numeric.Primes.PrimalityU64Base.GetEnumerator">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Numeric.Primes.PrimalityU64Base.StartingAt(System.Int64)">
+            <summary>
+            Returns an enumerable that will iterate every prime starting at the starting value.
+            </summary>
+            <param name="value">Allows for skipping ahead any integer before checking for inclusive and subsequent primes.  Passing a negative number here will produce a negative set of prime numbers.</param>
+        </member>
+        <member name="M:Open.Numeric.Primes.PrimalityU64Base.Indexed">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Numeric.Primes.PrimalityU64Base.Factors(System.UInt64)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Numeric.Primes.PrimalityU64Base.Factors(System.Int64)">
+            <summary>
+            Iterates the prime factors of the provided value.
+            First multiple is always 0, 1 or -1.
+            </summary>
+            <param name="value">The value to factorize.</param>
+        </member>
+        <member name="M:Open.Numeric.Primes.PrimalityU64Base.IsFactorable(System.Int64@)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Numeric.Primes.PrimalityU64Base.Next(System.UInt64@)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Numeric.Primes.PrimalityU64Base.Next(System.Int64@)">
+            <summary>
+            Finds the next prime number after the number given.
+            </summary>
+            <param name="after">The excluded lower boundary to start with.  If this number is negative, then the result will be the next greater magnitude value prime as negative number.</param>
+        </member>
+        <member name="M:Open.Numeric.Primes.PrimalityU64Base.IsPrime(System.UInt64@)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Numeric.Primes.PrimalityU64Base.IsPrime(System.Int32@)">
+            <inheritdoc cref="M:Open.Numeric.Primes.PrimalityU64Base.IsPrime(System.UInt64@)" />
+        </member>
+        <member name="M:Open.Numeric.Primes.PrimalityU64Base.IsPrime(System.UInt32@)">
+            <inheritdoc cref="M:Open.Numeric.Primes.PrimalityU64Base.IsPrime(System.UInt64@)" />
+        </member>
+        <member name="M:Open.Numeric.Primes.PrimalityU64Base.IsPrime(System.Int64@)">
+            <inheritdoc cref="M:Open.Numeric.Primes.PrimalityU64Base.IsPrime(System.UInt64@)" />
+        </member>
+        <member name="T:Open.Numeric.Primes.PrimalityFloatBase`1">
+            <inheritdoc />
+        </member>
+        <member name="T:Open.Numeric.Primes.PrimalityIntegerBase`1">
+            <inheritdoc/>
+        </member>
+        <member name="T:Open.Numeric.Primes.Prime">
+            <summary>
+            A useful set of prime discovery and prime factorization functions.<br/>
+            Unique overloads for certain number types including BigInteger in order to ensure efficiency and compiler optimizations.
+            </summary>
+            <remarks>Negative numbers are allowed where possible and the signs are preserved.</remarks>
+        </member>
+        <member name="F:Open.Numeric.Primes.Prime.Numbers">
+            <summary>
+            The default <see cref="T:Open.Numeric.Primes.Optimized"/> instance.
+            </summary>
+        </member>
+        <member name="M:Open.Numeric.Primes.Prime.Factors(System.UInt32)">
+            <inheritdoc cref="M:Open.Numeric.Primes.PrimalityBase`1.Factors(`0)"/>
+        </member>
+        <member name="M:Open.Numeric.Primes.Prime.Factors(System.UInt64)">
+            <inheritdoc cref="M:Open.Numeric.Primes.PrimalityBase`1.Factors(`0)"/>
+        </member>
+        <member name="M:Open.Numeric.Primes.Prime.Factors(System.Int64)">
+            <inheritdoc cref="M:Open.Numeric.Primes.PrimalityBase`1.Factors(`0)"/>
+        </member>
+        <member name="M:Open.Numeric.Primes.Prime.Factors(System.Numerics.BigInteger)">
+            <inheritdoc cref="M:Open.Numeric.Primes.PrimalityBigIntBase.Factors(System.Numerics.BigInteger)"/>
+        </member>
+        <member name="M:Open.Numeric.Primes.Prime.Factors(System.Single)">
+            <summary>
+            Iterates the prime factors of the provided value.
+            First multiple is always 0, 1 or -1.
+            </summary>
+            <param name="value">The value to factorize.</param>
+            <returns>
+            An enumerable that contains the prime factors of the provided value starting with 0, 1, or -1 for sign retention.
+            Value types may differ depending on the magnitude of the provided value.
+            </returns>
+        </member>
+        <member name="M:Open.Numeric.Primes.Prime.Factors(System.Double)">
+            <summary>
+            Iterates the prime factors of the provided value.
+            First multiple is always 0, 1 or -1.
+            </summary>
+            <param name="value">The value to factorize.</param>
+            <returns>
+            An enumerable that contains the prime factors of the provided value starting with 0, 1, or -1 for sign retention.
+            Value types may differ depending on the magnitude of the provided value.
+            </returns>
+        </member>
+        <member name="M:Open.Numeric.Primes.Prime.Factors(System.Decimal)">
+            <summary>
+            Iterates the prime factors of the provided value.
+            First multiple is always 0, 1 or -1.
+            </summary>
+            <param name="value">The value to factorize.</param>
+            <returns>
+            An enumerable that contains the prime factors of the provided value starting with 0, 1, or -1 for sign retention.
+            Value types may differ depending on the magnitude of the provided value.
+            </returns>
+        </member>
+        <member name="M:Open.Numeric.Primes.Prime.Factors(System.Double,System.Boolean)">
+            <summary>
+            Iterates the prime factors of the provided value.
+            If omitOneAndValue==false, first multiple is always 0, 1 or -1.
+            Else if the value is prime or not a whole number, then there will be no results.
+            </summary>
+            <param name="value">The value to factorize.</param>
+            <param name="omitOneAndValue">If true, only positive integers greater than 1 and less than the number itself are returned.</param>
+        </member>
+        <member name="M:Open.Numeric.Primes.Prime.Factors(System.Single,System.Boolean)">
+            <summary>
+            Iterates the prime factors of the provided value.
+            If omitOneAndValue==false, first multiple is always 0, 1 or -1.
+            Else if the value is prime or not a whole number, then there will be no results.
+            </summary>
+            <param name="value">The value to factorize.</param>
+            <param name="omitOneAndValue">If true, only positive integers greater than 1 and less than the number itself are returned..</param>
+        </member>
+        <member name="M:Open.Numeric.Primes.Prime.Factors(System.UInt64,System.Boolean)">
+            <summary>
+            Iterates the prime factors of the provided value.
+            If omitOneAndValue==false, first multiple is always 0 or 1.
+            Else if the value is prime, then there will be no results.
+            </summary>
+            <param name="value">The value to factorize.</param>
+            <param name="omitOneAndValue">If true, only positive integers greater than 1 and less than the number itself are returned.</param>
+        </member>
+        <member name="M:Open.Numeric.Primes.Prime.Factors(System.Int64,System.Boolean)">
+            <summary>
+            Iterates the prime factors of the provided value.
+            If omitOneAndValue==false, first multiple is always 0, 1 or -1.
+            Else if the value is prime, then there will be no results.
+            </summary>
+            <param name="value">The value to factorize.</param>
+            <param name="omitOneAndValue">If true, only positive integers greater than 1 and less than the number itself are returned.</param>
+        </member>
+        <member name="M:Open.Numeric.Primes.Prime.Factors(System.Numerics.BigInteger,System.Boolean)">
+            <summary>
+            Iterates the prime factors of the provided value.
+            If omitOneAndValue==false, first multiple is always 0, 1 or -1.
+            Else if the value is prime, then there will be no results.
+            </summary>
+            <param name="value">The value to factorize.</param>
+            <param name="omitOneAndValue">If true, only positive integers greater than 1 and less than the number itself are returned.</param>
+        </member>
+        <member name="M:Open.Numeric.Primes.Prime.CommonFactors(System.Collections.Generic.IEnumerable{System.Int64})">
+            <summary>
+            Iterates all the possible common prime factors of the provided numbers.
+            </summary>
+            <param name="values">The values to find common prime factors from.</param>
+            <returns>An enumerable of the common prime factors.</returns>
+        </member>
+        <member name="M:Open.Numeric.Primes.Prime.CommonFactors(System.Collections.Generic.IEnumerable{System.UInt64})">
+            <summary>
+            Iterates all the possible common prime factors of the provided numbers.
+            </summary>
+            <param name="values">The values to find common prime factors from.</param>
+            <returns>An enumerable of the common prime factors.</returns>
+        </member>
+        <member name="M:Open.Numeric.Primes.Prime.CommonFactors(System.UInt64[])">
+            <summary>
+            Iterates all the possible common prime factors of the provided numbers.
+            </summary>
+            <param name="values">The values to find common prime factors from.</param>
+            <returns>An enumerable of the common prime factors.</returns>
+        </member>
+        <member name="M:Open.Numeric.Primes.Prime.CommonFactors(System.Collections.Generic.IEnumerable{System.Numerics.BigInteger})">
+            <summary>
+            Iterates all the possible common prime factors of the provided numbers.
+            </summary>
+            <param name="values">The values to find common prime factors from.</param>
+            <returns>An enumerable of the common prime factors.</returns>
+        </member>
+        <member name="M:Open.Numeric.Primes.Prime.CommonFactors(System.Numerics.BigInteger[])">
+            <summary>
+            Iterates all the possible common prime factors of the provided numbers.
+            </summary>
+            <param name="values">The values to find common prime factors from.</param>
+            <returns>An enumerable of the common prime factors.</returns>
+        </member>
+        <member name="M:Open.Numeric.Primes.Prime.GreatestFactor(System.Collections.Generic.IEnumerable{System.Int64})">
+            <summary>
+            Returns the greatest common (positive) factor (GCF) of all the provided values.
+            Returns 1 if none found.
+            </summary>
+            <param name="values">The values to find common prime factors from.</param>
+            <returns>The greatest common factor or 1 if none found.</returns>
+        </member>
+        <member name="M:Open.Numeric.Primes.Prime.GreatestFactor(System.Collections.Generic.IEnumerable{System.UInt64})">
+            <summary>
+            Returns the greatest common (positive) factor (GCF) of all the provided values.
+            Returns 1 if none found.
+            </summary>
+            <param name="values">The values to find common prime factors from.</param>
+            <returns>The greatest common factor or 1 if none found.</returns>
+        </member>
+        <member name="M:Open.Numeric.Primes.Prime.GreatestFactor(System.UInt64[])">
+            <summary>
+            Returns the greatest common (positive) factor (GCF) of all the provided values.
+            Returns 1 if none found.
+            </summary>
+            <param name="values">The values to find common prime factors from.</param>
+            <returns>The greatest common factor or 1 if none found.</returns>
+        </member>
+        <member name="M:Open.Numeric.Primes.Prime.GreatestFactor(System.Collections.Generic.IEnumerable{System.Numerics.BigInteger})">
+            <summary>
+            Returns the greatest common (positive) factor (GCF) of all the provided values.
+            Returns 1 if none found.
+            </summary>
+            <param name="values">The values to find common prime factors from.</param>
+            <returns>The greatest common factor or 1 if none found.</returns>
+        </member>
+        <member name="M:Open.Numeric.Primes.Prime.GreatestFactor(System.Numerics.BigInteger[])">
+            <summary>
+            Returns the greatest common (positive) factor (GCF) of all the provided values.
+            Returns 1 if none found.
+            </summary>
+            <param name="values">The values to find common prime factors from.</param>
+            <returns>The greatest common factor or 1 if none found.</returns>
+        </member>
+        <member name="T:Open.Numeric.Primes.TrialDivision">
+            <summary>
+            Trial-division prime utility.
+            </summary>
+        </member>
+        <member name="F:Open.Numeric.Primes.TrialDivision.FirstKnownInt32">
+            <summary>
+            The initial known primes to use instead of calculating them on every check.
+            </summary>
+        </member>
+        <member name="T:Open.Numeric.Primes.TrialDivision.U32">
+            <summary>
+            Trial-division for <see cref="T:System.UInt32"/>.
+            </summary>
+        </member>
+        <member name="F:Open.Numeric.Primes.TrialDivision.U32.FirstKnown">
+            <inheritdoc cref="F:Open.Numeric.Primes.TrialDivision.FirstKnownInt32"/>
+        </member>
+        <member name="M:Open.Numeric.Primes.TrialDivision.U32.InParallel(System.UInt32@,System.Nullable{System.Int32})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Numeric.Primes.TrialDivision.U32.IsPrimeInternal(System.UInt32@)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Numeric.Primes.TrialDivision.U32.IsPrimeInternal(System.UInt32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Numeric.Primes.TrialDivision.U32.AllPrimesAfter(System.Collections.Generic.LinkedList{System.UInt32})">
+            <summary>
+            Find all primes after the provided known values.
+            </summary>
+        </member>
+        <member name="M:Open.Numeric.Primes.TrialDivision.U32.AllPrimes">
+            <summary>
+            Iterates all possible primes.
+            </summary>
+        </member>
+        <member name="M:Open.Numeric.Primes.TrialDivision.U32.GetEnumerator">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Numeric.Primes.TrialDivision.U32.StartingAt(System.UInt32@)">
+            <inheritdoc />
+            <summary>
+            Returns an enumerable that will iterate every prime starting at the starting value.
+            </summary>
+            <param name="startingAt">Allows for skipping ahead any integer before checking for inclusive and subsequent primes.</param>
+            <returns>An enumerable that will iterate every prime starting at the starting value</returns>
+        </member>
+        <member name="M:Open.Numeric.Primes.TrialDivision.U32.IsFactorable(System.UInt32@)">
+            <inheritdoc />
+        </member>
+        <member name="T:Open.Numeric.Primes.TrialDivision.U32.Memoized">
+            <summary>
+            Trial-division prime discovery class for 32 bit unsigned integers (<see cref="T:System.UInt32"/>) that remembers the primes used.
+            </summary>
+        </member>
+        <member name="M:Open.Numeric.Primes.TrialDivision.U32.Memoized.AllPrimes">
+            <summary>
+            Returns a memoized enumerable that will iterate every prime starting at the starting value.
+            </summary>
+            <returns>A memoized enumerable that will iterate every prime starting at the starting value</returns>
+        </member>
+        <member name="M:Open.Numeric.Primes.TrialDivision.U32.Memoized.IsPrimeInternal(System.UInt32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Numeric.Primes.TrialDivision.U32.Memoized.AllPrimesMemoizable">
+            <summary>
+            Iterates all prime numbers caching any previous prime factors.
+            </summary>
+        </member>
+        <member name="T:Open.Numeric.Primes.TrialDivision.U64">
+            <summary>
+            Trial-division prime discovery class for 64 bit unsigned integers (<see cref="T:System.UInt64"/>).
+            </summary>
+        </member>
+        <member name="F:Open.Numeric.Primes.TrialDivision.U64.FirstKnown">
+            <summary>
+            The initial known primes to use instead of calculating them on every check.
+            </summary>
+        </member>
+        <member name="M:Open.Numeric.Primes.TrialDivision.U64.InParallel(System.UInt64@,System.Nullable{System.Int32})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Numeric.Primes.TrialDivision.U64.IsPrimeInternal(System.UInt64@)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Numeric.Primes.TrialDivision.U64.AllPrimes">
+            <summary>
+            Iterates all possible primes.
+            </summary>
+        </member>
+        <member name="M:Open.Numeric.Primes.TrialDivision.U64.GetEnumerator">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Numeric.Primes.TrialDivision.U64.StartingAt(System.UInt64@)">
+            <inheritdoc />
+            <summary>
+            Returns an enumerable that will iterate every prime starting at the starting value.
+            </summary>
+            <param name="startingAt">Allows for skipping ahead any integer before checking for inclusive and subsequent primes.</param>
+        </member>
+        <member name="M:Open.Numeric.Primes.TrialDivision.U64.IsFactorable(System.UInt64@)">
+            <inheritdoc />
+        </member>
+        <member name="T:Open.Numeric.Primes.TrialDivision.U64.Memoized">
+            <summary>
+            Trial-division prime discovery class for 64 bit unsigned integers (<see cref="T:System.UInt64"/>) that remembers the primes used.
+            </summary>
+        </member>
+        <member name="M:Open.Numeric.Primes.TrialDivision.U64.Memoized.AllPrimes">
+            <summary>
+            Returns a memoized enumerable that will iterate every prime starting at the starting value.
+            </summary>
+        </member>
+        <member name="M:Open.Numeric.Primes.TrialDivision.U64.Memoized.IsPrimeInternal(System.UInt64@)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,1810 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Open.Collections</name>
+    </assembly>
+    <members>
+        <member name="P:Open.Collections.CollectionWrapper`2.SyncRoot">
+            <summary>
+            The underlying object used for synchronization.
+            This is exposed to allow for more complex synchronization operations.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.CollectionWrapper`2.Add(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.CollectionWrapper`2.AddThese(`0,`0,`0[])">
+            <inheritdoc cref="M:Open.Collections.IAddMultiple`1.AddThese(`0,`0,`0[])"/>
+        </member>
+        <member name="M:Open.Collections.CollectionWrapper`2.AddRange(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            Adds mutliple items to the collection.
+            It's important to avoid locking for too long so an array is used to add multiple items.
+            An enumerable is potentially slow as it may be yielding to a process.
+            </summary>
+            <param name="items">The items to add.</param>
+        </member>
+        <member name="M:Open.Collections.CollectionWrapper`2.Clear">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.CollectionWrapper`2.Remove(`0)">
+            <inheritdoc />
+        </member>
+        <member name="P:Open.Collections.CollectionWrapper`2.IsReadOnly">
+            <inheritdoc />
+        </member>
+        <member name="P:Open.Collections.DictionaryToHashSetWrapper`1.Count">
+            <inheritdoc />
+        </member>
+        <member name="P:Open.Collections.DictionaryToHashSetWrapper`1.IsReadOnly">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.DictionaryToHashSetWrapper`1.Add(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.DictionaryToHashSetWrapper`1.Remove(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.DictionaryToHashSetWrapper`1.Clear">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.DictionaryToHashSetWrapper`1.Contains(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.DictionaryToHashSetWrapper`1.CopyTo(`0[],System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.DictionaryToHashSetWrapper`1.CopyTo(System.Span{`0})">
+            <inheritdoc cref="M:Open.Collections.ReadOnlyCollectionWrapper`2.CopyTo(System.Span{`0})"/>
+        </member>
+        <member name="M:Open.Collections.DictionaryToHashSetWrapper`1.ToHashSet">
+            <summary>
+            Returns a copy of the underlying keys.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.DictionaryToHashSetWrapper`1.GetEnumerator">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.DictionaryToHashSetWrapper`1.ExceptWith(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.DictionaryToHashSetWrapper`1.IntersectWith(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.DictionaryToHashSetWrapper`1.IsProperSubsetOf(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.DictionaryToHashSetWrapper`1.IsProperSupersetOf(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.DictionaryToHashSetWrapper`1.IsSubsetOf(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.DictionaryToHashSetWrapper`1.IsSupersetOf(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.DictionaryToHashSetWrapper`1.Overlaps(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.DictionaryToHashSetWrapper`1.SetEquals(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.DictionaryToHashSetWrapper`1.SymmetricExceptWith(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.DictionaryToHashSetWrapper`1.UnionWith(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="T:Open.Collections.DictionaryWrapper`2">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.DictionaryWrapper`2.#ctor">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.DictionaryWrapper`2.#ctor(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.DictionaryWrapper`2.#ctor(System.Collections.Generic.IDictionary{`0,`1},System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.DictionaryWrapper`2.GetValueInternal(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.DictionaryWrapper`2.SetValueInternal(`0,`1)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.DictionaryWrapper`2.ContainsKey(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.DictionaryWrapper`2.Remove(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.DictionaryWrapper`2.TryGetValue(`0,`1@)">
+            <inheritdoc />
+        </member>
+        <member name="P:Open.Collections.DictionaryWrapperBase`3.Item(`0)">
+            <inheritdoc />
+        </member>
+        <member name="P:Open.Collections.DictionaryWrapperBase`3.Keys">
+            <inheritdoc />
+        </member>
+        <member name="P:Open.Collections.DictionaryWrapperBase`3.Values">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.DictionaryWrapperBase`3.Add(`0,`1)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.DictionaryWrapperBase`3.ContainsKey(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.DictionaryWrapperBase`3.Remove(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.DictionaryWrapperBase`3.TryGetValue(`0,`1@)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Extensions.ToByteArray(System.String,System.Text.Encoding)">
+            <summary>
+            Converts a string to a byte array.
+            </summary>
+            <param name="value">The string value.</param>
+            <param name="encoding">Default is UTF8.</param>
+        </member>
+        <member name="M:Open.Collections.Extensions.ToSbyteArray(System.String,System.Text.Encoding)">
+            <summary>
+            Converts a string to a sbyte array.
+            </summary>
+            <param name="value">The string value.</param>
+            <param name="encoding">Default is UTF8.</param>
+        </member>
+        <member name="M:Open.Collections.Extensions.ToSbyteArray(System.Byte[])">
+            <summary>
+            Directly converts a byte array (byte-by-byte) to an sbyte array.
+            </summary>
+            <param name="bytes">The bytes.</param>
+        </member>
+        <member name="M:Open.Collections.Extensions.Combinations``1(System.Collections.Generic.IEnumerable{``0},System.Int32,``0[])">
+            <param name="elements">The elements to draw from.</param>
+            <param name="length">The length of each result.</param>
+            <param name="buffer">A buffer that is filled with the values and returned as the yielded value instead of a new array.</param>
+            <inheritdoc cref="M:Open.Collections.Extensions.Combinations``1(System.Collections.Generic.IEnumerable{``0},System.Int32)"/>
+        </member>
+        <member name="M:Open.Collections.Extensions.Combinations``1(System.Collections.Generic.IEnumerable{``0},System.ArraySegment{``0})">
+            <param name="elements">The elements to draw from.</param>
+            <param name="buffer">A buffer that is filled with the values and returned as the yielded value instead of a new array</param>
+            <inheritdoc cref="M:Open.Collections.Extensions.Combinations``1(System.Collections.Generic.IEnumerable{``0},System.Int32)"/>
+        </member>
+        <member name="M:Open.Collections.Extensions.CombinationsDistinct``1(System.Collections.Generic.IEnumerable{``0},System.Int32,``0[])">
+            <param name="elements">The elements to draw from.</param>
+            <param name="length">The length of each result.</param>
+            <param name="buffer">An optional buffer that is filled with the values and returned as the yielded value instead of a new array</param>
+            <inheritdoc cref="M:Open.Collections.Extensions.CombinationsDistinct``1(System.Collections.Generic.IEnumerable{``0},System.Int32)"/>
+        </member>
+        <member name="M:Open.Collections.Extensions.CombinationsDistinct``1(System.Collections.Generic.IEnumerable{``0},System.ArraySegment{``0})">
+            <param name="elements">The elements to draw from.</param>
+            <param name="buffer">A buffer that is filled with the values and returned as the yielded value instead of a new array</param>
+            <inheritdoc cref="M:Open.Collections.Extensions.CombinationsDistinct``1(System.Collections.Generic.IEnumerable{``0},System.Int32)"/>
+        </member>
+        <member name="M:Open.Collections.Extensions.CombinationsBuffered``1(System.Collections.Generic.IEnumerable{``0},System.Int32)">
+            <inheritdoc cref="M:Open.Collections.Extensions.Combinations``1(System.Collections.Generic.IEnumerable{``0},System.Int32)"/>
+            <remarks>Values are yielded as read only memory buffer that should not be retained as its array is returned to pool afterwards.</remarks>
+            <returns>An enumerable the yields as read only memory buffer that should not be retained as its array is returned to pool afterwards.</returns>
+        </member>
+        <member name="M:Open.Collections.Extensions.CombinationsDistinctBuffered``1(System.Collections.Generic.IEnumerable{``0},System.Int32)">
+            <inheritdoc cref="M:Open.Collections.Extensions.CombinationsDistinct``1(System.Collections.Generic.IEnumerable{``0},System.Int32)"/>
+            <remarks>Values are yielded as read only memory buffer that should not be retained as its array is returned to pool afterwards.</remarks>
+            <returns>An enumerable the yields as read only memory buffer that should not be retained as its array is returned to pool afterwards.</returns>
+        </member>
+        <member name="M:Open.Collections.Extensions.Combinations``1(System.Collections.Generic.IEnumerable{``0},System.Int32)">
+            <param name="elements">The elements to draw from.</param>
+            <param name="length">The length of each result.</param>
+            <inheritdoc cref="M:Open.Collections.Extensions.Combinations``1(System.Collections.Generic.IEnumerable{``0})"/>
+        </member>
+        <member name="M:Open.Collections.Extensions.CombinationsDistinct``1(System.Collections.Generic.IEnumerable{``0},System.Int32)">
+            <param name="elements">The elements to draw from.</param>
+            <param name="length">The length of each result.</param>
+            <inheritdoc cref="M:Open.Collections.Extensions.CombinationsDistinct``1(System.Collections.Generic.IEnumerable{``0})"/>
+        </member>
+        <member name="M:Open.Collections.Extensions.Combinations``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Enumerates all possible combinations of values.
+            Results can be different permutations of another set.
+            </summary>
+            <example>[0, 0], [0, 1], [1, 0], [1, 1] where [0, 1] and [1, 0] are a different permutatation of the same set.</example>
+            <param name="elements">The elements to draw from.</param>
+        </member>
+        <member name="M:Open.Collections.Extensions.CombinationsDistinct``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Enumerates all possible distinct set combinations.
+            In contrast a set that has its items reordered is not distinct from the original.
+            </summary>
+            <example>[0, 0], [0, 1], [1, 1] where [1, 0] is not included as it is not a disticnt set from [0, 1].</example>
+            <param name="elements">The elements to draw from.</param>
+        </member>
+        <member name="M:Open.Collections.Extensions.TryRemove``2(System.Collections.Concurrent.ConcurrentDictionary{``0,``1},``0)">
+            <summary>
+            Shortcut for removeing a value without needing an 'out' parameter.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.Extensions.GetOrAdd``2(System.Collections.Concurrent.ConcurrentDictionary{``0,``1},System.Boolean@,``0,System.Func{``0,``1})">
+            <remarks>
+            <paramref name="updated"/> is true if this thread executed the value factory.
+            But because of the optimistic nature of <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/> it does not mean that the value produce is the one used.
+            </remarks>
+            <inheritdoc cref="M:System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(`0,System.Func{`0,`1})"/>
+        </member>
+        <member name="M:Open.Collections.Extensions.GetOrAdd``2(System.Collections.Concurrent.ConcurrentDictionary{``0,``1},System.Boolean@,``0,``1)">
+            <remarks>
+            <paramref name="updated"/> is true if the entry required an update.
+            But because of the optimistic nature of <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2"/> it does not mean that the value is the one used.
+            </remarks>
+            <inheritdoc cref="M:System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(`0,`1)"/>
+        </member>
+        <member name="M:Open.Collections.Extensions.UpdateRequired``1(System.Collections.Concurrent.ConcurrentDictionary{``0,System.DateTime},``0,System.TimeSpan)">
+            <summary>
+            Will return true if the existing <see cref="T:System.DateTime"/> value is past due.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.Extensions.GetOrAddSafely``2(System.Collections.Concurrent.ConcurrentDictionary{``0,System.Lazy{``1}},``0,System.Func{``0,``1})">
+            <remarks>Handles evicting an entry if the result of the <see cref="T:System.Lazy`1"/> was erroneous.</remarks>
+            <inheritdoc cref="M:System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(`0,System.Func{`0,`1})"/>
+        </member>
+        <member name="M:Open.Collections.Extensions.GetOrAddSafely``2(System.Collections.Concurrent.ConcurrentDictionary{``0,System.Lazy{System.Threading.Tasks.Task{``1}}},``0,System.Func{``0,System.Threading.Tasks.Task{``1}})">
+            <remarks>Handles evicting an entry if the result of the <see cref="T:System.Lazy`1"/> was erroneous or its <see cref="T:System.Threading.Tasks.Task`1"/> did not complete successfully.</remarks>
+            <inheritdoc cref="M:System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(`0,System.Func{`0,`1})"/>
+        </member>
+        <member name="M:Open.Collections.Extensions.ToExpando(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}})">
+            <summary>
+            Extension method that turns a dictionary of string and object to an ExpandoObject
+            </summary>
+        </member>
+        <member name="M:Open.Collections.Extensions.PreCache``1(System.Collections.Generic.IEnumerable{``0},System.Int32)">
+            <summary>
+            Similar to a buffer but is loaded by another thread and attempts keep the buffer full while contents are being pulled.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.Extensions.ToConcatenatedString``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String},System.String)">
+            <summary>
+            Concatentates any enumerable into a string using an optional separator.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.Extensions.Join(System.String[],System.Char)">
+            <summary>
+            Shortcut to String.Join() using "," as a default value.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.Extensions.JoinToString``1(System.Collections.Generic.IEnumerable{``0},System.Char)">
+            <summary>
+            Concatentates a set of values into a single string using a character as a separator.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.Extensions.JoinToString``1(System.Collections.Generic.IEnumerable{``0},System.String)">
+            <summary>
+            Concatentates set of values into a single string using another string as a separator.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.Extensions.IsEquivalentTo``1(``0[],``0[])">
+            <summary>
+            Validates if the indexes and values of source array match the target.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.Extensions.IsEquivalentTo``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Validates if the positions/indexes and values of source match the target.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.Extensions.ToStringArray``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Converts object values to their string equivalents.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.Extensions.Merge``1(System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{``0}})">
+            <summary>
+            Creates a single enumerable using the values contained.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.Extensions.OrderBy``1(System.Collections.Generic.IEnumerable{``0},Microsoft.Extensions.Primitives.StringSegment)">
+            <summary>
+            Shortcut for ordering an enumerable by an "ORDER BY" string.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.Extensions.OrderBy``1(System.Linq.IQueryable{``0},Microsoft.Extensions.Primitives.StringSegment)">
+            <summary>
+            Shortcut for ordering by an "ORDER BY" string.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.Extensions.Arrange``1(System.Collections.Generic.IReadOnlyList{``0},System.Collections.Generic.IEnumerable{System.Int32})">
+            <summary>
+            Returns an enumerable with the values from the source in the order provided.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.Extensions.Memoize``1(System.Collections.Generic.IEnumerable{``0},System.Boolean)">
+            <summary>
+            Caches the results up to the last index requested.
+            </summary>
+            <param name="list">The source enumerable to cache.</param>
+            <param name="isEndless">When true, will throw an InvalidOperationException if anything causes the list to evaluate to completion.</param>
+            <returns>A LazyList<typeparamref name="T"/> for accessing the cached results.</returns>
+        </member>
+        <member name="M:Open.Collections.Extensions.MemoizeUnsafe``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            <para>Caches the results up to the last index requested.</para>
+            <para>
+            WARNING:
+            - Is not thread safe.
+            - There is a risk of recursion.
+            - An endless enumerable may result in a stack overflow.
+            </para>
+            <para>If any of the above are of concern, then use .Memoize() instead.</para>
+            </summary>
+            <param name="list">The source enumerable to cache.</param>
+            <returns>A LazyList<typeparamref name="T"/> for accessing the cached results.</returns>
+        </member>
+        <member name="M:Open.Collections.Extensions.IndexOf``1(``0[],``0)">
+            <summary>
+            .IndexOf extension optimized for an array.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.Extensions.CopyToSpan``1(System.Collections.Generic.IEnumerable{``0},System.Span{``0})">
+            <summary>
+            Copies the results to the provided span up to its length or until the end of the results.
+            </summary>
+            <param name="source">The source enumerable.</param>
+            <param name="target">The span to copy to.</param>
+            <returns>
+            A span representing the results.
+            If the count was less than the target length, a new span representing the results.
+            Otherwise the target is returned.
+            </returns>
+        </member>
+        <member name="M:Open.Collections.Extensions.ToImmutableArray``1(System.ReadOnlySpan{``0})">
+            <summary>
+            Builds an immutable array using the contents of the span.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.Extensions.ToImmutableArray``1(System.Span{``0})">
+            <inheritdoc cref="M:Open.Collections.Extensions.ToImmutableArray``1(System.ReadOnlySpan{``0})"/>
+        </member>
+        <member name="M:Open.Collections.Extensions.ToImmutableArray``1(System.ReadOnlyMemory{``0})">
+            <summary>
+            Builds an immutable array using the contents of the memory.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.Extensions.ToImmutableArray``1(System.Memory{``0})">
+            <inheritdoc cref="M:Open.Collections.Extensions.ToImmutableArray``1(System.ReadOnlyMemory{``0})"/>
+        </member>
+        <member name="M:Open.Collections.Extensions.ToReadOnlyCollection``1(System.ReadOnlySpan{``0})">
+            <summary>
+            Builds an readonly collection using the contents of the span.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.Extensions.ToReadOnlyCollection``1(System.Span{``0})">
+            <inheritdoc cref="M:Open.Collections.Extensions.ToReadOnlyCollection``1(System.ReadOnlySpan{``0})"/>
+        </member>
+        <member name="M:Open.Collections.Extensions.ToReadOnlyCollection``1(System.ReadOnlyMemory{``0})">
+            <summary>
+            Builds an immutable array using the contents of the memory.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.Extensions.ToReadOnlyCollection``1(System.Memory{``0})">
+            <inheritdoc cref="M:Open.Collections.Extensions.ToImmutableArray``1(System.ReadOnlyMemory{``0})"/>
+        </member>
+        <member name="M:Open.Collections.Extensions.Preflight``1(System.Collections.Generic.IEnumerable{``0},System.Action)">
+            <summary>
+            Executes an action before the enumerable is consumed.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.Extensions.Preflight``1(System.Collections.Generic.IEnumerator{``0},System.Action)">
+            <summary>
+            Executes an action before the enumerable is consumed.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.Extensions.SetOrRemove``2(System.Collections.Generic.IDictionary{``0,``1},``0,``1)">
+            <summary>
+            Will remove an entry if the value is null or matches the default type value.
+            Otherwise will set the value.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.Extensions.Register``1(System.Collections.Generic.ICollection{``0},``0)">
+            <summary>
+            Adds a value to list only if it does not exist.
+            NOT THREAD SAFE: Use only when a collection local or is assured single threaded.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.Extensions.AddOrUpdate``2(System.Collections.Generic.IDictionary{``0,``1},``0,``1,``1)">
+            <summary>
+            Shortcut for adding a value or updating based on exising value.
+            If no value exists, it adds the provided value.
+            If a value exists, it sets the value using the updateValueFactory.
+            NOT THREAD SAFE: Use only when a dictionary local or is assured single threaded.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.Extensions.AddOrUpdate``2(System.Collections.Generic.IDictionary{``0,``1},``0,``1,System.Func{``0,``1,``1})">
+            <summary>
+            Shortcut for adding a value or updating based on exising value.
+            If no value exists, it adds the provided value.
+            If a value exists, it sets the value using the updateValueFactory.
+            NOT THREAD SAFE: Use only when a dictionary local or is assured single threaded.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.Extensions.AddOrUpdate``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Func{``0,``1},System.Func{``0,``1,``1})">
+            <summary>
+            Shortcut for adding a value or updating based on exising value.
+            If no value exists, it adds the value using the newValueFactory.
+            If a value exists, it sets the value using the updateValueFactory.
+            NOT THREAD SAFE: Use only when a dictionary local or is assured single threaded.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.Extensions.AddTo``2(System.Collections.Generic.IDictionary{``0,System.Collections.Generic.IList{``1}},``0,``1)">
+            <summary>
+            Thread safe shortcut for adding a value to list within a dictionary.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.Extensions.EnsureDefault``2(System.Collections.Generic.IDictionary{``0,``1},``0,``1)">
+            <summary>
+            Shortcut for ensuring a cacheKey contains a action.  If no action exists, it adds the provided defaultValue.
+            NOT THREAD SAFE: Use only when a dictionary local or is assured single threaded.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.Extensions.EnsureDefault``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Func{``0,``1})">
+            <summary>
+            Shortcut for ensuring a cacheKey contains a Value.  If no action exists, it adds it using the provided defaultValueFactory.
+            NOT THREAD SAFE: Use only when a dictionary local or is assured single threaded.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.Extensions.GetOrDefault``2(System.Collections.Generic.IDictionary{``0,``1},``0)">
+            <summary>
+            Attempts to get a value from a dictionary and if no value is present, it returns the default.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.Extensions.GetOrDefault``2(System.Collections.Generic.IDictionary{``0,``1},``0,``1)">
+            <summary>
+            Attempts to get a value from a dictionary and if no value is present, it returns the provided defaultValue.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.Extensions.GetOrDefault``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Func{``0,``1})">
+            <summary>
+            Attempts to get a value from a dictionary and if no value is present, it returns the response of the valueFactory.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.Extensions.GetOrAdd``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Func{``0,``1})">
+            <summary>
+            Tries to acquire a value from the dictionary.  If no value is present it adds it using the valueFactory response.
+            NOT THREAD SAFE: Use only when a dictionary local or is assured single threaded.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.Extensions.GetOrAdd``2(System.Collections.Generic.IDictionary{``0,``1},``0,``1)">
+            <summary>
+            Tries to acquire a value from the dictionary.  If no value is present it adds the value provided.
+            NOT THREAD SAFE: Use only when a dictionary local or is assured single threaded.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.Extensions.TryGetValueSynchronized``2(System.Collections.Generic.IDictionary{``0,``1},``0,``1@)">
+            <summary>
+            Thread safe value for syncronizing acquiring a value from a generic dictionary.
+            </summary>
+            <returns>True if a value was acquired.</returns>
+        </member>
+        <member name="M:Open.Collections.Extensions.GetValueSynchronized``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Boolean)">
+            <summary>
+            Attempts to acquire a specified type from a generic dictonary.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.Extensions.RegisterSynchronized``1(System.Collections.Generic.ICollection{``0},``0)">
+            <summary>
+            Thread safe value for syncronizing adding a value to list only if it does not exist.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.Extensions.AddOrUpdateSynchronized``2(System.Collections.Generic.IDictionary{``0,``1},``0,``1,System.Func{``0,``1,``1})">
+            <summary>
+            Thread safe shortcut for adding a value or updating based on exising value.
+            If no value exists, it adds the provided value.
+            If a value exists, it sets the value using the updateValueFactory.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.Extensions.AddOrUpdateSynchronized``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Func{``0,``1},System.Func{``0,``1,``1})">
+            <summary>
+            Thread safe shortcut for adding a value or updating based on exising value.
+            If no value exists, it adds the value using the newValueFactory.
+            If a value exists, it sets the value using the updateValueFactory.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.Extensions.AddToSynchronized``2(System.Collections.Generic.IDictionary{``0,System.Collections.Generic.IList{``1}},``0,``1)">
+            <summary>
+            Thread safe shortcut for adding a value to list within a dictionary.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.Extensions.EnsureDefaultSynchronized``2(System.Collections.Generic.IDictionary{``0,``1},``0,``1)">
+            <summary>
+            Thread safe shortcut for ensuring a cacheKey contains a action.  If no action exists, it adds the provided defaultValue.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.Extensions.EnsureDefaultSynchronized``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Func{``0,``1})">
+            <summary>
+            Thread safe shortcut for ensuring a cacheKey contains a Value.  If no value exists, it adds it using the provided defaultValueFactory.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.Extensions.GetOrAddSynchronized``2(System.Collections.Generic.IDictionary{``0,``1},``0,``1,System.Int32,System.Boolean)">
+            <summary>
+            Thread safe method for synchronizing acquiring a value from the dictionary.  If no value is present it adds the value provided.
+            If the millisecondTimeout is reached the value is still returned but the collection is unchanged.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.Extensions.GetOrAddSynchronized``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Func{``0,``1},System.Int32)">
+            <summary>
+            Thread safe method for synchronizing acquiring a value from the dictionary.  If no value is present it adds it using the valueFactory response.
+            If the millisecondTimeout is reached the valueFactory is executed and the value is still returned but the collection is unchanged.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.Extensions.TryAddSynchronized``2(System.Collections.Generic.IDictionary{``0,``1},``0,``1,System.Int32)">
+            <summary>
+            Attempts to add a value by synchronizing the collection.
+            </summary>
+            <returns>
+            Returns true if a value was added.  False if value already exists or a lock could not be acquired.
+            </returns>
+        </member>
+        <member name="M:Open.Collections.Extensions.TryAddSynchronized``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Func{``1},System.Int32)">
+            <summary>
+            Attempts to add a value by synchronizing the collection.
+            </summary>
+            <returns>
+            Returns true if a value was added.  False if value already exists or a lock could not be acquired.
+            </returns>
+        </member>
+        <member name="M:Open.Collections.Extensions.TryRemoveSynchronized``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Int32)">
+            <summary>
+            Attempts to add a value by synchronizing the collection.
+            </summary>
+            <returns>
+            Returns true if a value was added.  False if value already exists or a lock could not be acquired.
+            </returns>
+        </member>
+        <member name="M:Open.Collections.Extensions.TryRemoveSynchronized``2(System.Collections.Generic.IDictionary{``0,``1},``0,``1@,System.Int32)">
+            <summary>
+            Attempts to add a value by synchronizing the collection.
+            </summary>
+            <returns>
+            Returns true if a value was added.  False if value already exists or a lock could not be acquired.
+            </returns>
+        </member>
+        <member name="M:Open.Collections.Extensions.Permutations``1(System.Collections.Generic.IReadOnlyCollection{``0},``0[])">
+            <param name="elements">The elements to draw from.</param>
+            <param name="buffer">The buffer array that is filled with the values and returned as the yielded value instead of a new array</param>
+            <inheritdoc cref="M:Open.Collections.Extensions.Permutations``1(System.Collections.Generic.IEnumerable{``0})"/>
+        </member>
+        <member name="M:Open.Collections.Extensions.Permutations``1(System.Collections.Generic.IEnumerable{``0},``0[])">
+            <inheritdoc cref="M:Open.Collections.Extensions.Permutations``1(System.Collections.Generic.IReadOnlyCollection{``0},``0[])"/>
+        </member>
+        <member name="M:Open.Collections.Extensions.PermutationsBuffered``1(System.Collections.Generic.IReadOnlyCollection{``0})">
+            <inheritdoc cref="M:Open.Collections.Extensions.PermutationsBuffered``1(System.Collections.Generic.IEnumerable{``0})"/>
+        </member>
+        <member name="M:Open.Collections.Extensions.PermutationsBuffered``1(System.Collections.Generic.IEnumerable{``0})">
+            <inheritdoc cref="M:Open.Collections.Extensions.Permutations``1(System.Collections.Generic.IEnumerable{``0})"/>
+            <remarks>Values are yielded as read only memory buffer that should not be retained as its array is returned to pool afterwards.</remarks>
+        </member>
+        <member name="M:Open.Collections.Extensions.Permutations``1(System.Collections.Generic.IReadOnlyCollection{``0})">
+            <inheritdoc cref="M:Open.Collections.Extensions.Permutations``1(System.Collections.Generic.IEnumerable{``0})"/>
+        </member>
+        <member name="M:Open.Collections.Extensions.Permutations``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Enumerates all possible unique permutations of a given set.
+            </summary>
+            <example>[A, B, C] results in [A, B, C], [A, C, B], [B, A, C], [C, A, B], [B, C, A], [C, B, A]</example>
+            <param name="elements">The elements to derive from.</param>
+        </member>
+        <member name="M:Open.Collections.Extensions.DualBufferCopyToAsync(System.IO.Stream,System.IO.Stream,System.Int32,System.Boolean,System.Threading.CancellationToken)">
+            <summary>
+            Copies the source stream to the target.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.Extensions.Subsets``1(System.Collections.Generic.IReadOnlyList{``0},System.Int32,``0[])">
+            <param name="source">The source list to derive from.</param>
+            <param name="count">The maximum number of items in the result sets.</param>
+            <param name="buffer">
+            A buffer to use instead of returning new arrays for each iteration.
+            It must be at least the length of the count.
+            </param>
+            <inheritdoc cref="M:Open.Collections.Extensions.Subsets``1(System.Collections.Generic.IReadOnlyList{``0},System.Int32)"/>
+        </member>
+        <member name="M:Open.Collections.Extensions.SubsetsBuffered``1(System.Collections.Generic.IReadOnlyList{``0},System.Int32)">
+            <inheritdoc cref="M:Open.Collections.Extensions.Subsets``1(System.Collections.Generic.IReadOnlyList{``0},System.Int32)"/>
+            <remarks>Values are yielded as read only memory buffer that should not be retained as its array is returned to pool afterwards.</remarks>
+            <returns>An enumerable containing the resultant subsets as a memory buffer.</returns>
+        </member>
+        <member name="M:Open.Collections.Extensions.Subsets``1(System.Collections.Generic.IReadOnlyList{``0},System.Int32)">
+            <summary>
+            Enumerates the possible (ordered) subsets of the list, limited by the provided count.
+            </summary>
+            <param name="source">The source list to derive from.</param>
+            <param name="count">The maximum number of items in the result sets.</param>
+            <returns>An enumerable containing the resultant subsets.</returns>
+        </member>
+        <member name="M:Open.Collections.Extensions.Subsets``1(System.Collections.Generic.IReadOnlyList{``0},System.Int32,System.Buffers.ArrayPool{``0},System.Boolean)">
+            <param name="source">The source list to derive from.</param>
+            <param name="count">The maximum number of items in the result sets.</param>
+            <param name="pool">The array pool to get result arrays from.</param>
+            <param name="clearArray"><see langword="true"/>, clears the pooled array when finished; otherwise is left alone.</param>
+            <inheritdoc cref="M:Open.Collections.Extensions.Subsets``1(System.Collections.Generic.IReadOnlyList{``0},System.Int32)" />
+        </member>
+        <member name="M:Open.Collections.Extensions.SubsetsProgressive``1(System.Collections.Generic.IReadOnlyList{``0},System.Int32,``0[])">
+            <param name="buffer">
+            A buffer to use instead of returning new arrays for each iteration.
+            It must be at least the length of the count.
+            </param>
+            <param name="source">The source list to derive from.</param>
+            <param name="count">The maximum number of items in the result sets.</param>
+            <inheritdoc cref="M:Open.Collections.Extensions.SubsetsProgressive``1(System.Collections.Generic.IReadOnlyList{``0},System.Int32)"/>
+        </member>
+        <member name="M:Open.Collections.Extensions.SubsetsProgressiveBuffered``1(System.Collections.Generic.IReadOnlyList{``0},System.Int32)">
+            <inheritdoc cref="M:Open.Collections.Extensions.SubsetsProgressive``1(System.Collections.Generic.IReadOnlyList{``0},System.Int32)"/>
+            <remarks>Values are yielded as read only memory buffer that should not be retained as its array is returned to pool afterwards.</remarks>
+            <returns>An enumerable containing the resultant subsets as a memory buffer.</returns>
+        </member>
+        <member name="M:Open.Collections.Extensions.SubsetsProgressive``1(System.Collections.Generic.IReadOnlyList{``0},System.Int32)">
+            <summary>
+            Progressively enumerates the possible (ordered) subsets of the list, limited by the provided count.
+            In contrast to the .Subsets(count) extension, this will produce consistent results regardless of source set size but is not as fast.
+            Favorable for larger source sets that enumeration may cause evaluation.
+            </summary>
+            <param name="source">The source list to derive from.</param>
+            <param name="count">The maximum number of items in the result sets.</param>
+            <returns>An enumerable containing the resultant subsets.</returns>
+        </member>
+        <member name="M:Open.Collections.Extensions.SubsetsProgressive``1(System.Collections.Generic.IReadOnlyList{``0},System.Int32,System.Buffers.ArrayPool{``0},System.Boolean)">
+            <param name="source">The source list to derive from.</param>
+            <param name="count">The maximum number of items in the result sets.</param>
+            <param name="pool">The array pool to get result arrays from.</param>
+            <param name="clearArray"><see langword="true"/>, clears the pooled array when finished; otherwise is left alone.</param>
+            <inheritdoc cref="M:Open.Collections.Extensions.SubsetsProgressive``1(System.Collections.Generic.IReadOnlyList{``0},System.Int32)" />
+        </member>
+        <member name="M:Open.Collections.IAddMultiple`1.AddThese(`0,`0,`0[])">
+            <summary>Adds more than one item.</summary>
+            <param name="item1">First item to add.</param>
+            <param name="item2">Additional item to add.</param>
+            <param name="items">Extended param items to add.</param>
+        </member>
+        <member name="M:Open.Collections.IAddMultiple`1.AddRange(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            Adds all the items in <paramref name="items"/> to this collection.
+            </summary>
+            <param name="items">The items to add.</param>
+        </member>
+        <member name="T:Open.Collections.IIndexedDictionary`2">
+            <summary>
+            Represents a generic items of key/value pairs that are ordered independently of the key and value.
+            </summary>
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.IIndexedDictionary`2.Add(`0,`1)">
+            <summary>
+            Adds an entry with the specified key and value into the <see cref="T:Open.Collections.IIndexedDictionary`2"/>.
+            </summary>
+            <returns>The index of the newly added entry</returns>
+            <inheritdoc cref="M:Open.Collections.IIndexedDictionary`2.Insert(System.Int32,`0,`1)"/>
+        </member>
+        <member name="M:Open.Collections.IIndexedDictionary`2.Insert(System.Int32,`0,`1)">
+            <summary>
+            Inserts a new entry into the <see cref="T:Open.Collections.IIndexedDictionary`2"/> items with the specified key and value at the specified index.
+            </summary>
+            <param name="index">The zero-based index at which the element should be inserted.</param>
+            <param name="key">The key of the entry to add.</param>
+            <param name="value">The value of the entry to add. The value can be <see langword="null"/> if the type of the values in the dictionary is a reference type.</param>
+            <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="index"/> is less than 0.<br/>
+            -or-<br/>
+            <paramref name="index"/> is greater than <see cref="P:System.Collections.ICollection.Count"/>.</exception>
+            <exception cref="T:System.ArgumentException">An element with the same key already exists in the <see cref="T:Open.Collections.IIndexedDictionary`2"/>.</exception>
+            <exception cref="T:System.NotSupportedException">The <see cref="T:Open.Collections.IIndexedDictionary`2"/> is read-only.<br/>
+            -or-<br/>
+            The <see cref="T:Open.Collections.IIndexedDictionary`2"/> has a fized size.</exception>
+        </member>
+        <member name="M:Open.Collections.IIndexedDictionary`2.SetValue(`0,`1,System.Int32@)">
+            <summary>
+            Updates or creates and item.
+            </summary>
+            <returns><see langword="true"/> if the value was updated; otherwise <see langword="false"/>.</returns>
+        </member>
+        <member name="M:Open.Collections.IIndexedDictionary`2.SetValue(`0,`1)">
+            <summary>
+            Updates or creates and item.
+            </summary>
+            <returns>The index that was updated or added.</returns>
+        </member>
+        <member name="M:Open.Collections.IIndexedDictionary`2.GetKeyAt(System.Int32)">
+            <summary>
+            Returns the key at the requested <paramref name="index"/>.
+            </summary>
+            <exception cref="T:System.ArgumentOutOfRangeException">The index is less than zero or greater than the length of the collection.</exception>
+        </member>
+        <member name="M:Open.Collections.IIndexedDictionary`2.GetValueAt(System.Int32)">
+            <summary>
+            Returns the value at the requested <paramref name="index"/>.
+            </summary>
+            <exception cref="T:System.ArgumentOutOfRangeException">The index is less than zero or greater than the length of the collection.</exception>
+        </member>
+        <member name="M:Open.Collections.IIndexedDictionary`2.SetValueAt(System.Int32,`1,`0@)">
+            <summary>
+            Sets the <paramref name="value"/> of an item at the specified <paramref name="index"/>.
+            </summary>
+            <remarks><see langword="true"/> if the value changed; otherwise <see langword="false"/>.</remarks>
+            <exception cref="T:System.ArgumentOutOfRangeException">The index is less than zero or greater than the length of the collection.</exception>
+        </member>
+        <member name="M:Open.Collections.IIndexedDictionary`2.RemoveAt(System.Int32)">
+            <summary>
+            Removes the entry at the specified index from the <see cref="T:Open.Collections.IIndexedDictionary`2"/> items.
+            </summary>
+            <param name="index">The zero-based index of the entry to remove.</param>
+            <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="index"/> is less than 0.<br/>
+            -or-<br/>
+            index is equal to or greater than <see cref="P:System.Collections.Generic.ICollection`1.Count"/>.</exception>
+        </member>
+        <member name="T:Open.Collections.IndexedDictionary`2">
+            <summary>
+            A minimal implementation of <see cref="T:Open.Collections.IIndexedDictionary`2"/> that is inherently not thread safe.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.IndexedDictionary`2.GetEnumerator">
+            <inheritdoc />
+        </member>
+        <member name="P:Open.Collections.IndexedDictionary`2.Count">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.IndexedDictionary`2.Add(`0,`1)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.IndexedDictionary`2.GetKeyAt(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.IndexedDictionary`2.GetValueAt(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.IndexedDictionary`2.Insert(System.Int32,`0,`1)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.IndexedDictionary`2.Remove(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.IndexedDictionary`2.RemoveAt(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.IndexedDictionary`2.SetValue(`0,`1)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.IndexedDictionary`2.SetValue(`0,`1,System.Int32@)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.IndexedDictionary`2.SetValueAt(System.Int32,`1,`0@)">
+            <inheritdoc />
+        </member>
+        <member name="T:Open.Collections.LazyList`1">
+            <summary>
+            A a thread-safe list for caching the results of an enumerable.
+            Note: should be disposed manually whenever possible as the locking mechanism is a ReaderWriterLockSlim.
+            </summary>
+        </member>
+        <member name="P:Open.Collections.LazyList`1.IsEndless">
+            <summary>
+            A value indicating whether the results are known or expected to be finite.
+            A list that was constructed as endless but has reached the end of the results will return false.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.LazyList`1.IndexOf(`0)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Open.Collections.LazyListUnsafe`1">
+            <summary>
+            An "unsafe" lazy list is one that is not thread safe, does not manage recursion, and does not protect against stack overflow (infinite length).
+            Only use if you know the results are finite and access is thread safe.
+            Note: disposing releases the underlying enumerator if it never reached the end of the results.
+            </summary>
+        </member>
+        <member name="P:Open.Collections.LazyListUnsafe`1.Item(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="P:Open.Collections.LazyListUnsafe`1.Count">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.LazyListUnsafe`1.TryGetValueAt(System.Int32,`0@)">
+            <summary>
+            Will attempt to get a value in the list if it is within the count of the results.
+            </summary>
+            <param name="index">The index to look up.</param>
+            <param name="value">The value at that index.</param>
+            <returns>True if acquired.  False if the index is greater</returns>
+        </member>
+        <member name="M:Open.Collections.LazyListUnsafe`1.GetEnumerator">
+            <inheritdoc/>
+        </member>
+        <member name="M:Open.Collections.LazyListUnsafe`1.IndexOf(`0)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Open.Collections.LazyListUnsafe`1.Contains(`0)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Open.Collections.LazyListUnsafe`1.CopyTo(`0[],System.Int32)">
+            <inheritdoc cref="M:Open.Collections.ReadOnlyCollectionWrapper`2.CopyTo(System.Span{`0})"/>
+        </member>
+        <member name="P:Open.Collections.ILinkedList`1.First">
+            <inheritdoc cref="P:System.Collections.Generic.LinkedList`1.First"/>
+        </member>
+        <member name="P:Open.Collections.ILinkedList`1.Last">
+            <inheritdoc cref="P:System.Collections.Generic.LinkedList`1.Last"/>
+        </member>
+        <member name="M:Open.Collections.ILinkedList`1.AddAfter(System.Collections.Generic.LinkedListNode{`0},`0)">
+            <inheritdoc cref="M:System.Collections.Generic.LinkedList`1.AddAfter(System.Collections.Generic.LinkedListNode{`0},`0)"/>
+        </member>
+        <member name="M:Open.Collections.ILinkedList`1.AddAfter(System.Collections.Generic.LinkedListNode{`0},System.Collections.Generic.LinkedListNode{`0})">
+            <inheritdoc cref="M:System.Collections.Generic.LinkedList`1.AddAfter(System.Collections.Generic.LinkedListNode{`0},System.Collections.Generic.LinkedListNode{`0})"/>
+        </member>
+        <member name="M:Open.Collections.ILinkedList`1.AddBefore(System.Collections.Generic.LinkedListNode{`0},`0)">
+            <inheritdoc cref="M:System.Collections.Generic.LinkedList`1.AddBefore(System.Collections.Generic.LinkedListNode{`0},`0)"/>
+        </member>
+        <member name="M:Open.Collections.ILinkedList`1.AddBefore(System.Collections.Generic.LinkedListNode{`0},System.Collections.Generic.LinkedListNode{`0})">
+            <inheritdoc cref="M:System.Collections.Generic.LinkedList`1.AddBefore(System.Collections.Generic.LinkedListNode{`0},System.Collections.Generic.LinkedListNode{`0})"/>
+        </member>
+        <member name="M:Open.Collections.ILinkedList`1.AddFirst(`0)">
+            <inheritdoc cref="M:System.Collections.Generic.LinkedList`1.AddFirst(`0)"/>
+        </member>
+        <member name="M:Open.Collections.ILinkedList`1.AddFirst(System.Collections.Generic.LinkedListNode{`0})">
+            <inheritdoc cref="M:System.Collections.Generic.LinkedList`1.AddFirst(System.Collections.Generic.LinkedListNode{`0})"/>
+        </member>
+        <member name="M:Open.Collections.ILinkedList`1.AddLast(`0)">
+            <inheritdoc cref="M:System.Collections.Generic.LinkedList`1.AddLast(`0)"/>
+        </member>
+        <member name="M:Open.Collections.ILinkedList`1.AddLast(System.Collections.Generic.LinkedListNode{`0})">
+            <inheritdoc cref="M:System.Collections.Generic.LinkedList`1.AddLast(System.Collections.Generic.LinkedListNode{`0})"/>
+        </member>
+        <member name="M:Open.Collections.ILinkedList`1.Remove(System.Collections.Generic.LinkedListNode{`0})">
+            <inheritdoc cref="M:System.Collections.Generic.LinkedList`1.Remove(System.Collections.Generic.LinkedListNode{`0})"/>
+        </member>
+        <member name="M:Open.Collections.ILinkedList`1.RemoveFirst">
+            <inheritdoc cref="M:System.Collections.Generic.LinkedList`1.RemoveFirst"/>
+        </member>
+        <member name="M:Open.Collections.ILinkedList`1.RemoveLast">
+            <inheritdoc cref="M:System.Collections.Generic.LinkedList`1.RemoveLast"/>
+        </member>
+        <member name="M:Open.Collections.ILinkedList`1.TryTakeFirst(`0@)">
+            <summary>
+            Attempts to remove the first item.
+            </summary>
+            <param name="item">The item removed.</param>
+            <returns>True if the first item was removed successfully.</returns>
+        </member>
+        <member name="M:Open.Collections.ILinkedList`1.TryTakeLast(`0@)">
+            <summary>
+            Attempts to remove the last item.
+            </summary>
+            <param name="item">The item removed.</param>
+            <returns>True if the last item was removed successfully.</returns>
+        </member>
+        <member name="M:Open.Collections.LinkedList.Standard`1.TryTakeFirst(`0@)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.LinkedList.Standard`1.TryTakeLast(`0@)">
+            <inheritdoc />
+        </member>
+        <member name="P:Open.Collections.ListWrapper`2.Item(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.ListWrapper`2.IndexOf(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.ListWrapper`2.Insert(System.Int32,`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.ListWrapper`2.RemoveAt(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.NonGeneric.Extensions.GetOrAdd``1(System.Collections.IDictionary,System.Object,System.Func{System.Object,``0})">
+            <summary>
+            Tries to acquire a value from the dictionary.  If no value is present it adds it using the valueFactory response.
+            NOT THREAD SAFE: Use only when a dictionary local or is assured single threaded.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.NonGeneric.Extensions.GetOrAdd``1(System.Collections.IDictionary,System.Object,``0)">
+            <summary>
+            Tries to acquire a value from the dictionary.  If no value is present it adds the value provided.
+            NOT THREAD SAFE: Use only when a dictionary local or is assured single threaded.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.NonGeneric.Extensions.TryGetValue``1(System.Collections.IDictionary,System.Object,``0@)">
+            <summary>
+            Tries to acquire a value from a non-generic dictionary.
+            NOT THREAD SAFE: Use only when a dictionary local or is assured single threaded.
+            </summary>
+            <returns>True if a value was acquired.</returns>
+        </member>
+        <member name="M:Open.Collections.NonGeneric.Extensions.GetOrDefault``1(System.Collections.IDictionary,System.Object,System.Func{System.Object,``0})">
+            <summary>
+            Attempts to get a value from a dictionary and if no value is present, it returns the response of the valueFactory.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.NonGeneric.Extensions.GetOrDefault``1(System.Collections.IDictionary,System.Object,``0)">
+            <summary>
+            Attempts to get a value from a dictionary and if no value is present, it returns the provided defaultValue.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.NonGeneric.Extensions.TryAddSynchronized(System.Collections.IDictionary,System.Object,System.Object,System.Int32)">
+            <summary>
+            Attempts to add a value by synchronizing the collection.
+            </summary>
+            <returns>
+            Returns true if a value was added.  False if value already exists or a lock could not be acquired.
+            </returns>
+        </member>
+        <member name="M:Open.Collections.NonGeneric.Extensions.TryAddSynchronized(System.Collections.IDictionary,System.Object,System.Func{System.Object},System.Int32)">
+            <summary>
+            Attempts to add a value by synchronizing the collection.
+            </summary>
+            <returns>
+            Returns true if a value was added.  False if value already exists or a lock could not be acquired.
+            </returns>
+        </member>
+        <member name="M:Open.Collections.NonGeneric.Extensions.RemoveSynchronized(System.Collections.IDictionary,System.Object,System.Int32)">
+            <summary>
+            Attempts to add a value by synchronizing the collection.
+            </summary>
+            <returns>
+            Returns true if a value was added.  False if value already exists or a lock could not be acquired.
+            </returns>
+        </member>
+        <member name="M:Open.Collections.NonGeneric.Extensions.TryGetValueSynchronized``1(System.Collections.IDictionary,System.Object,``0@)">
+            <summary>
+            Thread safe value for syncronizing acquiring a value from a non-generic dictionary.
+            </summary>
+            <returns>True if a value was acquired.</returns>
+        </member>
+        <member name="M:Open.Collections.NonGeneric.Extensions.GetValueTypeSynchronized``1(System.Collections.IDictionary,System.Object,System.Boolean)">
+            <summary>
+            Attempts to acquire a specified type from a non-generic dictonary.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.NonGeneric.Extensions.GetValueSynchronized(System.Collections.IDictionary,System.Object,System.Boolean)">
+            <summary>
+            Thread safe method for getting a value from a dictionary.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.NonGeneric.Extensions.GetOrAddSynchronized``1(System.Collections.IDictionary,System.Object,``0,System.Int32,System.Boolean)">
+            <summary>
+            Thread safe method for synchronizing acquiring a value from the dictionary.  If no value is present it adds the value provided.
+            If the millisecondTimeout is reached the value is still returned but the collection is unchanged.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.NonGeneric.Extensions.GetOrAddSynchronized``1(System.Collections.IDictionary,System.Object,System.Func{System.Object,``0},System.Int32)">
+            <summary>
+            Thread safe method for synchronizing acquiring a value from the dictionary.  If no value is present it adds it using the valueFactory response.
+            If the millisecondTimeout is reached the valueFactory is executed and the value is still returned but the collection is unchanged.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.OrderedDictionary`2.#ctor">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.OrderedDictionary`2.#ctor(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.OrderedDictionary`2.SetValue(`0,`1)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.OrderedDictionary`2.AddInternal(`0,`1)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.OrderedDictionary`2.ContainsKey(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.OrderedDictionary`2.Remove(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.OrderedDictionary`2.TryGetValue(`0,`1@)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.OrderedDictionary`2.Clear">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.IQueue`1.Enqueue(`0)">
+            <inheritdoc cref="M:System.Collections.Generic.Queue`1.Enqueue(`0)"/>
+        </member>
+        <member name="M:Open.Collections.IQueue`1.TryDequeue(`0@)">
+            <inheritdoc cref="M:System.Collections.Concurrent.ConcurrentQueue`1.TryDequeue(`0@)"/>
+        </member>
+        <member name="M:Open.Collections.IQueue`1.TryPeek(`0@)">
+            <inheritdoc cref="M:System.Collections.Concurrent.ConcurrentQueue`1.TryPeek(`0@)"/>
+        </member>
+        <member name="P:Open.Collections.IQueue`1.Count">
+            <inheritdoc cref="P:System.Collections.Generic.Queue`1.Count"/>
+        </member>
+        <member name="M:Open.Collections.IQueue`1.Clear">
+            <inheritdoc cref="M:System.Collections.Generic.Queue`1.Clear"/>
+        </member>
+        <member name="M:Open.Collections.Queue.Concurrent`1.Clear">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Queue.Standard`1.TryDequeue(`0@)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Queue.Standard`1.TryPeek(`0@)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.ReadOnlyCollectionAdapter`1.Contains(`0)">
+            <inheritdoc cref="M:System.Collections.Generic.ICollection`1.Contains(`0)" />
+        </member>
+        <member name="P:Open.Collections.ReadOnlyCollectionAdapter`1.Count">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.ReadOnlyCollectionAdapter`1.GetEnumerator">
+            <summary>
+            To ensure expected behavior, this returns an enumerator from the underlying collection.  Exceptions can be thrown if the collection content changes.
+            </summary>
+            <returns>An enumerator from the underlying collection.</returns>
+        </member>
+        <member name="M:Open.Collections.ReadOnlyCollectionAdapter`1.CopyTo(`0[],System.Int32)">
+            <inheritdoc cref="M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)" />
+        </member>
+        <member name="M:Open.Collections.ReadOnlyCollectionAdapter`1.CopyTo(System.Span{`0})">
+            <inheritdoc cref="M:Open.Collections.Extensions.CopyToSpan``1(System.Collections.Generic.IEnumerable{``0},System.Span{``0})"/>
+        </member>
+        <member name="M:Open.Collections.ReadOnlyCollectionAdapter`1.Export(System.Collections.Generic.ICollection{`0})">
+            <inheritdoc cref="M:Open.Collections.ISynchronizedCollection`1.Export(System.Collections.Generic.ICollection{`0})" />
+        </member>
+        <member name="M:Open.Collections.ReadOnlyCollectionAdapter`1.System#Collections#Generic#ICollection{T}#Add(`0)">
+            <inheritdoc cref="M:System.Collections.Generic.ICollection`1.Add(`0)" />
+        </member>
+        <member name="M:Open.Collections.ReadOnlyCollectionAdapter`1.System#Collections#Generic#ICollection{T}#Clear">
+            <inheritdoc cref="M:System.Collections.Generic.ICollection`1.Clear" />
+        </member>
+        <member name="M:Open.Collections.ReadOnlyCollectionAdapter`1.System#Collections#Generic#ICollection{T}#Remove(`0)">
+            <inheritdoc cref="M:System.Collections.Generic.ICollection`1.Remove(`0)" />
+        </member>
+        <member name="P:Open.Collections.ReadOnlyCollectionAdapter`1.System#Collections#Generic#ICollection{T}#IsReadOnly">
+            <inheritdoc cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />
+        </member>
+        <member name="M:Open.Collections.ReadOnlyCollectionWrapper`2.#ctor(`1,System.Boolean)">
+            <summary>
+            Constructs a wrapper for read-only access to a collection.
+            </summary>
+            <param name="source">The source collection.</param>
+            <param name="owner">
+            If <see langword="true"/>, will call <paramref name="source"/>.Dispose() if the source is <see cref="T:System.IDisposable"/> when this is disposed.<br/>
+            And will throw <see cref="T:System.NotSupportedException"/> to prevent direct access to the source when .ExtractAndDispose() is called.
+            </param>
+            <exception cref="T:System.ArgumentNullException">If the <paramref name="source"/> is <see langword="null"/>.</exception>
+        </member>
+        <member name="M:Open.Collections.ReadOnlyCollectionWrapper`2.Contains(`0)">
+            <inheritdoc cref="M:System.Collections.Generic.ICollection`1.Contains(`0)" />
+        </member>
+        <member name="P:Open.Collections.ReadOnlyCollectionWrapper`2.Count">
+            <inheritdoc />
+        </member>
+        <member name="P:Open.Collections.ReadOnlyCollectionWrapper`2.IsReadOnly">
+            <inheritdoc cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />
+        </member>
+        <member name="M:Open.Collections.ReadOnlyCollectionWrapper`2.GetEnumerator">
+            <summary>
+            To ensure expected behavior, this returns an enumerator from the underlying collection.  Exceptions can be thrown if the collection content changes.
+            </summary>
+            <returns>An enumerator from the underlying collection.</returns>
+        </member>
+        <member name="M:Open.Collections.ReadOnlyCollectionWrapper`2.CopyTo(`0[],System.Int32)">
+            <inheritdoc cref="M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)" />
+        </member>
+        <member name="M:Open.Collections.ReadOnlyCollectionWrapper`2.CopyTo(System.Span{`0})">
+            <inheritdoc cref="M:Open.Collections.Extensions.CopyToSpan``1(System.Collections.Generic.IEnumerable{``0},System.Span{``0})"/>
+        </member>
+        <member name="M:Open.Collections.ReadOnlyCollectionWrapper`2.Export(System.Collections.Generic.ICollection{`0})">
+            <inheritdoc cref="M:Open.Collections.ISynchronizedCollection`1.Export(System.Collections.Generic.ICollection{`0})" />
+        </member>
+        <member name="M:Open.Collections.ReadOnlyCollectionWrapper`2.ExtractAndDispose">
+            <summary>
+            Extracts the underlying collection and returns it before disposing of this synchronized wrapper.
+            </summary>
+            <returns>The extracted underlying collection.</returns>
+            <exception cref="T:System.NotSupportedException">If the underlying collection is owned by this wrapper.</exception>
+        </member>
+        <member name="M:Open.Collections.Subsets.Indexes(System.Int32,System.Int32,System.Int32[])">
+            <param name="sourceLength">The length of the source set.</param>
+            <param name="subsetLength">The size of the desired subsets.</param>
+            <param name="buffer">
+            A buffer to use instead of returning new arrays for each iteration.
+            It must be at least the length of the count.
+            </param>
+            <inheritdoc cref="M:Open.Collections.Subsets.Indexes(System.Int32,System.Int32)"/>
+        </member>
+        <member name="M:Open.Collections.Subsets.IndexesBuffered(System.Int32,System.Int32)">
+            <inheritdoc cref="M:Open.Collections.Subsets.Indexes(System.Int32,System.Int32)"/>
+            <remarks>Values are yielded as read only memory buffer that should not be retained as its array is returned to pool afterwards.</remarks>
+        </member>
+        <member name="M:Open.Collections.Subsets.Indexes(System.Int32,System.Int32)">
+            <summary>
+            Enumerates all the possible subset indexes for a given source set length and subset length.
+            </summary>
+            <param name="sourceLength">The length of the source set.</param>
+            <param name="subsetLength">The size of the desired subsets.</param>
+        </member>
+        <member name="M:Open.Collections.Subsets.IndexesImmutable(System.Int32,System.Int32)">
+            <inheritdoc cref="M:Open.Collections.Subsets.Indexes(System.Int32,System.Int32)"/>
+        </member>
+        <member name="M:Open.Collections.Subsets.IndexesReadOnly(System.Int32,System.Int32)">
+            <inheritdoc cref="M:Open.Collections.Subsets.Indexes(System.Int32,System.Int32)"/>
+        </member>
+        <member name="T:Open.Collections.Synchronized.ConcurrentList`1">
+            <summary>
+            Buffers additions to the list using a <see cref="T:System.Collections.Concurrent.ConcurrentQueue`1"/>
+            and defers synchronization until needed.
+            </summary>
+        </member>
+        <member name="P:Open.Collections.Synchronized.ConcurrentList`1.Item(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ConcurrentList`1.IndexOf(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ConcurrentList`1.Insert(System.Int32,`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ConcurrentList`1.RemoveAt(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ConcurrentList`1.Remove(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ConcurrentList`1.Clear">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ConcurrentList`1.Contains(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ConcurrentList`1.CopyTo(`0[],System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ConcurrentList`1.GetEnumerator">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ConcurrentList`1.Snapshot">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ConcurrentList`1.Read(System.Action)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ConcurrentList`1.Read``1(System.Func{``0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ISynchronizedCollectionWrapper`2.Modify(System.Action{`1})">
+            <inheritdoc cref="M:Open.Collections.Synchronized.ISynchronizedCollectionWrapper`2.Modify(System.Func{System.Boolean},System.Action{`1})"/>
+        </member>
+        <member name="M:Open.Collections.Synchronized.ISynchronizedCollectionWrapper`2.Modify(System.Func{System.Boolean},System.Action{`1})">
+            <summary>
+            Allows for multiple modifications at once.
+            </summary>
+            <param name="condition">Only executes the action if the condition is true.  The condition may be invoked more than once.</param>
+            <param name="action">The action to execute safely on the underlying collection safely.</param>
+        </member>
+        <member name="M:Open.Collections.Synchronized.ISynchronizedCollectionWrapper`2.Modify``1(System.Func{`1,``0})">
+            <returns>The result of the action.</returns>
+            <inheritdoc cref="M:Open.Collections.Synchronized.ISynchronizedCollectionWrapper`2.Modify(System.Func{System.Boolean},System.Action{`1})"/>
+        </member>
+        <member name="M:Open.Collections.Synchronized.ISynchronizedCollectionWrapper`2.IfContains(`0,System.Action{`1})">
+            <summary>
+            If the item is within, allows locks the collection before executing the action.
+            </summary>
+            <param name="item">The item to look for.</param>
+            <param name="action">The action to execute safely on the underlying collection safely.</param>
+            <returns>True if the action was executed.</returns>
+        </member>
+        <member name="M:Open.Collections.Synchronized.ISynchronizedCollectionWrapper`2.IfNotContains(`0,System.Action{`1})">
+            <summary>
+            If the item is not within, allows locks the collection before executing the action.
+            </summary>
+            <param name="item">The item to look for.</param>
+            <param name="action">The action to execute safely on the underlying collection safely.</param>
+            <returns>True if the action was executed.</returns>
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedCollectionWrapper`2.Add(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedCollectionWrapper`2.AddThese(`0,`0,`0[])">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedCollectionWrapper`2.AddRange(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedCollectionWrapper`2.Clear">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedCollectionWrapper`2.Contains(`0)">
+            <inheritdoc  />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedCollectionWrapper`2.Remove(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedCollectionWrapper`2.Snapshot">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedCollectionWrapper`2.Export(System.Collections.Generic.ICollection{`0})">
+            <inheritdoc cref="T:Open.Collections.CollectionWrapper`2" />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedCollectionWrapper`2.CopyTo(`0[],System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedCollectionWrapper`2.CopyTo(System.Span{`0})">
+            <summary>
+            Copies the results to the provided span up to its length or until the end of the results.
+            </summary>
+            <returns>
+            A span representing the results.
+            If the count was less than the target length, a new span representing the results.
+            Otherwise the target is returned.
+            </returns>
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedCollectionWrapper`2.Read(System.Action)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedCollectionWrapper`2.Read``1(System.Func{``0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedCollectionWrapper`2.Modify(System.Action{`1})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedCollectionWrapper`2.Modify(System.Func{System.Boolean},System.Action{`1})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedCollectionWrapper`2.Modify``1(System.Func{`1,``0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedCollectionWrapper`2.IfContains(`0,System.Action{`1})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedCollectionWrapper`2.IfNotContains(`0,System.Action{`1})">
+            <inheritdoc />
+        </member>
+        <member name="T:Open.Collections.Synchronized.LockSynchronizedDictionaryWrapper`3">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedDictionaryWrapper`3.#ctor(`2)">
+            <inheritdoc />
+        </member>
+        <member name="P:Open.Collections.Synchronized.LockSynchronizedDictionaryWrapper`3.Item(`0)">
+            <inheritdoc />
+        </member>
+        <member name="P:Open.Collections.Synchronized.LockSynchronizedDictionaryWrapper`3.Keys">
+            <inheritdoc />
+        </member>
+        <member name="P:Open.Collections.Synchronized.LockSynchronizedDictionaryWrapper`3.Values">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedDictionaryWrapper`3.Add(`0,`1)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedDictionaryWrapper`3.ContainsKey(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedDictionaryWrapper`3.Remove(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedDictionaryWrapper`3.TryGetValue(`0,`1@)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedHashSet`1.Contains(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedHashSet`1.Add(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedHashSet`1.Remove(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedHashSet`1.ExceptWith(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedHashSet`1.IntersectWith(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedHashSet`1.SymmetricExceptWith(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedHashSet`1.UnionWith(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedHashSet`1.IsProperSubsetOf(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedHashSet`1.IsProperSupersetOf(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedHashSet`1.IsSubsetOf(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedHashSet`1.IsSupersetOf(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedHashSet`1.Overlaps(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedHashSet`1.SetEquals(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedHashSet`1.IfContains(`0,System.Action{System.Collections.Generic.HashSet{`0}})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedHashSet`1.IfNotContains(`0,System.Action{System.Collections.Generic.HashSet{`0}})">
+            <inheritdoc />
+        </member>
+        <member name="T:Open.Collections.Synchronized.LockSynchronizedIndexedDictionary`2">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedIndexedDictionary`2.#ctor(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedIndexedDictionary`2.GetKeyAt(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedIndexedDictionary`2.GetValueAt(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedIndexedDictionary`2.Insert(System.Int32,`0,`1)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedIndexedDictionary`2.RemoveAt(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedIndexedDictionary`2.SetValue(`0,`1,System.Int32@)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedIndexedDictionary`2.SetValue(`0,`1)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedIndexedDictionary`2.SetValueAt(System.Int32,`1,`0@)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedIndexedDictionary`2.Add(`0,`1)">
+            <inheritdoc />
+        </member>
+        <member name="P:Open.Collections.Synchronized.LockSynchronizedLinkedList`1.First">
+            <inheritdoc />
+        </member>
+        <member name="P:Open.Collections.Synchronized.LockSynchronizedLinkedList`1.Last">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedLinkedList`1.AddAfter(System.Collections.Generic.LinkedListNode{`0},`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedLinkedList`1.AddAfter(System.Collections.Generic.LinkedListNode{`0},System.Collections.Generic.LinkedListNode{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedLinkedList`1.AddBefore(System.Collections.Generic.LinkedListNode{`0},`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedLinkedList`1.AddBefore(System.Collections.Generic.LinkedListNode{`0},System.Collections.Generic.LinkedListNode{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedLinkedList`1.AddFirst(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedLinkedList`1.AddFirst(System.Collections.Generic.LinkedListNode{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedLinkedList`1.AddLast(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedLinkedList`1.AddLast(System.Collections.Generic.LinkedListNode{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedLinkedList`1.Remove(System.Collections.Generic.LinkedListNode{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedLinkedList`1.RemoveFirst">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedLinkedList`1.RemoveLast">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedLinkedList`1.TryTakeFirst(`0@)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedLinkedList`1.TryTakeLast(`0@)">
+            <inheritdoc />
+        </member>
+        <member name="P:Open.Collections.Synchronized.LockSynchronizedListWrapper`2.Item(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedListWrapper`2.IndexOf(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedListWrapper`2.Insert(System.Int32,`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedListWrapper`2.RemoveAt(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="T:Open.Collections.Synchronized.LockSynchronizedOrderedDictionary`2">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedOrderedDictionary`2.#ctor(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="P:Open.Collections.Synchronized.LockSynchronizedQueue`1.SyncRoot">
+            <summary>
+            The underlying object used for synchronization.  This is exposed to allow for more complex synchronization operations.
+            </summary>
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedQueue`1.Enqueue(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedQueue`1.TryDequeue(`0@)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.LockSynchronizedQueue`1.TryPeek(`0@)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedCollectionWrapper`2.Add(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedCollectionWrapper`2.AddThese(`0,`0,`0[])">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedCollectionWrapper`2.AddRange(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedCollectionWrapper`2.Clear">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedCollectionWrapper`2.Contains(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedCollectionWrapper`2.Remove(`0)">
+            <inheritdoc />
+        </member>
+        <member name="P:Open.Collections.Synchronized.ReadWriteSynchronizedCollectionWrapper`2.Count">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedCollectionWrapper`2.Snapshot">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedCollectionWrapper`2.Export(System.Collections.Generic.ICollection{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedCollectionWrapper`2.CopyTo(`0[],System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedCollectionWrapper`2.CopyTo(System.Span{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedCollectionWrapper`2.Read(System.Action)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedCollectionWrapper`2.Read``1(System.Func{``0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedCollectionWrapper`2.Modify(System.Func{System.Boolean},System.Action{`1})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedCollectionWrapper`2.Modify(System.Func{System.Boolean,System.Boolean},System.Action{`1})">
+            <summary>
+            Allows for multiple modifications at once.
+            </summary>
+            <param name="condition">Only executes the action if the condition is true.  The condition may be invoked more than once.</param>
+            <param name="action">The action to execute safely on the underlying collection safely.</param>
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedCollectionWrapper`2.Modify(System.Action{`1})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedCollectionWrapper`2.Modify``1(System.Func{`1,``0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedCollectionWrapper`2.IfContains(`0,System.Action{`1})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedCollectionWrapper`2.IfNotContains(`0,System.Action{`1})">
+            <inheritdoc />
+        </member>
+        <member name="T:Open.Collections.Synchronized.ReadWriteSynchronizedDictionaryWrapper`3">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedDictionaryWrapper`3.#ctor(`2,System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="P:Open.Collections.Synchronized.ReadWriteSynchronizedDictionaryWrapper`3.Item(`0)">
+            <inheritdoc />
+        </member>
+        <member name="P:Open.Collections.Synchronized.ReadWriteSynchronizedDictionaryWrapper`3.Keys">
+            <inheritdoc />
+        </member>
+        <member name="P:Open.Collections.Synchronized.ReadWriteSynchronizedDictionaryWrapper`3.Values">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedDictionaryWrapper`3.Add(`0,`1)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedDictionaryWrapper`3.ContainsKey(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedDictionaryWrapper`3.Remove(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedDictionaryWrapper`3.TryGetValue(`0,`1@)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedDictionaryWrapper`3.IfContainsKey(`0,System.Action{System.Collections.Generic.IDictionary{`0,`1}})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedDictionaryWrapper`3.IfNotContainsKey(`0,System.Action{System.Collections.Generic.IDictionary{`0,`1}})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedHashSet`1.Contains(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedHashSet`1.Add(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedHashSet`1.ExceptWith(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedHashSet`1.IntersectWith(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedHashSet`1.IsProperSubsetOf(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedHashSet`1.IsProperSupersetOf(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedHashSet`1.IsSubsetOf(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedHashSet`1.IsSupersetOf(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedHashSet`1.Overlaps(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedHashSet`1.SetEquals(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedHashSet`1.SymmetricExceptWith(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedHashSet`1.UnionWith(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedHashSet`1.IfContains(`0,System.Action{System.Collections.Generic.HashSet{`0}})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedHashSet`1.IfNotContains(`0,System.Action{System.Collections.Generic.HashSet{`0}})">
+            <inheritdoc />
+        </member>
+        <member name="P:Open.Collections.Synchronized.ReadWriteSynchronizedLinkedList`1.First">
+            <inheritdoc />
+        </member>
+        <member name="P:Open.Collections.Synchronized.ReadWriteSynchronizedLinkedList`1.Last">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedLinkedList`1.AddAfter(System.Collections.Generic.LinkedListNode{`0},`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedLinkedList`1.AddAfter(System.Collections.Generic.LinkedListNode{`0},System.Collections.Generic.LinkedListNode{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedLinkedList`1.AddBefore(System.Collections.Generic.LinkedListNode{`0},`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedLinkedList`1.AddBefore(System.Collections.Generic.LinkedListNode{`0},System.Collections.Generic.LinkedListNode{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedLinkedList`1.AddFirst(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedLinkedList`1.AddFirst(System.Collections.Generic.LinkedListNode{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedLinkedList`1.AddLast(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedLinkedList`1.AddLast(System.Collections.Generic.LinkedListNode{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedLinkedList`1.Remove(System.Collections.Generic.LinkedListNode{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedLinkedList`1.RemoveFirst">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedLinkedList`1.RemoveLast">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedLinkedList`1.TryTakeFirst(`0@)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedLinkedList`1.TryTakeLast(`0@)">
+            <inheritdoc />
+        </member>
+        <member name="P:Open.Collections.Synchronized.ReadWriteSynchronizedListWrapper`2.Item(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedListWrapper`2.IndexOf(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedListWrapper`2.Insert(System.Int32,`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedListWrapper`2.RemoveAt(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.ReadWriteSynchronizedListWrapper`2.Remove(`0)">
+            <inheritdoc />
+        </member>
+        <member name="E:Open.Collections.Synchronized.TrackedCollectionWrapper`2.Modified">
+            <summary>
+            Event fired after a chnage or group of changes has been made.
+            </summary>
+        </member>
+        <member name="E:Open.Collections.Synchronized.TrackedCollectionWrapper`2.Changed">
+            <summary>
+            Event fired after an item has been added or removed from the collection.
+            </summary>
+        </member>
+        <member name="E:Open.Collections.Synchronized.TrackedCollectionWrapper`2.Cleared">
+            <summary>
+            Event fired after the collection has been cleared.
+            </summary>
+        </member>
+        <member name="P:Open.Collections.Synchronized.TrackedCollectionWrapper`2.Count">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.TrackedCollectionWrapper`2.Add(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.TrackedCollectionWrapper`2.AddThese(`0,`0,`0[])">
+            <inheritdoc cref="M:Open.Collections.IAddMultiple`1.AddThese(`0,`0,`0[])" />
+        </member>
+        <member name="M:Open.Collections.Synchronized.TrackedCollectionWrapper`2.AddRange(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.TrackedCollectionWrapper`2.Clear">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.TrackedCollectionWrapper`2.Contains(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.TrackedCollectionWrapper`2.CopyTo(`0[],System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.TrackedCollectionWrapper`2.Remove(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.TrackedCollectionWrapper`2.GetEnumerator">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.TrackedCollectionWrapper`2.Read(System.Action)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.TrackedCollectionWrapper`2.Read``1(System.Func{``0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.TrackedCollectionWrapper`2.Modify(System.Action{`1})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.TrackedCollectionWrapper`2.Modify(System.Func{System.Boolean},System.Action{`1})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.TrackedCollectionWrapper`2.Modify``1(System.Func{`1,``0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.TrackedCollectionWrapper`2.IfContains(`0,System.Action{`1})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.TrackedCollectionWrapper`2.IfNotContains(`0,System.Action{`1})">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.TrackedCollectionWrapper`2.Snapshot">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.TrackedDictionaryWrapper`3.TryGetValue(`0,`1@)">
+            <inheritdoc />
+        </member>
+        <member name="P:Open.Collections.Synchronized.TrackedDictionaryWrapper`3.Item(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.TrackedDictionaryWrapper`3.ContainsKey(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.TrackedDictionaryWrapper`3.Add(`0,`1)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.TrackedDictionaryWrapper`3.Remove(`0)">
+            <inheritdoc />
+        </member>
+        <member name="T:Open.Collections.Synchronized.TrackedIndexedDictionaryWrapper`3">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.TrackedIndexedDictionaryWrapper`3.#ctor(`2,Open.Threading.ModificationSynchronizer)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.TrackedIndexedDictionaryWrapper`3.#ctor(`2,Open.Threading.ModificationSynchronizer@)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.TrackedIndexedDictionaryWrapper`3.GetKeyAt(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.TrackedIndexedDictionaryWrapper`3.GetValueAt(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.TrackedIndexedDictionaryWrapper`3.Insert(System.Int32,`0,`1)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.TrackedIndexedDictionaryWrapper`3.RemoveAt(System.Int32)">
+            <inheritdoc cref="M:System.Collections.Generic.IList`1.RemoveAt(System.Int32)" />
+        </member>
+        <member name="M:Open.Collections.Synchronized.TrackedIndexedDictionaryWrapper`3.SetValue(`0,`1)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.TrackedIndexedDictionaryWrapper`3.SetValue(`0,`1,System.Int32@)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.TrackedIndexedDictionaryWrapper`3.SetValueAt(System.Int32,`1,`0@)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.TrackedIndexedDictionaryWrapper`3.Add(`0,`1)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.TrackedIndexedDictionaryWrapper`2.#ctor(Open.Collections.IIndexedDictionary{`0,`1},Open.Threading.ModificationSynchronizer)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.TrackedIndexedDictionaryWrapper`2.#ctor(Open.Collections.IIndexedDictionary{`0,`1},Open.Threading.ModificationSynchronizer@)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.TrackedIndexedDictionary`2.#ctor(Open.Threading.ModificationSynchronizer@)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.TrackedIndexedDictionary`2.#ctor">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.TrackedIndexedDictionary`2.GetKeyAt(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.TrackedIndexedDictionary`2.GetValueAt(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="P:Open.Collections.Synchronized.TrackedListWrapper`1.Item(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.TrackedListWrapper`1.IndexOf(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.TrackedListWrapper`1.Insert(System.Int32,`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.TrackedListWrapper`1.Remove(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Open.Collections.Synchronized.TrackedListWrapper`1.RemoveAt(System.Int32)">
+            <returns>The item removed.</returns>
+            <inheritdoc cref="M:System.Collections.Generic.IList`1.RemoveAt(System.Int32)" />
+        </member>
+        <member name="M:Open.Collections.Synchronized.TrackedListWrapper`1.Replace(`0,`0,System.Boolean)">
+            <summary>
+            Synchonizes finding an item (<paramref name="target"/>), and if found, replaces it with the <paramref name="replacement"/>.
+            </summary>
+            <exception cref="T:System.ArgumentException">If <paramref name="throwIfNotFound"/> is true and the <paramref name="target"/> is not found.</exception>
+        </member>
+        <member name="M:Open.Collections.ISynchronizedCollection`1.Read(System.Action)">
+            <summary>
+            Provides temporary exclusive read access while the action is being executed.
+            </summary>
+            <param name="action">The action to execute safely on the underlying collection safely.</param>
+        </member>
+        <member name="M:Open.Collections.ISynchronizedCollection`1.Read``1(System.Func{``0})">
+            <returns>The result of the action.</returns>
+            <inheritdoc cref="M:Open.Collections.ISynchronizedCollection`1.Read(System.Action)"/>
+        </member>
+        <member name="M:Open.Collections.ISynchronizedCollection`1.Snapshot">
+            <summary>
+            Specialized ".ToArray()" thread-safe method.
+            </summary>
+            <returns>An array of the contents.</returns>
+        </member>
+        <member name="M:Open.Collections.ISynchronizedCollection`1.Export(System.Collections.Generic.ICollection{`0})">
+            <summary>
+            Adds all the current items in this collection to the one provided.
+            </summary>
+            <param name="to">The collection to add the items to.</param>
+        </member>
+    </members>
+</doc>
