@@ -1,0 +1,32 @@
+Info & 07:44:54.132
+          Logger initiated
+-----
+
+Debug & 07:44:56.644
+          Subscribed for Clocker at 50
+-----
+
+Debug & 07:44:57.642
+          Clock received 2.56
+-----
+
+Debug & 07:44:58.640
+          Clock received 3.56
+-----
+
+Debug & 07:44:59.639
+          Clock received 4.56
+-----
+
+Debug & 07:45:00.640
+          Clock received 5.56
+-----
+
+Debug & 07:45:01.640
+          Clock received 6.56
+-----
+
+Debug & 07:45:02.199
+          Unsubscribed from Clocker at input
+-----
+

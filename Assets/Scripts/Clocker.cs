@@ -3,88 +3,73 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Clocker : MonoBehaviour
 {
-    [SerializeField]
-    private Dictionary<int, List<string>> subscribers;
-    [SerializeField]
-    private Dictionary<int, List<int>> subscriptions;
-    [SerializeField]
-    [Range(1, 100)]
-    private int timeFactor;
-
+    private Dictionary<int, List<IObserver>> _observers = new Dictionary<int, List<IObserver>>();
+    private Dictionary<int, int> _clocks = new Dictionary<int, int>();
+    public int timeFactor;
 
     void Start()
     {
-        subscribers = new Dictionary<int, List<string>>();
-        subscriptions= new Dictionary<int, List<int>>();
-        timeFactor = 10;
-
-
-        // debug values
-        RegisterSubscriber("Test Seven", 7);
-        RegisterSubscriber("Test Seven Two", 7);
-        UnregisterSubscriber("Test Seven");
-        RegisterSubscriber("Test Five", 5);
-        //Debug.Log(this.RegisterListener("Test Seven Two", 7));
-        //Debug.Log(this.RegisterListener("Test Thirteen", 13));
+        if (timeFactor == 0)
+        {
+            timeFactor = 10;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        if (subscribers.Count > 0)
+        foreach (int mark in _observers.Keys)
         {
-            foreach (int step in subscriptions.Keys)
+            _clocks[mark] += 1;
+            if (_clocks[mark] == mark * timeFactor)
             {
-                subscriptions[step][1] += 1; // increase timer
-                if (subscriptions[step][1] > (step * timeFactor)) // if the step is reached
+                NotifyObservers(mark);
+                _clocks[mark] = 0;
+            }
+        }
+
+        // Debug.Log($"clocker time: {Time.time}");
+    }
+
+    public void AddObserver(int mark, IObserver observer)
+    {
+        if (_observers.ContainsKey(mark))
+        {
+            _observers[mark].Add(observer);
+        }
+        else
+        {
+            _observers[mark] = new List<IObserver>() { observer };
+            _clocks[mark] = 0;
+        }
+    }
+
+    public void RemoveObserver(IObserver observer)
+    {
+        // find mark of observer
+        foreach (int mark in _observers.Keys)
+        {
+            if (_observers[mark].Contains(observer))
+            {
+                _observers[mark].Remove(observer);
+                if (_observers[mark].Count == 0)
                 {
-                    // increase counter and rollover timer
-                    subscriptions[step][0] += 1;
-                    subscriptions[step][1] = 0;
-                    Debug.Log($"Subscription {step} triggered");
+                    _observers.Remove(mark);
+                    _clocks.Remove(mark);
                 }
+                break;
             }
         }
     }
 
-    public void RegisterSubscriber(string subscriberName, int subscriberValue)
+    protected void NotifyObservers(int mark)
     {
-        if (!subscribers.ContainsKey(subscriberValue)) // no such value
+        foreach (IObserver observer in _observers[mark])
         {
-            // register subscriber
-            subscribers[subscriberValue] = new List<string> { subscriberName };
-
-            // register subscription
-            subscriptions.Add(subscriberValue, new List<int> { 0, 0 });
+            observer.OnClockTick();
         }
-        else /// already a subscription with that value
-        {
-            if (!subscribers[subscriberValue].Contains(subscriberName))
-            {
-                subscribers[subscriberValue].Add(subscriberName);
-            }
-        }
-        Debug.Log($"Listener {subscriberName} unregistered");
     }
 
-    public void UnregisterSubscriber(string subscriberName)
-    {
-        // removelistener from the dictionary
-        foreach (int subsctiptionValue in subscribers.Keys)
-        {
-            if (subscribers[subsctiptionValue].Contains(subscriberName))
-            {
-                subscribers[subsctiptionValue].Remove(subscriberName);
-                // if there is no other listener with the same clock, remove the clock from the clocker
-                if (subscribers[subsctiptionValue].Count == 0)
-                {
-                    subscribers.Remove(subsctiptionValue);
-                    subscriptions.Remove(subsctiptionValue);
-                }
-            }
-        }
-        Debug.Log($"Listener {subscriberName} unregistered");
-    }
 }
