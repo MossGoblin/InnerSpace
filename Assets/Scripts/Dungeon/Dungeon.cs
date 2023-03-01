@@ -2,17 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Tile : MonoBehaviour
+public class Dungeon : MonoBehaviour
 {
-
-    private int p;
-    private int q;
-    private int r;
-
-    private int biome_id;
-    private int tile_type_id;
-    private int tile_id;
-
+    public int chunkRadius;
 
     // Start is called before the first frame update
     void Start()

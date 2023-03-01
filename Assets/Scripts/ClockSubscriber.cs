@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObserverTest : MonoBehaviour, IObserver
+public class ClockSubscriber : MonoBehaviour, IObserver
 {
     [SerializeField]
-    Clocker _clocker;
+    Clocker clocker;
 
     [SerializeField]
-    Logger _logger;
+    Logger logger;
 
     [SerializeField]
     private int mark; // in 1/50 of a sec; 50 for 1 tick per second
@@ -42,14 +42,14 @@ public class ObserverTest : MonoBehaviour, IObserver
         {
             if (!subscribed_to_clocker)
             {
-                _clocker.AddObserver(mark, this);
-                _logger.LogDebug($"Subscribed for Clocker at {mark}", true);
+                clocker.AddObserver(mark, this);
+                logger.LogDebug($"Subscribed for Clocker at {mark}", true);
                 subscribed_to_clocker = true;
             }
             else
             {
-                _clocker.RemoveObserver(this);
-                _logger.LogDebug($"Unsubscribed from Clocker at input", true);
+                clocker.RemoveObserver(this);
+                logger.LogDebug($"Unsubscribed from Clocker at input", true);
                 subscribed_to_clocker = false;
             }
         }
@@ -57,8 +57,8 @@ public class ObserverTest : MonoBehaviour, IObserver
         if (clocks_ticked == max_ticks)
         {
             clocks_ticked = 0;
-            _clocker.RemoveObserver(this);
-            _logger.LogDebug($"Unsubscribed from Clocker after {max_ticks} ticks", true);
+            clocker.RemoveObserver(this);
+            logger.LogDebug($"Unsubscribed from Clocker after {max_ticks} ticks", true);
             subscribed_to_clocker = false;
         }
     }

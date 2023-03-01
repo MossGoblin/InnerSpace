@@ -23,7 +23,7 @@ public class Logger : MonoBehaviour
 
     void Start()
     {
-        logFileName = "log_test.txt";
+        logFileName = Application.dataPath + "/log_test.txt";
 
         // test runs
         LogInfo("Logger initiated");
