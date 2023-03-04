@@ -7,7 +7,7 @@ public class Chunk : MonoBehaviour
 {
     public Dungeon dungeon;
     public Logger logger;
-    private int chunkRadius;
+    public int chunkRadius;
     private Dictionary<int[], Tile> tileList;
     private int tileCount;
     private int biomeID;
@@ -15,8 +15,8 @@ public class Chunk : MonoBehaviour
 
     void Start()
     {
-        chunkRadius = dungeon.chunkRadius;
-        // the triangle number equation is (n(n+1)) / 2, however in this case n = - chunkRadius, so for ease the + is substituted for a -
+        // Create empty tile dictionary
+        // the triangle number equation is (n*(n+1)) / 2, however in this case n = chunkRadius - 1, so for ease the + is substituted for a -
         tileCount = ((chunkRadius * (chunkRadius - 1)) / 2) * 6 + 1;
         tileList = new Dictionary<int[], Tile>();
 

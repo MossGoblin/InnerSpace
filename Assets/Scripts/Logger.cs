@@ -11,6 +11,8 @@ public enum LoggerLevel
 {
     Debug,
     Info,
+    Data,
+    Input,
     Error,
     Exception,
     CustomException
@@ -21,9 +23,13 @@ public class Logger : MonoBehaviour
 {
     public string logFileName;
 
-    void Start()
+    void Awake()
     {
-        logFileName = Application.dataPath + "/log_test.txt";
+        if (logFileName == "")
+        {
+            logFileName = "log_test.txt";
+        }
+        logFileName = Application.dataPath + "/Settings/" + logFileName;
 
         // test runs
         LogInfo("Logger initiated");
@@ -37,6 +43,17 @@ public class Logger : MonoBehaviour
     public void LogDebug(string message, bool console = false)
     {
         Log(message, LoggerLevel.Debug);
+        if (console) { Debug.Log(message); }
+    }
+
+    public void LogData(string message, bool console = false)
+    {
+        Log(message, LoggerLevel.Data);
+        if (console) { Debug.Log(message); }
+    }
+    public void LogInput(string message, bool console = false)
+    {
+        Log(message, LoggerLevel.Input);
         if (console) { Debug.Log(message); }
     }
 

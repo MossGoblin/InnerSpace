@@ -152,7 +152,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b1b2dad2c1b3004a9cbecd660e1fc6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chunkRadius: 4
 --- !u!4 &174322957
 Transform:
   m_ObjectHideFlags: 0
@@ -306,6 +305,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dungeon: {fileID: 174322956}
   logger: {fileID: 1675888331}
+  chunkRadius: 5
 --- !u!1 &1416090246
 GameObject:
   m_ObjectHideFlags: 0
@@ -365,6 +365,7 @@ GameObject:
   - component: {fileID: 1675888329}
   - component: {fileID: 1675888330}
   - component: {fileID: 1675888331}
+  - component: {fileID: 1675888332}
   m_Layer: 0
   m_Name: Conductor
   m_TagString: Untagged
@@ -412,7 +413,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 674590e8e7607824cb952cde53cfa291, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  logFileName: log_test.txt
+  logFileName: logger_test.txt
+--- !u!114 &1675888332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675888328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cc98ee0543ffa04ea05a1979bc40c79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!850595691 &2052052218
 LightingSettings:
   m_ObjectHideFlags: 0

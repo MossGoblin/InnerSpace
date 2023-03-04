@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class Dungeon : MonoBehaviour
 {
-    public int chunkRadius;
+    // List of chunks
+    // May be a dictionary with chunk addresses, based on coordinates
+    private Dictionary<int[], Chunk> chunkList;
 
-    // Start is called before the first frame update
     void Start()
     {
-        
+        chunkList = new Dictionary<int[], Chunk>();
+
+        // Create a chunk and adopt it
     }
 
-    // Update is called once per frame
     void Update()
     {
         
