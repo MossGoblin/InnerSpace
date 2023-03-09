@@ -19,12 +19,24 @@ public enum LoggerLevel
 }
 
 
-public class Logger : MonoBehaviour
+public class LogManager : MonoBehaviour
 {
     public string logFileName;
 
+    public static LogManager logInstance { get; private set; }
+
+
     void Awake()
     {
+        if (logInstance != null && logInstance != this)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            logInstance = this;
+        }
+
         if (logFileName == "")
         {
             logFileName = "log_test.txt";
@@ -33,11 +45,17 @@ public class Logger : MonoBehaviour
 
         // test runs
         LogInfo("Logger initiated");
+
+        // DontDestroyOnLoad(this.gameObject);
+    }
+
+    void Start()
+    {
     }
 
     void Update()
     {
-        
+
     }
 
     public void LogDebug(string message, bool console = false)

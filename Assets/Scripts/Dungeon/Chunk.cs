@@ -5,16 +5,31 @@ using UnityEngine;
 
 public class Chunk : MonoBehaviour
 {
-    public Dungeon dungeon;
-    public Logger logger;
+    private GameManager gameManager;
+    private ConfigManager cfgManager;
+    private LogManager logger;
+    private ClockManager clocker;
+    private Dungeon dungeon;
     public int chunkRadius;
     private Dictionary<int[], Tile> tileList;
     private int tileCount;
     private int biomeID;
+    public Tile tilePrefab;
 
 
     void Start()
     {
+        // get Managers
+        gameManager = FindObjectOfType<GameManager>();
+        logger = gameManager.logger;
+        clocker = gameManager.clocker;
+        cfgManager = gameManager.cfgManager;
+
+        // get parent dungeon
+        dungeon = GetComponentInParent<Dungeon>();
+
+        chunkRadius = cfgManager.config.chunkSize;
+
         // Create empty tile dictionary
         // the triangle number equation is (n*(n+1)) / 2, however in this case n = chunkRadius - 1, so for ease the + is substituted for a -
         tileCount = ((chunkRadius * (chunkRadius - 1)) / 2) * 6 + 1;
@@ -31,7 +46,13 @@ public class Chunk : MonoBehaviour
                 if (Math.Abs(cr) <= chunkRadius - 1)
                 {
                     int[] coord = new int[] { cp, cq, cr };
-                    tileList.Add(coord, new Tile(cp, cq, cr, biomeID));
+                    Tile newTile = Instantiate(tilePrefab, new Vector3 (0,0,0), Quaternion.identity);
+                    newTile.addr_p = cp;
+                    newTile.addr_q = cq;
+                    newTile.addr_r = cr;
+                    newTile.biomeID = biomeID;
+                    newTile.transform.SetParent(this.transform);
+                    tileList.Add(coord, newTile);
                 }
             }
         }
@@ -44,8 +65,15 @@ public class Chunk : MonoBehaviour
         logger.LogInfo($"Chunk generated with {tileCount} tiles", true);
         foreach (int[] coord in tileList.Keys)
         {
-            logger.LogDebug($"pqr: {coord[0]} : {coord[1]} : {coord[2]}", true);
+            logger.LogDebug($"pqr: {coord[0]} : {coord[1]} : {coord[2]}", false);
         }
+
+        // TEST SAVE CHUNK LIST
+        cfgManager.dungeonData = tileList;
+        cfgManager.SaveDungeon();
+        Debug.Log(tileList);
+
+
    }
 
     void Update()

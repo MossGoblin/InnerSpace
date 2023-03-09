@@ -4,11 +4,30 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class Clocker : MonoBehaviour
+public class ClockManager : MonoBehaviour
 {
     private Dictionary<int, List<IObserver>> _observers = new Dictionary<int, List<IObserver>>();
     private Dictionary<int, int> _clocks = new Dictionary<int, int>();
     public int timeFactor;
+
+
+    public static ClockManager clockInstance { get; private set; }
+
+    void Awake()
+    {
+        if (clockInstance != null && clockInstance != this)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            clockInstance = this;
+        }        
+
+        // DontDestroyOnLoad(this.gameObject);
+    }
+
+
 
     void Start()
     {
@@ -29,8 +48,6 @@ public class Clocker : MonoBehaviour
                 _clocks[mark] = 0;
             }
         }
-
-        // Debug.Log($"clocker time: {Time.time}");
     }
 
     public void AddObserver(int mark, IObserver observer)
@@ -48,7 +65,6 @@ public class Clocker : MonoBehaviour
 
     public void RemoveObserver(IObserver observer)
     {
-        // find mark of observer
         foreach (int mark in _observers.Keys)
         {
             if (_observers[mark].Contains(observer))

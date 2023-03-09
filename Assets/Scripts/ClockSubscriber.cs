@@ -5,10 +5,10 @@ using UnityEngine;
 public class ClockSubscriber : MonoBehaviour, IObserver
 {
     [SerializeField]
-    Clocker clocker;
+    ClockManager clocker;
 
     [SerializeField]
-    Logger logger;
+    LogManager logger;
 
     [SerializeField]
     private int mark; // in 1/50 of a sec; 50 for 1 tick per second
