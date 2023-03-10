@@ -2,7 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
-using System.Runtime.Serialization.Json;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
+using Newtonsoft.Json.Converters;
+using Newtonsoft.Json.Linq;
+
 
 [Serializable]
 public class ConfigData
@@ -55,28 +59,52 @@ public class ConfigManager : MonoBehaviour
     }
 
     // TESTING WITH CHUNK INSTEAD OF DUNGEON
+
+
+
+    private static ChunkData compileDungeonData(Dictionary<int[], Tile> dungeonData)
+    {
+        // HERE
+        ChunkData chunkData = new ChunkData();
+        string chunkDataString = "";
+        foreach (int[] addr in dungeonData.Keys)
+        {
+            // Tile tile = dungeonData[addr];
+            // TileData tileData = new TileData();
+            List<string> chunkDataList = new List<string>();
+            chunkDataList.Add(String.Join(",", addr));
+            chunkDataList.Add(String.Join(",", dungeonData[addr].addrP));
+            chunkDataList.Add(String.Join(",", dungeonData[addr].addrQ));
+            chunkDataList.Add(String.Join(",", dungeonData[addr].biomeID));
+            chunkDataList.Add(String.Join(",", dungeonData[addr].tileTypeID));
+            chunkDataList.Add(String.Join(",", dungeonData[addr].tileID));
+            chunkDataString += String.Join(";", chunkDataList);
+            chunkDataString += "/";
+        //     public string biomeID;
+        //     public string tileTypeID;
+        //     public string tileID;            
+        }
+        chunkData.tileData = chunkDataString;
+        return chunkData;
+    }
+
     public void SaveDungeon()
     {
 
-        Dictionary<string, string> serializableDungeonData = new Dictionary<string, string>();
-        foreach (int[] tileKey in dungeonData.Keys)
+        ChunkData chunkData = compileDungeonData(dungeonData);
+
+        string jsonFormattedContent = Newtonsoft.Json.JsonConvert.SerializeObject(chunkData);
+        Debug.Log("Chunk Data Serialized:");
+        Debug.Log(jsonFormattedContent);
+
+        if (System.IO.File.Exists(dungeonFilename) == true) 
         {
-            string addr = string.Join(",", tileKey);
-            Dictionary<string, int> tileData = new Dictionary<string, int>();
-            tileData.Add("addr_p", dungeonData[tileKey].addr_p);
-            tileData.Add("addr_q", dungeonData[tileKey].addr_q);
-            tileData.Add("addr_r", dungeonData[tileKey].addr_r);
-            tileData.Add("biome_id", dungeonData[tileKey].biomeID);
-            tileData.Add("tile_type_id", dungeonData[tileKey].tileTypeID);
-            tileData.Add("tile_id", dungeonData[tileKey].tileID);
-            serializableDungeonData.Add(addr, JsonUtility.ToJson(tileData));
+            System.IO.File.Delete(dungeonFilename);
+            Debug.Log("Old Chunk Data Deleted");
+
         }
-        //Convert the dungeonData object to a JSON string
-        string json = JsonUtility.ToJson(serializableDungeonData, prettyPrint: true);
-
-
-        //Write the JSON string to a file on disk.
-        File.WriteAllText(dungeonFilename, json);
+        System.IO.File.WriteAllText(dungeonFilename, jsonFormattedContent);
+        Debug.Log("Chunk Data Saved");
     }
 
     public void LoadDungeon()
@@ -88,3 +116,18 @@ public class ConfigManager : MonoBehaviour
         dungeonData = JsonUtility.FromJson<Dictionary<int[], Tile>>(savedJson);
     }
 }
+
+public class ChunkData
+{
+    public string tileData;
+}
+
+// public class TileData
+// {
+//     public string chunkAddress;
+//     public string addrP;
+//     public string addrQ;
+//     public string biomeID;
+//     public string tileTypeID;
+//     public string tileID;
+// }

@@ -1,22 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Tile : MonoBehaviour
 {
 
-    public int addr_p { get; set; }
-    public int addr_q { get; set; }
-    public int addr_r { get; set; }
+    public double addrP { get; set; }
+    public double addrQ { get; set; }
+    public double addrR { get; set; }
 
-    private int pos_p;
-    private int pos_q;
-    private int pos_r;
+    private double posP;
+    private double posQ;
+    private double posR;
 
     public int biomeID { get; set; }
     public int tileTypeID  { get; set; }
     public int tileID  { get; set; }
 
+        
+    public TMP_Text debugText;
 
     // public Tile(int p, int q, int r, int biomeID)
     // {
@@ -28,7 +31,8 @@ public class Tile : MonoBehaviour
 
     void Start()
     {
-
+        debugText.text = string.Join(" / ", new List<double>{addrP, addrQ, addrR});
+        // debugText.text = "QWEASDZXC";
     }
 
     // Update is called once per frame
@@ -37,16 +41,16 @@ public class Tile : MonoBehaviour
 
     }
 
-    public List<int[]> GetNbrsAddrs()
+    public List<double[]> GetNbrsAddrs()
     {
-        var nbrs_list = new List<int[]>
+        var nbrs_list = new List<double[]>
         {
-            new int[] { addr_p, addr_q + 1, addr_r - 1 },
-            new int[] { addr_p, addr_q - 1, addr_r + 1 },
-            new int[] { addr_p + 1, addr_q - 1, addr_r },
-            new int[] { addr_p - 1, addr_q + 1, addr_r },
-            new int[] { addr_p + 1, addr_q, addr_r - 1 },
-            new int[] { addr_p - 1, addr_q, addr_r + 1 }
+            new double[] { addrP, addrQ + 1, addrR - 1 },
+            new double[] { addrP, addrQ - 1, addrR + 1 },
+            new double[] { addrP + 1, addrQ - 1, addrR },
+            new double[] { addrP - 1, addrQ + 1, addrR },
+            new double[] { addrP + 1, addrQ, addrR - 1 },
+            new double[] { addrP - 1, addrQ, addrR + 1 }
         };
 
         return nbrs_list;

@@ -16,9 +16,15 @@ public class Chunk : MonoBehaviour
     private int biomeID;
     public Tile tilePrefab;
 
+    // HERE
+    private int tileSize;
+
 
     void Start()
     {
+
+        tileSize = 250;
+
         // get Managers
         gameManager = FindObjectOfType<GameManager>();
         logger = gameManager.logger;
@@ -47,9 +53,9 @@ public class Chunk : MonoBehaviour
                 {
                     int[] coord = new int[] { cp, cq, cr };
                     Tile newTile = Instantiate(tilePrefab, new Vector3 (0,0,0), Quaternion.identity);
-                    newTile.addr_p = cp;
-                    newTile.addr_q = cq;
-                    newTile.addr_r = cr;
+                    newTile.addrP = cp;
+                    newTile.addrQ = cq;
+                    newTile.addrR = cr;
                     newTile.biomeID = biomeID;
                     newTile.transform.SetParent(this.transform);
                     tileList.Add(coord, newTile);
@@ -71,13 +77,38 @@ public class Chunk : MonoBehaviour
         // TEST SAVE CHUNK LIST
         cfgManager.dungeonData = tileList;
         cfgManager.SaveDungeon();
-        Debug.Log(tileList);
 
+        PlaceTiles();
 
    }
 
     void Update()
     {
         
+    }
+
+    private void PlaceTiles()
+    {
+        // XXX iterate tiles
+        foreach (int[] addr in tileList.Keys)
+        {
+            // XXX calculate position based on address
+            // width = height = 0.768
+            // R == vertical
+            // delta hight = 3/4 * height
+            // P == horizontal
+            // delta width = width
+
+            // HERE
+            // SCALE (MAGIC NUMBER)
+            float posVertical = (float)(0.768 * (tileList[addr].addrR * 3/4));
+            float posHorizontal = (float)(0.768 * (Math.Sqrt(3) * tileList[addr].addrQ / 2 + Math.Sqrt(3) / 4 * tileList[addr].addrR));
+
+            // float posVertical = (float)(tileList[addr].addrR * (3 / 2));
+            // float posHorizontal = (float)(tileList[addr].addrP * (Math.Sqrt(3)));
+
+            tileList[addr].transform.position = transform.position + new Vector3(posHorizontal, posVertical);
+            // SCALING
+        }
     }
 }

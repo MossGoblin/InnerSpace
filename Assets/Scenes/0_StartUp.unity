@@ -355,6 +355,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cfgFilename: D:/Codee/Inner Space/Assets/Settings/innser_space_cfg.json
+  dungeonFilename: D:/Codee/Inner Space/Assets/Settings/dungeon.json
 --- !u!1 &1668771580
 GameObject:
   m_ObjectHideFlags: 0

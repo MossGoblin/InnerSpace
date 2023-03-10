@@ -17,7 +17,7 @@ public class Dungeon : MonoBehaviour
         chunkList = new Dictionary<int[], Chunk>();
 
         // Inspector View Test
-        activeChunkAddress = new int[] {1, 1, 0};
+        activeChunkAddress = new int[] {0, 0, 0};
 
         // Create a chunk and adopt it
     }
