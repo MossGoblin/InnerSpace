@@ -20,8 +20,6 @@ public class ConfigManager : MonoBehaviour
 
     public Dictionary<int[], Tile> dungeonData { get; set; }
 
-    // public string cfgFilename = Application.dataPath + "/Settings/" + "innser_space_cfg.json";
-    // public string dungeonFilename = Application.dataPath + "/Settings/" + "dungeon.json";
     public string cfgFilename;
     public string dungeonFilename;
 
@@ -39,18 +37,9 @@ public class ConfigManager : MonoBehaviour
             cfgInstance = this;
         }
 
-        // DontDestroyOnLoad(this.gameObject);
         cfgFilename = Application.dataPath + "/Settings/" + "innser_space_cfg.json";
         dungeonFilename = Application.dataPath + "/Settings/" + "dungeon.json";
         Debug.Log($"App.DataPath: {Application.dataPath}");
-
-    }
-
-    void Start()
-    {
-        // cfgFilename = Application.dataPath + "/Settings/" + "innser_space_cfg.json";
-        // dungeonFilename = Application.dataPath + "/Settings/" + "dungeon.json";
-        // Debug.Log($"App.DataPath: {Application.dataPath}");
 
     }
 

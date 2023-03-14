@@ -197,9 +197,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cc98ee0543ffa04ea05a1979bc40c79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  logger: {fileID: 0}
-  clocker: {fileID: 0}
-  cfgManager: {fileID: 0}
+  logger: {fileID: 169662999}
+  clocker: {fileID: 1668771582}
+  cfgManager: {fileID: 1315270340}
 --- !u!4 &287761786
 Transform:
   m_ObjectHideFlags: 0
