@@ -391,7 +391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chunkRadius: 5
-  tilePrefab: {fileID: 5291361256656951561, guid: 1b684860839b5414f874e396ffda295e,
+  tilePrefab: {fileID: 5291361256656951561, guid: e070e47dc01ef4b4cb916beb24b18471,
     type: 3}
 --- !u!1 &1416090246
 GameObject:

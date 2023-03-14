@@ -17,13 +17,11 @@ public class Chunk : MonoBehaviour
     public Tile tilePrefab;
 
     // HERE
-    private int tileSize;
-
+    private double tileSize;
 
     void Start()
     {
-
-        tileSize = 250;
+        tileSize = 0.5; // half hight of tile sprite over pixels per unit = 100/100
 
         // get Managers
         gameManager = FindObjectOfType<GameManager>();
@@ -52,7 +50,11 @@ public class Chunk : MonoBehaviour
                 if (Math.Abs(cr) <= chunkRadius - 1)
                 {
                     int[] coord = new int[] { cp, cq, cr };
-                    Tile newTile = Instantiate(tilePrefab, new Vector3 (0,0,0), Quaternion.identity);
+                    Tile newTile = Instantiate(
+                        tilePrefab,
+                        new Vector3(0, 0, 0),
+                        Quaternion.identity
+                    );
                     newTile.addrP = cp;
                     newTile.addrQ = cq;
                     newTile.addrR = cr;
@@ -65,7 +67,10 @@ public class Chunk : MonoBehaviour
 
         if (tileList.Count != tileCount)
         {
-            logger.LogError($"Chunk created with {tileList.Count} tiles instead of {tileCount}", true);
+            logger.LogError(
+                $"Chunk created with {tileList.Count} tiles instead of {tileCount}",
+                true
+            );
         }
 
         logger.LogInfo($"Chunk generated with {tileCount} tiles", true);
@@ -79,36 +84,23 @@ public class Chunk : MonoBehaviour
         cfgManager.SaveDungeon();
 
         PlaceTiles();
-
-   }
-
-    void Update()
-    {
-        
     }
+
+    void Update() { }
 
     private void PlaceTiles()
     {
         // XXX iterate tiles
         foreach (int[] addr in tileList.Keys)
         {
-            // XXX calculate position based on address
-            // width = height = 0.768
-            // R == vertical
-            // delta hight = 3/4 * height
-            // P == horizontal
-            // delta width = width
-
             // HERE
-            // SCALE (MAGIC NUMBER)
-            float posVertical = (float)(0.768 * (tileList[addr].addrR * 3/4));
-            float posHorizontal = (float)(0.768 * (Math.Sqrt(3) * tileList[addr].addrQ / 2 + Math.Sqrt(3) / 4 * tileList[addr].addrR));
+            // tileSize = 100.0/100.0; // TEST tileSize edit
+            // float offsetVertical = (float)(tileSize * tileList[addr].addrR * 3 / 4);
+            // float offsetHorizontal = (float)(tileSize * (Math.Sqrt(3) / 2 * tileList[addr].addrQ + Math.Sqrt(3) / 4 * tileList[addr].addrR));
+            float offsetVertical = (float)(tileSize * tileList[addr].addrR * 3 / 2);
+            float offsetHorizontal = (float)(tileSize * (Math.Sqrt(3) * tileList[addr].addrQ + Math.Sqrt(3) / 2 * tileList[addr].addrR));
 
-            // float posVertical = (float)(tileList[addr].addrR * (3 / 2));
-            // float posHorizontal = (float)(tileList[addr].addrP * (Math.Sqrt(3)));
-
-            tileList[addr].transform.position = transform.position + new Vector3(posHorizontal, posVertical);
-            // SCALING
+            tileList[addr].transform.position = transform.position + new Vector3(offsetHorizontal, offsetVertical);
         }
     }
 }

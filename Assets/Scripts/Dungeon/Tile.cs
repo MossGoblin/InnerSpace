@@ -21,18 +21,11 @@ public class Tile : MonoBehaviour
         
     public TMP_Text debugText;
 
-    // public Tile(int p, int q, int r, int biomeID)
-    // {
-    //     this.addr_p = p;
-    //     this.addr_q = q;
-    //     this.addr_r = r;
-    //     this.biomeID = biomeID;
-    // }
-
     void Start()
     {
-        debugText.text = string.Join(" / ", new List<double>{addrP, addrQ, addrR});
+        // debugText.text = string.Join(" / ", new List<double>{addrP, addrQ, addrR});
         // debugText.text = "QWEASDZXC";
+        debugText.enabled = false;
     }
 
     // Update is called once per frame
