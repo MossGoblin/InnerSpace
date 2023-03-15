@@ -58,9 +58,9 @@ public class Dungeon : MonoBehaviour
             result += $"\"{Serializer.SerializeAddress(address)}\" : ";
             result += chunkList[address].GetData();
         }
-        result += "},";
+        result = result.Remove(result.Length - 1); // HERE remove last comma
+        result += "}";
 
         return result;
-        // HERE remove last comma
     }
 }

@@ -24,7 +24,6 @@ public class Chunk : MonoBehaviour
         tileSize = 0.5; // half hight of tile sprite over pixels per unit = 100/100
 
         // get Managers
-        // gameManager = FindObjectOfType<GameManager>();
         GameObject gameManagerObject = GameObject.Find("GameManager");
         GameManager gameManager = gameManagerObject.GetComponent<GameManager>();
 
@@ -82,10 +81,6 @@ public class Chunk : MonoBehaviour
             logger.LogDebug($"pqr: {coord[0]} : {coord[1]} : {coord[2]}", false);
         }
 
-        // TEST SAVE CHUNK LIST
-        // cfgManager.dungeonData = tileList;
-        // cfgManager.SaveDungeon();
-
         PlaceTiles();
     }
 
@@ -121,9 +116,9 @@ public class Chunk : MonoBehaviour
             result += $"\"{Serializer.SerializeAddress(address)}\" : ";
             result += tileList[address].GetData();
         }
+        result = result.Remove(result.Length - 1); // HERE remove last comma
         result += "},";
 
         return result;
-        // HERE remove last comma
     }
 }
