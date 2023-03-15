@@ -6,8 +6,7 @@ public class GameManager : MonoBehaviour
     public LogManager logger;
     public ClockManager clocker;
     public ConfigManager cfgManager;
-
-
+    private Scene activeScene;
     public static GameManager gmInstance { get; private set; }
 
     void Awake()
@@ -38,7 +37,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        var activeScene = SceneManager.GetActiveScene();
+        activeScene = SceneManager.GetActiveScene();
         ConfigData cfg = new ConfigData();
         logger.LogInfo($"Config init: {cfgManager.cfgFilename}", true);
         cfgManager.LoadConfig();
@@ -47,7 +46,10 @@ public class GameManager : MonoBehaviour
         logger.LogInfo($"Chunk size: {cfg.chunkSize}");
 
         // LOAD NEXT SCENE
-        SceneManager.LoadScene("2_Dungeon");
+        if (activeScene.name == "0_StartUp")
+        {
+            SceneManager.LoadScene("2_Dungeon");
+        }
     }
 
     // Update is called once per frame

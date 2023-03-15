@@ -39,7 +39,6 @@ public class ConfigManager : MonoBehaviour
 
         cfgFilename = Application.dataPath + "/Settings/" + "innser_space_cfg.json";
         dungeonFilename = Application.dataPath + "/Settings/" + "dungeon.json";
-        Debug.Log($"App.DataPath: {Application.dataPath}");
 
     }
 
@@ -60,53 +59,25 @@ public class ConfigManager : MonoBehaviour
         config = JsonUtility.FromJson<ConfigData>(savedJson);
     }
 
-    // TESTING WITH CHUNK INSTEAD OF DUNGEON
-
-
-
-    private static ChunkData compileDungeonData(Dictionary<int[], Tile> dungeonData)
+    public void SaveDungeon(Dungeon dungeon)
     {
-        // HERE
-        ChunkData chunkData = new ChunkData();
-        string chunkDataString = "";
-        foreach (int[] addr in dungeonData.Keys)
-        {
-            // Tile tile = dungeonData[addr];
-            // TileData tileData = new TileData();
-            List<string> chunkDataList = new List<string>();
-            chunkDataList.Add(String.Join(",", addr));
-            chunkDataList.Add(String.Join(",", dungeonData[addr].addrP));
-            chunkDataList.Add(String.Join(",", dungeonData[addr].addrQ));
-            chunkDataList.Add(String.Join(",", dungeonData[addr].biomeID));
-            chunkDataList.Add(String.Join(",", dungeonData[addr].tileTypeID));
-            chunkDataList.Add(String.Join(",", dungeonData[addr].tileID));
-            chunkDataString += String.Join(";", chunkDataList);
-            chunkDataString += "/";
-        //     public string biomeID;
-        //     public string tileTypeID;
-        //     public string tileID;            
-        }
-        chunkData.tileData = chunkDataString;
-        return chunkData;
-    }
-
-    public void SaveDungeon()
-    {
-
-        ChunkData chunkData = compileDungeonData(dungeonData);
-
-        string jsonFormattedContent = Newtonsoft.Json.JsonConvert.SerializeObject(chunkData);
-        Debug.Log("Chunk Data Serialized:");
-        Debug.Log(jsonFormattedContent);
+        // Find dungeon
+        // GameObject dungeonObject = GameObject.Find("Dungeon");
+        // Dungeon dungeon = dungeonObject.GetComponent<Dungeon>();
+        
+        string dungeonString = dungeon.GetData();
+        Debug.Log("Dungeon Data Serialized:");
+        Debug.Log(dungeonString);
 
         if (System.IO.File.Exists(dungeonFilename) == true) 
         {
             System.IO.File.Delete(dungeonFilename);
-            Debug.Log("Old Chunk Data Deleted");
+            Debug.Log("Old Dungeon Data Deleted");
 
         }
-        System.IO.File.WriteAllText(dungeonFilename, jsonFormattedContent);
-        Debug.Log("Chunk Data Saved");
+
+        System.IO.File.WriteAllText(dungeonFilename, dungeonString);
+        Debug.Log("Dungeon Data Saved");
     }
 
     public void LoadDungeon()
@@ -118,18 +89,3 @@ public class ConfigManager : MonoBehaviour
         dungeonData = JsonUtility.FromJson<Dictionary<int[], Tile>>(savedJson);
     }
 }
-
-public class ChunkData
-{
-    public string tileData;
-}
-
-// public class TileData
-// {
-//     public string chunkAddress;
-//     public string addrP;
-//     public string addrQ;
-//     public string biomeID;
-//     public string tileTypeID;
-//     public string tileID;
-// }

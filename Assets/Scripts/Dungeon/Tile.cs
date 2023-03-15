@@ -23,12 +23,9 @@ public class Tile : MonoBehaviour
 
     void Start()
     {
-        // debugText.text = string.Join(" / ", new List<double>{addrP, addrQ, addrR});
-        // debugText.text = "QWEASDZXC";
-        debugText.enabled = false;
+        debugText.text = string.Join(" / ", new List<double>{addrP, addrQ, addrR});
     }
 
-    // Update is called once per frame
     void Update()
     {
 
@@ -47,5 +44,18 @@ public class Tile : MonoBehaviour
         };
 
         return nbrs_list;
+    }
+
+    public string GetData()
+    {
+        string result = "";
+        result += "{";
+        result += $"\"biomeID\" : {biomeID},";
+        result += $"\"tileTypeID\" : {tileTypeID},";
+        result += $"\"tileID\" : {tileID}";
+        result += "},";
+
+        return result;
+        // HERE remove last comma
     }
 }
