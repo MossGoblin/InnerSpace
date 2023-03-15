@@ -11,12 +11,12 @@ public class Chunk : MonoBehaviour
     private ClockManager clocker;
     private Dungeon dungeon;
     public int chunkRadius;
-    private Dictionary<int[], Tile> tileList;
+    
+    // XXX public
+    public Dictionary<string, Tile> tileList;
     private int tileCount;
     private int biomeID;
     public Tile tilePrefab;
-
-    // HERE
     private double tileSize;
 
     void Start()
@@ -39,7 +39,7 @@ public class Chunk : MonoBehaviour
         // Create empty tile dictionary
         // the triangle number equation is (n*(n+1)) / 2, however in this case n = chunkRadius - 1, so for ease the + is substituted for a -
         tileCount = ((chunkRadius * (chunkRadius - 1)) / 2) * 6 + 1;
-        tileList = new Dictionary<int[], Tile>();
+        tileList = new Dictionary<string, Tile>();
 
         // Initiate tileList
         // Iterate coordinates ring by ring
@@ -51,7 +51,7 @@ public class Chunk : MonoBehaviour
                 int cr = 0 - cp - cq;
                 if (Math.Abs(cr) <= chunkRadius - 1)
                 {
-                    int[] coord = new int[] { cp, cq, cr };
+                    string coord = Serializer.AddressToString(new int[] { cp, cq, cr });
                     Tile newTile = Instantiate(
                         tilePrefab,
                         new Vector3(0, 0, 0),
@@ -76,9 +76,9 @@ public class Chunk : MonoBehaviour
         }
 
         logger.LogInfo($"Chunk generated with {tileCount} tiles", true);
-        foreach (int[] coord in tileList.Keys)
+        foreach (string coord in tileList.Keys)
         {
-            logger.LogDebug($"pqr: {coord[0]} : {coord[1]} : {coord[2]}", false);
+            logger.LogDebug($"pqr: {coord}", false);
         }
 
         PlaceTiles();
@@ -86,20 +86,15 @@ public class Chunk : MonoBehaviour
 
     void Update() { }
 
-    public Dictionary<int[], Tile> getChunkData()
+    public Dictionary<string, Tile> getChunkData()
     {
         return tileList;
     }
 
     private void PlaceTiles()
     {
-        // XXX iterate tiles
-        foreach (int[] addr in tileList.Keys)
+        foreach (string addr in tileList.Keys)
         {
-            // HERE
-            // tileSize = 100.0/100.0; // TEST tileSize edit
-            // float offsetVertical = (float)(tileSize * tileList[addr].addrR * 3 / 4);
-            // float offsetHorizontal = (float)(tileSize * (Math.Sqrt(3) / 2 * tileList[addr].addrQ + Math.Sqrt(3) / 4 * tileList[addr].addrR));
             float offsetVertical = (float)(tileSize * tileList[addr].addrR * 3 / 2);
             float offsetHorizontal = (float)(tileSize * (Math.Sqrt(3) * tileList[addr].addrQ + Math.Sqrt(3) / 2 * tileList[addr].addrR));
 
@@ -111,12 +106,12 @@ public class Chunk : MonoBehaviour
     {
         string result = "";
         result += "{";
-        foreach (int[] address in tileList.Keys)
+        foreach (string address in tileList.Keys)
         {
-            result += $"\"{Serializer.SerializeAddress(address)}\" : ";
+            result += $"\"{address}\" : ";
             result += tileList[address].GetData();
         }
-        result = result.Remove(result.Length - 1); // HERE remove last comma
+        result = result.Remove(result.Length - 1);
         result += "},";
 
         return result;

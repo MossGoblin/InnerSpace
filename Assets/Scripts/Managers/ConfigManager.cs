@@ -18,7 +18,7 @@ public class ConfigManager : MonoBehaviour
 {
     public ConfigData config { get; set; }
 
-    public Dictionary<int[], Tile> dungeonData { get; set; }
+    public Dictionary<string, Tile> dungeonData { get; set; }
 
     public string cfgFilename;
     public string dungeonFilename;
@@ -86,6 +86,6 @@ public class ConfigManager : MonoBehaviour
         string savedJson = File.ReadAllText(dungeonFilename);
 
         //Convert the JSON string back to a ConfigData object.
-        dungeonData = JsonUtility.FromJson<Dictionary<int[], Tile>>(savedJson);
+        dungeonData = JsonUtility.FromJson<Dictionary<string, Tile>>(savedJson);
     }
 }

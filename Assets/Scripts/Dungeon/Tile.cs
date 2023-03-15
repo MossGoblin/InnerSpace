@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System.Linq;
+using System.Text.RegularExpressions;
 
 public class Tile : MonoBehaviour
 {
@@ -46,6 +48,30 @@ public class Tile : MonoBehaviour
         return nbrs_list;
     }
 
+    public void SetData(string addressStr, string tileData)
+    {
+        // int[] address = Serializer.AddressToArray(addressStr);
+        // addrP = address[0];
+        // addrQ = address[1];
+        // addrR = address[2];
+
+        // HERE Deserialize Tile Data
+        string biomeID_pattern = "biomeID\": (\\d)";
+        Regex rg = new Regex(biomeID_pattern);
+        MatchCollection matches = rg.Matches(tileData);
+        biomeID = int.Parse(matches[0].Groups[1].Value);
+
+        string tileTypeID_pattern = "tileTypeID\": (\\d)";
+        rg = new Regex(tileTypeID_pattern);
+        matches = rg.Matches(tileData);
+        tileTypeID = int.Parse(matches[0].Groups[1].Value);
+
+        string tileID_pattern = "tileTypeID\": (\\d)";
+        rg = new Regex(tileID_pattern);
+        matches = rg.Matches(tileData);
+        tileID = int.Parse(matches[0].Groups[1].Value);
+    }
+
     public string GetData()
     {
         string result = "";
@@ -56,6 +82,5 @@ public class Tile : MonoBehaviour
         result += "},";
 
         return result;
-        // HERE remove last comma
     }
 }
