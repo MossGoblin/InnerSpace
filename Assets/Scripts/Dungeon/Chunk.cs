@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Text.RegularExpressions;
 
 public class Chunk : MonoBehaviour
 {
@@ -44,6 +45,7 @@ public class Chunk : MonoBehaviour
         // Initiate tileList
         // Iterate coordinates ring by ring
 
+        // XXX Deactivate new tile creation
         for (int cp = -chunkRadius + 1; cp <= chunkRadius - 1; cp++)
         {
             for (int cq = chunkRadius - 1; cq >= -chunkRadius + 1; cq--)
@@ -115,5 +117,33 @@ public class Chunk : MonoBehaviour
         result += "},";
 
         return result;
+    }
+
+    public void SetData(string chunkData)
+    {
+        // parse tile data
+        string tiles_pattern = "(-?\\d+,-?\\d+,-?\\d+)\":({\"biomeID\":\\s*\\d+,\\s*\"tileTypeID\":\\s*\\d+,\\s*\"tileID\":\\s*\\d+})";
+        Regex rg = new Regex(tiles_pattern);
+        MatchCollection matches = rg.Matches(chunkData);
+        // var match_0 = matches[0];
+        // var match_1 = matches[1];
+        foreach (Match match in matches)
+        {
+            Tile newTile = Instantiate(
+                tilePrefab,
+                new Vector3(0, 0, 0),
+                Quaternion.identity
+            );
+            int[] tileAddr = Serializer.AddressToArray(match.Groups[1].Value);
+            newTile.addrP = tileAddr[0];
+            newTile.addrQ = tileAddr[1];
+            newTile.addrR = tileAddr[2];
+            newTile.transform.SetParent(this.transform);
+            newTile.SetData(match.Groups[1].Value, match.Groups[2].Value);
+            tileList.Add(match.Groups[1].Value, newTile);
+        }
+        // XXX TEST
+        Debug.Log(tileList.Count);
+        PlaceTiles();
     }
 }

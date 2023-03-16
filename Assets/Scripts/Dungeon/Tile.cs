@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using System.Linq;
 using System.Text.RegularExpressions;
 
 public class Tile : MonoBehaviour
@@ -66,7 +65,7 @@ public class Tile : MonoBehaviour
         matches = rg.Matches(tileData);
         tileTypeID = int.Parse(matches[0].Groups[1].Value);
 
-        string tileID_pattern = "tileTypeID\": (\\d)";
+        string tileID_pattern = "tileID\": (\\d)";
         rg = new Regex(tileID_pattern);
         matches = rg.Matches(tileData);
         tileID = int.Parse(matches[0].Groups[1].Value);

@@ -16,6 +16,12 @@ public class Dungeon : MonoBehaviour
     private LogManager logger;
     private ClockManager clocker;
 
+
+    // XX TEST CHUNK JSON
+    private string chunkTestJson;
+
+
+
     void Start()
     {
         // get managers
@@ -37,6 +43,11 @@ public class Dungeon : MonoBehaviour
         GameObject chunkGO = GameObject.Find("Chunk");
         Chunk chunk = chunkGO.GetComponent<Chunk>();
         chunkList.Add(activeChunkAddress, chunk);
+
+
+
+        // XXX TEST CHUNK JSON
+        chunkTestJson = "-5,4,1\":{\"biomeID\": 1,\"tileTypeID\": 2,\"tileID\": 3},\"-1,0,1\":{\"biomeID\": 4,\"tileTypeID\": 5,\"tileID\": 6}, ";
     }
 
     void Update()
@@ -48,7 +59,8 @@ public class Dungeon : MonoBehaviour
             logger.LogInfo("Dungeon Saved");
             string addr = Serializer.AddressToString(new int[] {0, 0, 0});
             // HERE regex tests
-            chunkList[addr].tileList[addr].SetData("address", "{\"biomeID\": 5,\"tileTypeID\": 5,\"tileID\": 5}");
+            // chunkList[addr].SetData(chunkTestJson);
+            cfgManager.LoadDungeon();
         }
     }
 

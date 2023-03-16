@@ -83,9 +83,10 @@ public class ConfigManager : MonoBehaviour
     public void LoadDungeon()
     {
         //Get the JSON string from the file on disk.
-        string savedJson = File.ReadAllText(dungeonFilename);
+        string loadedData = File.ReadAllText(dungeonFilename);
+        Debug.Log(loadedData);
 
-        //Convert the JSON string back to a ConfigData object.
-        dungeonData = JsonUtility.FromJson<Dictionary<string, Tile>>(savedJson);
+        // //Convert the JSON string back to a ConfigData object.
+        // dungeonData = JsonUtility.FromJson<Dictionary<string, Tile>>(loadedData);
     }
 }
