@@ -2,11 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Serialization;
-using Newtonsoft.Json.Converters;
-using Newtonsoft.Json.Linq;
-
 
 [Serializable]
 public class ConfigData
@@ -16,6 +11,10 @@ public class ConfigData
 
 public class ConfigManager : MonoBehaviour
 {
+    public GameManager gameManager;
+    public LogManager logger;
+    public ClockManager clocker;
+
     public ConfigData config { get; set; }
 
     public Dictionary<string, Tile> dungeonData { get; set; }
@@ -24,7 +23,6 @@ public class ConfigManager : MonoBehaviour
     public string dungeonFilename;
 
     public static ConfigManager cfgInstance { get; private set; }
-
 
     void Awake()
     {
@@ -39,9 +37,16 @@ public class ConfigManager : MonoBehaviour
 
         cfgFilename = Application.dataPath + "/Settings/" + "innser_space_cfg.json";
         dungeonFilename = Application.dataPath + "/Settings/" + "dungeon.json";
-
     }
 
+    void Start()
+    {
+        GameObject gameManagerObject = GameObject.Find("GameManager");
+        gameManager = gameManagerObject.GetComponent<GameManager>();
+
+        logger = gameManager.logger;
+        clocker = gameManager.clocker;
+    }
     public void SaveConfig()
     {
         //Convert the ConfigData object to a JSON string.
@@ -50,6 +55,7 @@ public class ConfigManager : MonoBehaviour
         //Write the JSON string to a file on disk.
         File.WriteAllText(cfgFilename, json);
     }
+
     public void LoadConfig()
     {
         //Get the JSON string from the file on disk.
@@ -61,32 +67,24 @@ public class ConfigManager : MonoBehaviour
 
     public void SaveDungeon(Dungeon dungeon)
     {
-        // Find dungeon
-        // GameObject dungeonObject = GameObject.Find("Dungeon");
-        // Dungeon dungeon = dungeonObject.GetComponent<Dungeon>();
-        
         string dungeonString = dungeon.GetData();
-        Debug.Log("Dungeon Data Serialized:");
-        Debug.Log(dungeonString);
+        logger.LogDebug("Dungeon Data Serialized:", true);
+        logger.LogDebug(dungeonString, true);
 
-        if (System.IO.File.Exists(dungeonFilename) == true) 
+        if (System.IO.File.Exists(dungeonFilename) == true)
         {
             System.IO.File.Delete(dungeonFilename);
-            Debug.Log("Old Dungeon Data Deleted");
-
+            logger.LogDebug("Old Dungeon Data Deleted", true);
         }
 
         System.IO.File.WriteAllText(dungeonFilename, dungeonString);
-        Debug.Log("Dungeon Data Saved");
+        logger.LogDebug("Dungeon Data Saved", true);
     }
 
-    public void LoadDungeon()
+    public string LoadDungeon()
     {
-        //Get the JSON string from the file on disk.
         string loadedData = File.ReadAllText(dungeonFilename);
-        Debug.Log(loadedData);
-
-        // //Convert the JSON string back to a ConfigData object.
-        // dungeonData = JsonUtility.FromJson<Dictionary<string, Tile>>(loadedData);
+        Debug.Log(loadedData); // DBG
+        return loadedData;
     }
 }

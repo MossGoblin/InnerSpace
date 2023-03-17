@@ -49,23 +49,23 @@ public class Tile : MonoBehaviour
 
     public void SetData(string addressStr, string tileData)
     {
-        // int[] address = Serializer.AddressToArray(addressStr);
-        // addrP = address[0];
-        // addrQ = address[1];
-        // addrR = address[2];
+        int[] address = Serializer.AddressToArray(addressStr);
+        addrP = address[0];
+        addrQ = address[1];
+        addrR = address[2];
 
         // HERE Deserialize Tile Data
-        string biomeID_pattern = "biomeID\": (\\d)";
+        string biomeID_pattern = "biomeID:(\\d)";
         Regex rg = new Regex(biomeID_pattern);
         MatchCollection matches = rg.Matches(tileData);
         biomeID = int.Parse(matches[0].Groups[1].Value);
 
-        string tileTypeID_pattern = "tileTypeID\": (\\d)";
+        string tileTypeID_pattern = "tileTypeID:(\\d)";
         rg = new Regex(tileTypeID_pattern);
         matches = rg.Matches(tileData);
         tileTypeID = int.Parse(matches[0].Groups[1].Value);
 
-        string tileID_pattern = "tileID\": (\\d)";
+        string tileID_pattern = "tileID:(\\d)";
         rg = new Regex(tileID_pattern);
         matches = rg.Matches(tileData);
         tileID = int.Parse(matches[0].Groups[1].Value);
@@ -73,12 +73,13 @@ public class Tile : MonoBehaviour
 
     public string GetData()
     {
+        // {biomeID:0,tileTypeID:0,tileID:0}
         string result = "";
         result += "{";
-        result += $"\"biomeID\" : {biomeID},";
-        result += $"\"tileTypeID\" : {tileTypeID},";
-        result += $"\"tileID\" : {tileID}";
-        result += "},";
+        result += $"biomeID:{biomeID},";
+        result += $"tileTypeID:{tileTypeID},";
+        result += $"tileID:{tileID}";
+        result += "}";
 
         return result;
     }

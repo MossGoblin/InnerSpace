@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Text.RegularExpressions;
 
 public class Dungeon : MonoBehaviour
 {
@@ -10,16 +11,12 @@ public class Dungeon : MonoBehaviour
     [SerializeField]
     private string activeChunkAddress;
     [SerializeField]
-    private int[] activeChunk;
-    private GameManager gameManager;
-    private ConfigManager cfgManager;
-    private LogManager logger;
-    private ClockManager clocker;
+    public GameManager gameManager;
+    public ConfigManager cfgManager;
+    public LogManager logger;
+    public ClockManager clocker;
 
-
-    // XX TEST CHUNK JSON
-    private string chunkTestJson;
-
+    public Chunk chunkPrefab;
 
 
     void Start()
@@ -35,47 +32,108 @@ public class Dungeon : MonoBehaviour
 
         chunkList = new Dictionary<string, Chunk>();
 
-        // Inspector View Test
         activeChunkAddress = Serializer.AddressToString(new int[] {0, 0, 0});
+
+        // Test auto-load
+        string dungeonData = cfgManager.LoadDungeon();
+        SetData(dungeonData);
 
         // Create a chunk and adopt it
         // TEMP adopt thepre-made chunk
-        GameObject chunkGO = GameObject.Find("Chunk");
-        Chunk chunk = chunkGO.GetComponent<Chunk>();
-        chunkList.Add(activeChunkAddress, chunk);
-
-
-
-        // XXX TEST CHUNK JSON
-        chunkTestJson = "-5,4,1\":{\"biomeID\": 1,\"tileTypeID\": 2,\"tileID\": 3},\"-1,0,1\":{\"biomeID\": 4,\"tileTypeID\": 5,\"tileID\": 6}, ";
+        // GameObject chunkGO = GameObject.Find("Chunk");
+        // Chunk chunk = chunkGO.GetComponent<Chunk>();
+        // chunkList.Add(activeChunkAddress, chunk);
     }
 
     void Update()
     {
+        /*
         if (Input.GetKeyDown("enter"))
         {
-            logger.LogInfo("Saving Dungeon Data");
-            cfgManager.SaveDungeon(this);
-            logger.LogInfo("Dungeon Saved");
-            string addr = Serializer.AddressToString(new int[] {0, 0, 0});
+            // logger.LogInfo("Saving Dungeon Data");
+            // cfgManager.SaveDungeon(this);
+            // logger.LogInfo("Dungeon Saved");
+            // string addr = Serializer.AddressToString(new int[] {0, 0, 0});
+
             // HERE regex tests
-            // chunkList[addr].SetData(chunkTestJson);
-            cfgManager.LoadDungeon();
+            string dungeonData = cfgManager.LoadDungeon();
+            SetData(dungeonData);
         }
+        */
     }
 
     public string GetData()
     {
+        // TODO align with new syntax
+        // {chunkaddr:0,0,0}{tileaddr:-5,5,0}{biomeID:0,tileTypeID:0,tileID:0}
+        // TODO ADD CURRENT CHUNK AND BASE CHUNK
         string result = "";
-        result += "{";
         foreach (string address in chunkList.Keys)
         {
-            result += $"\"{address}\" : ";
+            result += $"{{chunkaddr:{address}}}";
             result += chunkList[address].GetData();
         }
-        result = result.Remove(result.Length - 1);
-        result += "}";
 
         return result;
+    }
+
+    public void SetData(string dungeonData)
+    {
+        // TODO
+        /*
+        0. Reset chunkList
+        1. Parse dungeonData
+        2. Create chunks and fill in chunkList
+        3. Activate current chunk
+        */
+
+        chunkList = new Dictionary<string, Chunk>(); // 0
+        string[] dungeonSplit = SplitDungeonString(dungeonData); // 1
+        string dungeonString = dungeonSplit[1]; // 1
+        Dictionary<string, string> chunkStrings = SplitDungeonData(dungeonString); // 1
+        foreach (string address in chunkStrings.Keys)
+        {
+            int[] chunkAddr = Serializer.AddressToArray(address);
+            Chunk newChunk = Instantiate(chunkPrefab, new Vector3(0, 0, 0), Quaternion.identity);
+            newChunk.SetData(chunkStrings[address]);
+            newChunk.transform.SetParent(this.transform);
+            chunkList.Add(address, newChunk);
+            if (address != activeChunkAddress)
+            {
+                newChunk.Deactivate();
+            }
+        }
+    }
+
+
+    public Dictionary<string, string> SplitDungeonData(string dungeonData)
+    {
+        // HERE
+        string tiles_pattern = "{chunkaddr:(-?\\d+,-?\\d+,-?\\d+)}(.*)";
+        Regex rg = new Regex(tiles_pattern);
+        MatchCollection matches = rg.Matches(dungeonData);
+        Dictionary<string, string> split = new Dictionary<string, string>();
+
+        foreach (Match match in matches)
+        {
+            split.Add(match.Groups[1].Value, match.Groups[2].Value);
+        }
+
+        return split;
+    }
+
+    public string[] SplitDungeonString(string dungeonString)
+    {
+        string[] split = dungeonString.Split("/");
+
+        return split;
+    }
+
+    public void SwitchChunk(string addr)
+    {
+        // TODO
+        // deactivate current chunk
+        // set addr as the address of the current chunk
+        // activate current chunk
     }
 }
