@@ -14,8 +14,20 @@ public class InputManager : MonoBehaviour
         GetMouseButtonUp
     }
 
-    // TODO REDO to include KeyEvent
-    // Tuple or a struct?
+    public struct KeyAction
+    {
+        public KeyAction(KeyEvent keyEvent, KeyCode keyCode)
+        {
+            this.keyEvent = keyEvent;
+            this.keyCode = keyCode;
+        }
+
+        public KeyEvent keyEvent {get; set;}
+        public KeyCode keyCode {get; set;}
+
+        public override string ToString() => $"{keyEvent.ToString()} : {keyCode.ToString()}";
+    }
+
     private Dictionary<KeyCode, List<IObserver>> _observers;
 
 
@@ -44,6 +56,7 @@ public class InputManager : MonoBehaviour
     {
         // HERE
         // Check inputs and notify observers
+
     }
 
     public void AddObserver(KeyCode mark, IObserver observer)
