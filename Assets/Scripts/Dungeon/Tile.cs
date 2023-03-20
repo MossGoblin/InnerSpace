@@ -7,10 +7,9 @@ using System.Text.RegularExpressions;
 public class Tile : MonoBehaviour
 {
 
-    public double addrP { get; set; }
-    public double addrQ { get; set; }
-    public double addrR { get; set; }
+    public Address address;
 
+    // OBS Wil those be needed
     private double posP;
     private double posQ;
     private double posR;
@@ -24,7 +23,7 @@ public class Tile : MonoBehaviour
 
     void Start()
     {
-        debugText.text = string.Join(" / ", new List<double>{addrP, addrQ, addrR});
+        debugText.text = $"{address.addrP} / {address.addrQ} / {address.addrR}";
     }
 
     void Update()
@@ -36,23 +35,20 @@ public class Tile : MonoBehaviour
     {
         var nbrs_list = new List<double[]>
         {
-            new double[] { addrP, addrQ + 1, addrR - 1 },
-            new double[] { addrP, addrQ - 1, addrR + 1 },
-            new double[] { addrP + 1, addrQ - 1, addrR },
-            new double[] { addrP - 1, addrQ + 1, addrR },
-            new double[] { addrP + 1, addrQ, addrR - 1 },
-            new double[] { addrP - 1, addrQ, addrR + 1 }
+            new double[] { address.addrP, address.addrQ + 1, address.addrR - 1 },
+            new double[] { address.addrP, address.addrQ - 1, address.addrR + 1 },
+            new double[] { address.addrP + 1, address.addrQ - 1, address.addrR },
+            new double[] { address.addrP - 1, address.addrQ + 1, address.addrR },
+            new double[] { address.addrP + 1, address.addrQ, address.addrR - 1 },
+            new double[] { address.addrP - 1, address.addrQ, address.addrR + 1 }
         };
 
         return nbrs_list;
     }
 
-    public void SetData(string addressStr, string tileData)
+    public void SetData(Address newAddr, string tileData)
     {
-        int[] address = Serializer.AddressToArray(addressStr);
-        addrP = address[0];
-        addrQ = address[1];
-        addrR = address[2];
+        address = newAddr;
 
         // HERE Deserialize Tile Data
         string biomeID_pattern = "biomeID:(\\d)";

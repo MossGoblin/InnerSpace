@@ -21,6 +21,7 @@ public enum LoggerLevel
 
 public class LogManager : MonoBehaviour
 {
+    // TODO Standardize log output
     public string logFileName;
 
     public static LogManager logInstance { get; private set; }

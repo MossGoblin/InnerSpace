@@ -7,6 +7,7 @@ using UnityEngine;
 public class ConfigData
 {
     public int chunkSize;
+    public int rndSeed;
 }
 
 public class ConfigManager : MonoBehaviour

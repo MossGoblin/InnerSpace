@@ -6,6 +6,8 @@ public class GameManager : MonoBehaviour
     public LogManager logger;
     public ClockManager clocker;
     public ConfigManager cfgManager;
+
+    public AssetManager assetManager;
     private Scene activeScene;
     public static GameManager gmInstance { get; private set; }
 
@@ -57,7 +59,9 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown("enter"))
         {
+            cfgManager.SaveConfig();
             Debug.Log("Conductor ENTER");
+            Debug.Log("CONFIG SAVED");
         }
 
     }
