@@ -74634,3 +74634,1663 @@ Debug & 19:25:44.555
           pqr: (P:5, Q:-5, R:0)
 -----
 
+Info & 19:37:17.456
+          Logger initiated
+-----
+
+Info & 19:37:17.458
+          GameManager: ON
+-----
+
+Info & 19:37:17.459
+          Logger: ON
+-----
+
+Info & 19:37:17.460
+          Config Manager: ON
+-----
+
+Info & 19:37:17.460
+          Clocker: ON
+-----
+
+Info & 19:37:17.526
+          Config init: D:/[ CODEE ]/[ GITTED ]/InnerSpace/Assets/Settings/innser_space_cfg.json
+-----
+
+Info & 19:37:17.529
+          Config loaded
+-----
+
+Info & 19:37:17.530
+          ConfigData
+-----
+
+Info & 19:37:17.531
+          Chunk size: 0
+-----
+
+Info & 19:39:24.374
+          Logger initiated
+-----
+
+Info & 19:39:24.376
+          GameManager: ON
+-----
+
+Info & 19:39:24.378
+          Logger: ON
+-----
+
+Info & 19:39:24.378
+          Config Manager: ON
+-----
+
+Info & 19:39:24.379
+          Clocker: ON
+-----
+
+Info & 19:39:24.621
+          Config init: D:/[ CODEE ]/[ GITTED ]/InnerSpace/Assets/Settings/innser_space_cfg.json
+-----
+
+Info & 19:39:24.622
+          Config loaded
+-----
+
+Info & 19:39:24.623
+          ConfigData
+-----
+
+Info & 19:39:24.623
+          Chunk size: 0
+-----
+
+Info & 19:59:37.390
+          Logger initiated
+-----
+
+Info & 20:00:19.005
+          Logger initiated
+-----
+
+Info & 20:02:07.388
+          Logger initiated
+-----
+
+Info & 20:03:25.255
+          Logger initiated
+-----
+
+Info & 20:11:35.208
+          Logger initiated
+-----
+
+Info & 20:11:35.209
+          GameManager: ON
+-----
+
+Info & 20:11:35.211
+          Logger: ON
+-----
+
+Info & 20:11:35.212
+          Config Manager: ON
+-----
+
+Info & 20:11:35.212
+          Clocker: ON
+-----
+
+Info & 20:11:35.260
+          Config init: D:/[ CODEE ]/[ GITTED ]/InnerSpace/Assets/Settings/innser_space_cfg.json
+-----
+
+Info & 20:11:35.261
+          Config loaded
+-----
+
+Info & 20:11:35.262
+          ConfigData
+-----
+
+Info & 20:11:35.262
+          Chunk size: 0
+-----
+
+Info & 20:13:51.054
+          Logger initiated
+-----
+
+Info & 20:13:51.055
+          GameManager: ON
+-----
+
+Info & 20:13:51.056
+          Logger: ON
+-----
+
+Info & 20:13:51.057
+          Config Manager: ON
+-----
+
+Info & 20:13:51.057
+          Clocker: ON
+-----
+
+Info & 20:13:51.370
+          Config init: D:/[ CODEE ]/[ GITTED ]/InnerSpace/Assets/Settings/innser_space_cfg.json
+-----
+
+Info & 20:13:51.371
+          Config loaded
+-----
+
+Info & 20:13:51.372
+          ConfigData
+-----
+
+Info & 20:13:51.372
+          Chunk size: 0
+-----
+
+Info & 20:14:31.535
+          Logger initiated
+-----
+
+Info & 20:14:31.536
+          GameManager: ON
+-----
+
+Info & 20:14:31.538
+          Logger: ON
+-----
+
+Info & 20:14:31.539
+          Config Manager: ON
+-----
+
+Info & 20:14:31.539
+          Clocker: ON
+-----
+
+Info & 20:14:31.919
+          Config init: D:/[ CODEE ]/[ GITTED ]/InnerSpace/Assets/Settings/innser_space_cfg.json
+-----
+
+Info & 20:14:31.920
+          Config loaded
+-----
+
+Info & 20:14:31.921
+          ConfigData
+-----
+
+Info & 20:14:31.921
+          Chunk size: 0
+-----
+
+Info & 20:14:55.408
+          Logger initiated
+-----
+
+Info & 20:14:55.409
+          GameManager: ON
+-----
+
+Info & 20:14:55.412
+          Logger: ON
+-----
+
+Info & 20:14:55.412
+          Config Manager: ON
+-----
+
+Info & 20:14:55.413
+          Clocker: ON
+-----
+
+Info & 20:14:55.787
+          Config init: D:/[ CODEE ]/[ GITTED ]/InnerSpace/Assets/Settings/innser_space_cfg.json
+-----
+
+Info & 20:14:55.789
+          Config loaded
+-----
+
+Info & 20:14:55.790
+          ConfigData
+-----
+
+Info & 20:14:55.790
+          Chunk size: 0
+-----
+
+Info & 20:21:59.943
+          Logger initiated
+-----
+
+Info & 20:22:09.155
+          GameManager: ON
+-----
+
+Info & 20:22:09.158
+          Logger: ON
+-----
+
+Info & 20:22:09.159
+          Config Manager: ON
+-----
+
+Info & 20:22:09.160
+          Clocker: ON
+-----
+
+Info & 20:22:09.221
+          Config init: D:/[ CODEE ]/[ GITTED ]/InnerSpace/Assets/Settings/innser_space_cfg.json
+-----
+
+Info & 20:22:09.222
+          Config loaded
+-----
+
+Info & 20:22:09.223
+          ConfigData
+-----
+
+Info & 20:22:09.223
+          Chunk size: 0
+-----
+
+Info & 20:26:19.407
+          Logger initiated
+-----
+
+Info & 20:26:19.409
+          GameManager: ON
+-----
+
+Info & 20:26:19.411
+          Logger: ON
+-----
+
+Info & 20:26:19.411
+          Config Manager: ON
+-----
+
+Info & 20:26:19.411
+          Clocker: ON
+-----
+
+Info & 20:26:19.471
+          Config init: D:/[ CODEE ]/[ GITTED ]/InnerSpace/Assets/Settings/innser_space_cfg.json
+-----
+
+Info & 20:26:19.472
+          Config loaded
+-----
+
+Info & 20:26:19.473
+          ConfigData
+-----
+
+Info & 20:26:19.473
+          Chunk size: 0
+-----
+
+Info & 20:27:23.221
+          Logger initiated
+-----
+
+Info & 20:27:23.223
+          GameManager: ON
+-----
+
+Info & 20:27:23.225
+          Logger: ON
+-----
+
+Info & 20:27:23.225
+          Config Manager: ON
+-----
+
+Info & 20:27:23.226
+          Clocker: ON
+-----
+
+Info & 20:27:23.293
+          Config init: D:/[ CODEE ]/[ GITTED ]/InnerSpace/Assets/Settings/innser_space_cfg.json
+-----
+
+Info & 20:27:23.295
+          Config loaded
+-----
+
+Info & 20:27:23.295
+          ConfigData
+-----
+
+Info & 20:27:23.296
+          Chunk size: 0
+-----
+
+Info & 20:28:01.835
+          Logger initiated
+-----
+
+Info & 20:28:01.837
+          GameManager: ON
+-----
+
+Info & 20:28:01.839
+          Logger: ON
+-----
+
+Info & 20:28:01.840
+          Config Manager: ON
+-----
+
+Info & 20:28:01.841
+          Clocker: ON
+-----
+
+Info & 20:28:01.929
+          Config init: D:/[ CODEE ]/[ GITTED ]/InnerSpace/Assets/Settings/innser_space_cfg.json
+-----
+
+Info & 20:28:01.930
+          Config loaded
+-----
+
+Info & 20:28:01.931
+          ConfigData
+-----
+
+Info & 20:28:01.932
+          Chunk size: 0
+-----
+
+Info & 20:29:44.354
+          Logger initiated
+-----
+
+Info & 20:29:44.355
+          GameManager: ON
+-----
+
+Info & 20:29:44.357
+          Logger: ON
+-----
+
+Info & 20:29:44.358
+          Config Manager: ON
+-----
+
+Info & 20:29:44.358
+          Clocker: ON
+-----
+
+Info & 20:29:44.596
+          Config init: D:/[ CODEE ]/[ GITTED ]/InnerSpace/Assets/Settings/innser_space_cfg.json
+-----
+
+Info & 20:29:44.597
+          Config loaded
+-----
+
+Info & 20:29:44.598
+          ConfigData
+-----
+
+Info & 20:29:44.598
+          Chunk size: 0
+-----
+
+Info & 20:34:15.612
+          Logger initiated
+-----
+
+Info & 20:34:15.614
+          GameManager: ON
+-----
+
+Info & 20:34:15.616
+          Logger: ON
+-----
+
+Info & 20:34:15.617
+          Config Manager: ON
+-----
+
+Info & 20:34:15.618
+          Clocker: ON
+-----
+
+Info & 20:34:15.873
+          Config init: D:/[ CODEE ]/[ GITTED ]/InnerSpace/Assets/Settings/innser_space_cfg.json
+-----
+
+Info & 20:34:15.874
+          Config loaded
+-----
+
+Info & 20:34:15.875
+          ConfigData
+-----
+
+Info & 20:34:15.875
+          Chunk size: 0
+-----
+
+Info & 20:34:39.668
+          Chunk generated with 91 tiles
+-----
+
+Debug & 20:34:39.670
+          pqr: (P:-5, Q:5, R:0)
+-----
+
+Debug & 20:34:39.671
+          pqr: (P:-5, Q:4, R:1)
+-----
+
+Debug & 20:34:39.671
+          pqr: (P:-5, Q:3, R:2)
+-----
+
+Debug & 20:34:39.672
+          pqr: (P:-5, Q:2, R:3)
+-----
+
+Debug & 20:34:39.672
+          pqr: (P:-5, Q:1, R:4)
+-----
+
+Debug & 20:34:39.672
+          pqr: (P:-5, Q:0, R:5)
+-----
+
+Debug & 20:34:39.673
+          pqr: (P:-4, Q:5, R:-1)
+-----
+
+Debug & 20:34:39.673
+          pqr: (P:-4, Q:4, R:0)
+-----
+
+Debug & 20:34:39.673
+          pqr: (P:-4, Q:3, R:1)
+-----
+
+Debug & 20:34:39.674
+          pqr: (P:-4, Q:2, R:2)
+-----
+
+Debug & 20:34:39.674
+          pqr: (P:-4, Q:1, R:3)
+-----
+
+Debug & 20:34:39.674
+          pqr: (P:-4, Q:0, R:4)
+-----
+
+Debug & 20:34:39.675
+          pqr: (P:-4, Q:-1, R:5)
+-----
+
+Debug & 20:34:39.675
+          pqr: (P:-3, Q:5, R:-2)
+-----
+
+Debug & 20:34:39.675
+          pqr: (P:-3, Q:4, R:-1)
+-----
+
+Debug & 20:34:39.676
+          pqr: (P:-3, Q:3, R:0)
+-----
+
+Debug & 20:34:39.676
+          pqr: (P:-3, Q:2, R:1)
+-----
+
+Debug & 20:34:39.677
+          pqr: (P:-3, Q:1, R:2)
+-----
+
+Debug & 20:34:39.677
+          pqr: (P:-3, Q:0, R:3)
+-----
+
+Debug & 20:34:39.677
+          pqr: (P:-3, Q:-1, R:4)
+-----
+
+Debug & 20:34:39.678
+          pqr: (P:-3, Q:-2, R:5)
+-----
+
+Debug & 20:34:39.678
+          pqr: (P:-2, Q:5, R:-3)
+-----
+
+Debug & 20:34:39.678
+          pqr: (P:-2, Q:4, R:-2)
+-----
+
+Debug & 20:34:39.679
+          pqr: (P:-2, Q:3, R:-1)
+-----
+
+Debug & 20:34:39.679
+          pqr: (P:-2, Q:2, R:0)
+-----
+
+Debug & 20:34:39.679
+          pqr: (P:-2, Q:1, R:1)
+-----
+
+Debug & 20:34:39.680
+          pqr: (P:-2, Q:0, R:2)
+-----
+
+Debug & 20:34:39.680
+          pqr: (P:-2, Q:-1, R:3)
+-----
+
+Debug & 20:34:39.680
+          pqr: (P:-2, Q:-2, R:4)
+-----
+
+Debug & 20:34:39.681
+          pqr: (P:-2, Q:-3, R:5)
+-----
+
+Debug & 20:34:39.681
+          pqr: (P:-1, Q:5, R:-4)
+-----
+
+Debug & 20:34:39.681
+          pqr: (P:-1, Q:4, R:-3)
+-----
+
+Debug & 20:34:39.682
+          pqr: (P:-1, Q:3, R:-2)
+-----
+
+Debug & 20:34:39.682
+          pqr: (P:-1, Q:2, R:-1)
+-----
+
+Debug & 20:34:39.682
+          pqr: (P:-1, Q:1, R:0)
+-----
+
+Debug & 20:34:39.682
+          pqr: (P:-1, Q:0, R:1)
+-----
+
+Debug & 20:34:39.683
+          pqr: (P:-1, Q:-1, R:2)
+-----
+
+Debug & 20:34:39.683
+          pqr: (P:-1, Q:-2, R:3)
+-----
+
+Debug & 20:34:39.684
+          pqr: (P:-1, Q:-3, R:4)
+-----
+
+Debug & 20:34:39.684
+          pqr: (P:-1, Q:-4, R:5)
+-----
+
+Debug & 20:34:39.684
+          pqr: (P:0, Q:5, R:-5)
+-----
+
+Debug & 20:34:39.684
+          pqr: (P:0, Q:4, R:-4)
+-----
+
+Debug & 20:34:39.685
+          pqr: (P:0, Q:3, R:-3)
+-----
+
+Debug & 20:34:39.685
+          pqr: (P:0, Q:2, R:-2)
+-----
+
+Debug & 20:34:39.686
+          pqr: (P:0, Q:1, R:-1)
+-----
+
+Debug & 20:34:39.686
+          pqr: (P:0, Q:0, R:0)
+-----
+
+Debug & 20:34:39.686
+          pqr: (P:0, Q:-1, R:1)
+-----
+
+Debug & 20:34:39.687
+          pqr: (P:0, Q:-2, R:2)
+-----
+
+Debug & 20:34:39.687
+          pqr: (P:0, Q:-3, R:3)
+-----
+
+Debug & 20:34:39.687
+          pqr: (P:0, Q:-4, R:4)
+-----
+
+Debug & 20:34:39.687
+          pqr: (P:0, Q:-5, R:5)
+-----
+
+Debug & 20:34:39.688
+          pqr: (P:1, Q:4, R:-5)
+-----
+
+Debug & 20:34:39.688
+          pqr: (P:1, Q:3, R:-4)
+-----
+
+Debug & 20:34:39.688
+          pqr: (P:1, Q:2, R:-3)
+-----
+
+Debug & 20:34:39.689
+          pqr: (P:1, Q:1, R:-2)
+-----
+
+Debug & 20:34:39.689
+          pqr: (P:1, Q:0, R:-1)
+-----
+
+Debug & 20:34:39.689
+          pqr: (P:1, Q:-1, R:0)
+-----
+
+Debug & 20:34:39.690
+          pqr: (P:1, Q:-2, R:1)
+-----
+
+Debug & 20:34:39.690
+          pqr: (P:1, Q:-3, R:2)
+-----
+
+Debug & 20:34:39.690
+          pqr: (P:1, Q:-4, R:3)
+-----
+
+Debug & 20:34:39.690
+          pqr: (P:1, Q:-5, R:4)
+-----
+
+Debug & 20:34:39.691
+          pqr: (P:2, Q:3, R:-5)
+-----
+
+Debug & 20:34:39.691
+          pqr: (P:2, Q:2, R:-4)
+-----
+
+Debug & 20:34:39.691
+          pqr: (P:2, Q:1, R:-3)
+-----
+
+Debug & 20:34:39.692
+          pqr: (P:2, Q:0, R:-2)
+-----
+
+Debug & 20:34:39.692
+          pqr: (P:2, Q:-1, R:-1)
+-----
+
+Debug & 20:34:39.692
+          pqr: (P:2, Q:-2, R:0)
+-----
+
+Debug & 20:34:39.692
+          pqr: (P:2, Q:-3, R:1)
+-----
+
+Debug & 20:34:39.693
+          pqr: (P:2, Q:-4, R:2)
+-----
+
+Debug & 20:34:39.693
+          pqr: (P:2, Q:-5, R:3)
+-----
+
+Debug & 20:34:39.693
+          pqr: (P:3, Q:2, R:-5)
+-----
+
+Debug & 20:34:39.694
+          pqr: (P:3, Q:1, R:-4)
+-----
+
+Debug & 20:34:39.694
+          pqr: (P:3, Q:0, R:-3)
+-----
+
+Debug & 20:34:39.694
+          pqr: (P:3, Q:-1, R:-2)
+-----
+
+Debug & 20:34:39.694
+          pqr: (P:3, Q:-2, R:-1)
+-----
+
+Debug & 20:34:39.695
+          pqr: (P:3, Q:-3, R:0)
+-----
+
+Debug & 20:34:39.695
+          pqr: (P:3, Q:-4, R:1)
+-----
+
+Debug & 20:34:39.695
+          pqr: (P:3, Q:-5, R:2)
+-----
+
+Debug & 20:34:39.696
+          pqr: (P:4, Q:1, R:-5)
+-----
+
+Debug & 20:34:39.696
+          pqr: (P:4, Q:0, R:-4)
+-----
+
+Debug & 20:34:39.696
+          pqr: (P:4, Q:-1, R:-3)
+-----
+
+Debug & 20:34:39.696
+          pqr: (P:4, Q:-2, R:-2)
+-----
+
+Debug & 20:34:39.697
+          pqr: (P:4, Q:-3, R:-1)
+-----
+
+Debug & 20:34:39.697
+          pqr: (P:4, Q:-4, R:0)
+-----
+
+Debug & 20:34:39.697
+          pqr: (P:4, Q:-5, R:1)
+-----
+
+Debug & 20:34:39.698
+          pqr: (P:5, Q:0, R:-5)
+-----
+
+Debug & 20:34:39.698
+          pqr: (P:5, Q:-1, R:-4)
+-----
+
+Debug & 20:34:39.698
+          pqr: (P:5, Q:-2, R:-3)
+-----
+
+Debug & 20:34:39.699
+          pqr: (P:5, Q:-3, R:-2)
+-----
+
+Debug & 20:34:39.699
+          pqr: (P:5, Q:-4, R:-1)
+-----
+
+Debug & 20:34:39.699
+          pqr: (P:5, Q:-5, R:0)
+-----
+
+Info & 20:35:02.013
+          Logger initiated
+-----
+
+Info & 20:35:02.014
+          GameManager: ON
+-----
+
+Info & 20:35:02.016
+          Logger: ON
+-----
+
+Info & 20:35:02.017
+          Config Manager: ON
+-----
+
+Info & 20:35:02.017
+          Clocker: ON
+-----
+
+Info & 20:35:02.053
+          Config init: D:/[ CODEE ]/[ GITTED ]/InnerSpace/Assets/Settings/innser_space_cfg.json
+-----
+
+Info & 20:35:02.054
+          Config loaded
+-----
+
+Info & 20:35:02.055
+          ConfigData
+-----
+
+Info & 20:35:02.055
+          Chunk size: 0
+-----
+
+Info & 20:37:52.977
+          Logger initiated
+-----
+
+Info & 20:37:52.978
+          GameManager: ON
+-----
+
+Info & 20:37:52.980
+          Logger: ON
+-----
+
+Info & 20:37:52.980
+          Config Manager: ON
+-----
+
+Info & 20:37:52.981
+          Clocker: ON
+-----
+
+Info & 20:37:53.205
+          Config init: D:/[ CODEE ]/[ GITTED ]/InnerSpace/Assets/Settings/innser_space_cfg.json
+-----
+
+Info & 20:37:53.206
+          Config loaded
+-----
+
+Info & 20:37:53.207
+          ConfigData
+-----
+
+Info & 20:37:53.207
+          Chunk size: 0
+-----
+
+Info & 20:38:11.590
+          Chunk generated with 91 tiles
+-----
+
+Debug & 20:38:11.608
+          pqr: (P:-5, Q:5, R:0)
+-----
+
+Debug & 20:38:11.608
+          pqr: (P:-5, Q:4, R:1)
+-----
+
+Debug & 20:38:11.609
+          pqr: (P:-5, Q:3, R:2)
+-----
+
+Debug & 20:38:11.609
+          pqr: (P:-5, Q:2, R:3)
+-----
+
+Debug & 20:38:11.609
+          pqr: (P:-5, Q:1, R:4)
+-----
+
+Debug & 20:38:11.610
+          pqr: (P:-5, Q:0, R:5)
+-----
+
+Debug & 20:38:11.610
+          pqr: (P:-4, Q:5, R:-1)
+-----
+
+Debug & 20:38:11.610
+          pqr: (P:-4, Q:4, R:0)
+-----
+
+Debug & 20:38:11.611
+          pqr: (P:-4, Q:3, R:1)
+-----
+
+Debug & 20:38:11.611
+          pqr: (P:-4, Q:2, R:2)
+-----
+
+Debug & 20:38:11.611
+          pqr: (P:-4, Q:1, R:3)
+-----
+
+Debug & 20:38:11.611
+          pqr: (P:-4, Q:0, R:4)
+-----
+
+Debug & 20:38:11.612
+          pqr: (P:-4, Q:-1, R:5)
+-----
+
+Debug & 20:38:11.612
+          pqr: (P:-3, Q:5, R:-2)
+-----
+
+Debug & 20:38:11.612
+          pqr: (P:-3, Q:4, R:-1)
+-----
+
+Debug & 20:38:11.612
+          pqr: (P:-3, Q:3, R:0)
+-----
+
+Debug & 20:38:11.613
+          pqr: (P:-3, Q:2, R:1)
+-----
+
+Debug & 20:38:11.613
+          pqr: (P:-3, Q:1, R:2)
+-----
+
+Debug & 20:38:11.613
+          pqr: (P:-3, Q:0, R:3)
+-----
+
+Debug & 20:38:11.614
+          pqr: (P:-3, Q:-1, R:4)
+-----
+
+Debug & 20:38:11.614
+          pqr: (P:-3, Q:-2, R:5)
+-----
+
+Debug & 20:38:11.614
+          pqr: (P:-2, Q:5, R:-3)
+-----
+
+Debug & 20:38:11.614
+          pqr: (P:-2, Q:4, R:-2)
+-----
+
+Debug & 20:38:11.615
+          pqr: (P:-2, Q:3, R:-1)
+-----
+
+Debug & 20:38:11.615
+          pqr: (P:-2, Q:2, R:0)
+-----
+
+Debug & 20:38:11.615
+          pqr: (P:-2, Q:1, R:1)
+-----
+
+Debug & 20:38:11.616
+          pqr: (P:-2, Q:0, R:2)
+-----
+
+Debug & 20:38:11.616
+          pqr: (P:-2, Q:-1, R:3)
+-----
+
+Debug & 20:38:11.616
+          pqr: (P:-2, Q:-2, R:4)
+-----
+
+Debug & 20:38:11.616
+          pqr: (P:-2, Q:-3, R:5)
+-----
+
+Debug & 20:38:11.617
+          pqr: (P:-1, Q:5, R:-4)
+-----
+
+Debug & 20:38:11.617
+          pqr: (P:-1, Q:4, R:-3)
+-----
+
+Debug & 20:38:11.617
+          pqr: (P:-1, Q:3, R:-2)
+-----
+
+Debug & 20:38:11.617
+          pqr: (P:-1, Q:2, R:-1)
+-----
+
+Debug & 20:38:11.618
+          pqr: (P:-1, Q:1, R:0)
+-----
+
+Debug & 20:38:11.618
+          pqr: (P:-1, Q:0, R:1)
+-----
+
+Debug & 20:38:11.618
+          pqr: (P:-1, Q:-1, R:2)
+-----
+
+Debug & 20:38:11.619
+          pqr: (P:-1, Q:-2, R:3)
+-----
+
+Debug & 20:38:11.619
+          pqr: (P:-1, Q:-3, R:4)
+-----
+
+Debug & 20:38:11.619
+          pqr: (P:-1, Q:-4, R:5)
+-----
+
+Debug & 20:38:11.620
+          pqr: (P:0, Q:5, R:-5)
+-----
+
+Debug & 20:38:11.620
+          pqr: (P:0, Q:4, R:-4)
+-----
+
+Debug & 20:38:11.620
+          pqr: (P:0, Q:3, R:-3)
+-----
+
+Debug & 20:38:11.621
+          pqr: (P:0, Q:2, R:-2)
+-----
+
+Debug & 20:38:11.622
+          pqr: (P:0, Q:1, R:-1)
+-----
+
+Debug & 20:38:11.622
+          pqr: (P:0, Q:0, R:0)
+-----
+
+Debug & 20:38:11.622
+          pqr: (P:0, Q:-1, R:1)
+-----
+
+Debug & 20:38:11.623
+          pqr: (P:0, Q:-2, R:2)
+-----
+
+Debug & 20:38:11.623
+          pqr: (P:0, Q:-3, R:3)
+-----
+
+Debug & 20:38:11.623
+          pqr: (P:0, Q:-4, R:4)
+-----
+
+Debug & 20:38:11.624
+          pqr: (P:0, Q:-5, R:5)
+-----
+
+Debug & 20:38:11.624
+          pqr: (P:1, Q:4, R:-5)
+-----
+
+Debug & 20:38:11.624
+          pqr: (P:1, Q:3, R:-4)
+-----
+
+Debug & 20:38:11.625
+          pqr: (P:1, Q:2, R:-3)
+-----
+
+Debug & 20:38:11.625
+          pqr: (P:1, Q:1, R:-2)
+-----
+
+Debug & 20:38:11.625
+          pqr: (P:1, Q:0, R:-1)
+-----
+
+Debug & 20:38:11.625
+          pqr: (P:1, Q:-1, R:0)
+-----
+
+Debug & 20:38:11.626
+          pqr: (P:1, Q:-2, R:1)
+-----
+
+Debug & 20:38:11.626
+          pqr: (P:1, Q:-3, R:2)
+-----
+
+Debug & 20:38:11.626
+          pqr: (P:1, Q:-4, R:3)
+-----
+
+Debug & 20:38:11.627
+          pqr: (P:1, Q:-5, R:4)
+-----
+
+Debug & 20:38:11.627
+          pqr: (P:2, Q:3, R:-5)
+-----
+
+Debug & 20:38:11.627
+          pqr: (P:2, Q:2, R:-4)
+-----
+
+Debug & 20:38:11.628
+          pqr: (P:2, Q:1, R:-3)
+-----
+
+Debug & 20:38:11.628
+          pqr: (P:2, Q:0, R:-2)
+-----
+
+Debug & 20:38:11.629
+          pqr: (P:2, Q:-1, R:-1)
+-----
+
+Debug & 20:38:11.629
+          pqr: (P:2, Q:-2, R:0)
+-----
+
+Debug & 20:38:11.629
+          pqr: (P:2, Q:-3, R:1)
+-----
+
+Debug & 20:38:11.630
+          pqr: (P:2, Q:-4, R:2)
+-----
+
+Debug & 20:38:11.630
+          pqr: (P:2, Q:-5, R:3)
+-----
+
+Debug & 20:38:11.630
+          pqr: (P:3, Q:2, R:-5)
+-----
+
+Debug & 20:38:11.630
+          pqr: (P:3, Q:1, R:-4)
+-----
+
+Debug & 20:38:11.631
+          pqr: (P:3, Q:0, R:-3)
+-----
+
+Debug & 20:38:11.631
+          pqr: (P:3, Q:-1, R:-2)
+-----
+
+Debug & 20:38:11.631
+          pqr: (P:3, Q:-2, R:-1)
+-----
+
+Debug & 20:38:11.632
+          pqr: (P:3, Q:-3, R:0)
+-----
+
+Debug & 20:38:11.632
+          pqr: (P:3, Q:-4, R:1)
+-----
+
+Debug & 20:38:11.632
+          pqr: (P:3, Q:-5, R:2)
+-----
+
+Debug & 20:38:11.632
+          pqr: (P:4, Q:1, R:-5)
+-----
+
+Debug & 20:38:11.633
+          pqr: (P:4, Q:0, R:-4)
+-----
+
+Debug & 20:38:11.633
+          pqr: (P:4, Q:-1, R:-3)
+-----
+
+Debug & 20:38:11.633
+          pqr: (P:4, Q:-2, R:-2)
+-----
+
+Debug & 20:38:11.634
+          pqr: (P:4, Q:-3, R:-1)
+-----
+
+Debug & 20:38:11.634
+          pqr: (P:4, Q:-4, R:0)
+-----
+
+Debug & 20:38:11.634
+          pqr: (P:4, Q:-5, R:1)
+-----
+
+Debug & 20:38:11.634
+          pqr: (P:5, Q:0, R:-5)
+-----
+
+Debug & 20:38:11.635
+          pqr: (P:5, Q:-1, R:-4)
+-----
+
+Debug & 20:38:11.635
+          pqr: (P:5, Q:-2, R:-3)
+-----
+
+Debug & 20:38:11.635
+          pqr: (P:5, Q:-3, R:-2)
+-----
+
+Debug & 20:38:11.636
+          pqr: (P:5, Q:-4, R:-1)
+-----
+
+Debug & 20:38:11.636
+          pqr: (P:5, Q:-5, R:0)
+-----
+
+Info & 20:38:22.857
+          Logger initiated
+-----
+
+Info & 20:38:22.858
+          GameManager: ON
+-----
+
+Info & 20:38:22.861
+          Logger: ON
+-----
+
+Info & 20:38:22.862
+          Config Manager: ON
+-----
+
+Info & 20:38:22.862
+          Clocker: ON
+-----
+
+Info & 20:38:22.899
+          Config init: D:/[ CODEE ]/[ GITTED ]/InnerSpace/Assets/Settings/innser_space_cfg.json
+-----
+
+Info & 20:38:22.900
+          Config loaded
+-----
+
+Info & 20:38:22.901
+          ConfigData
+-----
+
+Info & 20:38:22.901
+          Chunk size: 0
+-----
+
+Info & 20:38:27.627
+          Chunk generated with 91 tiles
+-----
+
+Debug & 20:38:27.628
+          pqr: (P:-5, Q:5, R:0)
+-----
+
+Debug & 20:38:27.629
+          pqr: (P:-5, Q:4, R:1)
+-----
+
+Debug & 20:38:27.629
+          pqr: (P:-5, Q:3, R:2)
+-----
+
+Debug & 20:38:27.629
+          pqr: (P:-5, Q:2, R:3)
+-----
+
+Debug & 20:38:27.630
+          pqr: (P:-5, Q:1, R:4)
+-----
+
+Debug & 20:38:27.630
+          pqr: (P:-5, Q:0, R:5)
+-----
+
+Debug & 20:38:27.630
+          pqr: (P:-4, Q:5, R:-1)
+-----
+
+Debug & 20:38:27.631
+          pqr: (P:-4, Q:4, R:0)
+-----
+
+Debug & 20:38:27.631
+          pqr: (P:-4, Q:3, R:1)
+-----
+
+Debug & 20:38:27.631
+          pqr: (P:-4, Q:2, R:2)
+-----
+
+Debug & 20:38:27.631
+          pqr: (P:-4, Q:1, R:3)
+-----
+
+Debug & 20:38:27.632
+          pqr: (P:-4, Q:0, R:4)
+-----
+
+Debug & 20:38:27.632
+          pqr: (P:-4, Q:-1, R:5)
+-----
+
+Debug & 20:38:27.632
+          pqr: (P:-3, Q:5, R:-2)
+-----
+
+Debug & 20:38:27.633
+          pqr: (P:-3, Q:4, R:-1)
+-----
+
+Debug & 20:38:27.633
+          pqr: (P:-3, Q:3, R:0)
+-----
+
+Debug & 20:38:27.633
+          pqr: (P:-3, Q:2, R:1)
+-----
+
+Debug & 20:38:27.634
+          pqr: (P:-3, Q:1, R:2)
+-----
+
+Debug & 20:38:27.634
+          pqr: (P:-3, Q:0, R:3)
+-----
+
+Debug & 20:38:27.634
+          pqr: (P:-3, Q:-1, R:4)
+-----
+
+Debug & 20:38:27.635
+          pqr: (P:-3, Q:-2, R:5)
+-----
+
+Debug & 20:38:27.635
+          pqr: (P:-2, Q:5, R:-3)
+-----
+
+Debug & 20:38:27.635
+          pqr: (P:-2, Q:4, R:-2)
+-----
+
+Debug & 20:38:27.636
+          pqr: (P:-2, Q:3, R:-1)
+-----
+
+Debug & 20:38:27.636
+          pqr: (P:-2, Q:2, R:0)
+-----
+
+Debug & 20:38:27.636
+          pqr: (P:-2, Q:1, R:1)
+-----
+
+Debug & 20:38:27.637
+          pqr: (P:-2, Q:0, R:2)
+-----
+
+Debug & 20:38:27.637
+          pqr: (P:-2, Q:-1, R:3)
+-----
+
+Debug & 20:38:27.637
+          pqr: (P:-2, Q:-2, R:4)
+-----
+
+Debug & 20:38:27.638
+          pqr: (P:-2, Q:-3, R:5)
+-----
+
+Debug & 20:38:27.638
+          pqr: (P:-1, Q:5, R:-4)
+-----
+
+Debug & 20:38:27.638
+          pqr: (P:-1, Q:4, R:-3)
+-----
+
+Debug & 20:38:27.639
+          pqr: (P:-1, Q:3, R:-2)
+-----
+
+Debug & 20:38:27.639
+          pqr: (P:-1, Q:2, R:-1)
+-----
+
+Debug & 20:38:27.639
+          pqr: (P:-1, Q:1, R:0)
+-----
+
+Debug & 20:38:27.640
+          pqr: (P:-1, Q:0, R:1)
+-----
+
+Debug & 20:38:27.640
+          pqr: (P:-1, Q:-1, R:2)
+-----
+
+Debug & 20:38:27.640
+          pqr: (P:-1, Q:-2, R:3)
+-----
+
+Debug & 20:38:27.641
+          pqr: (P:-1, Q:-3, R:4)
+-----
+
+Debug & 20:38:27.641
+          pqr: (P:-1, Q:-4, R:5)
+-----
+
+Debug & 20:38:27.641
+          pqr: (P:0, Q:5, R:-5)
+-----
+
+Debug & 20:38:27.641
+          pqr: (P:0, Q:4, R:-4)
+-----
+
+Debug & 20:38:27.642
+          pqr: (P:0, Q:3, R:-3)
+-----
+
+Debug & 20:38:27.642
+          pqr: (P:0, Q:2, R:-2)
+-----
+
+Debug & 20:38:27.642
+          pqr: (P:0, Q:1, R:-1)
+-----
+
+Debug & 20:38:27.643
+          pqr: (P:0, Q:0, R:0)
+-----
+
+Debug & 20:38:27.643
+          pqr: (P:0, Q:-1, R:1)
+-----
+
+Debug & 20:38:27.643
+          pqr: (P:0, Q:-2, R:2)
+-----
+
+Debug & 20:38:27.644
+          pqr: (P:0, Q:-3, R:3)
+-----
+
+Debug & 20:38:27.644
+          pqr: (P:0, Q:-4, R:4)
+-----
+
+Debug & 20:38:27.645
+          pqr: (P:0, Q:-5, R:5)
+-----
+
+Debug & 20:38:27.645
+          pqr: (P:1, Q:4, R:-5)
+-----
+
+Debug & 20:38:27.645
+          pqr: (P:1, Q:3, R:-4)
+-----
+
+Debug & 20:38:27.646
+          pqr: (P:1, Q:2, R:-3)
+-----
+
+Debug & 20:38:27.646
+          pqr: (P:1, Q:1, R:-2)
+-----
+
+Debug & 20:38:27.647
+          pqr: (P:1, Q:0, R:-1)
+-----
+
+Debug & 20:38:27.647
+          pqr: (P:1, Q:-1, R:0)
+-----
+
+Debug & 20:38:27.647
+          pqr: (P:1, Q:-2, R:1)
+-----
+
+Debug & 20:38:27.648
+          pqr: (P:1, Q:-3, R:2)
+-----
+
+Debug & 20:38:27.648
+          pqr: (P:1, Q:-4, R:3)
+-----
+
+Debug & 20:38:27.648
+          pqr: (P:1, Q:-5, R:4)
+-----
+
+Debug & 20:38:27.648
+          pqr: (P:2, Q:3, R:-5)
+-----
+
+Debug & 20:38:27.649
+          pqr: (P:2, Q:2, R:-4)
+-----
+
+Debug & 20:38:27.649
+          pqr: (P:2, Q:1, R:-3)
+-----
+
+Debug & 20:38:27.649
+          pqr: (P:2, Q:0, R:-2)
+-----
+
+Debug & 20:38:27.650
+          pqr: (P:2, Q:-1, R:-1)
+-----
+
+Debug & 20:38:27.650
+          pqr: (P:2, Q:-2, R:0)
+-----
+
+Debug & 20:38:27.651
+          pqr: (P:2, Q:-3, R:1)
+-----
+
+Debug & 20:38:27.651
+          pqr: (P:2, Q:-4, R:2)
+-----
+
+Debug & 20:38:27.651
+          pqr: (P:2, Q:-5, R:3)
+-----
+
+Debug & 20:38:27.652
+          pqr: (P:3, Q:2, R:-5)
+-----
+
+Debug & 20:38:27.652
+          pqr: (P:3, Q:1, R:-4)
+-----
+
+Debug & 20:38:27.652
+          pqr: (P:3, Q:0, R:-3)
+-----
+
+Debug & 20:38:27.652
+          pqr: (P:3, Q:-1, R:-2)
+-----
+
+Debug & 20:38:27.653
+          pqr: (P:3, Q:-2, R:-1)
+-----
+
+Debug & 20:38:27.653
+          pqr: (P:3, Q:-3, R:0)
+-----
+
+Debug & 20:38:27.653
+          pqr: (P:3, Q:-4, R:1)
+-----
+
+Debug & 20:38:27.653
+          pqr: (P:3, Q:-5, R:2)
+-----
+
+Debug & 20:38:27.654
+          pqr: (P:4, Q:1, R:-5)
+-----
+
+Debug & 20:38:27.654
+          pqr: (P:4, Q:0, R:-4)
+-----
+
+Debug & 20:38:27.655
+          pqr: (P:4, Q:-1, R:-3)
+-----
+
+Debug & 20:38:27.655
+          pqr: (P:4, Q:-2, R:-2)
+-----
+
+Debug & 20:38:27.655
+          pqr: (P:4, Q:-3, R:-1)
+-----
+
+Debug & 20:38:27.656
+          pqr: (P:4, Q:-4, R:0)
+-----
+
+Debug & 20:38:27.656
+          pqr: (P:4, Q:-5, R:1)
+-----
+
+Debug & 20:38:27.656
+          pqr: (P:5, Q:0, R:-5)
+-----
+
+Debug & 20:38:27.656
+          pqr: (P:5, Q:-1, R:-4)
+-----
+
+Debug & 20:38:27.657
+          pqr: (P:5, Q:-2, R:-3)
+-----
+
+Debug & 20:38:27.657
+          pqr: (P:5, Q:-3, R:-2)
+-----
+
+Debug & 20:38:27.657
+          pqr: (P:5, Q:-4, R:-1)
+-----
+
+Debug & 20:38:27.658
+          pqr: (P:5, Q:-5, R:0)
+-----
+

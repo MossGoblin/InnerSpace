@@ -38,6 +38,9 @@ public class Dungeon : MonoBehaviour
         string dungeonData = cfgManager.LoadDungeon();
         SetData(dungeonData);
 
+        // XXX
+        Debug.Log($"DungeonUI Persistence is: {cfgManager.config.persistentDungeonUI}");
+
         // Create a chunk and adopt it
         // TEMP adopt thepre-made chunk
         // GameObject chunkGO = GameObject.Find("Chunk");

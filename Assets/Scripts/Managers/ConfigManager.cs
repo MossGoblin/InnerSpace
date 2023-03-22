@@ -89,4 +89,10 @@ public class ConfigManager : MonoBehaviour
         Debug.Log(loadedData); // DBG
         return loadedData;
     }
+
+    public void OnDungeonUIToggle()
+    {
+        config.persistentDungeonUI = !config.persistentDungeonUI;
+    }
+
 }

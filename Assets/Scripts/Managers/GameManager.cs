@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
@@ -33,8 +34,6 @@ public class GameManager : MonoBehaviour
         logger.LogInfo($"Clocker: ON", true);
 
         DontDestroyOnLoad(this.gameObject);
-
-
     }
 
 
@@ -47,23 +46,11 @@ public class GameManager : MonoBehaviour
         logger.LogInfo($"Config loaded", true);
         logger.LogInfo(cfgManager.config.ToString());
         logger.LogInfo($"Chunk size: {cfg.chunkSize}");
-
-        // // LOAD NEXT SCENE
-        // if (activeScene.name == "0_StartUp")
-        // {
-        //     SceneManager.LoadScene("2_Dungeon");
-        // }
     }
 
-    // Update is called once per frame
     void Update()
     {
-        // if (Input.GetKeyDown("enter"))
-        // {
-        //     cfgManager.SaveConfig();
-        //     Debug.Log("Conductor ENTER");
-        //     Debug.Log("CONFIG SAVED");
-        // }
+
     }
 
     public void LoadNextScene()
@@ -76,5 +63,4 @@ public class GameManager : MonoBehaviour
         Debug.Log("QUIT");
         Application.Quit();
     }
-
 }
