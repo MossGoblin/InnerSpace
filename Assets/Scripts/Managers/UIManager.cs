@@ -8,21 +8,41 @@ public class UIManager : MonoBehaviour
     private Canvas gameUICanvas;
     private bool uiActive;
 
-    void Awake()
+    private ConfigManager cfgManager;
+
+    void Start()
     {
         uiActive = false;
         gameUI = GameObject.Find("FunctionalUI");
         gameUICanvas = gameUI.GetComponent<Canvas>();
+
+        GameObject gameManagerObject = GameObject.Find("GameManager");
+        GameManager gameManager = gameManagerObject.GetComponent<GameManager>();
+        cfgManager = gameManager.cfgManager;
     }
 
     void Update()
     {
+        if (cfgManager.config.persistentDungeonUI)
+        {
+            if (Input.GetKeyDown(KeyCode.Tab))
+            {
+                uiActive = !uiActive;
+            }
+        }
+        else
+        {
+            if (Input.GetKey(KeyCode.Tab))
+            {
+                uiActive = true;
+            }
+            else
+            {
+                uiActive = false;
+            }
+        }
+
         gameUICanvas.enabled = uiActive;
         gameUI.gameObject.SetActive(uiActive);
-        
-        if (Input.GetKeyDown("enter"))
-        {
-            uiActive = !uiActive;
-        }        
     }
 }

@@ -8,6 +8,7 @@ public class ConfigData
 {
     public int chunkSize;
     public int rndSeed;
+    public bool persistentDungeonUI;
 }
 
 public class ConfigManager : MonoBehaviour
