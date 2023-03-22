@@ -14,11 +14,11 @@ public class Dungeon : MonoBehaviour
     [SerializeField]
     public GameManager gameManager;
     public ConfigManager cfgManager;
+    public UIManager uiManager;
     public LogManager logger;
     public ClockManager clocker;
 
     public Chunk chunkPrefab;
-
 
     void Start()
     {
@@ -28,6 +28,7 @@ public class Dungeon : MonoBehaviour
         logger = gameManager.logger;
         clocker = gameManager.clocker;
         cfgManager = gameManager.cfgManager;
+        uiManager = gameManager.uiManager;
 
         chunkList = new Dictionary<Address, Chunk>();
 
@@ -46,19 +47,7 @@ public class Dungeon : MonoBehaviour
 
     void Update()
     {
-        /*
-        if (Input.GetKeyDown("enter"))
-        {
-            // logger.LogInfo("Saving Dungeon Data");
-            // cfgManager.SaveDungeon(this);
-            // logger.LogInfo("Dungeon Saved");
-            // string addr = Serializer.AddressToString(new int[] {0, 0, 0});
 
-            // HERE regex tests
-            string dungeonData = cfgManager.LoadDungeon();
-            SetData(dungeonData);
-        }
-        */
     }
 
     public string GetData()
@@ -99,11 +88,11 @@ public class Dungeon : MonoBehaviour
             chunkList.Add(address, newChunk);
             if (address.Equals(activeChunkAddress))
             {
-                newChunk.Deactivate();
+                newChunk.isActivated = true;
             }
             else
             {
-                newChunk.isActive = true;
+                newChunk.isActivated = false;
             }
         }
     }

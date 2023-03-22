@@ -22,6 +22,7 @@ public class Chunk : MonoBehaviour
     private double tileSize;
 
     public bool isActive = false;
+    public bool isActivated = false;
 
     void Start()
     {
@@ -89,7 +90,19 @@ public class Chunk : MonoBehaviour
         }
     }
 
-    void Update() { }
+    void Update()
+    {
+        if (isActivated && !isActive)
+        {
+            Activate();
+            this.isActive = true;
+        }
+        else if (!isActivated && isActive)
+        {
+            Deactivate();
+            this.isActive = false;
+        }
+     }
 
     public Dictionary<Address, Tile> getChunkData()
     {

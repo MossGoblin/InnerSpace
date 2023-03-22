@@ -1,14 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using Rnd = System.Random;
+using UnityEngine;
+
 
 public struct Address
 {
     public Address(int p, int q)
     {
-        addrP = p;
-        addrQ = q;
-        addrR = 0 - p - q;
+        this.addrP = p;
+        this.addrQ = q;
+        this.addrR = 0 - p - q;
     }
     public int addrP { get; set; }
     public int addrQ { get; set; }

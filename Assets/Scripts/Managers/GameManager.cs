@@ -6,8 +6,9 @@ public class GameManager : MonoBehaviour
     public LogManager logger;
     public ClockManager clocker;
     public ConfigManager cfgManager;
-
     public AssetManager assetManager;
+    public UIManager uiManager;
+
     private Scene activeScene;
     public static GameManager gmInstance { get; private set; }
 
@@ -47,22 +48,26 @@ public class GameManager : MonoBehaviour
         logger.LogInfo(cfgManager.config.ToString());
         logger.LogInfo($"Chunk size: {cfg.chunkSize}");
 
-        // LOAD NEXT SCENE
-        if (activeScene.name == "0_StartUp")
-        {
-            SceneManager.LoadScene("2_Dungeon");
-        }
+        // // LOAD NEXT SCENE
+        // if (activeScene.name == "0_StartUp")
+        // {
+        //     SceneManager.LoadScene("2_Dungeon");
+        // }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("enter"))
-        {
-            cfgManager.SaveConfig();
-            Debug.Log("Conductor ENTER");
-            Debug.Log("CONFIG SAVED");
-        }
+        // if (Input.GetKeyDown("enter"))
+        // {
+        //     cfgManager.SaveConfig();
+        //     Debug.Log("Conductor ENTER");
+        //     Debug.Log("CONFIG SAVED");
+        // }
+    }
 
+    public void LoadNextScene()
+    {
+        SceneManager.LoadScene("2_Dungeon");
     }
 }
