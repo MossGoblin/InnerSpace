@@ -70,4 +70,11 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("2_Dungeon");
     }
+
+    public void QuitGame()
+    {
+        Debug.Log("QUIT");
+        Application.Quit();
+    }
+
 }

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MenuButtons
   m_EditorClassIdentifier: 
   colorMode: 3
-  topLeft: {r: 0.30065584, g: 0.745283, b: 0.2214756, a: 1}
-  topRight: {r: 0.45171547, g: 0.8773585, b: 0.376602, a: 1}
-  bottomLeft: {r: 0.65379125, g: 0.3890174, b: 0.8867924, a: 1}
-  bottomRight: {r: 0.723692, g: 0.51690996, b: 0.9056604, a: 1}
+  topLeft: {r: 0.38382453, g: 0.8584906, b: 0.2956123, a: 1}
+  topRight: {r: 0.45352897, g: 0.7735849, b: 0.3977394, a: 1}
+  bottomLeft: {r: 0.78570336, g: 0.5189569, b: 0.9245283, a: 1}
+  bottomRight: {r: 0.65345967, g: 0.46070665, b: 0.8207547, a: 1}
