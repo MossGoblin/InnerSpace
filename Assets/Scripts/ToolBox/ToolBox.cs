@@ -30,6 +30,12 @@ public class ToolBox
     public void Init(int initSeed = 0)
     {
         this.seed = initSeed;
+        Random.InitState(this.seed);
+    }
+
+    public int RandomInt(int lower, int higher)
+    {
+        return Random.Range(lower, higher);
     }
 
 }

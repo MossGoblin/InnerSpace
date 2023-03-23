@@ -330,7 +330,7 @@ MonoBehaviour:
   logger: {fileID: 169662999}
   clocker: {fileID: 1668771582}
   cfgManager: {fileID: 1315270340}
-  assetManager: {fileID: 0}
+  assetManager: {fileID: 1376296250}
   uiManager: {fileID: 0}
 --- !u!4 &287761786
 Transform:
@@ -348,6 +348,7 @@ Transform:
   - {fileID: 1315270339}
   - {fileID: 1668771581}
   - {fileID: 2103277753}
+  - {fileID: 1376296249}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1718,6 +1719,62 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1375588590}
   m_CullTransparentMesh: 1
+--- !u!1 &1376296248
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1376296249}
+  - component: {fileID: 1376296250}
+  m_Layer: 0
+  m_Name: AssetManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1376296249
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376296248}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 287761786}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1376296250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376296248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98665caf59c1c864eb11c0a6d27fb2d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tileSpriteSet00:
+  - {fileID: 21300000, guid: b6f32442e0453104d81ed10f52059822, type: 3}
+  - {fileID: 21300000, guid: a7cb16f9d997f51479263905d9aca605, type: 3}
+  - {fileID: 21300000, guid: 83145e979fe388740b81ba0dde503fd8, type: 3}
+  - {fileID: 21300000, guid: e31254183fcae78478bf561228282888, type: 3}
+  - {fileID: 21300000, guid: 2167a7a06f1c59e4aa1320739562fe39, type: 3}
+  tileSpriteSet01:
+  - {fileID: 21300000, guid: 6c1bcaa2b7773644d9eba47c829dcd6f, type: 3}
+  - {fileID: 21300000, guid: 30f6e4162897d574c92e920dd18bc36b, type: 3}
+  - {fileID: 21300000, guid: 2a321d564e035e347bcaec8afbce059b, type: 3}
+  - {fileID: 21300000, guid: 59582cb5f83d8cb49bc509095dcc49d2, type: 3}
+  - {fileID: 21300000, guid: c2cce864cd79f3c4a80cebc6f5e6bdaf, type: 3}
 --- !u!1 &1380178983
 GameObject:
   m_ObjectHideFlags: 0

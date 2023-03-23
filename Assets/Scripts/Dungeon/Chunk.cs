@@ -9,6 +9,7 @@ public class Chunk : MonoBehaviour
 {
     private GameManager gameManager;
     private ConfigManager cfgManager;
+    private AssetManager assetManager;
     private LogManager logger;
     private ClockManager clocker;
     private Dungeon dungeon;
@@ -34,6 +35,7 @@ public class Chunk : MonoBehaviour
         logger = gameManager.logger;
         clocker = gameManager.clocker;
         cfgManager = gameManager.cfgManager;
+        assetManager = gameManager.assetManager;
 
         // get parent dungeon
         dungeon = GetComponentInParent<Dungeon>();
@@ -46,7 +48,6 @@ public class Chunk : MonoBehaviour
         tileList = new Dictionary<Address, Tile>();
 
         // Initiate tileList
-        // XXX Deactivate new tile creation
         for (int cp = -chunkRadius + 1; cp <= chunkRadius - 1; cp++)
         {
             for (int cq = chunkRadius - 1; cq >= -chunkRadius + 1; cq--)
@@ -65,6 +66,9 @@ public class Chunk : MonoBehaviour
                     newTile.address.addrR = cr;
                     newTile.biomeID = biomeID;
                     newTile.transform.SetParent(this.transform);
+                    // XXX
+                    SpriteRenderer tileSpriteRenderer = newTile.GetComponentInParent<SpriteRenderer>();
+                    tileSpriteRenderer.sprite = assetManager.GetSprite(1);
                     tileList.Add(coord, newTile);
                 }
             }
