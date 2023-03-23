@@ -135,4 +135,9 @@ public class Dungeon : MonoBehaviour
         activeChunkAddress = newActiveAddr;
         chunkList[activeChunkAddress].Activate();
     }
+
+    public Dictionary<Address, Chunk> GetChunkList()
+    {
+        return chunkList;
+    }
 }
