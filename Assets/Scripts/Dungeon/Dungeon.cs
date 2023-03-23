@@ -77,8 +77,9 @@ public class Dungeon : MonoBehaviour
 
         chunkList = new Dictionary<Address, Chunk>(); // 0
         string[] dungeonSplit = SplitDungeonString(dungeonData); // 1
-        string dungeonString = dungeonSplit[1]; // 1
-        Dictionary<Address, string> chunkStrings = SplitDungeonData(dungeonString); // 1
+        // HERE Dungeon META in dungeonSplit[0]
+        string[] dungeonStrings = dungeonSplit.Where((item, index)=>index!=0).ToArray(); // 1
+        Dictionary<Address, string> chunkStrings = SplitDungeonData(dungeonStrings); // 1
         foreach (Address address in chunkStrings.Keys)
         {
             Address chunkAddr = address;
@@ -98,17 +99,20 @@ public class Dungeon : MonoBehaviour
     }
 
 
-    private Dictionary<Address, string> SplitDungeonData(string dungeonData)
+    private Dictionary<Address, string> SplitDungeonData(string[] dungeonData)
     {
         // HERE
-        string tiles_pattern = "{chunkaddr:(-?\\d+,-?\\d+,-?\\d+)}(.*)";
-        Regex rg = new Regex(tiles_pattern);
-        MatchCollection matches = rg.Matches(dungeonData);
         Dictionary<Address, string> split = new Dictionary<Address, string>();
-
-        foreach (Match match in matches)
+        foreach (string dungeonString in dungeonData)
         {
-            split.Add(CompileAddress(match.Groups[1].Value), match.Groups[2].Value);
+            string tiles_pattern = "{chunkaddr:(-?\\d+,-?\\d+,-?\\d+)}(.*)";
+            Regex rg = new Regex(tiles_pattern);
+            MatchCollection matches = rg.Matches(dungeonString);
+
+            foreach (Match match in matches)
+            {
+                split.Add(CompileAddress(match.Groups[1].Value), match.Groups[2].Value);
+            }
         }
 
         return split;
@@ -123,7 +127,7 @@ public class Dungeon : MonoBehaviour
 
     public string[] SplitDungeonString(string dungeonString)
     {
-        string[] split = dungeonString.Split("/");
+        string[] split = dungeonString.Split("\r\n");
 
         return split;
     }
