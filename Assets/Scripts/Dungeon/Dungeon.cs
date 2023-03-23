@@ -6,8 +6,6 @@ using System.Linq;
 
 public class Dungeon : MonoBehaviour
 {
-    // List of chunks
-    // May be a dictionary with chunk addresses, based on coordinates
     private Dictionary<Address, Chunk> chunkList;
     [SerializeField]
     private Address activeChunkAddress;
@@ -40,16 +38,15 @@ public class Dungeon : MonoBehaviour
 
         // XXX
         Debug.Log($"DungeonUI Persistence is: {cfgManager.config.persistentDungeonUI}");
-
-        // Create a chunk and adopt it
-        // TEMP adopt thepre-made chunk
-        // GameObject chunkGO = GameObject.Find("Chunk");
-        // Chunk chunk = chunkGO.GetComponent<Chunk>();
-        // chunkList.Add(activeChunkAddress, chunk);
     }
 
     void Update()
     {
+        if (Input.GetKey(KeyCode.Return))
+        {
+            logger.LogDebug("Save Dungeon", true);
+            cfgManager.SaveDungeon(this);
+        }
 
     }
 
@@ -61,7 +58,7 @@ public class Dungeon : MonoBehaviour
         string result = "";
         foreach (Address address in chunkList.Keys)
         {
-            result += $"{{chunkaddr:{address.ToString()}}}";
+            result += $"XXX/{{chunkaddr:{address.ToString()}}}";
             result += chunkList[address].GetData();
         }
 

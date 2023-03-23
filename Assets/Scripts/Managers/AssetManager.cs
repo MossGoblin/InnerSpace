@@ -17,19 +17,29 @@ public class AssetManager : MonoBehaviour
         
     }
 
-    public Sprite GetSprite(int tileSetID)
+    public struct TileSprite
+    {
+        public TileSprite(Sprite tileSprite, int tileIndex)
+        {
+            this.tileSprite = tileSprite;
+            this.tileSpriteIndex = tileIndex;
+        }
+        public Sprite tileSprite { get; set; }
+        public int tileSpriteIndex { get; set; }
+    }
+    public TileSprite GetSprite(int tileSetID)
     {
         int rndID = 0;
         switch (tileSetID)
         {
             case 0:
                 rndID = Random.Range(0, tileSpriteSet00.Count);
-                return tileSpriteSet00[rndID];
+                return new TileSprite(tileSpriteSet00[rndID], rndID);
             case 1:
                 rndID = Random.Range(0, tileSpriteSet01.Count);
-                return tileSpriteSet01[rndID];
+                return new TileSprite(tileSpriteSet01[rndID], rndID);
         }
 
-        return null;
+        return new TileSprite(null, 0);
     }
 }

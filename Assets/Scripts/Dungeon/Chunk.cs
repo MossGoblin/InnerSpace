@@ -68,7 +68,11 @@ public class Chunk : MonoBehaviour
                     newTile.transform.SetParent(this.transform);
                     // XXX
                     SpriteRenderer tileSpriteRenderer = newTile.GetComponentInParent<SpriteRenderer>();
-                    tileSpriteRenderer.sprite = assetManager.GetSprite(1);
+                    int tileTypeID = 1;
+                    AssetManager.TileSprite tileSpriteData = assetManager.GetSprite(tileTypeID);
+                    tileSpriteRenderer.sprite = tileSpriteData.tileSprite;
+                    newTile.tileTypeID = tileTypeID;
+                    newTile.tileID = tileSpriteData.tileSpriteIndex;
                     tileList.Add(coord, newTile);
                 }
             }

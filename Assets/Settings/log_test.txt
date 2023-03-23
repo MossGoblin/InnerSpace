@@ -84006,3 +84006,2875 @@ Debug & 07:40:12.396
           pqr: (P:5, Q:-5, R:0)
 -----
 
+Info & 07:59:09.943
+          Logger initiated
+-----
+
+Info & 07:59:09.944
+          GameManager: ON
+-----
+
+Info & 07:59:09.945
+          Logger: ON
+-----
+
+Info & 07:59:09.946
+          Config Manager: ON
+-----
+
+Info & 07:59:09.946
+          Clocker: ON
+-----
+
+Info & 07:59:09.977
+          Config init: D:/[ CODEE ]/[ GITTED ]/InnerSpace/Assets/Settings/innser_space_cfg.json
+-----
+
+Info & 07:59:09.978
+          Config loaded
+-----
+
+Info & 07:59:09.979
+          ConfigData
+-----
+
+Info & 07:59:09.979
+          Chunk size: 0
+-----
+
+Info & 07:59:16.774
+          Chunk generated with 91 tiles
+-----
+
+Debug & 07:59:16.776
+          pqr: (P:-5, Q:5, R:0)
+-----
+
+Debug & 07:59:16.776
+          pqr: (P:-5, Q:4, R:1)
+-----
+
+Debug & 07:59:16.776
+          pqr: (P:-5, Q:3, R:2)
+-----
+
+Debug & 07:59:16.776
+          pqr: (P:-5, Q:2, R:3)
+-----
+
+Debug & 07:59:16.777
+          pqr: (P:-5, Q:1, R:4)
+-----
+
+Debug & 07:59:16.777
+          pqr: (P:-5, Q:0, R:5)
+-----
+
+Debug & 07:59:16.777
+          pqr: (P:-4, Q:5, R:-1)
+-----
+
+Debug & 07:59:16.778
+          pqr: (P:-4, Q:4, R:0)
+-----
+
+Debug & 07:59:16.778
+          pqr: (P:-4, Q:3, R:1)
+-----
+
+Debug & 07:59:16.778
+          pqr: (P:-4, Q:2, R:2)
+-----
+
+Debug & 07:59:16.778
+          pqr: (P:-4, Q:1, R:3)
+-----
+
+Debug & 07:59:16.779
+          pqr: (P:-4, Q:0, R:4)
+-----
+
+Debug & 07:59:16.779
+          pqr: (P:-4, Q:-1, R:5)
+-----
+
+Debug & 07:59:16.779
+          pqr: (P:-3, Q:5, R:-2)
+-----
+
+Debug & 07:59:16.780
+          pqr: (P:-3, Q:4, R:-1)
+-----
+
+Debug & 07:59:16.780
+          pqr: (P:-3, Q:3, R:0)
+-----
+
+Debug & 07:59:16.780
+          pqr: (P:-3, Q:2, R:1)
+-----
+
+Debug & 07:59:16.780
+          pqr: (P:-3, Q:1, R:2)
+-----
+
+Debug & 07:59:16.781
+          pqr: (P:-3, Q:0, R:3)
+-----
+
+Debug & 07:59:16.781
+          pqr: (P:-3, Q:-1, R:4)
+-----
+
+Debug & 07:59:16.781
+          pqr: (P:-3, Q:-2, R:5)
+-----
+
+Debug & 07:59:16.781
+          pqr: (P:-2, Q:5, R:-3)
+-----
+
+Debug & 07:59:16.782
+          pqr: (P:-2, Q:4, R:-2)
+-----
+
+Debug & 07:59:16.782
+          pqr: (P:-2, Q:3, R:-1)
+-----
+
+Debug & 07:59:16.782
+          pqr: (P:-2, Q:2, R:0)
+-----
+
+Debug & 07:59:16.783
+          pqr: (P:-2, Q:1, R:1)
+-----
+
+Debug & 07:59:16.783
+          pqr: (P:-2, Q:0, R:2)
+-----
+
+Debug & 07:59:16.783
+          pqr: (P:-2, Q:-1, R:3)
+-----
+
+Debug & 07:59:16.784
+          pqr: (P:-2, Q:-2, R:4)
+-----
+
+Debug & 07:59:16.784
+          pqr: (P:-2, Q:-3, R:5)
+-----
+
+Debug & 07:59:16.784
+          pqr: (P:-1, Q:5, R:-4)
+-----
+
+Debug & 07:59:16.785
+          pqr: (P:-1, Q:4, R:-3)
+-----
+
+Debug & 07:59:16.785
+          pqr: (P:-1, Q:3, R:-2)
+-----
+
+Debug & 07:59:16.785
+          pqr: (P:-1, Q:2, R:-1)
+-----
+
+Debug & 07:59:16.785
+          pqr: (P:-1, Q:1, R:0)
+-----
+
+Debug & 07:59:16.786
+          pqr: (P:-1, Q:0, R:1)
+-----
+
+Debug & 07:59:16.786
+          pqr: (P:-1, Q:-1, R:2)
+-----
+
+Debug & 07:59:16.786
+          pqr: (P:-1, Q:-2, R:3)
+-----
+
+Debug & 07:59:16.786
+          pqr: (P:-1, Q:-3, R:4)
+-----
+
+Debug & 07:59:16.787
+          pqr: (P:-1, Q:-4, R:5)
+-----
+
+Debug & 07:59:16.787
+          pqr: (P:0, Q:5, R:-5)
+-----
+
+Debug & 07:59:16.787
+          pqr: (P:0, Q:4, R:-4)
+-----
+
+Debug & 07:59:16.788
+          pqr: (P:0, Q:3, R:-3)
+-----
+
+Debug & 07:59:16.788
+          pqr: (P:0, Q:2, R:-2)
+-----
+
+Debug & 07:59:16.788
+          pqr: (P:0, Q:1, R:-1)
+-----
+
+Debug & 07:59:16.788
+          pqr: (P:0, Q:0, R:0)
+-----
+
+Debug & 07:59:16.789
+          pqr: (P:0, Q:-1, R:1)
+-----
+
+Debug & 07:59:16.789
+          pqr: (P:0, Q:-2, R:2)
+-----
+
+Debug & 07:59:16.789
+          pqr: (P:0, Q:-3, R:3)
+-----
+
+Debug & 07:59:16.790
+          pqr: (P:0, Q:-4, R:4)
+-----
+
+Debug & 07:59:16.790
+          pqr: (P:0, Q:-5, R:5)
+-----
+
+Debug & 07:59:16.790
+          pqr: (P:1, Q:4, R:-5)
+-----
+
+Debug & 07:59:16.790
+          pqr: (P:1, Q:3, R:-4)
+-----
+
+Debug & 07:59:16.791
+          pqr: (P:1, Q:2, R:-3)
+-----
+
+Debug & 07:59:16.791
+          pqr: (P:1, Q:1, R:-2)
+-----
+
+Debug & 07:59:16.791
+          pqr: (P:1, Q:0, R:-1)
+-----
+
+Debug & 07:59:16.792
+          pqr: (P:1, Q:-1, R:0)
+-----
+
+Debug & 07:59:16.792
+          pqr: (P:1, Q:-2, R:1)
+-----
+
+Debug & 07:59:16.792
+          pqr: (P:1, Q:-3, R:2)
+-----
+
+Debug & 07:59:16.793
+          pqr: (P:1, Q:-4, R:3)
+-----
+
+Debug & 07:59:16.793
+          pqr: (P:1, Q:-5, R:4)
+-----
+
+Debug & 07:59:16.793
+          pqr: (P:2, Q:3, R:-5)
+-----
+
+Debug & 07:59:16.794
+          pqr: (P:2, Q:2, R:-4)
+-----
+
+Debug & 07:59:16.794
+          pqr: (P:2, Q:1, R:-3)
+-----
+
+Debug & 07:59:16.794
+          pqr: (P:2, Q:0, R:-2)
+-----
+
+Debug & 07:59:16.795
+          pqr: (P:2, Q:-1, R:-1)
+-----
+
+Debug & 07:59:16.795
+          pqr: (P:2, Q:-2, R:0)
+-----
+
+Debug & 07:59:16.795
+          pqr: (P:2, Q:-3, R:1)
+-----
+
+Debug & 07:59:16.796
+          pqr: (P:2, Q:-4, R:2)
+-----
+
+Debug & 07:59:16.796
+          pqr: (P:2, Q:-5, R:3)
+-----
+
+Debug & 07:59:16.796
+          pqr: (P:3, Q:2, R:-5)
+-----
+
+Debug & 07:59:16.796
+          pqr: (P:3, Q:1, R:-4)
+-----
+
+Debug & 07:59:16.797
+          pqr: (P:3, Q:0, R:-3)
+-----
+
+Debug & 07:59:16.797
+          pqr: (P:3, Q:-1, R:-2)
+-----
+
+Debug & 07:59:16.797
+          pqr: (P:3, Q:-2, R:-1)
+-----
+
+Debug & 07:59:16.798
+          pqr: (P:3, Q:-3, R:0)
+-----
+
+Debug & 07:59:16.798
+          pqr: (P:3, Q:-4, R:1)
+-----
+
+Debug & 07:59:16.798
+          pqr: (P:3, Q:-5, R:2)
+-----
+
+Debug & 07:59:16.799
+          pqr: (P:4, Q:1, R:-5)
+-----
+
+Debug & 07:59:16.799
+          pqr: (P:4, Q:0, R:-4)
+-----
+
+Debug & 07:59:16.799
+          pqr: (P:4, Q:-1, R:-3)
+-----
+
+Debug & 07:59:16.799
+          pqr: (P:4, Q:-2, R:-2)
+-----
+
+Debug & 07:59:16.800
+          pqr: (P:4, Q:-3, R:-1)
+-----
+
+Debug & 07:59:16.800
+          pqr: (P:4, Q:-4, R:0)
+-----
+
+Debug & 07:59:16.800
+          pqr: (P:4, Q:-5, R:1)
+-----
+
+Debug & 07:59:16.801
+          pqr: (P:5, Q:0, R:-5)
+-----
+
+Debug & 07:59:16.801
+          pqr: (P:5, Q:-1, R:-4)
+-----
+
+Debug & 07:59:16.801
+          pqr: (P:5, Q:-2, R:-3)
+-----
+
+Debug & 07:59:16.801
+          pqr: (P:5, Q:-3, R:-2)
+-----
+
+Debug & 07:59:16.802
+          pqr: (P:5, Q:-4, R:-1)
+-----
+
+Debug & 07:59:16.802
+          pqr: (P:5, Q:-5, R:0)
+-----
+
+Debug & 07:59:24.667
+          Save Dungeon
+-----
+
+Debug & 07:59:24.671
+          Save Dungeon
+-----
+
+Debug & 07:59:24.674
+          Save Dungeon
+-----
+
+Debug & 07:59:24.678
+          Save Dungeon
+-----
+
+Debug & 07:59:24.681
+          Save Dungeon
+-----
+
+Debug & 07:59:24.684
+          Save Dungeon
+-----
+
+Debug & 07:59:24.688
+          Save Dungeon
+-----
+
+Debug & 07:59:24.691
+          Save Dungeon
+-----
+
+Debug & 07:59:24.695
+          Save Dungeon
+-----
+
+Debug & 07:59:24.698
+          Save Dungeon
+-----
+
+Debug & 07:59:24.701
+          Save Dungeon
+-----
+
+Debug & 07:59:24.704
+          Save Dungeon
+-----
+
+Debug & 07:59:24.708
+          Save Dungeon
+-----
+
+Debug & 07:59:24.711
+          Save Dungeon
+-----
+
+Debug & 07:59:24.714
+          Save Dungeon
+-----
+
+Debug & 07:59:24.717
+          Save Dungeon
+-----
+
+Debug & 07:59:24.720
+          Save Dungeon
+-----
+
+Debug & 07:59:24.724
+          Save Dungeon
+-----
+
+Debug & 07:59:24.728
+          Save Dungeon
+-----
+
+Debug & 07:59:24.731
+          Save Dungeon
+-----
+
+Debug & 07:59:24.734
+          Save Dungeon
+-----
+
+Info & 08:00:25.687
+          Logger initiated
+-----
+
+Info & 08:00:25.688
+          GameManager: ON
+-----
+
+Info & 08:00:25.690
+          Logger: ON
+-----
+
+Info & 08:00:25.690
+          Config Manager: ON
+-----
+
+Info & 08:00:25.690
+          Clocker: ON
+-----
+
+Info & 08:00:25.750
+          Config init: D:/[ CODEE ]/[ GITTED ]/InnerSpace/Assets/Settings/innser_space_cfg.json
+-----
+
+Info & 08:00:25.751
+          Config loaded
+-----
+
+Info & 08:00:25.751
+          ConfigData
+-----
+
+Info & 08:00:25.752
+          Chunk size: 0
+-----
+
+Info & 08:00:31.498
+          Chunk generated with 91 tiles
+-----
+
+Debug & 08:00:31.499
+          pqr: (P:-5, Q:5, R:0)
+-----
+
+Debug & 08:00:31.500
+          pqr: (P:-5, Q:4, R:1)
+-----
+
+Debug & 08:00:31.500
+          pqr: (P:-5, Q:3, R:2)
+-----
+
+Debug & 08:00:31.500
+          pqr: (P:-5, Q:2, R:3)
+-----
+
+Debug & 08:00:31.501
+          pqr: (P:-5, Q:1, R:4)
+-----
+
+Debug & 08:00:31.501
+          pqr: (P:-5, Q:0, R:5)
+-----
+
+Debug & 08:00:31.501
+          pqr: (P:-4, Q:5, R:-1)
+-----
+
+Debug & 08:00:31.502
+          pqr: (P:-4, Q:4, R:0)
+-----
+
+Debug & 08:00:31.502
+          pqr: (P:-4, Q:3, R:1)
+-----
+
+Debug & 08:00:31.502
+          pqr: (P:-4, Q:2, R:2)
+-----
+
+Debug & 08:00:31.503
+          pqr: (P:-4, Q:1, R:3)
+-----
+
+Debug & 08:00:31.503
+          pqr: (P:-4, Q:0, R:4)
+-----
+
+Debug & 08:00:31.503
+          pqr: (P:-4, Q:-1, R:5)
+-----
+
+Debug & 08:00:31.504
+          pqr: (P:-3, Q:5, R:-2)
+-----
+
+Debug & 08:00:31.504
+          pqr: (P:-3, Q:4, R:-1)
+-----
+
+Debug & 08:00:31.504
+          pqr: (P:-3, Q:3, R:0)
+-----
+
+Debug & 08:00:31.505
+          pqr: (P:-3, Q:2, R:1)
+-----
+
+Debug & 08:00:31.505
+          pqr: (P:-3, Q:1, R:2)
+-----
+
+Debug & 08:00:31.505
+          pqr: (P:-3, Q:0, R:3)
+-----
+
+Debug & 08:00:31.505
+          pqr: (P:-3, Q:-1, R:4)
+-----
+
+Debug & 08:00:31.506
+          pqr: (P:-3, Q:-2, R:5)
+-----
+
+Debug & 08:00:31.506
+          pqr: (P:-2, Q:5, R:-3)
+-----
+
+Debug & 08:00:31.506
+          pqr: (P:-2, Q:4, R:-2)
+-----
+
+Debug & 08:00:31.507
+          pqr: (P:-2, Q:3, R:-1)
+-----
+
+Debug & 08:00:31.507
+          pqr: (P:-2, Q:2, R:0)
+-----
+
+Debug & 08:00:31.507
+          pqr: (P:-2, Q:1, R:1)
+-----
+
+Debug & 08:00:31.507
+          pqr: (P:-2, Q:0, R:2)
+-----
+
+Debug & 08:00:31.508
+          pqr: (P:-2, Q:-1, R:3)
+-----
+
+Debug & 08:00:31.508
+          pqr: (P:-2, Q:-2, R:4)
+-----
+
+Debug & 08:00:31.508
+          pqr: (P:-2, Q:-3, R:5)
+-----
+
+Debug & 08:00:31.509
+          pqr: (P:-1, Q:5, R:-4)
+-----
+
+Debug & 08:00:31.509
+          pqr: (P:-1, Q:4, R:-3)
+-----
+
+Debug & 08:00:31.509
+          pqr: (P:-1, Q:3, R:-2)
+-----
+
+Debug & 08:00:31.509
+          pqr: (P:-1, Q:2, R:-1)
+-----
+
+Debug & 08:00:31.510
+          pqr: (P:-1, Q:1, R:0)
+-----
+
+Debug & 08:00:31.510
+          pqr: (P:-1, Q:0, R:1)
+-----
+
+Debug & 08:00:31.510
+          pqr: (P:-1, Q:-1, R:2)
+-----
+
+Debug & 08:00:31.510
+          pqr: (P:-1, Q:-2, R:3)
+-----
+
+Debug & 08:00:31.511
+          pqr: (P:-1, Q:-3, R:4)
+-----
+
+Debug & 08:00:31.511
+          pqr: (P:-1, Q:-4, R:5)
+-----
+
+Debug & 08:00:31.511
+          pqr: (P:0, Q:5, R:-5)
+-----
+
+Debug & 08:00:31.512
+          pqr: (P:0, Q:4, R:-4)
+-----
+
+Debug & 08:00:31.512
+          pqr: (P:0, Q:3, R:-3)
+-----
+
+Debug & 08:00:31.512
+          pqr: (P:0, Q:2, R:-2)
+-----
+
+Debug & 08:00:31.512
+          pqr: (P:0, Q:1, R:-1)
+-----
+
+Debug & 08:00:31.513
+          pqr: (P:0, Q:0, R:0)
+-----
+
+Debug & 08:00:31.513
+          pqr: (P:0, Q:-1, R:1)
+-----
+
+Debug & 08:00:31.513
+          pqr: (P:0, Q:-2, R:2)
+-----
+
+Debug & 08:00:31.513
+          pqr: (P:0, Q:-3, R:3)
+-----
+
+Debug & 08:00:31.514
+          pqr: (P:0, Q:-4, R:4)
+-----
+
+Debug & 08:00:31.514
+          pqr: (P:0, Q:-5, R:5)
+-----
+
+Debug & 08:00:31.514
+          pqr: (P:1, Q:4, R:-5)
+-----
+
+Debug & 08:00:31.515
+          pqr: (P:1, Q:3, R:-4)
+-----
+
+Debug & 08:00:31.515
+          pqr: (P:1, Q:2, R:-3)
+-----
+
+Debug & 08:00:31.515
+          pqr: (P:1, Q:1, R:-2)
+-----
+
+Debug & 08:00:31.516
+          pqr: (P:1, Q:0, R:-1)
+-----
+
+Debug & 08:00:31.516
+          pqr: (P:1, Q:-1, R:0)
+-----
+
+Debug & 08:00:31.516
+          pqr: (P:1, Q:-2, R:1)
+-----
+
+Debug & 08:00:31.516
+          pqr: (P:1, Q:-3, R:2)
+-----
+
+Debug & 08:00:31.517
+          pqr: (P:1, Q:-4, R:3)
+-----
+
+Debug & 08:00:31.517
+          pqr: (P:1, Q:-5, R:4)
+-----
+
+Debug & 08:00:31.517
+          pqr: (P:2, Q:3, R:-5)
+-----
+
+Debug & 08:00:31.517
+          pqr: (P:2, Q:2, R:-4)
+-----
+
+Debug & 08:00:31.518
+          pqr: (P:2, Q:1, R:-3)
+-----
+
+Debug & 08:00:31.518
+          pqr: (P:2, Q:0, R:-2)
+-----
+
+Debug & 08:00:31.518
+          pqr: (P:2, Q:-1, R:-1)
+-----
+
+Debug & 08:00:31.519
+          pqr: (P:2, Q:-2, R:0)
+-----
+
+Debug & 08:00:31.519
+          pqr: (P:2, Q:-3, R:1)
+-----
+
+Debug & 08:00:31.519
+          pqr: (P:2, Q:-4, R:2)
+-----
+
+Debug & 08:00:31.520
+          pqr: (P:2, Q:-5, R:3)
+-----
+
+Debug & 08:00:31.520
+          pqr: (P:3, Q:2, R:-5)
+-----
+
+Debug & 08:00:31.520
+          pqr: (P:3, Q:1, R:-4)
+-----
+
+Debug & 08:00:31.520
+          pqr: (P:3, Q:0, R:-3)
+-----
+
+Debug & 08:00:31.521
+          pqr: (P:3, Q:-1, R:-2)
+-----
+
+Debug & 08:00:31.521
+          pqr: (P:3, Q:-2, R:-1)
+-----
+
+Debug & 08:00:31.521
+          pqr: (P:3, Q:-3, R:0)
+-----
+
+Debug & 08:00:31.521
+          pqr: (P:3, Q:-4, R:1)
+-----
+
+Debug & 08:00:31.522
+          pqr: (P:3, Q:-5, R:2)
+-----
+
+Debug & 08:00:31.522
+          pqr: (P:4, Q:1, R:-5)
+-----
+
+Debug & 08:00:31.522
+          pqr: (P:4, Q:0, R:-4)
+-----
+
+Debug & 08:00:31.523
+          pqr: (P:4, Q:-1, R:-3)
+-----
+
+Debug & 08:00:31.523
+          pqr: (P:4, Q:-2, R:-2)
+-----
+
+Debug & 08:00:31.523
+          pqr: (P:4, Q:-3, R:-1)
+-----
+
+Debug & 08:00:31.524
+          pqr: (P:4, Q:-4, R:0)
+-----
+
+Debug & 08:00:31.524
+          pqr: (P:4, Q:-5, R:1)
+-----
+
+Debug & 08:00:31.524
+          pqr: (P:5, Q:0, R:-5)
+-----
+
+Debug & 08:00:31.525
+          pqr: (P:5, Q:-1, R:-4)
+-----
+
+Debug & 08:00:31.525
+          pqr: (P:5, Q:-2, R:-3)
+-----
+
+Debug & 08:00:31.525
+          pqr: (P:5, Q:-3, R:-2)
+-----
+
+Debug & 08:00:31.525
+          pqr: (P:5, Q:-4, R:-1)
+-----
+
+Debug & 08:00:31.526
+          pqr: (P:5, Q:-5, R:0)
+-----
+
+Debug & 08:00:35.467
+          Save Dungeon
+-----
+
+Debug & 08:00:35.470
+          Dungeon Data Serialized:
+-----
+
+Debug & 08:00:35.470
+          {chunkaddr:(P:0, Q:0, R:0)}{"(P:-5, Q:5, R:0)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-5, Q:4, R:1)":{biomeID:0,tileTypeID:1,tileID:0}"(P:-5, Q:3, R:2)":{biomeID:0,tileTypeID:1,tileID:0}"(P:-5, Q:2, R:3)":{biomeID:0,tileTypeID:1,tileID:3}"(P:-5, Q:1, R:4)":{biomeID:0,tileTypeID:1,tileID:3}"(P:-5, Q:0, R:5)":{biomeID:0,tileTypeID:1,tileID:3}"(P:-4, Q:5, R:-1)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-4, Q:4, R:0)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-4, Q:3, R:1)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-4, Q:2, R:2)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-4, Q:1, R:3)":{biomeID:0,tileTypeID:1,tileID:0}"(P:-4, Q:0, R:4)":{biomeID:0,tileTypeID:1,tileID:4}"(P:-4, Q:-1, R:5)":{biomeID:0,tileTypeID:1,tileID:3}"(P:-3, Q:5, R:-2)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-3, Q:4, R:-1)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-3, Q:3, R:0)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-3, Q:2, R:1)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-3, Q:1, R:2)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-3, Q:0, R:3)":{biomeID:0,tileTypeID:1,tileID:4}"(P:-3, Q:-1, R:4)":{biomeID:0,tileTypeID:1,tileID:4}"(P:-3, Q:-2, R:5)":{biomeID:0,tileTypeID:1,tileID:3}"(P:-2, Q:5, R:-3)":{biomeID:0,tileTypeID:1,tileID:3}"(P:-2, Q:4, R:-2)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-2, Q:3, R:-1)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-2, Q:2, R:0)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-2, Q:1, R:1)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-2, Q:0, R:2)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-2, Q:-1, R:3)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-2, Q:-2, R:4)":{biomeID:0,tileTypeID:1,tileID:0}"(P:-2, Q:-3, R:5)":{biomeID:0,tileTypeID:1,tileID:4}"(P:-1, Q:5, R:-4)":{biomeID:0,tileTypeID:1,tileID:4}"(P:-1, Q:4, R:-3)":{biomeID:0,tileTypeID:1,tileID:0}"(P:-1, Q:3, R:-2)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-1, Q:2, R:-1)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-1, Q:1, R:0)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-1, Q:0, R:1)":{biomeID:0,tileTypeID:1,tileID:0}"(P:-1, Q:-1, R:2)":{biomeID:0,tileTypeID:1,tileID:0}"(P:-1, Q:-2, R:3)":{biomeID:0,tileTypeID:1,tileID:3}"(P:-1, Q:-3, R:4)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-1, Q:-4, R:5)":{biomeID:0,tileTypeID:1,tileID:0}"(P:0, Q:5, R:-5)":{biomeID:0,tileTypeID:1,tileID:0}"(P:0, Q:4, R:-4)":{biomeID:0,tileTypeID:1,tileID:0}"(P:0, Q:3, R:-3)":{biomeID:0,tileTypeID:1,tileID:3}"(P:0, Q:2, R:-2)":{biomeID:0,tileTypeID:1,tileID:3}"(P:0, Q:1, R:-1)":{biomeID:0,tileTypeID:1,tileID:1}"(P:0, Q:0, R:0)":{biomeID:0,tileTypeID:1,tileID:0}"(P:0, Q:-1, R:1)":{biomeID:0,tileTypeID:1,tileID:1}"(P:0, Q:-2, R:2)":{biomeID:0,tileTypeID:1,tileID:1}"(P:0, Q:-3, R:3)":{biomeID:0,tileTypeID:1,tileID:3}"(P:0, Q:-4, R:4)":{biomeID:0,tileTypeID:1,tileID:2}"(P:0, Q:-5, R:5)":{biomeID:0,tileTypeID:1,tileID:2}"(P:1, Q:4, R:-5)":{biomeID:0,tileTypeID:1,tileID:0}"(P:1, Q:3, R:-4)":{biomeID:0,tileTypeID:1,tileID:3}"(P:1, Q:2, R:-3)":{biomeID:0,tileTypeID:1,tileID:1}"(P:1, Q:1, R:-2)":{biomeID:0,tileTypeID:1,tileID:1}"(P:1, Q:0, R:-1)":{biomeID:0,tileTypeID:1,tileID:4}"(P:1, Q:-1, R:0)":{biomeID:0,tileTypeID:1,tileID:1}"(P:1, Q:-2, R:1)":{biomeID:0,tileTypeID:1,tileID:0}"(P:1, Q:-3, R:2)":{biomeID:0,tileTypeID:1,tileID:4}"(P:1, Q:-4, R:3)":{biomeID:0,tileTypeID:1,tileID:4}"(P:1, Q:-5, R:4)":{biomeID:0,tileTypeID:1,tileID:0}"(P:2, Q:3, R:-5)":{biomeID:0,tileTypeID:1,tileID:1}"(P:2, Q:2, R:-4)":{biomeID:0,tileTypeID:1,tileID:0}"(P:2, Q:1, R:-3)":{biomeID:0,tileTypeID:1,tileID:2}"(P:2, Q:0, R:-2)":{biomeID:0,tileTypeID:1,tileID:1}"(P:2, Q:-1, R:-1)":{biomeID:0,tileTypeID:1,tileID:0}"(P:2, Q:-2, R:0)":{biomeID:0,tileTypeID:1,tileID:0}"(P:2, Q:-3, R:1)":{biomeID:0,tileTypeID:1,tileID:4}"(P:2, Q:-4, R:2)":{biomeID:0,tileTypeID:1,tileID:0}"(P:2, Q:-5, R:3)":{biomeID:0,tileTypeID:1,tileID:4}"(P:3, Q:2, R:-5)":{biomeID:0,tileTypeID:1,tileID:4}"(P:3, Q:1, R:-4)":{biomeID:0,tileTypeID:1,tileID:1}"(P:3, Q:0, R:-3)":{biomeID:0,tileTypeID:1,tileID:4}"(P:3, Q:-1, R:-2)":{biomeID:0,tileTypeID:1,tileID:4}"(P:3, Q:-2, R:-1)":{biomeID:0,tileTypeID:1,tileID:2}"(P:3, Q:-3, R:0)":{biomeID:0,tileTypeID:1,tileID:3}"(P:3, Q:-4, R:1)":{biomeID:0,tileTypeID:1,tileID:3}"(P:3, Q:-5, R:2)":{biomeID:0,tileTypeID:1,tileID:3}"(P:4, Q:1, R:-5)":{biomeID:0,tileTypeID:1,tileID:1}"(P:4, Q:0, R:-4)":{biomeID:0,tileTypeID:1,tileID:3}"(P:4, Q:-1, R:-3)":{biomeID:0,tileTypeID:1,tileID:2}"(P:4, Q:-2, R:-2)":{biomeID:0,tileTypeID:1,tileID:4}"(P:4, Q:-3, R:-1)":{biomeID:0,tileTypeID:1,tileID:4}"(P:4, Q:-4, R:0)":{biomeID:0,tileTypeID:1,tileID:2}"(P:4, Q:-5, R:1)":{biomeID:0,tileTypeID:1,tileID:3}"(P:5, Q:0, R:-5)":{biomeID:0,tileTypeID:1,tileID:4}"(P:5, Q:-1, R:-4)":{biomeID:0,tileTypeID:1,tileID:1}"(P:5, Q:-2, R:-3)":{biomeID:0,tileTypeID:1,tileID:2}"(P:5, Q:-3, R:-2)":{biomeID:0,tileTypeID:1,tileID:1}"(P:5, Q:-4, R:-1)":{biomeID:0,tileTypeID:1,tileID:3}"(P:5, Q:-5, R:0)":{biomeID:0,tileTypeID:1,tileID:3},
+-----
+
+Debug & 08:00:35.471
+          Old Dungeon Data Deleted
+-----
+
+Debug & 08:00:35.472
+          Dungeon Data Saved
+-----
+
+Debug & 08:00:35.477
+          Save Dungeon
+-----
+
+Debug & 08:00:35.479
+          Dungeon Data Serialized:
+-----
+
+Debug & 08:00:35.479
+          {chunkaddr:(P:0, Q:0, R:0)}{"(P:-5, Q:5, R:0)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-5, Q:4, R:1)":{biomeID:0,tileTypeID:1,tileID:0}"(P:-5, Q:3, R:2)":{biomeID:0,tileTypeID:1,tileID:0}"(P:-5, Q:2, R:3)":{biomeID:0,tileTypeID:1,tileID:3}"(P:-5, Q:1, R:4)":{biomeID:0,tileTypeID:1,tileID:3}"(P:-5, Q:0, R:5)":{biomeID:0,tileTypeID:1,tileID:3}"(P:-4, Q:5, R:-1)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-4, Q:4, R:0)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-4, Q:3, R:1)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-4, Q:2, R:2)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-4, Q:1, R:3)":{biomeID:0,tileTypeID:1,tileID:0}"(P:-4, Q:0, R:4)":{biomeID:0,tileTypeID:1,tileID:4}"(P:-4, Q:-1, R:5)":{biomeID:0,tileTypeID:1,tileID:3}"(P:-3, Q:5, R:-2)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-3, Q:4, R:-1)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-3, Q:3, R:0)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-3, Q:2, R:1)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-3, Q:1, R:2)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-3, Q:0, R:3)":{biomeID:0,tileTypeID:1,tileID:4}"(P:-3, Q:-1, R:4)":{biomeID:0,tileTypeID:1,tileID:4}"(P:-3, Q:-2, R:5)":{biomeID:0,tileTypeID:1,tileID:3}"(P:-2, Q:5, R:-3)":{biomeID:0,tileTypeID:1,tileID:3}"(P:-2, Q:4, R:-2)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-2, Q:3, R:-1)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-2, Q:2, R:0)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-2, Q:1, R:1)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-2, Q:0, R:2)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-2, Q:-1, R:3)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-2, Q:-2, R:4)":{biomeID:0,tileTypeID:1,tileID:0}"(P:-2, Q:-3, R:5)":{biomeID:0,tileTypeID:1,tileID:4}"(P:-1, Q:5, R:-4)":{biomeID:0,tileTypeID:1,tileID:4}"(P:-1, Q:4, R:-3)":{biomeID:0,tileTypeID:1,tileID:0}"(P:-1, Q:3, R:-2)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-1, Q:2, R:-1)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-1, Q:1, R:0)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-1, Q:0, R:1)":{biomeID:0,tileTypeID:1,tileID:0}"(P:-1, Q:-1, R:2)":{biomeID:0,tileTypeID:1,tileID:0}"(P:-1, Q:-2, R:3)":{biomeID:0,tileTypeID:1,tileID:3}"(P:-1, Q:-3, R:4)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-1, Q:-4, R:5)":{biomeID:0,tileTypeID:1,tileID:0}"(P:0, Q:5, R:-5)":{biomeID:0,tileTypeID:1,tileID:0}"(P:0, Q:4, R:-4)":{biomeID:0,tileTypeID:1,tileID:0}"(P:0, Q:3, R:-3)":{biomeID:0,tileTypeID:1,tileID:3}"(P:0, Q:2, R:-2)":{biomeID:0,tileTypeID:1,tileID:3}"(P:0, Q:1, R:-1)":{biomeID:0,tileTypeID:1,tileID:1}"(P:0, Q:0, R:0)":{biomeID:0,tileTypeID:1,tileID:0}"(P:0, Q:-1, R:1)":{biomeID:0,tileTypeID:1,tileID:1}"(P:0, Q:-2, R:2)":{biomeID:0,tileTypeID:1,tileID:1}"(P:0, Q:-3, R:3)":{biomeID:0,tileTypeID:1,tileID:3}"(P:0, Q:-4, R:4)":{biomeID:0,tileTypeID:1,tileID:2}"(P:0, Q:-5, R:5)":{biomeID:0,tileTypeID:1,tileID:2}"(P:1, Q:4, R:-5)":{biomeID:0,tileTypeID:1,tileID:0}"(P:1, Q:3, R:-4)":{biomeID:0,tileTypeID:1,tileID:3}"(P:1, Q:2, R:-3)":{biomeID:0,tileTypeID:1,tileID:1}"(P:1, Q:1, R:-2)":{biomeID:0,tileTypeID:1,tileID:1}"(P:1, Q:0, R:-1)":{biomeID:0,tileTypeID:1,tileID:4}"(P:1, Q:-1, R:0)":{biomeID:0,tileTypeID:1,tileID:1}"(P:1, Q:-2, R:1)":{biomeID:0,tileTypeID:1,tileID:0}"(P:1, Q:-3, R:2)":{biomeID:0,tileTypeID:1,tileID:4}"(P:1, Q:-4, R:3)":{biomeID:0,tileTypeID:1,tileID:4}"(P:1, Q:-5, R:4)":{biomeID:0,tileTypeID:1,tileID:0}"(P:2, Q:3, R:-5)":{biomeID:0,tileTypeID:1,tileID:1}"(P:2, Q:2, R:-4)":{biomeID:0,tileTypeID:1,tileID:0}"(P:2, Q:1, R:-3)":{biomeID:0,tileTypeID:1,tileID:2}"(P:2, Q:0, R:-2)":{biomeID:0,tileTypeID:1,tileID:1}"(P:2, Q:-1, R:-1)":{biomeID:0,tileTypeID:1,tileID:0}"(P:2, Q:-2, R:0)":{biomeID:0,tileTypeID:1,tileID:0}"(P:2, Q:-3, R:1)":{biomeID:0,tileTypeID:1,tileID:4}"(P:2, Q:-4, R:2)":{biomeID:0,tileTypeID:1,tileID:0}"(P:2, Q:-5, R:3)":{biomeID:0,tileTypeID:1,tileID:4}"(P:3, Q:2, R:-5)":{biomeID:0,tileTypeID:1,tileID:4}"(P:3, Q:1, R:-4)":{biomeID:0,tileTypeID:1,tileID:1}"(P:3, Q:0, R:-3)":{biomeID:0,tileTypeID:1,tileID:4}"(P:3, Q:-1, R:-2)":{biomeID:0,tileTypeID:1,tileID:4}"(P:3, Q:-2, R:-1)":{biomeID:0,tileTypeID:1,tileID:2}"(P:3, Q:-3, R:0)":{biomeID:0,tileTypeID:1,tileID:3}"(P:3, Q:-4, R:1)":{biomeID:0,tileTypeID:1,tileID:3}"(P:3, Q:-5, R:2)":{biomeID:0,tileTypeID:1,tileID:3}"(P:4, Q:1, R:-5)":{biomeID:0,tileTypeID:1,tileID:1}"(P:4, Q:0, R:-4)":{biomeID:0,tileTypeID:1,tileID:3}"(P:4, Q:-1, R:-3)":{biomeID:0,tileTypeID:1,tileID:2}"(P:4, Q:-2, R:-2)":{biomeID:0,tileTypeID:1,tileID:4}"(P:4, Q:-3, R:-1)":{biomeID:0,tileTypeID:1,tileID:4}"(P:4, Q:-4, R:0)":{biomeID:0,tileTypeID:1,tileID:2}"(P:4, Q:-5, R:1)":{biomeID:0,tileTypeID:1,tileID:3}"(P:5, Q:0, R:-5)":{biomeID:0,tileTypeID:1,tileID:4}"(P:5, Q:-1, R:-4)":{biomeID:0,tileTypeID:1,tileID:1}"(P:5, Q:-2, R:-3)":{biomeID:0,tileTypeID:1,tileID:2}"(P:5, Q:-3, R:-2)":{biomeID:0,tileTypeID:1,tileID:1}"(P:5, Q:-4, R:-1)":{biomeID:0,tileTypeID:1,tileID:3}"(P:5, Q:-5, R:0)":{biomeID:0,tileTypeID:1,tileID:3},
+-----
+
+Debug & 08:00:35.480
+          Old Dungeon Data Deleted
+-----
+
+Debug & 08:00:35.481
+          Dungeon Data Saved
+-----
+
+Debug & 08:00:35.485
+          Save Dungeon
+-----
+
+Debug & 08:00:35.486
+          Dungeon Data Serialized:
+-----
+
+Debug & 08:00:35.486
+          {chunkaddr:(P:0, Q:0, R:0)}{"(P:-5, Q:5, R:0)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-5, Q:4, R:1)":{biomeID:0,tileTypeID:1,tileID:0}"(P:-5, Q:3, R:2)":{biomeID:0,tileTypeID:1,tileID:0}"(P:-5, Q:2, R:3)":{biomeID:0,tileTypeID:1,tileID:3}"(P:-5, Q:1, R:4)":{biomeID:0,tileTypeID:1,tileID:3}"(P:-5, Q:0, R:5)":{biomeID:0,tileTypeID:1,tileID:3}"(P:-4, Q:5, R:-1)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-4, Q:4, R:0)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-4, Q:3, R:1)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-4, Q:2, R:2)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-4, Q:1, R:3)":{biomeID:0,tileTypeID:1,tileID:0}"(P:-4, Q:0, R:4)":{biomeID:0,tileTypeID:1,tileID:4}"(P:-4, Q:-1, R:5)":{biomeID:0,tileTypeID:1,tileID:3}"(P:-3, Q:5, R:-2)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-3, Q:4, R:-1)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-3, Q:3, R:0)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-3, Q:2, R:1)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-3, Q:1, R:2)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-3, Q:0, R:3)":{biomeID:0,tileTypeID:1,tileID:4}"(P:-3, Q:-1, R:4)":{biomeID:0,tileTypeID:1,tileID:4}"(P:-3, Q:-2, R:5)":{biomeID:0,tileTypeID:1,tileID:3}"(P:-2, Q:5, R:-3)":{biomeID:0,tileTypeID:1,tileID:3}"(P:-2, Q:4, R:-2)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-2, Q:3, R:-1)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-2, Q:2, R:0)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-2, Q:1, R:1)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-2, Q:0, R:2)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-2, Q:-1, R:3)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-2, Q:-2, R:4)":{biomeID:0,tileTypeID:1,tileID:0}"(P:-2, Q:-3, R:5)":{biomeID:0,tileTypeID:1,tileID:4}"(P:-1, Q:5, R:-4)":{biomeID:0,tileTypeID:1,tileID:4}"(P:-1, Q:4, R:-3)":{biomeID:0,tileTypeID:1,tileID:0}"(P:-1, Q:3, R:-2)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-1, Q:2, R:-1)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-1, Q:1, R:0)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-1, Q:0, R:1)":{biomeID:0,tileTypeID:1,tileID:0}"(P:-1, Q:-1, R:2)":{biomeID:0,tileTypeID:1,tileID:0}"(P:-1, Q:-2, R:3)":{biomeID:0,tileTypeID:1,tileID:3}"(P:-1, Q:-3, R:4)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-1, Q:-4, R:5)":{biomeID:0,tileTypeID:1,tileID:0}"(P:0, Q:5, R:-5)":{biomeID:0,tileTypeID:1,tileID:0}"(P:0, Q:4, R:-4)":{biomeID:0,tileTypeID:1,tileID:0}"(P:0, Q:3, R:-3)":{biomeID:0,tileTypeID:1,tileID:3}"(P:0, Q:2, R:-2)":{biomeID:0,tileTypeID:1,tileID:3}"(P:0, Q:1, R:-1)":{biomeID:0,tileTypeID:1,tileID:1}"(P:0, Q:0, R:0)":{biomeID:0,tileTypeID:1,tileID:0}"(P:0, Q:-1, R:1)":{biomeID:0,tileTypeID:1,tileID:1}"(P:0, Q:-2, R:2)":{biomeID:0,tileTypeID:1,tileID:1}"(P:0, Q:-3, R:3)":{biomeID:0,tileTypeID:1,tileID:3}"(P:0, Q:-4, R:4)":{biomeID:0,tileTypeID:1,tileID:2}"(P:0, Q:-5, R:5)":{biomeID:0,tileTypeID:1,tileID:2}"(P:1, Q:4, R:-5)":{biomeID:0,tileTypeID:1,tileID:0}"(P:1, Q:3, R:-4)":{biomeID:0,tileTypeID:1,tileID:3}"(P:1, Q:2, R:-3)":{biomeID:0,tileTypeID:1,tileID:1}"(P:1, Q:1, R:-2)":{biomeID:0,tileTypeID:1,tileID:1}"(P:1, Q:0, R:-1)":{biomeID:0,tileTypeID:1,tileID:4}"(P:1, Q:-1, R:0)":{biomeID:0,tileTypeID:1,tileID:1}"(P:1, Q:-2, R:1)":{biomeID:0,tileTypeID:1,tileID:0}"(P:1, Q:-3, R:2)":{biomeID:0,tileTypeID:1,tileID:4}"(P:1, Q:-4, R:3)":{biomeID:0,tileTypeID:1,tileID:4}"(P:1, Q:-5, R:4)":{biomeID:0,tileTypeID:1,tileID:0}"(P:2, Q:3, R:-5)":{biomeID:0,tileTypeID:1,tileID:1}"(P:2, Q:2, R:-4)":{biomeID:0,tileTypeID:1,tileID:0}"(P:2, Q:1, R:-3)":{biomeID:0,tileTypeID:1,tileID:2}"(P:2, Q:0, R:-2)":{biomeID:0,tileTypeID:1,tileID:1}"(P:2, Q:-1, R:-1)":{biomeID:0,tileTypeID:1,tileID:0}"(P:2, Q:-2, R:0)":{biomeID:0,tileTypeID:1,tileID:0}"(P:2, Q:-3, R:1)":{biomeID:0,tileTypeID:1,tileID:4}"(P:2, Q:-4, R:2)":{biomeID:0,tileTypeID:1,tileID:0}"(P:2, Q:-5, R:3)":{biomeID:0,tileTypeID:1,tileID:4}"(P:3, Q:2, R:-5)":{biomeID:0,tileTypeID:1,tileID:4}"(P:3, Q:1, R:-4)":{biomeID:0,tileTypeID:1,tileID:1}"(P:3, Q:0, R:-3)":{biomeID:0,tileTypeID:1,tileID:4}"(P:3, Q:-1, R:-2)":{biomeID:0,tileTypeID:1,tileID:4}"(P:3, Q:-2, R:-1)":{biomeID:0,tileTypeID:1,tileID:2}"(P:3, Q:-3, R:0)":{biomeID:0,tileTypeID:1,tileID:3}"(P:3, Q:-4, R:1)":{biomeID:0,tileTypeID:1,tileID:3}"(P:3, Q:-5, R:2)":{biomeID:0,tileTypeID:1,tileID:3}"(P:4, Q:1, R:-5)":{biomeID:0,tileTypeID:1,tileID:1}"(P:4, Q:0, R:-4)":{biomeID:0,tileTypeID:1,tileID:3}"(P:4, Q:-1, R:-3)":{biomeID:0,tileTypeID:1,tileID:2}"(P:4, Q:-2, R:-2)":{biomeID:0,tileTypeID:1,tileID:4}"(P:4, Q:-3, R:-1)":{biomeID:0,tileTypeID:1,tileID:4}"(P:4, Q:-4, R:0)":{biomeID:0,tileTypeID:1,tileID:2}"(P:4, Q:-5, R:1)":{biomeID:0,tileTypeID:1,tileID:3}"(P:5, Q:0, R:-5)":{biomeID:0,tileTypeID:1,tileID:4}"(P:5, Q:-1, R:-4)":{biomeID:0,tileTypeID:1,tileID:1}"(P:5, Q:-2, R:-3)":{biomeID:0,tileTypeID:1,tileID:2}"(P:5, Q:-3, R:-2)":{biomeID:0,tileTypeID:1,tileID:1}"(P:5, Q:-4, R:-1)":{biomeID:0,tileTypeID:1,tileID:3}"(P:5, Q:-5, R:0)":{biomeID:0,tileTypeID:1,tileID:3},
+-----
+
+Debug & 08:00:35.487
+          Old Dungeon Data Deleted
+-----
+
+Debug & 08:00:35.488
+          Dungeon Data Saved
+-----
+
+Debug & 08:00:35.493
+          Save Dungeon
+-----
+
+Debug & 08:00:35.494
+          Dungeon Data Serialized:
+-----
+
+Debug & 08:00:35.495
+          {chunkaddr:(P:0, Q:0, R:0)}{"(P:-5, Q:5, R:0)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-5, Q:4, R:1)":{biomeID:0,tileTypeID:1,tileID:0}"(P:-5, Q:3, R:2)":{biomeID:0,tileTypeID:1,tileID:0}"(P:-5, Q:2, R:3)":{biomeID:0,tileTypeID:1,tileID:3}"(P:-5, Q:1, R:4)":{biomeID:0,tileTypeID:1,tileID:3}"(P:-5, Q:0, R:5)":{biomeID:0,tileTypeID:1,tileID:3}"(P:-4, Q:5, R:-1)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-4, Q:4, R:0)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-4, Q:3, R:1)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-4, Q:2, R:2)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-4, Q:1, R:3)":{biomeID:0,tileTypeID:1,tileID:0}"(P:-4, Q:0, R:4)":{biomeID:0,tileTypeID:1,tileID:4}"(P:-4, Q:-1, R:5)":{biomeID:0,tileTypeID:1,tileID:3}"(P:-3, Q:5, R:-2)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-3, Q:4, R:-1)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-3, Q:3, R:0)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-3, Q:2, R:1)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-3, Q:1, R:2)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-3, Q:0, R:3)":{biomeID:0,tileTypeID:1,tileID:4}"(P:-3, Q:-1, R:4)":{biomeID:0,tileTypeID:1,tileID:4}"(P:-3, Q:-2, R:5)":{biomeID:0,tileTypeID:1,tileID:3}"(P:-2, Q:5, R:-3)":{biomeID:0,tileTypeID:1,tileID:3}"(P:-2, Q:4, R:-2)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-2, Q:3, R:-1)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-2, Q:2, R:0)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-2, Q:1, R:1)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-2, Q:0, R:2)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-2, Q:-1, R:3)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-2, Q:-2, R:4)":{biomeID:0,tileTypeID:1,tileID:0}"(P:-2, Q:-3, R:5)":{biomeID:0,tileTypeID:1,tileID:4}"(P:-1, Q:5, R:-4)":{biomeID:0,tileTypeID:1,tileID:4}"(P:-1, Q:4, R:-3)":{biomeID:0,tileTypeID:1,tileID:0}"(P:-1, Q:3, R:-2)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-1, Q:2, R:-1)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-1, Q:1, R:0)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-1, Q:0, R:1)":{biomeID:0,tileTypeID:1,tileID:0}"(P:-1, Q:-1, R:2)":{biomeID:0,tileTypeID:1,tileID:0}"(P:-1, Q:-2, R:3)":{biomeID:0,tileTypeID:1,tileID:3}"(P:-1, Q:-3, R:4)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-1, Q:-4, R:5)":{biomeID:0,tileTypeID:1,tileID:0}"(P:0, Q:5, R:-5)":{biomeID:0,tileTypeID:1,tileID:0}"(P:0, Q:4, R:-4)":{biomeID:0,tileTypeID:1,tileID:0}"(P:0, Q:3, R:-3)":{biomeID:0,tileTypeID:1,tileID:3}"(P:0, Q:2, R:-2)":{biomeID:0,tileTypeID:1,tileID:3}"(P:0, Q:1, R:-1)":{biomeID:0,tileTypeID:1,tileID:1}"(P:0, Q:0, R:0)":{biomeID:0,tileTypeID:1,tileID:0}"(P:0, Q:-1, R:1)":{biomeID:0,tileTypeID:1,tileID:1}"(P:0, Q:-2, R:2)":{biomeID:0,tileTypeID:1,tileID:1}"(P:0, Q:-3, R:3)":{biomeID:0,tileTypeID:1,tileID:3}"(P:0, Q:-4, R:4)":{biomeID:0,tileTypeID:1,tileID:2}"(P:0, Q:-5, R:5)":{biomeID:0,tileTypeID:1,tileID:2}"(P:1, Q:4, R:-5)":{biomeID:0,tileTypeID:1,tileID:0}"(P:1, Q:3, R:-4)":{biomeID:0,tileTypeID:1,tileID:3}"(P:1, Q:2, R:-3)":{biomeID:0,tileTypeID:1,tileID:1}"(P:1, Q:1, R:-2)":{biomeID:0,tileTypeID:1,tileID:1}"(P:1, Q:0, R:-1)":{biomeID:0,tileTypeID:1,tileID:4}"(P:1, Q:-1, R:0)":{biomeID:0,tileTypeID:1,tileID:1}"(P:1, Q:-2, R:1)":{biomeID:0,tileTypeID:1,tileID:0}"(P:1, Q:-3, R:2)":{biomeID:0,tileTypeID:1,tileID:4}"(P:1, Q:-4, R:3)":{biomeID:0,tileTypeID:1,tileID:4}"(P:1, Q:-5, R:4)":{biomeID:0,tileTypeID:1,tileID:0}"(P:2, Q:3, R:-5)":{biomeID:0,tileTypeID:1,tileID:1}"(P:2, Q:2, R:-4)":{biomeID:0,tileTypeID:1,tileID:0}"(P:2, Q:1, R:-3)":{biomeID:0,tileTypeID:1,tileID:2}"(P:2, Q:0, R:-2)":{biomeID:0,tileTypeID:1,tileID:1}"(P:2, Q:-1, R:-1)":{biomeID:0,tileTypeID:1,tileID:0}"(P:2, Q:-2, R:0)":{biomeID:0,tileTypeID:1,tileID:0}"(P:2, Q:-3, R:1)":{biomeID:0,tileTypeID:1,tileID:4}"(P:2, Q:-4, R:2)":{biomeID:0,tileTypeID:1,tileID:0}"(P:2, Q:-5, R:3)":{biomeID:0,tileTypeID:1,tileID:4}"(P:3, Q:2, R:-5)":{biomeID:0,tileTypeID:1,tileID:4}"(P:3, Q:1, R:-4)":{biomeID:0,tileTypeID:1,tileID:1}"(P:3, Q:0, R:-3)":{biomeID:0,tileTypeID:1,tileID:4}"(P:3, Q:-1, R:-2)":{biomeID:0,tileTypeID:1,tileID:4}"(P:3, Q:-2, R:-1)":{biomeID:0,tileTypeID:1,tileID:2}"(P:3, Q:-3, R:0)":{biomeID:0,tileTypeID:1,tileID:3}"(P:3, Q:-4, R:1)":{biomeID:0,tileTypeID:1,tileID:3}"(P:3, Q:-5, R:2)":{biomeID:0,tileTypeID:1,tileID:3}"(P:4, Q:1, R:-5)":{biomeID:0,tileTypeID:1,tileID:1}"(P:4, Q:0, R:-4)":{biomeID:0,tileTypeID:1,tileID:3}"(P:4, Q:-1, R:-3)":{biomeID:0,tileTypeID:1,tileID:2}"(P:4, Q:-2, R:-2)":{biomeID:0,tileTypeID:1,tileID:4}"(P:4, Q:-3, R:-1)":{biomeID:0,tileTypeID:1,tileID:4}"(P:4, Q:-4, R:0)":{biomeID:0,tileTypeID:1,tileID:2}"(P:4, Q:-5, R:1)":{biomeID:0,tileTypeID:1,tileID:3}"(P:5, Q:0, R:-5)":{biomeID:0,tileTypeID:1,tileID:4}"(P:5, Q:-1, R:-4)":{biomeID:0,tileTypeID:1,tileID:1}"(P:5, Q:-2, R:-3)":{biomeID:0,tileTypeID:1,tileID:2}"(P:5, Q:-3, R:-2)":{biomeID:0,tileTypeID:1,tileID:1}"(P:5, Q:-4, R:-1)":{biomeID:0,tileTypeID:1,tileID:3}"(P:5, Q:-5, R:0)":{biomeID:0,tileTypeID:1,tileID:3},
+-----
+
+Debug & 08:00:35.496
+          Old Dungeon Data Deleted
+-----
+
+Debug & 08:00:35.497
+          Dungeon Data Saved
+-----
+
+Debug & 08:00:35.500
+          Save Dungeon
+-----
+
+Debug & 08:00:35.515
+          Dungeon Data Serialized:
+-----
+
+Debug & 08:00:35.516
+          {chunkaddr:(P:0, Q:0, R:0)}{"(P:-5, Q:5, R:0)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-5, Q:4, R:1)":{biomeID:0,tileTypeID:1,tileID:0}"(P:-5, Q:3, R:2)":{biomeID:0,tileTypeID:1,tileID:0}"(P:-5, Q:2, R:3)":{biomeID:0,tileTypeID:1,tileID:3}"(P:-5, Q:1, R:4)":{biomeID:0,tileTypeID:1,tileID:3}"(P:-5, Q:0, R:5)":{biomeID:0,tileTypeID:1,tileID:3}"(P:-4, Q:5, R:-1)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-4, Q:4, R:0)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-4, Q:3, R:1)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-4, Q:2, R:2)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-4, Q:1, R:3)":{biomeID:0,tileTypeID:1,tileID:0}"(P:-4, Q:0, R:4)":{biomeID:0,tileTypeID:1,tileID:4}"(P:-4, Q:-1, R:5)":{biomeID:0,tileTypeID:1,tileID:3}"(P:-3, Q:5, R:-2)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-3, Q:4, R:-1)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-3, Q:3, R:0)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-3, Q:2, R:1)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-3, Q:1, R:2)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-3, Q:0, R:3)":{biomeID:0,tileTypeID:1,tileID:4}"(P:-3, Q:-1, R:4)":{biomeID:0,tileTypeID:1,tileID:4}"(P:-3, Q:-2, R:5)":{biomeID:0,tileTypeID:1,tileID:3}"(P:-2, Q:5, R:-3)":{biomeID:0,tileTypeID:1,tileID:3}"(P:-2, Q:4, R:-2)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-2, Q:3, R:-1)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-2, Q:2, R:0)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-2, Q:1, R:1)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-2, Q:0, R:2)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-2, Q:-1, R:3)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-2, Q:-2, R:4)":{biomeID:0,tileTypeID:1,tileID:0}"(P:-2, Q:-3, R:5)":{biomeID:0,tileTypeID:1,tileID:4}"(P:-1, Q:5, R:-4)":{biomeID:0,tileTypeID:1,tileID:4}"(P:-1, Q:4, R:-3)":{biomeID:0,tileTypeID:1,tileID:0}"(P:-1, Q:3, R:-2)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-1, Q:2, R:-1)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-1, Q:1, R:0)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-1, Q:0, R:1)":{biomeID:0,tileTypeID:1,tileID:0}"(P:-1, Q:-1, R:2)":{biomeID:0,tileTypeID:1,tileID:0}"(P:-1, Q:-2, R:3)":{biomeID:0,tileTypeID:1,tileID:3}"(P:-1, Q:-3, R:4)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-1, Q:-4, R:5)":{biomeID:0,tileTypeID:1,tileID:0}"(P:0, Q:5, R:-5)":{biomeID:0,tileTypeID:1,tileID:0}"(P:0, Q:4, R:-4)":{biomeID:0,tileTypeID:1,tileID:0}"(P:0, Q:3, R:-3)":{biomeID:0,tileTypeID:1,tileID:3}"(P:0, Q:2, R:-2)":{biomeID:0,tileTypeID:1,tileID:3}"(P:0, Q:1, R:-1)":{biomeID:0,tileTypeID:1,tileID:1}"(P:0, Q:0, R:0)":{biomeID:0,tileTypeID:1,tileID:0}"(P:0, Q:-1, R:1)":{biomeID:0,tileTypeID:1,tileID:1}"(P:0, Q:-2, R:2)":{biomeID:0,tileTypeID:1,tileID:1}"(P:0, Q:-3, R:3)":{biomeID:0,tileTypeID:1,tileID:3}"(P:0, Q:-4, R:4)":{biomeID:0,tileTypeID:1,tileID:2}"(P:0, Q:-5, R:5)":{biomeID:0,tileTypeID:1,tileID:2}"(P:1, Q:4, R:-5)":{biomeID:0,tileTypeID:1,tileID:0}"(P:1, Q:3, R:-4)":{biomeID:0,tileTypeID:1,tileID:3}"(P:1, Q:2, R:-3)":{biomeID:0,tileTypeID:1,tileID:1}"(P:1, Q:1, R:-2)":{biomeID:0,tileTypeID:1,tileID:1}"(P:1, Q:0, R:-1)":{biomeID:0,tileTypeID:1,tileID:4}"(P:1, Q:-1, R:0)":{biomeID:0,tileTypeID:1,tileID:1}"(P:1, Q:-2, R:1)":{biomeID:0,tileTypeID:1,tileID:0}"(P:1, Q:-3, R:2)":{biomeID:0,tileTypeID:1,tileID:4}"(P:1, Q:-4, R:3)":{biomeID:0,tileTypeID:1,tileID:4}"(P:1, Q:-5, R:4)":{biomeID:0,tileTypeID:1,tileID:0}"(P:2, Q:3, R:-5)":{biomeID:0,tileTypeID:1,tileID:1}"(P:2, Q:2, R:-4)":{biomeID:0,tileTypeID:1,tileID:0}"(P:2, Q:1, R:-3)":{biomeID:0,tileTypeID:1,tileID:2}"(P:2, Q:0, R:-2)":{biomeID:0,tileTypeID:1,tileID:1}"(P:2, Q:-1, R:-1)":{biomeID:0,tileTypeID:1,tileID:0}"(P:2, Q:-2, R:0)":{biomeID:0,tileTypeID:1,tileID:0}"(P:2, Q:-3, R:1)":{biomeID:0,tileTypeID:1,tileID:4}"(P:2, Q:-4, R:2)":{biomeID:0,tileTypeID:1,tileID:0}"(P:2, Q:-5, R:3)":{biomeID:0,tileTypeID:1,tileID:4}"(P:3, Q:2, R:-5)":{biomeID:0,tileTypeID:1,tileID:4}"(P:3, Q:1, R:-4)":{biomeID:0,tileTypeID:1,tileID:1}"(P:3, Q:0, R:-3)":{biomeID:0,tileTypeID:1,tileID:4}"(P:3, Q:-1, R:-2)":{biomeID:0,tileTypeID:1,tileID:4}"(P:3, Q:-2, R:-1)":{biomeID:0,tileTypeID:1,tileID:2}"(P:3, Q:-3, R:0)":{biomeID:0,tileTypeID:1,tileID:3}"(P:3, Q:-4, R:1)":{biomeID:0,tileTypeID:1,tileID:3}"(P:3, Q:-5, R:2)":{biomeID:0,tileTypeID:1,tileID:3}"(P:4, Q:1, R:-5)":{biomeID:0,tileTypeID:1,tileID:1}"(P:4, Q:0, R:-4)":{biomeID:0,tileTypeID:1,tileID:3}"(P:4, Q:-1, R:-3)":{biomeID:0,tileTypeID:1,tileID:2}"(P:4, Q:-2, R:-2)":{biomeID:0,tileTypeID:1,tileID:4}"(P:4, Q:-3, R:-1)":{biomeID:0,tileTypeID:1,tileID:4}"(P:4, Q:-4, R:0)":{biomeID:0,tileTypeID:1,tileID:2}"(P:4, Q:-5, R:1)":{biomeID:0,tileTypeID:1,tileID:3}"(P:5, Q:0, R:-5)":{biomeID:0,tileTypeID:1,tileID:4}"(P:5, Q:-1, R:-4)":{biomeID:0,tileTypeID:1,tileID:1}"(P:5, Q:-2, R:-3)":{biomeID:0,tileTypeID:1,tileID:2}"(P:5, Q:-3, R:-2)":{biomeID:0,tileTypeID:1,tileID:1}"(P:5, Q:-4, R:-1)":{biomeID:0,tileTypeID:1,tileID:3}"(P:5, Q:-5, R:0)":{biomeID:0,tileTypeID:1,tileID:3},
+-----
+
+Debug & 08:00:35.517
+          Old Dungeon Data Deleted
+-----
+
+Debug & 08:00:35.517
+          Dungeon Data Saved
+-----
+
+Debug & 08:00:35.522
+          Save Dungeon
+-----
+
+Debug & 08:00:35.523
+          Dungeon Data Serialized:
+-----
+
+Debug & 08:00:35.524
+          {chunkaddr:(P:0, Q:0, R:0)}{"(P:-5, Q:5, R:0)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-5, Q:4, R:1)":{biomeID:0,tileTypeID:1,tileID:0}"(P:-5, Q:3, R:2)":{biomeID:0,tileTypeID:1,tileID:0}"(P:-5, Q:2, R:3)":{biomeID:0,tileTypeID:1,tileID:3}"(P:-5, Q:1, R:4)":{biomeID:0,tileTypeID:1,tileID:3}"(P:-5, Q:0, R:5)":{biomeID:0,tileTypeID:1,tileID:3}"(P:-4, Q:5, R:-1)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-4, Q:4, R:0)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-4, Q:3, R:1)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-4, Q:2, R:2)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-4, Q:1, R:3)":{biomeID:0,tileTypeID:1,tileID:0}"(P:-4, Q:0, R:4)":{biomeID:0,tileTypeID:1,tileID:4}"(P:-4, Q:-1, R:5)":{biomeID:0,tileTypeID:1,tileID:3}"(P:-3, Q:5, R:-2)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-3, Q:4, R:-1)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-3, Q:3, R:0)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-3, Q:2, R:1)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-3, Q:1, R:2)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-3, Q:0, R:3)":{biomeID:0,tileTypeID:1,tileID:4}"(P:-3, Q:-1, R:4)":{biomeID:0,tileTypeID:1,tileID:4}"(P:-3, Q:-2, R:5)":{biomeID:0,tileTypeID:1,tileID:3}"(P:-2, Q:5, R:-3)":{biomeID:0,tileTypeID:1,tileID:3}"(P:-2, Q:4, R:-2)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-2, Q:3, R:-1)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-2, Q:2, R:0)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-2, Q:1, R:1)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-2, Q:0, R:2)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-2, Q:-1, R:3)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-2, Q:-2, R:4)":{biomeID:0,tileTypeID:1,tileID:0}"(P:-2, Q:-3, R:5)":{biomeID:0,tileTypeID:1,tileID:4}"(P:-1, Q:5, R:-4)":{biomeID:0,tileTypeID:1,tileID:4}"(P:-1, Q:4, R:-3)":{biomeID:0,tileTypeID:1,tileID:0}"(P:-1, Q:3, R:-2)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-1, Q:2, R:-1)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-1, Q:1, R:0)":{biomeID:0,tileTypeID:1,tileID:1}"(P:-1, Q:0, R:1)":{biomeID:0,tileTypeID:1,tileID:0}"(P:-1, Q:-1, R:2)":{biomeID:0,tileTypeID:1,tileID:0}"(P:-1, Q:-2, R:3)":{biomeID:0,tileTypeID:1,tileID:3}"(P:-1, Q:-3, R:4)":{biomeID:0,tileTypeID:1,tileID:2}"(P:-1, Q:-4, R:5)":{biomeID:0,tileTypeID:1,tileID:0}"(P:0, Q:5, R:-5)":{biomeID:0,tileTypeID:1,tileID:0}"(P:0, Q:4, R:-4)":{biomeID:0,tileTypeID:1,tileID:0}"(P:0, Q:3, R:-3)":{biomeID:0,tileTypeID:1,tileID:3}"(P:0, Q:2, R:-2)":{biomeID:0,tileTypeID:1,tileID:3}"(P:0, Q:1, R:-1)":{biomeID:0,tileTypeID:1,tileID:1}"(P:0, Q:0, R:0)":{biomeID:0,tileTypeID:1,tileID:0}"(P:0, Q:-1, R:1)":{biomeID:0,tileTypeID:1,tileID:1}"(P:0, Q:-2, R:2)":{biomeID:0,tileTypeID:1,tileID:1}"(P:0, Q:-3, R:3)":{biomeID:0,tileTypeID:1,tileID:3}"(P:0, Q:-4, R:4)":{biomeID:0,tileTypeID:1,tileID:2}"(P:0, Q:-5, R:5)":{biomeID:0,tileTypeID:1,tileID:2}"(P:1, Q:4, R:-5)":{biomeID:0,tileTypeID:1,tileID:0}"(P:1, Q:3, R:-4)":{biomeID:0,tileTypeID:1,tileID:3}"(P:1, Q:2, R:-3)":{biomeID:0,tileTypeID:1,tileID:1}"(P:1, Q:1, R:-2)":{biomeID:0,tileTypeID:1,tileID:1}"(P:1, Q:0, R:-1)":{biomeID:0,tileTypeID:1,tileID:4}"(P:1, Q:-1, R:0)":{biomeID:0,tileTypeID:1,tileID:1}"(P:1, Q:-2, R:1)":{biomeID:0,tileTypeID:1,tileID:0}"(P:1, Q:-3, R:2)":{biomeID:0,tileTypeID:1,tileID:4}"(P:1, Q:-4, R:3)":{biomeID:0,tileTypeID:1,tileID:4}"(P:1, Q:-5, R:4)":{biomeID:0,tileTypeID:1,tileID:0}"(P:2, Q:3, R:-5)":{biomeID:0,tileTypeID:1,tileID:1}"(P:2, Q:2, R:-4)":{biomeID:0,tileTypeID:1,tileID:0}"(P:2, Q:1, R:-3)":{biomeID:0,tileTypeID:1,tileID:2}"(P:2, Q:0, R:-2)":{biomeID:0,tileTypeID:1,tileID:1}"(P:2, Q:-1, R:-1)":{biomeID:0,tileTypeID:1,tileID:0}"(P:2, Q:-2, R:0)":{biomeID:0,tileTypeID:1,tileID:0}"(P:2, Q:-3, R:1)":{biomeID:0,tileTypeID:1,tileID:4}"(P:2, Q:-4, R:2)":{biomeID:0,tileTypeID:1,tileID:0}"(P:2, Q:-5, R:3)":{biomeID:0,tileTypeID:1,tileID:4}"(P:3, Q:2, R:-5)":{biomeID:0,tileTypeID:1,tileID:4}"(P:3, Q:1, R:-4)":{biomeID:0,tileTypeID:1,tileID:1}"(P:3, Q:0, R:-3)":{biomeID:0,tileTypeID:1,tileID:4}"(P:3, Q:-1, R:-2)":{biomeID:0,tileTypeID:1,tileID:4}"(P:3, Q:-2, R:-1)":{biomeID:0,tileTypeID:1,tileID:2}"(P:3, Q:-3, R:0)":{biomeID:0,tileTypeID:1,tileID:3}"(P:3, Q:-4, R:1)":{biomeID:0,tileTypeID:1,tileID:3}"(P:3, Q:-5, R:2)":{biomeID:0,tileTypeID:1,tileID:3}"(P:4, Q:1, R:-5)":{biomeID:0,tileTypeID:1,tileID:1}"(P:4, Q:0, R:-4)":{biomeID:0,tileTypeID:1,tileID:3}"(P:4, Q:-1, R:-3)":{biomeID:0,tileTypeID:1,tileID:2}"(P:4, Q:-2, R:-2)":{biomeID:0,tileTypeID:1,tileID:4}"(P:4, Q:-3, R:-1)":{biomeID:0,tileTypeID:1,tileID:4}"(P:4, Q:-4, R:0)":{biomeID:0,tileTypeID:1,tileID:2}"(P:4, Q:-5, R:1)":{biomeID:0,tileTypeID:1,tileID:3}"(P:5, Q:0, R:-5)":{biomeID:0,tileTypeID:1,tileID:4}"(P:5, Q:-1, R:-4)":{biomeID:0,tileTypeID:1,tileID:1}"(P:5, Q:-2, R:-3)":{biomeID:0,tileTypeID:1,tileID:2}"(P:5, Q:-3, R:-2)":{biomeID:0,tileTypeID:1,tileID:1}"(P:5, Q:-4, R:-1)":{biomeID:0,tileTypeID:1,tileID:3}"(P:5, Q:-5, R:0)":{biomeID:0,tileTypeID:1,tileID:3},
+-----
+
+Debug & 08:00:35.524
+          Old Dungeon Data Deleted
+-----
+
+Debug & 08:00:35.525
+          Dungeon Data Saved
+-----
+
+Info & 08:03:11.574
+          Logger initiated
+-----
+
+Info & 08:03:11.575
+          GameManager: ON
+-----
+
+Info & 08:03:11.577
+          Logger: ON
+-----
+
+Info & 08:03:11.578
+          Config Manager: ON
+-----
+
+Info & 08:03:11.578
+          Clocker: ON
+-----
+
+Info & 08:03:11.637
+          Config init: D:/[ CODEE ]/[ GITTED ]/InnerSpace/Assets/Settings/innser_space_cfg.json
+-----
+
+Info & 08:03:11.638
+          Config loaded
+-----
+
+Info & 08:03:11.640
+          ConfigData
+-----
+
+Info & 08:03:11.640
+          Chunk size: 0
+-----
+
+Info & 08:04:33.274
+          Logger initiated
+-----
+
+Info & 08:04:33.276
+          GameManager: ON
+-----
+
+Info & 08:04:33.277
+          Logger: ON
+-----
+
+Info & 08:04:33.278
+          Config Manager: ON
+-----
+
+Info & 08:04:33.278
+          Clocker: ON
+-----
+
+Info & 08:04:33.336
+          Config init: D:/[ CODEE ]/[ GITTED ]/InnerSpace/Assets/Settings/innser_space_cfg.json
+-----
+
+Info & 08:04:33.337
+          Config loaded
+-----
+
+Info & 08:04:33.337
+          ConfigData
+-----
+
+Info & 08:04:33.338
+          Chunk size: 0
+-----
+
+Info & 08:06:32.628
+          Logger initiated
+-----
+
+Info & 08:06:32.629
+          GameManager: ON
+-----
+
+Info & 08:06:32.631
+          Logger: ON
+-----
+
+Info & 08:06:32.631
+          Config Manager: ON
+-----
+
+Info & 08:06:32.632
+          Clocker: ON
+-----
+
+Info & 08:06:32.693
+          Config init: D:/[ CODEE ]/[ GITTED ]/InnerSpace/Assets/Settings/innser_space_cfg.json
+-----
+
+Info & 08:06:32.694
+          Config loaded
+-----
+
+Info & 08:06:32.695
+          ConfigData
+-----
+
+Info & 08:06:32.695
+          Chunk size: 0
+-----
+
+Info & 08:07:03.114
+          Logger initiated
+-----
+
+Info & 08:07:03.115
+          GameManager: ON
+-----
+
+Info & 08:07:03.117
+          Logger: ON
+-----
+
+Info & 08:07:03.118
+          Config Manager: ON
+-----
+
+Info & 08:07:03.118
+          Clocker: ON
+-----
+
+Info & 08:07:03.177
+          Config init: D:/[ CODEE ]/[ GITTED ]/InnerSpace/Assets/Settings/innser_space_cfg.json
+-----
+
+Info & 08:07:03.179
+          Config loaded
+-----
+
+Info & 08:07:03.179
+          ConfigData
+-----
+
+Info & 08:07:03.180
+          Chunk size: 0
+-----
+
+Info & 08:12:15.835
+          Logger initiated
+-----
+
+Info & 08:12:15.836
+          GameManager: ON
+-----
+
+Info & 08:12:15.839
+          Logger: ON
+-----
+
+Info & 08:12:15.839
+          Config Manager: ON
+-----
+
+Info & 08:12:15.840
+          Clocker: ON
+-----
+
+Info & 08:12:15.905
+          Config init: D:/[ CODEE ]/[ GITTED ]/InnerSpace/Assets/Settings/innser_space_cfg.json
+-----
+
+Info & 08:12:15.906
+          Config loaded
+-----
+
+Info & 08:12:15.907
+          ConfigData
+-----
+
+Info & 08:12:15.907
+          Chunk size: 0
+-----
+
+Info & 08:12:58.320
+          Chunk generated with 91 tiles
+-----
+
+Debug & 08:12:58.321
+          pqr: -5,5,0
+-----
+
+Debug & 08:12:58.322
+          pqr: -5,4,1
+-----
+
+Debug & 08:12:58.322
+          pqr: -5,3,2
+-----
+
+Debug & 08:12:58.322
+          pqr: -5,2,3
+-----
+
+Debug & 08:12:58.323
+          pqr: -5,1,4
+-----
+
+Debug & 08:12:58.323
+          pqr: -5,0,5
+-----
+
+Debug & 08:12:58.323
+          pqr: -4,5,-1
+-----
+
+Debug & 08:12:58.323
+          pqr: -4,4,0
+-----
+
+Debug & 08:12:58.324
+          pqr: -4,3,1
+-----
+
+Debug & 08:12:58.324
+          pqr: -4,2,2
+-----
+
+Debug & 08:12:58.324
+          pqr: -4,1,3
+-----
+
+Debug & 08:12:58.325
+          pqr: -4,0,4
+-----
+
+Debug & 08:12:58.325
+          pqr: -4,-1,5
+-----
+
+Debug & 08:12:58.325
+          pqr: -3,5,-2
+-----
+
+Debug & 08:12:58.326
+          pqr: -3,4,-1
+-----
+
+Debug & 08:12:58.326
+          pqr: -3,3,0
+-----
+
+Debug & 08:12:58.327
+          pqr: -3,2,1
+-----
+
+Debug & 08:12:58.327
+          pqr: -3,1,2
+-----
+
+Debug & 08:12:58.327
+          pqr: -3,0,3
+-----
+
+Debug & 08:12:58.327
+          pqr: -3,-1,4
+-----
+
+Debug & 08:12:58.328
+          pqr: -3,-2,5
+-----
+
+Debug & 08:12:58.328
+          pqr: -2,5,-3
+-----
+
+Debug & 08:12:58.328
+          pqr: -2,4,-2
+-----
+
+Debug & 08:12:58.328
+          pqr: -2,3,-1
+-----
+
+Debug & 08:12:58.329
+          pqr: -2,2,0
+-----
+
+Debug & 08:12:58.329
+          pqr: -2,1,1
+-----
+
+Debug & 08:12:58.329
+          pqr: -2,0,2
+-----
+
+Debug & 08:12:58.330
+          pqr: -2,-1,3
+-----
+
+Debug & 08:12:58.330
+          pqr: -2,-2,4
+-----
+
+Debug & 08:12:58.330
+          pqr: -2,-3,5
+-----
+
+Debug & 08:12:58.330
+          pqr: -1,5,-4
+-----
+
+Debug & 08:12:58.331
+          pqr: -1,4,-3
+-----
+
+Debug & 08:12:58.331
+          pqr: -1,3,-2
+-----
+
+Debug & 08:12:58.331
+          pqr: -1,2,-1
+-----
+
+Debug & 08:12:58.332
+          pqr: -1,1,0
+-----
+
+Debug & 08:12:58.332
+          pqr: -1,0,1
+-----
+
+Debug & 08:12:58.332
+          pqr: -1,-1,2
+-----
+
+Debug & 08:12:58.333
+          pqr: -1,-2,3
+-----
+
+Debug & 08:12:58.333
+          pqr: -1,-3,4
+-----
+
+Debug & 08:12:58.333
+          pqr: -1,-4,5
+-----
+
+Debug & 08:12:58.334
+          pqr: 0,5,-5
+-----
+
+Debug & 08:12:58.335
+          pqr: 0,4,-4
+-----
+
+Debug & 08:12:58.335
+          pqr: 0,3,-3
+-----
+
+Debug & 08:12:58.335
+          pqr: 0,2,-2
+-----
+
+Debug & 08:12:58.335
+          pqr: 0,1,-1
+-----
+
+Debug & 08:12:58.335
+          pqr: 0,0,0
+-----
+
+Debug & 08:12:58.336
+          pqr: 0,-1,1
+-----
+
+Debug & 08:12:58.336
+          pqr: 0,-2,2
+-----
+
+Debug & 08:12:58.336
+          pqr: 0,-3,3
+-----
+
+Debug & 08:12:58.337
+          pqr: 0,-4,4
+-----
+
+Debug & 08:12:58.337
+          pqr: 0,-5,5
+-----
+
+Debug & 08:12:58.337
+          pqr: 1,4,-5
+-----
+
+Debug & 08:12:58.338
+          pqr: 1,3,-4
+-----
+
+Debug & 08:12:58.338
+          pqr: 1,2,-3
+-----
+
+Debug & 08:12:58.338
+          pqr: 1,1,-2
+-----
+
+Debug & 08:12:58.339
+          pqr: 1,0,-1
+-----
+
+Debug & 08:12:58.339
+          pqr: 1,-1,0
+-----
+
+Debug & 08:12:58.339
+          pqr: 1,-2,1
+-----
+
+Debug & 08:12:58.339
+          pqr: 1,-3,2
+-----
+
+Debug & 08:12:58.340
+          pqr: 1,-4,3
+-----
+
+Debug & 08:12:58.340
+          pqr: 1,-5,4
+-----
+
+Debug & 08:12:58.340
+          pqr: 2,3,-5
+-----
+
+Debug & 08:12:58.341
+          pqr: 2,2,-4
+-----
+
+Debug & 08:12:58.341
+          pqr: 2,1,-3
+-----
+
+Debug & 08:12:58.341
+          pqr: 2,0,-2
+-----
+
+Debug & 08:12:58.342
+          pqr: 2,-1,-1
+-----
+
+Debug & 08:12:58.342
+          pqr: 2,-2,0
+-----
+
+Debug & 08:12:58.343
+          pqr: 2,-3,1
+-----
+
+Debug & 08:12:58.343
+          pqr: 2,-4,2
+-----
+
+Debug & 08:12:58.343
+          pqr: 2,-5,3
+-----
+
+Debug & 08:12:58.344
+          pqr: 3,2,-5
+-----
+
+Debug & 08:12:58.344
+          pqr: 3,1,-4
+-----
+
+Debug & 08:12:58.344
+          pqr: 3,0,-3
+-----
+
+Debug & 08:12:58.345
+          pqr: 3,-1,-2
+-----
+
+Debug & 08:12:58.345
+          pqr: 3,-2,-1
+-----
+
+Debug & 08:12:58.345
+          pqr: 3,-3,0
+-----
+
+Debug & 08:12:58.345
+          pqr: 3,-4,1
+-----
+
+Debug & 08:12:58.346
+          pqr: 3,-5,2
+-----
+
+Debug & 08:12:58.346
+          pqr: 4,1,-5
+-----
+
+Debug & 08:12:58.346
+          pqr: 4,0,-4
+-----
+
+Debug & 08:12:58.347
+          pqr: 4,-1,-3
+-----
+
+Debug & 08:12:58.347
+          pqr: 4,-2,-2
+-----
+
+Debug & 08:12:58.347
+          pqr: 4,-3,-1
+-----
+
+Debug & 08:12:58.348
+          pqr: 4,-4,0
+-----
+
+Debug & 08:12:58.348
+          pqr: 4,-5,1
+-----
+
+Debug & 08:12:58.348
+          pqr: 5,0,-5
+-----
+
+Debug & 08:12:58.349
+          pqr: 5,-1,-4
+-----
+
+Debug & 08:12:58.349
+          pqr: 5,-2,-3
+-----
+
+Debug & 08:12:58.350
+          pqr: 5,-3,-2
+-----
+
+Debug & 08:12:58.350
+          pqr: 5,-4,-1
+-----
+
+Debug & 08:12:58.350
+          pqr: 5,-5,0
+-----
+
+Info & 08:13:25.573
+          Logger initiated
+-----
+
+Info & 08:13:25.575
+          GameManager: ON
+-----
+
+Info & 08:13:25.577
+          Logger: ON
+-----
+
+Info & 08:13:25.577
+          Config Manager: ON
+-----
+
+Info & 08:13:25.578
+          Clocker: ON
+-----
+
+Info & 08:13:25.635
+          Config init: D:/[ CODEE ]/[ GITTED ]/InnerSpace/Assets/Settings/innser_space_cfg.json
+-----
+
+Info & 08:13:25.636
+          Config loaded
+-----
+
+Info & 08:13:25.636
+          ConfigData
+-----
+
+Info & 08:13:25.636
+          Chunk size: 0
+-----
+
+Info & 08:13:32.844
+          Chunk generated with 91 tiles
+-----
+
+Debug & 08:13:32.845
+          pqr: -5,5,0
+-----
+
+Debug & 08:13:32.845
+          pqr: -5,4,1
+-----
+
+Debug & 08:13:32.846
+          pqr: -5,3,2
+-----
+
+Debug & 08:13:32.846
+          pqr: -5,2,3
+-----
+
+Debug & 08:13:32.846
+          pqr: -5,1,4
+-----
+
+Debug & 08:13:32.847
+          pqr: -5,0,5
+-----
+
+Debug & 08:13:32.847
+          pqr: -4,5,-1
+-----
+
+Debug & 08:13:32.847
+          pqr: -4,4,0
+-----
+
+Debug & 08:13:32.848
+          pqr: -4,3,1
+-----
+
+Debug & 08:13:32.848
+          pqr: -4,2,2
+-----
+
+Debug & 08:13:32.848
+          pqr: -4,1,3
+-----
+
+Debug & 08:13:32.848
+          pqr: -4,0,4
+-----
+
+Debug & 08:13:32.849
+          pqr: -4,-1,5
+-----
+
+Debug & 08:13:32.849
+          pqr: -3,5,-2
+-----
+
+Debug & 08:13:32.849
+          pqr: -3,4,-1
+-----
+
+Debug & 08:13:32.850
+          pqr: -3,3,0
+-----
+
+Debug & 08:13:32.850
+          pqr: -3,2,1
+-----
+
+Debug & 08:13:32.850
+          pqr: -3,1,2
+-----
+
+Debug & 08:13:32.851
+          pqr: -3,0,3
+-----
+
+Debug & 08:13:32.851
+          pqr: -3,-1,4
+-----
+
+Debug & 08:13:32.851
+          pqr: -3,-2,5
+-----
+
+Debug & 08:13:32.852
+          pqr: -2,5,-3
+-----
+
+Debug & 08:13:32.852
+          pqr: -2,4,-2
+-----
+
+Debug & 08:13:32.852
+          pqr: -2,3,-1
+-----
+
+Debug & 08:13:32.852
+          pqr: -2,2,0
+-----
+
+Debug & 08:13:32.853
+          pqr: -2,1,1
+-----
+
+Debug & 08:13:32.853
+          pqr: -2,0,2
+-----
+
+Debug & 08:13:32.853
+          pqr: -2,-1,3
+-----
+
+Debug & 08:13:32.854
+          pqr: -2,-2,4
+-----
+
+Debug & 08:13:32.854
+          pqr: -2,-3,5
+-----
+
+Debug & 08:13:32.854
+          pqr: -1,5,-4
+-----
+
+Debug & 08:13:32.854
+          pqr: -1,4,-3
+-----
+
+Debug & 08:13:32.854
+          pqr: -1,3,-2
+-----
+
+Debug & 08:13:32.854
+          pqr: -1,2,-1
+-----
+
+Debug & 08:13:32.855
+          pqr: -1,1,0
+-----
+
+Debug & 08:13:32.855
+          pqr: -1,0,1
+-----
+
+Debug & 08:13:32.855
+          pqr: -1,-1,2
+-----
+
+Debug & 08:13:32.856
+          pqr: -1,-2,3
+-----
+
+Debug & 08:13:32.856
+          pqr: -1,-3,4
+-----
+
+Debug & 08:13:32.856
+          pqr: -1,-4,5
+-----
+
+Debug & 08:13:32.857
+          pqr: 0,5,-5
+-----
+
+Debug & 08:13:32.857
+          pqr: 0,4,-4
+-----
+
+Debug & 08:13:32.857
+          pqr: 0,3,-3
+-----
+
+Debug & 08:13:32.857
+          pqr: 0,2,-2
+-----
+
+Debug & 08:13:32.858
+          pqr: 0,1,-1
+-----
+
+Debug & 08:13:32.858
+          pqr: 0,0,0
+-----
+
+Debug & 08:13:32.858
+          pqr: 0,-1,1
+-----
+
+Debug & 08:13:32.859
+          pqr: 0,-2,2
+-----
+
+Debug & 08:13:32.859
+          pqr: 0,-3,3
+-----
+
+Debug & 08:13:32.859
+          pqr: 0,-4,4
+-----
+
+Debug & 08:13:32.860
+          pqr: 0,-5,5
+-----
+
+Debug & 08:13:32.860
+          pqr: 1,4,-5
+-----
+
+Debug & 08:13:32.860
+          pqr: 1,3,-4
+-----
+
+Debug & 08:13:32.861
+          pqr: 1,2,-3
+-----
+
+Debug & 08:13:32.861
+          pqr: 1,1,-2
+-----
+
+Debug & 08:13:32.861
+          pqr: 1,0,-1
+-----
+
+Debug & 08:13:32.862
+          pqr: 1,-1,0
+-----
+
+Debug & 08:13:32.862
+          pqr: 1,-2,1
+-----
+
+Debug & 08:13:32.862
+          pqr: 1,-3,2
+-----
+
+Debug & 08:13:32.863
+          pqr: 1,-4,3
+-----
+
+Debug & 08:13:32.863
+          pqr: 1,-5,4
+-----
+
+Debug & 08:13:32.863
+          pqr: 2,3,-5
+-----
+
+Debug & 08:13:32.863
+          pqr: 2,2,-4
+-----
+
+Debug & 08:13:32.864
+          pqr: 2,1,-3
+-----
+
+Debug & 08:13:32.864
+          pqr: 2,0,-2
+-----
+
+Debug & 08:13:32.864
+          pqr: 2,-1,-1
+-----
+
+Debug & 08:13:32.865
+          pqr: 2,-2,0
+-----
+
+Debug & 08:13:32.865
+          pqr: 2,-3,1
+-----
+
+Debug & 08:13:32.865
+          pqr: 2,-4,2
+-----
+
+Debug & 08:13:32.866
+          pqr: 2,-5,3
+-----
+
+Debug & 08:13:32.866
+          pqr: 3,2,-5
+-----
+
+Debug & 08:13:32.866
+          pqr: 3,1,-4
+-----
+
+Debug & 08:13:32.867
+          pqr: 3,0,-3
+-----
+
+Debug & 08:13:32.867
+          pqr: 3,-1,-2
+-----
+
+Debug & 08:13:32.867
+          pqr: 3,-2,-1
+-----
+
+Debug & 08:13:32.868
+          pqr: 3,-3,0
+-----
+
+Debug & 08:13:32.868
+          pqr: 3,-4,1
+-----
+
+Debug & 08:13:32.868
+          pqr: 3,-5,2
+-----
+
+Debug & 08:13:32.869
+          pqr: 4,1,-5
+-----
+
+Debug & 08:13:32.869
+          pqr: 4,0,-4
+-----
+
+Debug & 08:13:32.870
+          pqr: 4,-1,-3
+-----
+
+Debug & 08:13:32.871
+          pqr: 4,-2,-2
+-----
+
+Debug & 08:13:32.871
+          pqr: 4,-3,-1
+-----
+
+Debug & 08:13:32.872
+          pqr: 4,-4,0
+-----
+
+Debug & 08:13:32.872
+          pqr: 4,-5,1
+-----
+
+Debug & 08:13:32.872
+          pqr: 5,0,-5
+-----
+
+Debug & 08:13:32.873
+          pqr: 5,-1,-4
+-----
+
+Debug & 08:13:32.873
+          pqr: 5,-2,-3
+-----
+
+Debug & 08:13:32.873
+          pqr: 5,-3,-2
+-----
+
+Debug & 08:13:32.874
+          pqr: 5,-4,-1
+-----
+
+Debug & 08:13:32.874
+          pqr: 5,-5,0
+-----
+
+Debug & 08:13:37.095
+          Save Dungeon
+-----
+
+Debug & 08:13:37.098
+          Dungeon Data Serialized:
+-----
+
+Debug & 08:13:37.099
+          XXX/{chunkaddr:0,0,0}{"-5,5,0":{biomeID:0,tileTypeID:0,tileID:4}"-5,4,1":{biomeID:0,tileTypeID:0,tileID:3}"-5,3,2":{biomeID:0,tileTypeID:0,tileID:1}"-5,2,3":{biomeID:0,tileTypeID:0,tileID:1}"-5,1,4":{biomeID:0,tileTypeID:0,tileID:0}"-5,0,5":{biomeID:0,tileTypeID:0,tileID:1}"-4,5,-1":{biomeID:0,tileTypeID:0,tileID:3}"-4,4,0":{biomeID:0,tileTypeID:0,tileID:2}"-4,3,1":{biomeID:0,tileTypeID:0,tileID:2}"-4,2,2":{biomeID:0,tileTypeID:0,tileID:1}"-4,1,3":{biomeID:0,tileTypeID:0,tileID:3}"-4,0,4":{biomeID:0,tileTypeID:0,tileID:2}"-4,-1,5":{biomeID:0,tileTypeID:0,tileID:3}"-3,5,-2":{biomeID:0,tileTypeID:0,tileID:2}"-3,4,-1":{biomeID:0,tileTypeID:0,tileID:2}"-3,3,0":{biomeID:0,tileTypeID:0,tileID:2}"-3,2,1":{biomeID:0,tileTypeID:0,tileID:4}"-3,1,2":{biomeID:0,tileTypeID:0,tileID:1}"-3,0,3":{biomeID:0,tileTypeID:0,tileID:0}"-3,-1,4":{biomeID:0,tileTypeID:0,tileID:1}"-3,-2,5":{biomeID:0,tileTypeID:0,tileID:3}"-2,5,-3":{biomeID:0,tileTypeID:0,tileID:0}"-2,4,-2":{biomeID:0,tileTypeID:0,tileID:0}"-2,3,-1":{biomeID:0,tileTypeID:0,tileID:0}"-2,2,0":{biomeID:0,tileTypeID:0,tileID:1}"-2,1,1":{biomeID:0,tileTypeID:0,tileID:0}"-2,0,2":{biomeID:0,tileTypeID:0,tileID:3}"-2,-1,3":{biomeID:0,tileTypeID:0,tileID:3}"-2,-2,4":{biomeID:0,tileTypeID:0,tileID:3}"-2,-3,5":{biomeID:0,tileTypeID:0,tileID:3}"-1,5,-4":{biomeID:0,tileTypeID:0,tileID:0}"-1,4,-3":{biomeID:0,tileTypeID:0,tileID:3}"-1,3,-2":{biomeID:0,tileTypeID:0,tileID:4}"-1,2,-1":{biomeID:0,tileTypeID:0,tileID:1}"-1,1,0":{biomeID:0,tileTypeID:0,tileID:3}"-1,0,1":{biomeID:0,tileTypeID:0,tileID:1}"-1,-1,2":{biomeID:0,tileTypeID:0,tileID:4}"-1,-2,3":{biomeID:0,tileTypeID:0,tileID:2}"-1,-3,4":{biomeID:0,tileTypeID:0,tileID:2}"-1,-4,5":{biomeID:0,tileTypeID:0,tileID:3}"0,5,-5":{biomeID:0,tileTypeID:0,tileID:4}"0,4,-4":{biomeID:0,tileTypeID:0,tileID:3}"0,3,-3":{biomeID:0,tileTypeID:0,tileID:3}"0,2,-2":{biomeID:0,tileTypeID:0,tileID:1}"0,1,-1":{biomeID:0,tileTypeID:0,tileID:4}"0,0,0":{biomeID:0,tileTypeID:0,tileID:4}"0,-1,1":{biomeID:0,tileTypeID:0,tileID:2}"0,-2,2":{biomeID:0,tileTypeID:0,tileID:3}"0,-3,3":{biomeID:0,tileTypeID:0,tileID:2}"0,-4,4":{biomeID:0,tileTypeID:0,tileID:4}"0,-5,5":{biomeID:0,tileTypeID:0,tileID:3}"1,4,-5":{biomeID:0,tileTypeID:0,tileID:2}"1,3,-4":{biomeID:0,tileTypeID:0,tileID:0}"1,2,-3":{biomeID:0,tileTypeID:0,tileID:4}"1,1,-2":{biomeID:0,tileTypeID:0,tileID:2}"1,0,-1":{biomeID:0,tileTypeID:0,tileID:2}"1,-1,0":{biomeID:0,tileTypeID:0,tileID:2}"1,-2,1":{biomeID:0,tileTypeID:0,tileID:3}"1,-3,2":{biomeID:0,tileTypeID:0,tileID:1}"1,-4,3":{biomeID:0,tileTypeID:0,tileID:0}"1,-5,4":{biomeID:0,tileTypeID:0,tileID:4}"2,3,-5":{biomeID:0,tileTypeID:0,tileID:0}"2,2,-4":{biomeID:0,tileTypeID:0,tileID:2}"2,1,-3":{biomeID:0,tileTypeID:0,tileID:2}"2,0,-2":{biomeID:0,tileTypeID:0,tileID:1}"2,-1,-1":{biomeID:0,tileTypeID:0,tileID:1}"2,-2,0":{biomeID:0,tileTypeID:0,tileID:3}"2,-3,1":{biomeID:0,tileTypeID:0,tileID:3}"2,-4,2":{biomeID:0,tileTypeID:0,tileID:2}"2,-5,3":{biomeID:0,tileTypeID:0,tileID:0}"3,2,-5":{biomeID:0,tileTypeID:0,tileID:3}"3,1,-4":{biomeID:0,tileTypeID:0,tileID:0}"3,0,-3":{biomeID:0,tileTypeID:0,tileID:3}"3,-1,-2":{biomeID:0,tileTypeID:0,tileID:0}"3,-2,-1":{biomeID:0,tileTypeID:0,tileID:4}"3,-3,0":{biomeID:0,tileTypeID:0,tileID:1}"3,-4,1":{biomeID:0,tileTypeID:0,tileID:2}"3,-5,2":{biomeID:0,tileTypeID:0,tileID:1}"4,1,-5":{biomeID:0,tileTypeID:0,tileID:0}"4,0,-4":{biomeID:0,tileTypeID:0,tileID:0}"4,-1,-3":{biomeID:0,tileTypeID:0,tileID:2}"4,-2,-2":{biomeID:0,tileTypeID:0,tileID:2}"4,-3,-1":{biomeID:0,tileTypeID:0,tileID:1}"4,-4,0":{biomeID:0,tileTypeID:0,tileID:4}"4,-5,1":{biomeID:0,tileTypeID:0,tileID:0}"5,0,-5":{biomeID:0,tileTypeID:0,tileID:0}"5,-1,-4":{biomeID:0,tileTypeID:0,tileID:4}"5,-2,-3":{biomeID:0,tileTypeID:0,tileID:1}"5,-3,-2":{biomeID:0,tileTypeID:0,tileID:2}"5,-4,-1":{biomeID:0,tileTypeID:0,tileID:0}"5,-5,0":{biomeID:0,tileTypeID:0,tileID:0},
+-----
+
+Debug & 08:13:37.100
+          Old Dungeon Data Deleted
+-----
+
+Debug & 08:13:37.101
+          Dungeon Data Saved
+-----
+
+Debug & 08:13:37.106
+          Save Dungeon
+-----
+
+Debug & 08:13:37.108
+          Dungeon Data Serialized:
+-----
+
+Debug & 08:13:37.108
+          XXX/{chunkaddr:0,0,0}{"-5,5,0":{biomeID:0,tileTypeID:0,tileID:4}"-5,4,1":{biomeID:0,tileTypeID:0,tileID:3}"-5,3,2":{biomeID:0,tileTypeID:0,tileID:1}"-5,2,3":{biomeID:0,tileTypeID:0,tileID:1}"-5,1,4":{biomeID:0,tileTypeID:0,tileID:0}"-5,0,5":{biomeID:0,tileTypeID:0,tileID:1}"-4,5,-1":{biomeID:0,tileTypeID:0,tileID:3}"-4,4,0":{biomeID:0,tileTypeID:0,tileID:2}"-4,3,1":{biomeID:0,tileTypeID:0,tileID:2}"-4,2,2":{biomeID:0,tileTypeID:0,tileID:1}"-4,1,3":{biomeID:0,tileTypeID:0,tileID:3}"-4,0,4":{biomeID:0,tileTypeID:0,tileID:2}"-4,-1,5":{biomeID:0,tileTypeID:0,tileID:3}"-3,5,-2":{biomeID:0,tileTypeID:0,tileID:2}"-3,4,-1":{biomeID:0,tileTypeID:0,tileID:2}"-3,3,0":{biomeID:0,tileTypeID:0,tileID:2}"-3,2,1":{biomeID:0,tileTypeID:0,tileID:4}"-3,1,2":{biomeID:0,tileTypeID:0,tileID:1}"-3,0,3":{biomeID:0,tileTypeID:0,tileID:0}"-3,-1,4":{biomeID:0,tileTypeID:0,tileID:1}"-3,-2,5":{biomeID:0,tileTypeID:0,tileID:3}"-2,5,-3":{biomeID:0,tileTypeID:0,tileID:0}"-2,4,-2":{biomeID:0,tileTypeID:0,tileID:0}"-2,3,-1":{biomeID:0,tileTypeID:0,tileID:0}"-2,2,0":{biomeID:0,tileTypeID:0,tileID:1}"-2,1,1":{biomeID:0,tileTypeID:0,tileID:0}"-2,0,2":{biomeID:0,tileTypeID:0,tileID:3}"-2,-1,3":{biomeID:0,tileTypeID:0,tileID:3}"-2,-2,4":{biomeID:0,tileTypeID:0,tileID:3}"-2,-3,5":{biomeID:0,tileTypeID:0,tileID:3}"-1,5,-4":{biomeID:0,tileTypeID:0,tileID:0}"-1,4,-3":{biomeID:0,tileTypeID:0,tileID:3}"-1,3,-2":{biomeID:0,tileTypeID:0,tileID:4}"-1,2,-1":{biomeID:0,tileTypeID:0,tileID:1}"-1,1,0":{biomeID:0,tileTypeID:0,tileID:3}"-1,0,1":{biomeID:0,tileTypeID:0,tileID:1}"-1,-1,2":{biomeID:0,tileTypeID:0,tileID:4}"-1,-2,3":{biomeID:0,tileTypeID:0,tileID:2}"-1,-3,4":{biomeID:0,tileTypeID:0,tileID:2}"-1,-4,5":{biomeID:0,tileTypeID:0,tileID:3}"0,5,-5":{biomeID:0,tileTypeID:0,tileID:4}"0,4,-4":{biomeID:0,tileTypeID:0,tileID:3}"0,3,-3":{biomeID:0,tileTypeID:0,tileID:3}"0,2,-2":{biomeID:0,tileTypeID:0,tileID:1}"0,1,-1":{biomeID:0,tileTypeID:0,tileID:4}"0,0,0":{biomeID:0,tileTypeID:0,tileID:4}"0,-1,1":{biomeID:0,tileTypeID:0,tileID:2}"0,-2,2":{biomeID:0,tileTypeID:0,tileID:3}"0,-3,3":{biomeID:0,tileTypeID:0,tileID:2}"0,-4,4":{biomeID:0,tileTypeID:0,tileID:4}"0,-5,5":{biomeID:0,tileTypeID:0,tileID:3}"1,4,-5":{biomeID:0,tileTypeID:0,tileID:2}"1,3,-4":{biomeID:0,tileTypeID:0,tileID:0}"1,2,-3":{biomeID:0,tileTypeID:0,tileID:4}"1,1,-2":{biomeID:0,tileTypeID:0,tileID:2}"1,0,-1":{biomeID:0,tileTypeID:0,tileID:2}"1,-1,0":{biomeID:0,tileTypeID:0,tileID:2}"1,-2,1":{biomeID:0,tileTypeID:0,tileID:3}"1,-3,2":{biomeID:0,tileTypeID:0,tileID:1}"1,-4,3":{biomeID:0,tileTypeID:0,tileID:0}"1,-5,4":{biomeID:0,tileTypeID:0,tileID:4}"2,3,-5":{biomeID:0,tileTypeID:0,tileID:0}"2,2,-4":{biomeID:0,tileTypeID:0,tileID:2}"2,1,-3":{biomeID:0,tileTypeID:0,tileID:2}"2,0,-2":{biomeID:0,tileTypeID:0,tileID:1}"2,-1,-1":{biomeID:0,tileTypeID:0,tileID:1}"2,-2,0":{biomeID:0,tileTypeID:0,tileID:3}"2,-3,1":{biomeID:0,tileTypeID:0,tileID:3}"2,-4,2":{biomeID:0,tileTypeID:0,tileID:2}"2,-5,3":{biomeID:0,tileTypeID:0,tileID:0}"3,2,-5":{biomeID:0,tileTypeID:0,tileID:3}"3,1,-4":{biomeID:0,tileTypeID:0,tileID:0}"3,0,-3":{biomeID:0,tileTypeID:0,tileID:3}"3,-1,-2":{biomeID:0,tileTypeID:0,tileID:0}"3,-2,-1":{biomeID:0,tileTypeID:0,tileID:4}"3,-3,0":{biomeID:0,tileTypeID:0,tileID:1}"3,-4,1":{biomeID:0,tileTypeID:0,tileID:2}"3,-5,2":{biomeID:0,tileTypeID:0,tileID:1}"4,1,-5":{biomeID:0,tileTypeID:0,tileID:0}"4,0,-4":{biomeID:0,tileTypeID:0,tileID:0}"4,-1,-3":{biomeID:0,tileTypeID:0,tileID:2}"4,-2,-2":{biomeID:0,tileTypeID:0,tileID:2}"4,-3,-1":{biomeID:0,tileTypeID:0,tileID:1}"4,-4,0":{biomeID:0,tileTypeID:0,tileID:4}"4,-5,1":{biomeID:0,tileTypeID:0,tileID:0}"5,0,-5":{biomeID:0,tileTypeID:0,tileID:0}"5,-1,-4":{biomeID:0,tileTypeID:0,tileID:4}"5,-2,-3":{biomeID:0,tileTypeID:0,tileID:1}"5,-3,-2":{biomeID:0,tileTypeID:0,tileID:2}"5,-4,-1":{biomeID:0,tileTypeID:0,tileID:0}"5,-5,0":{biomeID:0,tileTypeID:0,tileID:0},
+-----
+
+Debug & 08:13:37.109
+          Old Dungeon Data Deleted
+-----
+
+Debug & 08:13:37.110
+          Dungeon Data Saved
+-----
+
+Debug & 08:13:37.114
+          Save Dungeon
+-----
+
+Debug & 08:13:37.116
+          Dungeon Data Serialized:
+-----
+
+Debug & 08:13:37.116
+          XXX/{chunkaddr:0,0,0}{"-5,5,0":{biomeID:0,tileTypeID:0,tileID:4}"-5,4,1":{biomeID:0,tileTypeID:0,tileID:3}"-5,3,2":{biomeID:0,tileTypeID:0,tileID:1}"-5,2,3":{biomeID:0,tileTypeID:0,tileID:1}"-5,1,4":{biomeID:0,tileTypeID:0,tileID:0}"-5,0,5":{biomeID:0,tileTypeID:0,tileID:1}"-4,5,-1":{biomeID:0,tileTypeID:0,tileID:3}"-4,4,0":{biomeID:0,tileTypeID:0,tileID:2}"-4,3,1":{biomeID:0,tileTypeID:0,tileID:2}"-4,2,2":{biomeID:0,tileTypeID:0,tileID:1}"-4,1,3":{biomeID:0,tileTypeID:0,tileID:3}"-4,0,4":{biomeID:0,tileTypeID:0,tileID:2}"-4,-1,5":{biomeID:0,tileTypeID:0,tileID:3}"-3,5,-2":{biomeID:0,tileTypeID:0,tileID:2}"-3,4,-1":{biomeID:0,tileTypeID:0,tileID:2}"-3,3,0":{biomeID:0,tileTypeID:0,tileID:2}"-3,2,1":{biomeID:0,tileTypeID:0,tileID:4}"-3,1,2":{biomeID:0,tileTypeID:0,tileID:1}"-3,0,3":{biomeID:0,tileTypeID:0,tileID:0}"-3,-1,4":{biomeID:0,tileTypeID:0,tileID:1}"-3,-2,5":{biomeID:0,tileTypeID:0,tileID:3}"-2,5,-3":{biomeID:0,tileTypeID:0,tileID:0}"-2,4,-2":{biomeID:0,tileTypeID:0,tileID:0}"-2,3,-1":{biomeID:0,tileTypeID:0,tileID:0}"-2,2,0":{biomeID:0,tileTypeID:0,tileID:1}"-2,1,1":{biomeID:0,tileTypeID:0,tileID:0}"-2,0,2":{biomeID:0,tileTypeID:0,tileID:3}"-2,-1,3":{biomeID:0,tileTypeID:0,tileID:3}"-2,-2,4":{biomeID:0,tileTypeID:0,tileID:3}"-2,-3,5":{biomeID:0,tileTypeID:0,tileID:3}"-1,5,-4":{biomeID:0,tileTypeID:0,tileID:0}"-1,4,-3":{biomeID:0,tileTypeID:0,tileID:3}"-1,3,-2":{biomeID:0,tileTypeID:0,tileID:4}"-1,2,-1":{biomeID:0,tileTypeID:0,tileID:1}"-1,1,0":{biomeID:0,tileTypeID:0,tileID:3}"-1,0,1":{biomeID:0,tileTypeID:0,tileID:1}"-1,-1,2":{biomeID:0,tileTypeID:0,tileID:4}"-1,-2,3":{biomeID:0,tileTypeID:0,tileID:2}"-1,-3,4":{biomeID:0,tileTypeID:0,tileID:2}"-1,-4,5":{biomeID:0,tileTypeID:0,tileID:3}"0,5,-5":{biomeID:0,tileTypeID:0,tileID:4}"0,4,-4":{biomeID:0,tileTypeID:0,tileID:3}"0,3,-3":{biomeID:0,tileTypeID:0,tileID:3}"0,2,-2":{biomeID:0,tileTypeID:0,tileID:1}"0,1,-1":{biomeID:0,tileTypeID:0,tileID:4}"0,0,0":{biomeID:0,tileTypeID:0,tileID:4}"0,-1,1":{biomeID:0,tileTypeID:0,tileID:2}"0,-2,2":{biomeID:0,tileTypeID:0,tileID:3}"0,-3,3":{biomeID:0,tileTypeID:0,tileID:2}"0,-4,4":{biomeID:0,tileTypeID:0,tileID:4}"0,-5,5":{biomeID:0,tileTypeID:0,tileID:3}"1,4,-5":{biomeID:0,tileTypeID:0,tileID:2}"1,3,-4":{biomeID:0,tileTypeID:0,tileID:0}"1,2,-3":{biomeID:0,tileTypeID:0,tileID:4}"1,1,-2":{biomeID:0,tileTypeID:0,tileID:2}"1,0,-1":{biomeID:0,tileTypeID:0,tileID:2}"1,-1,0":{biomeID:0,tileTypeID:0,tileID:2}"1,-2,1":{biomeID:0,tileTypeID:0,tileID:3}"1,-3,2":{biomeID:0,tileTypeID:0,tileID:1}"1,-4,3":{biomeID:0,tileTypeID:0,tileID:0}"1,-5,4":{biomeID:0,tileTypeID:0,tileID:4}"2,3,-5":{biomeID:0,tileTypeID:0,tileID:0}"2,2,-4":{biomeID:0,tileTypeID:0,tileID:2}"2,1,-3":{biomeID:0,tileTypeID:0,tileID:2}"2,0,-2":{biomeID:0,tileTypeID:0,tileID:1}"2,-1,-1":{biomeID:0,tileTypeID:0,tileID:1}"2,-2,0":{biomeID:0,tileTypeID:0,tileID:3}"2,-3,1":{biomeID:0,tileTypeID:0,tileID:3}"2,-4,2":{biomeID:0,tileTypeID:0,tileID:2}"2,-5,3":{biomeID:0,tileTypeID:0,tileID:0}"3,2,-5":{biomeID:0,tileTypeID:0,tileID:3}"3,1,-4":{biomeID:0,tileTypeID:0,tileID:0}"3,0,-3":{biomeID:0,tileTypeID:0,tileID:3}"3,-1,-2":{biomeID:0,tileTypeID:0,tileID:0}"3,-2,-1":{biomeID:0,tileTypeID:0,tileID:4}"3,-3,0":{biomeID:0,tileTypeID:0,tileID:1}"3,-4,1":{biomeID:0,tileTypeID:0,tileID:2}"3,-5,2":{biomeID:0,tileTypeID:0,tileID:1}"4,1,-5":{biomeID:0,tileTypeID:0,tileID:0}"4,0,-4":{biomeID:0,tileTypeID:0,tileID:0}"4,-1,-3":{biomeID:0,tileTypeID:0,tileID:2}"4,-2,-2":{biomeID:0,tileTypeID:0,tileID:2}"4,-3,-1":{biomeID:0,tileTypeID:0,tileID:1}"4,-4,0":{biomeID:0,tileTypeID:0,tileID:4}"4,-5,1":{biomeID:0,tileTypeID:0,tileID:0}"5,0,-5":{biomeID:0,tileTypeID:0,tileID:0}"5,-1,-4":{biomeID:0,tileTypeID:0,tileID:4}"5,-2,-3":{biomeID:0,tileTypeID:0,tileID:1}"5,-3,-2":{biomeID:0,tileTypeID:0,tileID:2}"5,-4,-1":{biomeID:0,tileTypeID:0,tileID:0}"5,-5,0":{biomeID:0,tileTypeID:0,tileID:0},
+-----
+
+Debug & 08:13:37.117
+          Old Dungeon Data Deleted
+-----
+
+Debug & 08:13:37.118
+          Dungeon Data Saved
+-----
+
+Debug & 08:13:37.123
+          Save Dungeon
+-----
+
+Debug & 08:13:37.139
+          Dungeon Data Serialized:
+-----
+
+Debug & 08:13:37.140
+          XXX/{chunkaddr:0,0,0}{"-5,5,0":{biomeID:0,tileTypeID:0,tileID:4}"-5,4,1":{biomeID:0,tileTypeID:0,tileID:3}"-5,3,2":{biomeID:0,tileTypeID:0,tileID:1}"-5,2,3":{biomeID:0,tileTypeID:0,tileID:1}"-5,1,4":{biomeID:0,tileTypeID:0,tileID:0}"-5,0,5":{biomeID:0,tileTypeID:0,tileID:1}"-4,5,-1":{biomeID:0,tileTypeID:0,tileID:3}"-4,4,0":{biomeID:0,tileTypeID:0,tileID:2}"-4,3,1":{biomeID:0,tileTypeID:0,tileID:2}"-4,2,2":{biomeID:0,tileTypeID:0,tileID:1}"-4,1,3":{biomeID:0,tileTypeID:0,tileID:3}"-4,0,4":{biomeID:0,tileTypeID:0,tileID:2}"-4,-1,5":{biomeID:0,tileTypeID:0,tileID:3}"-3,5,-2":{biomeID:0,tileTypeID:0,tileID:2}"-3,4,-1":{biomeID:0,tileTypeID:0,tileID:2}"-3,3,0":{biomeID:0,tileTypeID:0,tileID:2}"-3,2,1":{biomeID:0,tileTypeID:0,tileID:4}"-3,1,2":{biomeID:0,tileTypeID:0,tileID:1}"-3,0,3":{biomeID:0,tileTypeID:0,tileID:0}"-3,-1,4":{biomeID:0,tileTypeID:0,tileID:1}"-3,-2,5":{biomeID:0,tileTypeID:0,tileID:3}"-2,5,-3":{biomeID:0,tileTypeID:0,tileID:0}"-2,4,-2":{biomeID:0,tileTypeID:0,tileID:0}"-2,3,-1":{biomeID:0,tileTypeID:0,tileID:0}"-2,2,0":{biomeID:0,tileTypeID:0,tileID:1}"-2,1,1":{biomeID:0,tileTypeID:0,tileID:0}"-2,0,2":{biomeID:0,tileTypeID:0,tileID:3}"-2,-1,3":{biomeID:0,tileTypeID:0,tileID:3}"-2,-2,4":{biomeID:0,tileTypeID:0,tileID:3}"-2,-3,5":{biomeID:0,tileTypeID:0,tileID:3}"-1,5,-4":{biomeID:0,tileTypeID:0,tileID:0}"-1,4,-3":{biomeID:0,tileTypeID:0,tileID:3}"-1,3,-2":{biomeID:0,tileTypeID:0,tileID:4}"-1,2,-1":{biomeID:0,tileTypeID:0,tileID:1}"-1,1,0":{biomeID:0,tileTypeID:0,tileID:3}"-1,0,1":{biomeID:0,tileTypeID:0,tileID:1}"-1,-1,2":{biomeID:0,tileTypeID:0,tileID:4}"-1,-2,3":{biomeID:0,tileTypeID:0,tileID:2}"-1,-3,4":{biomeID:0,tileTypeID:0,tileID:2}"-1,-4,5":{biomeID:0,tileTypeID:0,tileID:3}"0,5,-5":{biomeID:0,tileTypeID:0,tileID:4}"0,4,-4":{biomeID:0,tileTypeID:0,tileID:3}"0,3,-3":{biomeID:0,tileTypeID:0,tileID:3}"0,2,-2":{biomeID:0,tileTypeID:0,tileID:1}"0,1,-1":{biomeID:0,tileTypeID:0,tileID:4}"0,0,0":{biomeID:0,tileTypeID:0,tileID:4}"0,-1,1":{biomeID:0,tileTypeID:0,tileID:2}"0,-2,2":{biomeID:0,tileTypeID:0,tileID:3}"0,-3,3":{biomeID:0,tileTypeID:0,tileID:2}"0,-4,4":{biomeID:0,tileTypeID:0,tileID:4}"0,-5,5":{biomeID:0,tileTypeID:0,tileID:3}"1,4,-5":{biomeID:0,tileTypeID:0,tileID:2}"1,3,-4":{biomeID:0,tileTypeID:0,tileID:0}"1,2,-3":{biomeID:0,tileTypeID:0,tileID:4}"1,1,-2":{biomeID:0,tileTypeID:0,tileID:2}"1,0,-1":{biomeID:0,tileTypeID:0,tileID:2}"1,-1,0":{biomeID:0,tileTypeID:0,tileID:2}"1,-2,1":{biomeID:0,tileTypeID:0,tileID:3}"1,-3,2":{biomeID:0,tileTypeID:0,tileID:1}"1,-4,3":{biomeID:0,tileTypeID:0,tileID:0}"1,-5,4":{biomeID:0,tileTypeID:0,tileID:4}"2,3,-5":{biomeID:0,tileTypeID:0,tileID:0}"2,2,-4":{biomeID:0,tileTypeID:0,tileID:2}"2,1,-3":{biomeID:0,tileTypeID:0,tileID:2}"2,0,-2":{biomeID:0,tileTypeID:0,tileID:1}"2,-1,-1":{biomeID:0,tileTypeID:0,tileID:1}"2,-2,0":{biomeID:0,tileTypeID:0,tileID:3}"2,-3,1":{biomeID:0,tileTypeID:0,tileID:3}"2,-4,2":{biomeID:0,tileTypeID:0,tileID:2}"2,-5,3":{biomeID:0,tileTypeID:0,tileID:0}"3,2,-5":{biomeID:0,tileTypeID:0,tileID:3}"3,1,-4":{biomeID:0,tileTypeID:0,tileID:0}"3,0,-3":{biomeID:0,tileTypeID:0,tileID:3}"3,-1,-2":{biomeID:0,tileTypeID:0,tileID:0}"3,-2,-1":{biomeID:0,tileTypeID:0,tileID:4}"3,-3,0":{biomeID:0,tileTypeID:0,tileID:1}"3,-4,1":{biomeID:0,tileTypeID:0,tileID:2}"3,-5,2":{biomeID:0,tileTypeID:0,tileID:1}"4,1,-5":{biomeID:0,tileTypeID:0,tileID:0}"4,0,-4":{biomeID:0,tileTypeID:0,tileID:0}"4,-1,-3":{biomeID:0,tileTypeID:0,tileID:2}"4,-2,-2":{biomeID:0,tileTypeID:0,tileID:2}"4,-3,-1":{biomeID:0,tileTypeID:0,tileID:1}"4,-4,0":{biomeID:0,tileTypeID:0,tileID:4}"4,-5,1":{biomeID:0,tileTypeID:0,tileID:0}"5,0,-5":{biomeID:0,tileTypeID:0,tileID:0}"5,-1,-4":{biomeID:0,tileTypeID:0,tileID:4}"5,-2,-3":{biomeID:0,tileTypeID:0,tileID:1}"5,-3,-2":{biomeID:0,tileTypeID:0,tileID:2}"5,-4,-1":{biomeID:0,tileTypeID:0,tileID:0}"5,-5,0":{biomeID:0,tileTypeID:0,tileID:0},
+-----
+
+Debug & 08:13:37.141
+          Old Dungeon Data Deleted
+-----
+
+Debug & 08:13:37.142
+          Dungeon Data Saved
+-----
+
+Debug & 08:13:37.147
+          Save Dungeon
+-----
+
+Debug & 08:13:37.148
+          Dungeon Data Serialized:
+-----
+
+Debug & 08:13:37.148
+          XXX/{chunkaddr:0,0,0}{"-5,5,0":{biomeID:0,tileTypeID:0,tileID:4}"-5,4,1":{biomeID:0,tileTypeID:0,tileID:3}"-5,3,2":{biomeID:0,tileTypeID:0,tileID:1}"-5,2,3":{biomeID:0,tileTypeID:0,tileID:1}"-5,1,4":{biomeID:0,tileTypeID:0,tileID:0}"-5,0,5":{biomeID:0,tileTypeID:0,tileID:1}"-4,5,-1":{biomeID:0,tileTypeID:0,tileID:3}"-4,4,0":{biomeID:0,tileTypeID:0,tileID:2}"-4,3,1":{biomeID:0,tileTypeID:0,tileID:2}"-4,2,2":{biomeID:0,tileTypeID:0,tileID:1}"-4,1,3":{biomeID:0,tileTypeID:0,tileID:3}"-4,0,4":{biomeID:0,tileTypeID:0,tileID:2}"-4,-1,5":{biomeID:0,tileTypeID:0,tileID:3}"-3,5,-2":{biomeID:0,tileTypeID:0,tileID:2}"-3,4,-1":{biomeID:0,tileTypeID:0,tileID:2}"-3,3,0":{biomeID:0,tileTypeID:0,tileID:2}"-3,2,1":{biomeID:0,tileTypeID:0,tileID:4}"-3,1,2":{biomeID:0,tileTypeID:0,tileID:1}"-3,0,3":{biomeID:0,tileTypeID:0,tileID:0}"-3,-1,4":{biomeID:0,tileTypeID:0,tileID:1}"-3,-2,5":{biomeID:0,tileTypeID:0,tileID:3}"-2,5,-3":{biomeID:0,tileTypeID:0,tileID:0}"-2,4,-2":{biomeID:0,tileTypeID:0,tileID:0}"-2,3,-1":{biomeID:0,tileTypeID:0,tileID:0}"-2,2,0":{biomeID:0,tileTypeID:0,tileID:1}"-2,1,1":{biomeID:0,tileTypeID:0,tileID:0}"-2,0,2":{biomeID:0,tileTypeID:0,tileID:3}"-2,-1,3":{biomeID:0,tileTypeID:0,tileID:3}"-2,-2,4":{biomeID:0,tileTypeID:0,tileID:3}"-2,-3,5":{biomeID:0,tileTypeID:0,tileID:3}"-1,5,-4":{biomeID:0,tileTypeID:0,tileID:0}"-1,4,-3":{biomeID:0,tileTypeID:0,tileID:3}"-1,3,-2":{biomeID:0,tileTypeID:0,tileID:4}"-1,2,-1":{biomeID:0,tileTypeID:0,tileID:1}"-1,1,0":{biomeID:0,tileTypeID:0,tileID:3}"-1,0,1":{biomeID:0,tileTypeID:0,tileID:1}"-1,-1,2":{biomeID:0,tileTypeID:0,tileID:4}"-1,-2,3":{biomeID:0,tileTypeID:0,tileID:2}"-1,-3,4":{biomeID:0,tileTypeID:0,tileID:2}"-1,-4,5":{biomeID:0,tileTypeID:0,tileID:3}"0,5,-5":{biomeID:0,tileTypeID:0,tileID:4}"0,4,-4":{biomeID:0,tileTypeID:0,tileID:3}"0,3,-3":{biomeID:0,tileTypeID:0,tileID:3}"0,2,-2":{biomeID:0,tileTypeID:0,tileID:1}"0,1,-1":{biomeID:0,tileTypeID:0,tileID:4}"0,0,0":{biomeID:0,tileTypeID:0,tileID:4}"0,-1,1":{biomeID:0,tileTypeID:0,tileID:2}"0,-2,2":{biomeID:0,tileTypeID:0,tileID:3}"0,-3,3":{biomeID:0,tileTypeID:0,tileID:2}"0,-4,4":{biomeID:0,tileTypeID:0,tileID:4}"0,-5,5":{biomeID:0,tileTypeID:0,tileID:3}"1,4,-5":{biomeID:0,tileTypeID:0,tileID:2}"1,3,-4":{biomeID:0,tileTypeID:0,tileID:0}"1,2,-3":{biomeID:0,tileTypeID:0,tileID:4}"1,1,-2":{biomeID:0,tileTypeID:0,tileID:2}"1,0,-1":{biomeID:0,tileTypeID:0,tileID:2}"1,-1,0":{biomeID:0,tileTypeID:0,tileID:2}"1,-2,1":{biomeID:0,tileTypeID:0,tileID:3}"1,-3,2":{biomeID:0,tileTypeID:0,tileID:1}"1,-4,3":{biomeID:0,tileTypeID:0,tileID:0}"1,-5,4":{biomeID:0,tileTypeID:0,tileID:4}"2,3,-5":{biomeID:0,tileTypeID:0,tileID:0}"2,2,-4":{biomeID:0,tileTypeID:0,tileID:2}"2,1,-3":{biomeID:0,tileTypeID:0,tileID:2}"2,0,-2":{biomeID:0,tileTypeID:0,tileID:1}"2,-1,-1":{biomeID:0,tileTypeID:0,tileID:1}"2,-2,0":{biomeID:0,tileTypeID:0,tileID:3}"2,-3,1":{biomeID:0,tileTypeID:0,tileID:3}"2,-4,2":{biomeID:0,tileTypeID:0,tileID:2}"2,-5,3":{biomeID:0,tileTypeID:0,tileID:0}"3,2,-5":{biomeID:0,tileTypeID:0,tileID:3}"3,1,-4":{biomeID:0,tileTypeID:0,tileID:0}"3,0,-3":{biomeID:0,tileTypeID:0,tileID:3}"3,-1,-2":{biomeID:0,tileTypeID:0,tileID:0}"3,-2,-1":{biomeID:0,tileTypeID:0,tileID:4}"3,-3,0":{biomeID:0,tileTypeID:0,tileID:1}"3,-4,1":{biomeID:0,tileTypeID:0,tileID:2}"3,-5,2":{biomeID:0,tileTypeID:0,tileID:1}"4,1,-5":{biomeID:0,tileTypeID:0,tileID:0}"4,0,-4":{biomeID:0,tileTypeID:0,tileID:0}"4,-1,-3":{biomeID:0,tileTypeID:0,tileID:2}"4,-2,-2":{biomeID:0,tileTypeID:0,tileID:2}"4,-3,-1":{biomeID:0,tileTypeID:0,tileID:1}"4,-4,0":{biomeID:0,tileTypeID:0,tileID:4}"4,-5,1":{biomeID:0,tileTypeID:0,tileID:0}"5,0,-5":{biomeID:0,tileTypeID:0,tileID:0}"5,-1,-4":{biomeID:0,tileTypeID:0,tileID:4}"5,-2,-3":{biomeID:0,tileTypeID:0,tileID:1}"5,-3,-2":{biomeID:0,tileTypeID:0,tileID:2}"5,-4,-1":{biomeID:0,tileTypeID:0,tileID:0}"5,-5,0":{biomeID:0,tileTypeID:0,tileID:0},
+-----
+
+Debug & 08:13:37.149
+          Old Dungeon Data Deleted
+-----
+
+Debug & 08:13:37.150
+          Dungeon Data Saved
+-----
+
+Info & 08:15:55.341
+          Logger initiated
+-----
+
+Info & 08:15:55.342
+          GameManager: ON
+-----
+
+Info & 08:15:55.344
+          Logger: ON
+-----
+
+Info & 08:15:55.344
+          Config Manager: ON
+-----
+
+Info & 08:15:55.345
+          Clocker: ON
+-----
+
+Info & 08:15:55.402
+          Config init: D:/[ CODEE ]/[ GITTED ]/InnerSpace/Assets/Settings/innser_space_cfg.json
+-----
+
+Info & 08:15:55.403
+          Config loaded
+-----
+
+Info & 08:15:55.404
+          ConfigData
+-----
+
+Info & 08:15:55.404
+          Chunk size: 0
+-----
+
+Info & 08:15:57.363
+          Chunk generated with 91 tiles
+-----
+
+Debug & 08:15:57.364
+          pqr: -5,5,0
+-----
+
+Debug & 08:15:57.364
+          pqr: -5,4,1
+-----
+
+Debug & 08:15:57.365
+          pqr: -5,3,2
+-----
+
+Debug & 08:15:57.365
+          pqr: -5,2,3
+-----
+
+Debug & 08:15:57.365
+          pqr: -5,1,4
+-----
+
+Debug & 08:15:57.366
+          pqr: -5,0,5
+-----
+
+Debug & 08:15:57.366
+          pqr: -4,5,-1
+-----
+
+Debug & 08:15:57.366
+          pqr: -4,4,0
+-----
+
+Debug & 08:15:57.367
+          pqr: -4,3,1
+-----
+
+Debug & 08:15:57.367
+          pqr: -4,2,2
+-----
+
+Debug & 08:15:57.367
+          pqr: -4,1,3
+-----
+
+Debug & 08:15:57.367
+          pqr: -4,0,4
+-----
+
+Debug & 08:15:57.368
+          pqr: -4,-1,5
+-----
+
+Debug & 08:15:57.368
+          pqr: -3,5,-2
+-----
+
+Debug & 08:15:57.368
+          pqr: -3,4,-1
+-----
+
+Debug & 08:15:57.368
+          pqr: -3,3,0
+-----
+
+Debug & 08:15:57.369
+          pqr: -3,2,1
+-----
+
+Debug & 08:15:57.369
+          pqr: -3,1,2
+-----
+
+Debug & 08:15:57.369
+          pqr: -3,0,3
+-----
+
+Debug & 08:15:57.370
+          pqr: -3,-1,4
+-----
+
+Debug & 08:15:57.370
+          pqr: -3,-2,5
+-----
+
+Debug & 08:15:57.370
+          pqr: -2,5,-3
+-----
+
+Debug & 08:15:57.370
+          pqr: -2,4,-2
+-----
+
+Debug & 08:15:57.371
+          pqr: -2,3,-1
+-----
+
+Debug & 08:15:57.371
+          pqr: -2,2,0
+-----
+
+Debug & 08:15:57.371
+          pqr: -2,1,1
+-----
+
+Debug & 08:15:57.372
+          pqr: -2,0,2
+-----
+
+Debug & 08:15:57.372
+          pqr: -2,-1,3
+-----
+
+Debug & 08:15:57.372
+          pqr: -2,-2,4
+-----
+
+Debug & 08:15:57.372
+          pqr: -2,-3,5
+-----
+
+Debug & 08:15:57.373
+          pqr: -1,5,-4
+-----
+
+Debug & 08:15:57.373
+          pqr: -1,4,-3
+-----
+
+Debug & 08:15:57.373
+          pqr: -1,3,-2
+-----
+
+Debug & 08:15:57.374
+          pqr: -1,2,-1
+-----
+
+Debug & 08:15:57.374
+          pqr: -1,1,0
+-----
+
+Debug & 08:15:57.374
+          pqr: -1,0,1
+-----
+
+Debug & 08:15:57.374
+          pqr: -1,-1,2
+-----
+
+Debug & 08:15:57.375
+          pqr: -1,-2,3
+-----
+
+Debug & 08:15:57.376
+          pqr: -1,-3,4
+-----
+
+Debug & 08:15:57.376
+          pqr: -1,-4,5
+-----
+
+Debug & 08:15:57.376
+          pqr: 0,5,-5
+-----
+
+Debug & 08:15:57.376
+          pqr: 0,4,-4
+-----
+
+Debug & 08:15:57.376
+          pqr: 0,3,-3
+-----
+
+Debug & 08:15:57.376
+          pqr: 0,2,-2
+-----
+
+Debug & 08:15:57.377
+          pqr: 0,1,-1
+-----
+
+Debug & 08:15:57.377
+          pqr: 0,0,0
+-----
+
+Debug & 08:15:57.377
+          pqr: 0,-1,1
+-----
+
+Debug & 08:15:57.378
+          pqr: 0,-2,2
+-----
+
+Debug & 08:15:57.378
+          pqr: 0,-3,3
+-----
+
+Debug & 08:15:57.378
+          pqr: 0,-4,4
+-----
+
+Debug & 08:15:57.379
+          pqr: 0,-5,5
+-----
+
+Debug & 08:15:57.379
+          pqr: 1,4,-5
+-----
+
+Debug & 08:15:57.379
+          pqr: 1,3,-4
+-----
+
+Debug & 08:15:57.379
+          pqr: 1,2,-3
+-----
+
+Debug & 08:15:57.380
+          pqr: 1,1,-2
+-----
+
+Debug & 08:15:57.380
+          pqr: 1,0,-1
+-----
+
+Debug & 08:15:57.380
+          pqr: 1,-1,0
+-----
+
+Debug & 08:15:57.381
+          pqr: 1,-2,1
+-----
+
+Debug & 08:15:57.381
+          pqr: 1,-3,2
+-----
+
+Debug & 08:15:57.381
+          pqr: 1,-4,3
+-----
+
+Debug & 08:15:57.382
+          pqr: 1,-5,4
+-----
+
+Debug & 08:15:57.382
+          pqr: 2,3,-5
+-----
+
+Debug & 08:15:57.382
+          pqr: 2,2,-4
+-----
+
+Debug & 08:15:57.383
+          pqr: 2,1,-3
+-----
+
+Debug & 08:15:57.383
+          pqr: 2,0,-2
+-----
+
+Debug & 08:15:57.383
+          pqr: 2,-1,-1
+-----
+
+Debug & 08:15:57.384
+          pqr: 2,-2,0
+-----
+
+Debug & 08:15:57.384
+          pqr: 2,-3,1
+-----
+
+Debug & 08:15:57.384
+          pqr: 2,-4,2
+-----
+
+Debug & 08:15:57.384
+          pqr: 2,-5,3
+-----
+
+Debug & 08:15:57.385
+          pqr: 3,2,-5
+-----
+
+Debug & 08:15:57.385
+          pqr: 3,1,-4
+-----
+
+Debug & 08:15:57.385
+          pqr: 3,0,-3
+-----
+
+Debug & 08:15:57.386
+          pqr: 3,-1,-2
+-----
+
+Debug & 08:15:57.386
+          pqr: 3,-2,-1
+-----
+
+Debug & 08:15:57.386
+          pqr: 3,-3,0
+-----
+
+Debug & 08:15:57.386
+          pqr: 3,-4,1
+-----
+
+Debug & 08:15:57.387
+          pqr: 3,-5,2
+-----
+
+Debug & 08:15:57.387
+          pqr: 4,1,-5
+-----
+
+Debug & 08:15:57.387
+          pqr: 4,0,-4
+-----
+
+Debug & 08:15:57.388
+          pqr: 4,-1,-3
+-----
+
+Debug & 08:15:57.388
+          pqr: 4,-2,-2
+-----
+
+Debug & 08:15:57.388
+          pqr: 4,-3,-1
+-----
+
+Debug & 08:15:57.389
+          pqr: 4,-4,0
+-----
+
+Debug & 08:15:57.389
+          pqr: 4,-5,1
+-----
+
+Debug & 08:15:57.389
+          pqr: 5,0,-5
+-----
+
+Debug & 08:15:57.389
+          pqr: 5,-1,-4
+-----
+
+Debug & 08:15:57.390
+          pqr: 5,-2,-3
+-----
+
+Debug & 08:15:57.390
+          pqr: 5,-3,-2
+-----
+
+Debug & 08:15:57.390
+          pqr: 5,-4,-1
+-----
+
+Debug & 08:15:57.391
+          pqr: 5,-5,0
+-----
+
+Info & 08:16:40.087
+          Logger initiated
+-----
+
+Info & 08:16:40.088
+          GameManager: ON
+-----
+
+Info & 08:16:40.090
+          Logger: ON
+-----
+
+Info & 08:16:40.090
+          Config Manager: ON
+-----
+
+Info & 08:16:40.091
+          Clocker: ON
+-----
+
+Info & 08:16:40.161
+          Config init: D:/[ CODEE ]/[ GITTED ]/InnerSpace/Assets/Settings/innser_space_cfg.json
+-----
+
+Info & 08:16:40.162
+          Config loaded
+-----
+
+Info & 08:16:40.163
+          ConfigData
+-----
+
+Info & 08:16:40.163
+          Chunk size: 0
+-----
+
+Info & 08:16:41.646
+          Chunk generated with 91 tiles
+-----
+
+Debug & 08:16:41.648
+          pqr: -5,5,0
+-----
+
+Debug & 08:16:41.648
+          pqr: -5,4,1
+-----
+
+Debug & 08:16:41.648
+          pqr: -5,3,2
+-----
+
+Debug & 08:16:41.649
+          pqr: -5,2,3
+-----
+
+Debug & 08:16:41.649
+          pqr: -5,1,4
+-----
+
+Debug & 08:16:41.649
+          pqr: -5,0,5
+-----
+
+Debug & 08:16:41.649
+          pqr: -4,5,-1
+-----
+
+Debug & 08:16:41.650
+          pqr: -4,4,0
+-----
+
+Debug & 08:16:41.650
+          pqr: -4,3,1
+-----
+
+Debug & 08:16:41.650
+          pqr: -4,2,2
+-----
+
+Debug & 08:16:41.651
+          pqr: -4,1,3
+-----
+
+Debug & 08:16:41.651
+          pqr: -4,0,4
+-----
+
+Debug & 08:16:41.651
+          pqr: -4,-1,5
+-----
+
+Debug & 08:16:41.651
+          pqr: -3,5,-2
+-----
+
+Debug & 08:16:41.652
+          pqr: -3,4,-1
+-----
+
+Debug & 08:16:41.652
+          pqr: -3,3,0
+-----
+
+Debug & 08:16:41.652
+          pqr: -3,2,1
+-----
+
+Debug & 08:16:41.653
+          pqr: -3,1,2
+-----
+
+Debug & 08:16:41.653
+          pqr: -3,0,3
+-----
+
+Debug & 08:16:41.653
+          pqr: -3,-1,4
+-----
+
+Debug & 08:16:41.654
+          pqr: -3,-2,5
+-----
+
+Debug & 08:16:41.654
+          pqr: -2,5,-3
+-----
+
+Debug & 08:16:41.654
+          pqr: -2,4,-2
+-----
+
+Debug & 08:16:41.654
+          pqr: -2,3,-1
+-----
+
+Debug & 08:16:41.655
+          pqr: -2,2,0
+-----
+
+Debug & 08:16:41.655
+          pqr: -2,1,1
+-----
+
+Debug & 08:16:41.655
+          pqr: -2,0,2
+-----
+
+Debug & 08:16:41.655
+          pqr: -2,-1,3
+-----
+
+Debug & 08:16:41.656
+          pqr: -2,-2,4
+-----
+
+Debug & 08:16:41.656
+          pqr: -2,-3,5
+-----
+
+Debug & 08:16:41.656
+          pqr: -1,5,-4
+-----
+
+Debug & 08:16:41.656
+          pqr: -1,4,-3
+-----
+
+Debug & 08:16:41.657
+          pqr: -1,3,-2
+-----
+
+Debug & 08:16:41.657
+          pqr: -1,2,-1
+-----
+
+Debug & 08:16:41.657
+          pqr: -1,1,0
+-----
+
+Debug & 08:16:41.657
+          pqr: -1,0,1
+-----
+
+Debug & 08:16:41.658
+          pqr: -1,-1,2
+-----
+
+Debug & 08:16:41.658
+          pqr: -1,-2,3
+-----
+
+Debug & 08:16:41.658
+          pqr: -1,-3,4
+-----
+
+Debug & 08:16:41.658
+          pqr: -1,-4,5
+-----
+
+Debug & 08:16:41.659
+          pqr: 0,5,-5
+-----
+
+Debug & 08:16:41.659
+          pqr: 0,4,-4
+-----
+
+Debug & 08:16:41.659
+          pqr: 0,3,-3
+-----
+
+Debug & 08:16:41.659
+          pqr: 0,2,-2
+-----
+
+Debug & 08:16:41.660
+          pqr: 0,1,-1
+-----
+
+Debug & 08:16:41.660
+          pqr: 0,0,0
+-----
+
+Debug & 08:16:41.660
+          pqr: 0,-1,1
+-----
+
+Debug & 08:16:41.660
+          pqr: 0,-2,2
+-----
+
+Debug & 08:16:41.661
+          pqr: 0,-3,3
+-----
+
+Debug & 08:16:41.661
+          pqr: 0,-4,4
+-----
+
+Debug & 08:16:41.661
+          pqr: 0,-5,5
+-----
+
+Debug & 08:16:41.661
+          pqr: 1,4,-5
+-----
+
+Debug & 08:16:41.662
+          pqr: 1,3,-4
+-----
+
+Debug & 08:16:41.662
+          pqr: 1,2,-3
+-----
+
+Debug & 08:16:41.662
+          pqr: 1,1,-2
+-----
+
+Debug & 08:16:41.662
+          pqr: 1,0,-1
+-----
+
+Debug & 08:16:41.663
+          pqr: 1,-1,0
+-----
+
+Debug & 08:16:41.663
+          pqr: 1,-2,1
+-----
+
+Debug & 08:16:41.663
+          pqr: 1,-3,2
+-----
+
+Debug & 08:16:41.664
+          pqr: 1,-4,3
+-----
+
+Debug & 08:16:41.664
+          pqr: 1,-5,4
+-----
+
+Debug & 08:16:41.664
+          pqr: 2,3,-5
+-----
+
+Debug & 08:16:41.665
+          pqr: 2,2,-4
+-----
+
+Debug & 08:16:41.665
+          pqr: 2,1,-3
+-----
+
+Debug & 08:16:41.665
+          pqr: 2,0,-2
+-----
+
+Debug & 08:16:41.665
+          pqr: 2,-1,-1
+-----
+
+Debug & 08:16:41.666
+          pqr: 2,-2,0
+-----
+
+Debug & 08:16:41.666
+          pqr: 2,-3,1
+-----
+
+Debug & 08:16:41.666
+          pqr: 2,-4,2
+-----
+
+Debug & 08:16:41.667
+          pqr: 2,-5,3
+-----
+
+Debug & 08:16:41.667
+          pqr: 3,2,-5
+-----
+
+Debug & 08:16:41.667
+          pqr: 3,1,-4
+-----
+
+Debug & 08:16:41.668
+          pqr: 3,0,-3
+-----
+
+Debug & 08:16:41.668
+          pqr: 3,-1,-2
+-----
+
+Debug & 08:16:41.668
+          pqr: 3,-2,-1
+-----
+
+Debug & 08:16:41.668
+          pqr: 3,-3,0
+-----
+
+Debug & 08:16:41.669
+          pqr: 3,-4,1
+-----
+
+Debug & 08:16:41.669
+          pqr: 3,-5,2
+-----
+
+Debug & 08:16:41.669
+          pqr: 4,1,-5
+-----
+
+Debug & 08:16:41.669
+          pqr: 4,0,-4
+-----
+
+Debug & 08:16:41.670
+          pqr: 4,-1,-3
+-----
+
+Debug & 08:16:41.670
+          pqr: 4,-2,-2
+-----
+
+Debug & 08:16:41.670
+          pqr: 4,-3,-1
+-----
+
+Debug & 08:16:41.671
+          pqr: 4,-4,0
+-----
+
+Debug & 08:16:41.671
+          pqr: 4,-5,1
+-----
+
+Debug & 08:16:41.671
+          pqr: 5,0,-5
+-----
+
+Debug & 08:16:41.671
+          pqr: 5,-1,-4
+-----
+
+Debug & 08:16:41.672
+          pqr: 5,-2,-3
+-----
+
+Debug & 08:16:41.672
+          pqr: 5,-3,-2
+-----
+
+Debug & 08:16:41.672
+          pqr: 5,-4,-1
+-----
+
+Debug & 08:16:41.672
+          pqr: 5,-5,0
+-----
+

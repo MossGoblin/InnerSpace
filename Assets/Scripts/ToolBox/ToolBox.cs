@@ -15,7 +15,7 @@ public struct Address
     public int addrP { get; set; }
     public int addrQ { get; set; }
     public int addrR { get; set; }
-    public override string ToString() => $"(P:{addrP}, Q:{addrQ}, R:{addrR})";
+    public override string ToString() => $"{addrP},{addrQ},{addrR}";
 
     public bool Equals(Address anotherAddress)
     {
