@@ -9,6 +9,10 @@ public class ConfigData
     public int chunkSize;
     public int rndSeed;
     public bool persistentDungeonUI;
+
+    public float volumeMaster;
+    public bool fullScreen;
+
 }
 
 public class ConfigManager : MonoBehaviour
@@ -94,5 +98,4 @@ public class ConfigManager : MonoBehaviour
     {
         config.persistentDungeonUI = !config.persistentDungeonUI;
     }
-
 }
