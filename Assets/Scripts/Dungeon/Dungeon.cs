@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Text.RegularExpressions;
 using System.Linq;
+using System;
 
 public class Dungeon : MonoBehaviour
 {
@@ -30,7 +31,7 @@ public class Dungeon : MonoBehaviour
 
         chunkList = new Dictionary<Address, Chunk>();
 
-        activeChunkAddress = new Address(0, 0);
+        activeChunkAddress = new Address(-1,1);
 
         // Test auto-load
         string dungeonData = cfgManager.LoadDungeon();
@@ -47,7 +48,6 @@ public class Dungeon : MonoBehaviour
             logger.LogDebug("Save Dungeon", true);
             cfgManager.SaveDungeon(this);
         }
-
     }
 
     public string GetData()
@@ -58,7 +58,7 @@ public class Dungeon : MonoBehaviour
         string result = "";
         foreach (Address address in chunkList.Keys)
         {
-            result += $"XXX/{{chunkaddr:{address.ToString()}}}";
+            result += $"activeChunkAddress:{activeChunkAddress.addrP}.{activeChunkAddress.addrQ}/{{chunkaddr:{address.ToString()}}}";
             result += chunkList[address].GetData();
         }
 
@@ -78,40 +78,48 @@ public class Dungeon : MonoBehaviour
         chunkList = new Dictionary<Address, Chunk>(); // 0
         string[] dungeonSplit = SplitDungeonString(dungeonData); // 1
         // HERE Dungeon META in dungeonSplit[0]
+        activeChunkAddress = GetActiveChunkAddress(dungeonSplit[0]);
         string[] dungeonStrings = dungeonSplit.Where((item, index)=>index!=0).ToArray(); // 1
-        Dictionary<Address, string> chunkStrings = SplitDungeonData(dungeonStrings); // 1
+        Dictionary<Address, List<string>> chunkStrings = SplitDungeonData(dungeonStrings); // 1
         foreach (Address address in chunkStrings.Keys)
         {
             Address chunkAddr = address;
             Chunk newChunk = Instantiate(chunkPrefab, new Vector3(0, 0, 0), Quaternion.identity);
-            newChunk.SetData(chunkStrings[address]);
+            // HERE
+            int chunkBiomeID = Int32.Parse(chunkStrings[address][0]);
+            newChunk.SetData(chunkBiomeID, chunkStrings[address][1]);
             newChunk.transform.SetParent(this.transform);
             chunkList.Add(address, newChunk);
             if (address.Equals(activeChunkAddress))
             {
                 newChunk.isActivated = true;
+                logger.LogDebug($"Activating chunk {address.ToString()}", true);
+                // TMP fix
+                // newChunk.Activate();
             }
             else
             {
                 newChunk.isActivated = false;
+                // TMP fix
+                // newChunk.Deactivate();
             }
         }
     }
 
 
-    private Dictionary<Address, string> SplitDungeonData(string[] dungeonData)
+    private Dictionary<Address, List<string>> SplitDungeonData(string[] dungeonData)
     {
         // HERE
-        Dictionary<Address, string> split = new Dictionary<Address, string>();
+        Dictionary<Address, List<string>> split = new Dictionary<Address, List<string>>();
         foreach (string dungeonString in dungeonData)
         {
-            string tiles_pattern = "{chunkaddr:(-?\\d+,-?\\d+,-?\\d+)}(.*)";
+            string tiles_pattern = "{chunkaddr:(-?\\d+,-?\\d+,-?\\d+),chunkBiomeID:(\\d+)}(.*)";
             Regex rg = new Regex(tiles_pattern);
             MatchCollection matches = rg.Matches(dungeonString);
 
             foreach (Match match in matches)
             {
-                split.Add(CompileAddress(match.Groups[1].Value), match.Groups[2].Value);
+                split.Add(CompileAddress(match.Groups[1].Value), new List<string> { match.Groups[2].Value, match.Groups[3].Value });
             }
         }
 
@@ -143,5 +151,14 @@ public class Dungeon : MonoBehaviour
     public Dictionary<Address, Chunk> GetChunkList()
     {
         return chunkList;
+    }
+
+    private Address GetActiveChunkAddress(string dungeonMeta)
+    {
+        string text_pattern = "{activeChunkAddress:(-?\\d+,-?\\d+)}";
+        Regex rg = new Regex(text_pattern);
+        MatchCollection matches = rg.Matches(dungeonMeta);
+        Address activeChunkAddress = CompileAddress(matches[0].Groups[1].Value);
+        return activeChunkAddress;
     }
 }

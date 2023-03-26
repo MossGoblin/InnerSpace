@@ -46,19 +46,16 @@ public class Tile : MonoBehaviour
         return nbrs_list;
     }
 
-    public void SetData(Address newAddr, string tileData)
+    public void SetData(Address newAddr, int chunkBiomeID, string tileData)
     {
         address = newAddr;
 
         // HERE Deserialize Tile Data
-        string biomeID_pattern = "biomeID:(\\d)";
-        Regex rg = new Regex(biomeID_pattern);
-        MatchCollection matches = rg.Matches(tileData);
-        biomeID = int.Parse(matches[0].Groups[1].Value);
+        biomeID = chunkBiomeID;
 
         string tileTypeID_pattern = "tileTypeID:(\\d)";
-        rg = new Regex(tileTypeID_pattern);
-        matches = rg.Matches(tileData);
+        Regex rg = new Regex(tileTypeID_pattern);
+        MatchCollection matches = rg.Matches(tileData);
         tileTypeID = int.Parse(matches[0].Groups[1].Value);
 
         string tileID_pattern = "tileID:(\\d)";
@@ -69,10 +66,9 @@ public class Tile : MonoBehaviour
 
     public string GetData()
     {
-        // {biomeID:0,tileTypeID:0,tileID:0}
+        // {tileTypeID:0,tileID:0}
         string result = "";
         result += "{";
-        result += $"biomeID:{biomeID},";
         result += $"tileTypeID:{tileTypeID},";
         result += $"tileID:{tileID}";
         result += "}";

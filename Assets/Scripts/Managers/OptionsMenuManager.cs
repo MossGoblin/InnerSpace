@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Audio;
+using TMPro;
 
 public class OptionsMenuManager : MonoBehaviour
 {
@@ -10,9 +11,31 @@ public class OptionsMenuManager : MonoBehaviour
     // private GameObject persistentDungeonUIToggleObject;
     private Toggle persistentDungeonUIToggle;
     public AudioMixer masterAudioMixer;
+    Resolution[] resolutions;
+    public TMP_Dropdown resolutionDropDown;
 
-    void Start()
+    void Awake()
     {
+        if (resolutionDropDown)
+        {
+            resolutions = Screen.resolutions;
+            resolutionDropDown.ClearOptions();
+            List<string> resolutionOptions = new List<string>();
+            Resolution currentResolutionIndex;
+            foreach (Resolution resolution in resolutions)
+            {
+                string option = resolution.width + " x " + resolution.height;
+                resolutionOptions.Add(option);
+                if (resolution.width == Screen.currentResolution.width && resolution.height == Screen.currentResolution.height)
+                {
+                    currentResolutionIndex = resolution;
+                }
+            }
+            resolutionDropDown.AddOptions(resolutionOptions);
+            //resolutionDropDown.value = currentResolutionIndex
+            // HERE https://www.youtube.com/watch?v=YOaYQrN1oYQ&t=2s
+        }
+
         GameObject gameManagerObject = GameObject.Find("GameManager");
         GameManager gameManager = gameManagerObject.GetComponent<GameManager>();
         cfgManager = gameManager.cfgManager;
@@ -25,10 +48,10 @@ public class OptionsMenuManager : MonoBehaviour
         }
     }
 
-    public void TogglePersistantDungeonUI()
+    public void TogglePersistantDungeonUI(bool persistentDungeonUI)
     {
-        cfgManager.config.persistentDungeonUI = !cfgManager.config.persistentDungeonUI;
-        Debug.Log($"Persistent Dungeon UI Toggled to {cfgManager.config.persistentDungeonUI}");
+        cfgManager.config.persistentDungeonUI = persistentDungeonUI;
+        Debug.Log($"Persistent Dungeon UI Toggled to {persistentDungeonUI}");
     }
 
 
@@ -42,5 +65,10 @@ public class OptionsMenuManager : MonoBehaviour
     public void SetGraphicsQuality(int qualityIndex)
     {
         QualitySettings.SetQualityLevel(qualityIndex);
+    }
+
+    public void SetFullScreen(bool IsFullScreen)
+    {
+        Screen.fullScreen = IsFullScreen;
     }
 }

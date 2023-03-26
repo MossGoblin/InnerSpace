@@ -6,6 +6,8 @@ public class AssetManager : MonoBehaviour
 {
     public List<Sprite> tileSpriteSet00;
     public List<Sprite> tileSpriteSet01;
+    public List<Sprite> tileSpriteSet02;
+    public List<Sprite> tileSpriteSet03;
 
     void Start()
     {
@@ -38,6 +40,12 @@ public class AssetManager : MonoBehaviour
             case 1:
                 rndID = Random.Range(0, tileSpriteSet01.Count);
                 return new TileSprite(tileSpriteSet01[rndID], rndID);
+            case 2:
+                rndID = Random.Range(0, tileSpriteSet02.Count);
+                return new TileSprite(tileSpriteSet02[rndID], rndID);
+            case 3:
+                rndID = Random.Range(0, tileSpriteSet03.Count);
+                return new TileSprite(tileSpriteSet03[rndID], rndID);
         }
 
         return new TileSprite(null, 0);

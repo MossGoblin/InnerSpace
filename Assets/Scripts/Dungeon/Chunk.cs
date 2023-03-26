@@ -18,16 +18,22 @@ public class Chunk : MonoBehaviour
     // XXX public
     public Dictionary<Address, Tile> tileList;
     private int tileCount;
+    [SerializeField]
     private int biomeID;
     public Tile tilePrefab;
+    private double tileHeight;
     private double tileSize;
+    private double tilePPU;
 
     public bool isActive = false;
     public bool isActivated = false;
 
     void Start()
     {
-        tileSize = 0.5; // half hight of tile sprite over pixels per unit = 100/100
+        tilePPU = 100;
+        tileHeight = 442;
+
+        tileSize = tileHeight / (4 * tilePPU); // half hight of tile sprite over pixels per unit = 100/100; 'height' is half vertical size (e.g. height of png)
 
         // get managers
         GameObject gameManagerObject = GameObject.Find("GameManager");
@@ -68,10 +74,9 @@ public class Chunk : MonoBehaviour
                     newTile.transform.SetParent(this.transform);
                     // XXX
                     SpriteRenderer tileSpriteRenderer = newTile.GetComponentInParent<SpriteRenderer>();
-                    int tileTypeID = 1;
-                    AssetManager.TileSprite tileSpriteData = assetManager.GetSprite(tileTypeID);
+                    AssetManager.TileSprite tileSpriteData = assetManager.GetSprite(newTile.biomeID);
                     tileSpriteRenderer.sprite = tileSpriteData.tileSprite;
-                    newTile.tileTypeID = tileTypeID;
+                    newTile.tileTypeID = newTile.biomeID;
                     newTile.tileID = tileSpriteData.tileSpriteIndex;
                     tileList.Add(coord, newTile);
                 }
@@ -100,12 +105,14 @@ public class Chunk : MonoBehaviour
 
     void Update()
     {
+        // HERE Revise
         if (isActivated && !isActive)
         {
             Activate();
             this.isActive = true;
         }
-        else if (!isActivated && isActive)
+        // else if (!isActivated && isActive)
+        else if (!isActivated)
         {
             Deactivate();
             this.isActive = false;
@@ -143,12 +150,14 @@ public class Chunk : MonoBehaviour
         return result;
     }
 
-    public void SetData(string chunkData)
+    public void SetData(int chunkBiomeID, string chunkData)
     {
         // parse tile data
-        string tiles_pattern = "(-?\\d+,-?\\d+,-?\\d+)\":({\"biomeID\":\\s*\\d+,\\s*\"tileTypeID\":\\s*\\d+,\\s*\"tileID\":\\s*\\d+})";
+        string tiles_pattern = "(-?\\d+,-?\\d+,-?\\d+)\":({\\s*tileTypeID:\\s*\\d+,\\s*tileID:\\s*\\d+})";
         Regex rg = new Regex(tiles_pattern);
         MatchCollection matches = rg.Matches(chunkData);
+        biomeID = chunkBiomeID;
+
         // var match_0 = matches[0];
         // var match_1 = matches[1];
         foreach (Match match in matches)
@@ -160,7 +169,11 @@ public class Chunk : MonoBehaviour
             );
             newTile.transform.SetParent(this.transform);
             Address newTileAddr = CompileAddress(match.Groups[1].Value);
-            newTile.SetData(newTileAddr, match.Groups[2].Value);
+            newTile.SetData(newTileAddr, biomeID, match.Groups[2].Value);
+            if (tileList == null)
+            {
+                tileList = new Dictionary<Address, Tile>();
+            }
             tileList.Add(newTileAddr, newTile);
         }
     }
