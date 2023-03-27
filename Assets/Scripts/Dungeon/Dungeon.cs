@@ -78,7 +78,7 @@ public class Dungeon : MonoBehaviour
         chunkList = new Dictionary<Address, Chunk>(); // 0
         string[] dungeonSplit = SplitDungeonString(dungeonData); // 1
         // HERE Dungeon META in dungeonSplit[0]
-        activeChunkAddress = GetActiveChunkAddress(dungeonSplit[0]);
+        activeChunkAddress = ParseActiveChunkAddress(dungeonSplit[0]);
         string[] dungeonStrings = dungeonSplit.Where((item, index)=>index!=0).ToArray(); // 1
         Dictionary<Address, List<string>> chunkStrings = SplitDungeonData(dungeonStrings); // 1
         foreach (Address address in chunkStrings.Keys)
@@ -153,12 +153,16 @@ public class Dungeon : MonoBehaviour
         return chunkList;
     }
 
-    private Address GetActiveChunkAddress(string dungeonMeta)
+    private Address ParseActiveChunkAddress(string dungeonMeta)
     {
         string text_pattern = "{activeChunkAddress:(-?\\d+,-?\\d+)}";
         Regex rg = new Regex(text_pattern);
         MatchCollection matches = rg.Matches(dungeonMeta);
         Address activeChunkAddress = CompileAddress(matches[0].Groups[1].Value);
+        return activeChunkAddress;
+    }
+    public Address GetActiveChunkAddress()
+    {
         return activeChunkAddress;
     }
 }

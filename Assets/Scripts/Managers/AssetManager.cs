@@ -8,6 +8,7 @@ public class AssetManager : MonoBehaviour
     public List<Sprite> tileSpriteSet01;
     public List<Sprite> tileSpriteSet02;
     public List<Sprite> tileSpriteSet03;
+    public List<Sprite> chunkSpriteSet;
 
     void Start()
     {
@@ -29,7 +30,7 @@ public class AssetManager : MonoBehaviour
         public Sprite tileSprite { get; set; }
         public int tileSpriteIndex { get; set; }
     }
-    public TileSprite GetSprite(int tileSetID)
+    public TileSprite GetRandomSprite(int tileSetID)
     {
         int rndID = 0;
         switch (tileSetID)
@@ -49,5 +50,10 @@ public class AssetManager : MonoBehaviour
         }
 
         return new TileSprite(null, 0);
+    }
+
+    public Sprite GetChunkPrefab(int biomeID)
+    {
+        return chunkSpriteSet[biomeID];
     }
 }

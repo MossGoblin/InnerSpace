@@ -19,7 +19,7 @@ public class Chunk : MonoBehaviour
     public Dictionary<Address, Tile> tileList;
     private int tileCount;
     [SerializeField]
-    private int biomeID;
+    public int biomeID;
     public Tile tilePrefab;
     private double tileHeight;
     private double tileSize;
@@ -73,8 +73,8 @@ public class Chunk : MonoBehaviour
                     newTile.biomeID = biomeID;
                     newTile.transform.SetParent(this.transform);
                     // XXX
+                    AssetManager.TileSprite tileSpriteData = assetManager.GetRandomSprite(newTile.biomeID);
                     SpriteRenderer tileSpriteRenderer = newTile.GetComponentInParent<SpriteRenderer>();
-                    AssetManager.TileSprite tileSpriteData = assetManager.GetSprite(newTile.biomeID);
                     tileSpriteRenderer.sprite = tileSpriteData.tileSprite;
                     newTile.tileTypeID = newTile.biomeID;
                     newTile.tileID = tileSpriteData.tileSpriteIndex;
