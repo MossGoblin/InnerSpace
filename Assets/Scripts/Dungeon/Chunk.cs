@@ -12,7 +12,6 @@ public class Chunk : MonoBehaviour
     private AssetManager assetManager;
     private LogManager logger;
     private ClockManager clocker;
-    private Dungeon dungeon;
     public int chunkRadius;
     
     // XXX public
@@ -43,9 +42,6 @@ public class Chunk : MonoBehaviour
         cfgManager = gameManager.cfgManager;
         assetManager = gameManager.assetManager;
 
-        // get parent dungeon
-        dungeon = GetComponentInParent<Dungeon>();
-
         chunkRadius = cfgManager.config.chunkSize;
 
         // Create empty tile dictionary
@@ -53,6 +49,7 @@ public class Chunk : MonoBehaviour
         tileCount = ((chunkRadius * (chunkRadius - 1)) / 2) * 6 + 1;
         tileList = new Dictionary<Address, Tile>();
 
+    
         // Initiate tileList
         for (int cp = -chunkRadius + 1; cp <= chunkRadius - 1; cp++)
         {

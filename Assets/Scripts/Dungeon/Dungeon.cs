@@ -52,13 +52,11 @@ public class Dungeon : MonoBehaviour
 
     public string GetData()
     {
-        // TODO align with new syntax
-        // {chunkaddr:0,0,0}{tileaddr:-5,5,0}{biomeID:0,tileTypeID:0,tileID:0}
-        // TODO ADD CURRENT CHUNK AND BASE CHUNK
         string result = "";
+        result += $"{{activeChunkAddress:{activeChunkAddress.addrP},{activeChunkAddress.addrQ}}}";
         foreach (Address address in chunkList.Keys)
         {
-            result += $"activeChunkAddress:{activeChunkAddress.addrP}.{activeChunkAddress.addrQ}/{{chunkaddr:{address.ToString()}}}";
+            result += $"{{chunkaddr:{address.ToString()},chunkBiomeID:{chunkList[address].biomeID}}}";
             result += chunkList[address].GetData();
         }
 
@@ -94,14 +92,10 @@ public class Dungeon : MonoBehaviour
             {
                 newChunk.isActivated = true;
                 logger.LogDebug($"Activating chunk {address.ToString()}", true);
-                // TMP fix
-                // newChunk.Activate();
             }
             else
             {
                 newChunk.isActivated = false;
-                // TMP fix
-                // newChunk.Deactivate();
             }
         }
     }

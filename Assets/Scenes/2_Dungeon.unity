@@ -461,7 +461,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &414493867
 Transform:
   m_ObjectHideFlags: 0
@@ -1182,7 +1182,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1248903162}
   m_Layer: 0
-  m_Name: ProhectVersion
+  m_Name: ProjectVersion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1510,7 +1510,6 @@ MonoBehaviour:
   mapChunkPrefab: {fileID: 1426144936533377358, guid: 416b64afee799604e9a0103a3f526bb7,
     type: 3}
   dungeon: {fileID: 174322956}
-  camera: {fileID: 519420031}
 --- !u!1 &1836178323
 GameObject:
   m_ObjectHideFlags: 0

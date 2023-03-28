@@ -38,6 +38,20 @@ public class ToolBox
         return Random.Range(lower, higher);
     }
 
+    public List<int> DrawPoolFromBag(List<int> bag, int number)
+    {
+        List<int> drawPool = new List<int>();
+
+        for (int count = 0; count < bag.Count; count ++)
+        {
+            int newDraw = Random.Range(0, bag.Count);
+            bag.Remove(newDraw);
+            drawPool.Add(newDraw);
+        }
+
+        return drawPool;
+    }
+
 }
 
     public static class Weighted
