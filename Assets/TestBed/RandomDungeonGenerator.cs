@@ -61,6 +61,7 @@ public class RandomDungeonGenerator : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Return))
         {
+            Debug.Log($"Saving {chunkList.Count} chunks");
             SaveDungeonData();
         }
     }

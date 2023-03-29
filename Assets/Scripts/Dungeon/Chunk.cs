@@ -13,10 +13,11 @@ public class Chunk : MonoBehaviour
     private LogManager logger;
     private ClockManager clocker;
     public int chunkRadius;
-    
+
     // XXX public
     public Dictionary<Address, Tile> tileList;
     private int tileCount;
+
     [SerializeField]
     public int biomeID;
     public Tile tilePrefab;
@@ -47,37 +48,12 @@ public class Chunk : MonoBehaviour
         // Create empty tile dictionary
         // the triangle number equation is (n*(n+1)) / 2, however in this case n = chunkRadius - 1, so for ease the + is substituted for a -
         tileCount = ((chunkRadius * (chunkRadius - 1)) / 2) * 6 + 1;
-        tileList = new Dictionary<Address, Tile>();
 
-    
-        // Initiate tileList
-        for (int cp = -chunkRadius + 1; cp <= chunkRadius - 1; cp++)
+        foreach (Tile tile in tileList.Values)
         {
-            for (int cq = chunkRadius - 1; cq >= -chunkRadius + 1; cq--)
-            {
-                int cr = 0 - cp - cq;
-                if (Math.Abs(cr) <= chunkRadius - 1)
-                {
-                    Address coord = new Address(cp, cq);
-                    Tile newTile = Instantiate(
-                        tilePrefab,
-                        new Vector3(0, 0, 0),
-                        Quaternion.identity
-                    );
-                    newTile.address.addrP = cp;
-                    newTile.address.addrQ = cq;
-                    newTile.address.addrR = cr;
-                    newTile.biomeID = biomeID;
-                    newTile.transform.SetParent(this.transform);
-                    // XXX
-                    AssetManager.TileSprite tileSpriteData = assetManager.GetRandomSprite(newTile.biomeID);
-                    SpriteRenderer tileSpriteRenderer = newTile.GetComponentInParent<SpriteRenderer>();
-                    tileSpriteRenderer.sprite = tileSpriteData.tileSprite;
-                    newTile.tileTypeID = newTile.biomeID;
-                    newTile.tileID = tileSpriteData.tileSpriteIndex;
-                    tileList.Add(coord, newTile);
-                }
-            }
+            AssetManager.TileSprite tileSpriteData = assetManager.GetRandomSprite(tile.biomeID);
+            SpriteRenderer tileSpriteRenderer = tile.GetComponentInParent<SpriteRenderer>();
+            tileSpriteRenderer.sprite = tileSpriteData.tileSprite;
         }
 
         if (tileList.Count != tileCount)
@@ -102,19 +78,17 @@ public class Chunk : MonoBehaviour
 
     void Update()
     {
-        // HERE Revise
         if (isActivated && !isActive)
         {
             Activate();
             this.isActive = true;
         }
-        // else if (!isActivated && isActive)
         else if (!isActivated)
         {
             Deactivate();
             this.isActive = false;
         }
-     }
+    }
 
     public Dictionary<Address, Tile> getChunkData()
     {
@@ -126,9 +100,16 @@ public class Chunk : MonoBehaviour
         foreach (Address addr in tileList.Keys)
         {
             float offsetVertical = (float)(tileSize * tileList[addr].address.addrR * 3 / 2);
-            float offsetHorizontal = (float)(tileSize * (Math.Sqrt(3) * tileList[addr].address.addrQ + Math.Sqrt(3) / 2 * tileList[addr].address.addrR));
+            float offsetHorizontal = (float)(
+                tileSize
+                * (
+                    Math.Sqrt(3) * tileList[addr].address.addrQ
+                    + Math.Sqrt(3) / 2 * tileList[addr].address.addrR
+                )
+            );
 
-            tileList[addr].transform.position = transform.position + new Vector3(offsetHorizontal, offsetVertical);
+            tileList[addr].transform.position =
+                transform.position + new Vector3(offsetHorizontal, offsetVertical);
         }
     }
 
@@ -150,20 +131,15 @@ public class Chunk : MonoBehaviour
     public void SetData(int chunkBiomeID, string chunkData)
     {
         // parse tile data
-        string tiles_pattern = "(-?\\d+,-?\\d+,-?\\d+)\":({\\s*tileTypeID:\\s*\\d+,\\s*tileID:\\s*\\d+})";
+        string tiles_pattern =
+            "(-?\\d+,-?\\d+,-?\\d+)\":({\\s*tileTypeID:\\s*\\d+,\\s*tileID:\\s*\\d+})";
         Regex rg = new Regex(tiles_pattern);
         MatchCollection matches = rg.Matches(chunkData);
         biomeID = chunkBiomeID;
 
-        // var match_0 = matches[0];
-        // var match_1 = matches[1];
         foreach (Match match in matches)
         {
-            Tile newTile = Instantiate(
-                tilePrefab,
-                new Vector3(0, 0, 0),
-                Quaternion.identity
-            );
+            Tile newTile = Instantiate(tilePrefab, new Vector3(0, 0, 0), Quaternion.identity);
             newTile.transform.SetParent(this.transform);
             Address newTileAddr = CompileAddress(match.Groups[1].Value);
             newTile.SetData(newTileAddr, biomeID, match.Groups[2].Value);
@@ -181,7 +157,6 @@ public class Chunk : MonoBehaviour
         int[] addressListInt = addressList.Select(c => int.Parse(c)).ToArray();
         return new Address(addressListInt[0], addressListInt[1]);
     }
-
 
     public void Activate()
     {
