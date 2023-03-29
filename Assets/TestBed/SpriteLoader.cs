@@ -5,39 +5,60 @@ using System.IO;
 
 public class SpriteLoader : MonoBehaviour
 {
+
+    // public List<Sprite> spritesAll;
+    public List<Sprite> chunkSprites;
+    public List<Sprite> hexField;
+    public List<Sprite> hexDesert;
+    public List<Sprite> hexVolcanic;
+    public List<Sprite> hexSnow;
     void Start()
     {
-        string root = @"D:\[ CODEE ]\[ GITTED ]\InnerSpace\Assets\Tilesets\dev02\TestField";
-        // Get a list of all subdirectories
+        // spritesAll = new List<Sprite>();
+        chunkSprites = new List<Sprite>();
+        hexField = new List<Sprite>();
+        hexDesert = new List<Sprite>();
+        hexVolcanic = new List<Sprite>();
+        hexSnow = new List<Sprite>();
+        string[] prefixes = {"chunk", "hex_fields", "hex_desert", "hex_volcanic", "hex_snow"};
 
-        // var dirs = Directory.EnumerateDirectories(root);
-
-        // foreach (var subdir in dirs)
-        // {
-        //     Debug.Log(subdir);
-        // }
-
+        string root = @"D:\[ CODEE ]\[ GITTED ]\InnerSpace\Assets\Tilesets\dev02\TestField\Resources\TestSprites";
+        string resourcesRoot = "TestSprites";
         var files = Directory.EnumerateFiles(root);
-        foreach (var file in files)
+
+        foreach (var filePath in files)
         {
-            if (file.EndsWith(".png"))
+            if (filePath.EndsWith(".png"))
             {
-                Debug.Log(file);
+                string[] filenameSplit = filePath.Split("\\");
+                int lastIndex = filenameSplit.Length - 1;
+                string fileName = filenameSplit[lastIndex];
+                string fullFileName = resourcesRoot + "/" + fileName.Replace(".png", "");
+                Sprite loadedSprite = Resources.Load<Sprite>(fullFileName);
+                Debug.Log($"file loaded: {fileName}");
+                // Distribute sprites
+                if (fileName.StartsWith(prefixes[0]))
+                {
+                    chunkSprites.Add(loadedSprite);
+                }
+                else if (fileName.StartsWith(prefixes[1]))
+                {
+                    hexField.Add(loadedSprite);
+                }
+                else if (fileName.StartsWith(prefixes[2]))
+                {
+                    hexDesert.Add(loadedSprite);
+                }
+                else if (fileName.StartsWith(prefixes[3]))
+                {
+                    hexVolcanic.Add(loadedSprite);
+                }
+                else if (fileName.StartsWith(prefixes[4]))
+                {
+                    hexSnow.Add(loadedSprite);
+                }
             }
         }
-
-
-        /*
-        var dirs = from dir in
-            Directory.EnumerateDirectories(root)
-                     select dir;
-        Debug.Log("Subdirectories: {0}", dirs.Count<string>().ToString());
-        Debug.Log("List of Subdirectories");
-        foreach (var dir in dirs)
-        {
-            Debug.Log("{0}", dir.Substring(dir.LastIndexOf("\\") + 1));
-        }
-
-        */
+        Debug.Log("DONE");
     }
 }
