@@ -49,6 +49,12 @@ public class Chunk : MonoBehaviour
         // the triangle number equation is (n*(n+1)) / 2, however in this case n = chunkRadius - 1, so for ease the + is substituted for a -
         tileCount = ((chunkRadius * (chunkRadius - 1)) / 2) * 6 + 1;
 
+        // TMP null check is fix for the dungeon generator
+
+        if (tileList == null)
+        {
+            return;
+        }
         foreach (Tile tile in tileList.Values)
         {
             AssetManager.TileSprite tileSpriteData = assetManager.GetRandomSprite(tile.biomeID);
@@ -170,10 +176,57 @@ public class Chunk : MonoBehaviour
 
     public void Deactivate()
     {
+        // TMP fix for the dungeon generator
+        if (tileList == null || tileList.Keys.Count == 0)
+        {
+            return;
+        }
         foreach (Address tileAddr in tileList.Keys)
         {
             tileList[tileAddr].gameObject.SetActive(false);
         }
         isActive = false;
+    }
+
+    public void GenerateRandomTiles()
+    {
+
+        if (assetManager == null)
+        {
+            GameObject gameManagerObject = GameObject.Find("GameManager");
+            GameManager gameManager = gameManagerObject.GetComponent<GameManager>();
+            assetManager = gameManager.assetManager;
+        }
+        
+        tileList = new Dictionary<Address, Tile>();
+
+
+        // Initiate tileList
+        for (int cp = -chunkRadius + 1; cp <= chunkRadius - 1; cp++)
+        {
+            for (int cq = chunkRadius - 1; cq >= -chunkRadius + 1; cq--)
+            {
+                int cr = 0 - cp - cq;
+                if (Math.Abs(cr) <= chunkRadius - 1)
+                {
+                    Address coord = new Address(cp, cq);
+                    Tile newTile = Instantiate(
+                        tilePrefab,
+                        new Vector3(0, 0, 0),
+                        Quaternion.identity
+                    );
+                    newTile.address.addrP = cp;
+                    newTile.address.addrQ = cq;
+                    newTile.address.addrR = cr;
+                    newTile.biomeID = biomeID;
+                    newTile.transform.SetParent(this.transform);
+                    // XXX
+                    AssetManager.TileSprite newTileSpriteData = assetManager.GetRandomSprite(newTile.biomeID);
+                    newTile.tileTypeID = newTile.biomeID;
+                    newTile.tileID = newTileSpriteData.tileSpriteIndex;
+                    tileList.Add(coord, newTile);
+                }
+            }
+        }
     }
 }

@@ -395,7 +395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0a5f78cbbcf9b94bb867aa2f957424c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberOfChunks: 10
+  numberOfChunks: 15
   maxRadius: 5
   biomeCount: 4
   tileSetCount_00: 12
