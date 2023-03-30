@@ -47,8 +47,15 @@ public class RandomDungeonGenerator : MonoBehaviour
             }
             Chunk newChunk = Instantiate(chunkPrefab, new Vector3(0, 0, 0), Quaternion.identity);
             newChunk.biomeID = tb.RandomInt(0, biomeCount);
-            newChunk.isActivated = false;
-            newChunk.GenerateRandomTiles();
+            if (currentAddress.Equals(startAdress))
+            {
+                newChunk.isActivated = true;
+            }
+            else
+            {
+                newChunk.isActivated = false;
+            }
+            newChunk.GenerateRandomTiles(maxRadius);
             chunkList.Add(currentAddress, newChunk);
             addressesDone.Add(currentAddress);
             chunkCount ++;

@@ -396,7 +396,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfChunks: 15
-  maxRadius: 5
+  maxRadius: 6
   biomeCount: 4
   tileSetCount_00: 12
   tileSetCount_01: 8

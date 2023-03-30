@@ -13,27 +13,24 @@ public class Chunk : MonoBehaviour
     private LogManager logger;
     private ClockManager clocker;
     public int chunkRadius;
-
-    // XXX public
+    [SerializeField]
     public Dictionary<Address, Tile> tileList;
     private int tileCount;
 
     [SerializeField]
     public int biomeID;
     public Tile tilePrefab;
-    private double tileHeight;
     private double tileSize;
-    private double tilePPU;
+    private double tileHeight = 442;
+    private double tilePPU = 100;
 
     public bool isActive = false;
     public bool isActivated = false;
 
     void Start()
     {
-        tilePPU = 100;
-        tileHeight = 442;
-
-        tileSize = tileHeight / (4 * tilePPU); // half hight of tile sprite over pixels per unit = 100/100; 'height' is half vertical size (e.g. height of png)
+        SetTileSize();
+        
 
         // get managers
         GameObject gameManagerObject = GameObject.Find("GameManager");
@@ -53,8 +50,10 @@ public class Chunk : MonoBehaviour
 
         if (tileList == null)
         {
+            Debug.Log($"HIT NULL CHECK : CHUNK START()");
             return;
         }
+
         foreach (Tile tile in tileList.Values)
         {
             AssetManager.TileSprite tileSpriteData = assetManager.GetRandomSprite(tile.biomeID);
@@ -70,16 +69,16 @@ public class Chunk : MonoBehaviour
             );
         }
 
-        logger.LogInfo($"Chunk generated with {tileCount} tiles", true);
+        logger.LogInfo($"Chunk generated with {tileList.Count} tiles", true);
         foreach (Address coord in tileList.Keys)
         {
             logger.LogDebug($"pqr: {coord}", false);
         }
+    }
 
-        if (isActive)
-        {
-            PlaceTiles();
-        }
+    private void SetTileSize()
+    {
+        tileSize = tileHeight / (4 * tilePPU); // half hight of tile sprite over pixels per unit = 100/100; 'height' is half vertical size (e.g. height of png)
     }
 
     void Update()
@@ -114,8 +113,7 @@ public class Chunk : MonoBehaviour
                 )
             );
 
-            tileList[addr].transform.position =
-                transform.position + new Vector3(offsetHorizontal, offsetVertical);
+            tileList[addr].transform.position = transform.position + new Vector3(offsetHorizontal, offsetVertical);
         }
     }
 
@@ -136,6 +134,11 @@ public class Chunk : MonoBehaviour
 
     public void SetData(int chunkBiomeID, string chunkData)
     {
+        if (tileList == null)
+        {
+            tileList = new Dictionary<Address, Tile>();
+        }
+
         // parse tile data
         string tiles_pattern =
             "(-?\\d+,-?\\d+,-?\\d+)\":({\\s*tileTypeID:\\s*\\d+,\\s*tileID:\\s*\\d+})";
@@ -149,10 +152,6 @@ public class Chunk : MonoBehaviour
             newTile.transform.SetParent(this.transform);
             Address newTileAddr = CompileAddress(match.Groups[1].Value);
             newTile.SetData(newTileAddr, biomeID, match.Groups[2].Value);
-            if (tileList == null)
-            {
-                tileList = new Dictionary<Address, Tile>();
-            }
             tileList.Add(newTileAddr, newTile);
         }
     }
@@ -188,7 +187,7 @@ public class Chunk : MonoBehaviour
         isActive = false;
     }
 
-    public void GenerateRandomTiles()
+    public void GenerateRandomTiles(int newChunkRadius)
     {
 
         if (assetManager == null)
@@ -202,12 +201,12 @@ public class Chunk : MonoBehaviour
 
 
         // Initiate tileList
-        for (int cp = -chunkRadius + 1; cp <= chunkRadius - 1; cp++)
+        for (int cp = -newChunkRadius + 1; cp <= newChunkRadius - 1; cp++)
         {
-            for (int cq = chunkRadius - 1; cq >= -chunkRadius + 1; cq--)
+            for (int cq = newChunkRadius - 1; cq >= -newChunkRadius + 1; cq--)
             {
                 int cr = 0 - cp - cq;
-                if (Math.Abs(cr) <= chunkRadius - 1)
+                if (Math.Abs(cr) <= newChunkRadius - 1)
                 {
                     Address coord = new Address(cp, cq);
                     Tile newTile = Instantiate(
