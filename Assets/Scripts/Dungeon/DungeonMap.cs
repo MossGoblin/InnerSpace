@@ -48,8 +48,11 @@ public class DungeonMap : MonoBehaviour
             float minimumScaleFactor = 0.6f;
             float adjustedScale = minimumScaleFactor + scaleFactor / (1 / (1 - minimumScaleFactor));
             Vector3 newScale = new Vector3(newMapChunk.transform.localScale.x * adjustedScale, newMapChunk.transform.localScale.x * adjustedScale);
-
             newMapChunk.transform.localScale = newScale;
+            // TEST decay alpha
+            Color newColor = chunkSpriteRenderer.color;
+            newColor.a  = newColor.a * adjustedScale / 2;
+            chunkSpriteRenderer.color = newColor;
         }
 
 
