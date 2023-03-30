@@ -44,6 +44,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d0dc78d8e32ece4cb033db52e81b408, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chunkRadius: 5
+  chunkRadius: 0
+  biomeID: 0
   tilePrefab: {fileID: 5291361256656951561, guid: e070e47dc01ef4b4cb916beb24b18471,
     type: 3}
+  isActive: 0
+  isActivated: 0

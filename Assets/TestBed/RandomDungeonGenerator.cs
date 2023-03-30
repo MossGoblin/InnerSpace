@@ -5,7 +5,6 @@ using UnityEngine;
 public class RandomDungeonGenerator : MonoBehaviour
 {
     public int numberOfChunks;
-    public int maxRadius;
     public int biomeCount;
     public int tileSetCount_00;
     public int tileSetCount_01;
@@ -55,7 +54,7 @@ public class RandomDungeonGenerator : MonoBehaviour
             {
                 newChunk.isActivated = false;
             }
-            newChunk.GenerateRandomTiles(maxRadius);
+            newChunk.GenerateRandomTiles();
             chunkList.Add(currentAddress, newChunk);
             addressesDone.Add(currentAddress);
             chunkCount ++;

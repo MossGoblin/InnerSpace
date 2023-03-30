@@ -30,16 +30,9 @@ public class Chunk : MonoBehaviour
     void Start()
     {
         SetTileSize();
-        
 
         // get managers
-        GameObject gameManagerObject = GameObject.Find("GameManager");
-        GameManager gameManager = gameManagerObject.GetComponent<GameManager>();
-        logger = gameManager.logger;
-        clocker = gameManager.clocker;
-        cfgManager = gameManager.cfgManager;
-        assetManager = gameManager.assetManager;
-
+        LoadManagers();
         chunkRadius = cfgManager.config.chunkSize;
 
         // Create empty tile dictionary
@@ -74,6 +67,17 @@ public class Chunk : MonoBehaviour
         {
             logger.LogDebug($"pqr: {coord}", false);
         }
+    }
+
+    private void LoadManagers()
+    {
+        GameObject gameManagerObject = GameObject.Find("GameManager");
+        GameManager gameManager = gameManagerObject.GetComponent<GameManager>();
+        logger = gameManager.logger;
+        clocker = gameManager.clocker;
+        cfgManager = gameManager.cfgManager;
+        assetManager = gameManager.assetManager;
+
     }
 
     private void SetTileSize()
@@ -187,26 +191,23 @@ public class Chunk : MonoBehaviour
         isActive = false;
     }
 
-    public void GenerateRandomTiles(int newChunkRadius)
+    public void GenerateRandomTiles()
     {
+        LoadManagers();
+        cfgManager.LoadConfig();
+        chunkRadius = cfgManager.config.chunkSize;
 
-        if (assetManager == null)
-        {
-            GameObject gameManagerObject = GameObject.Find("GameManager");
-            GameManager gameManager = gameManagerObject.GetComponent<GameManager>();
-            assetManager = gameManager.assetManager;
-        }
         
         tileList = new Dictionary<Address, Tile>();
 
 
         // Initiate tileList
-        for (int cp = -newChunkRadius + 1; cp <= newChunkRadius - 1; cp++)
+        for (int cp = -chunkRadius + 1; cp <= chunkRadius - 1; cp++)
         {
-            for (int cq = newChunkRadius - 1; cq >= -newChunkRadius + 1; cq--)
+            for (int cq = chunkRadius - 1; cq >= -chunkRadius + 1; cq--)
             {
                 int cr = 0 - cp - cq;
-                if (Math.Abs(cr) <= newChunkRadius - 1)
+                if (Math.Abs(cr) <= chunkRadius - 1)
                 {
                     Address coord = new Address(cp, cq);
                     Tile newTile = Instantiate(
