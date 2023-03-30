@@ -16,7 +16,6 @@ public class Dungeon : MonoBehaviour
     public UIManager uiManager;
     public LogManager logger;
     public ClockManager clocker;
-
     public Chunk chunkPrefab;
 
     void Start()
@@ -56,7 +55,7 @@ public class Dungeon : MonoBehaviour
         result += $"{{activeChunkAddress:{activeChunkAddress.addrP},{activeChunkAddress.addrQ}}}";
         foreach (Address address in chunkList.Keys)
         {
-            result += $"{{chunkaddr:{address.ToString()},chunkBiomeID:{chunkList[address].biomeID}}}";
+            result += $"{{chunkaddr:{address.ToString()},chunkBiomeID:{chunkList[address].biomeID},chunkDecay:{chunkList[address].decay.ToString("0.00")}}}";
             result += chunkList[address].GetData();
         }
 
@@ -85,7 +84,8 @@ public class Dungeon : MonoBehaviour
             Chunk newChunk = Instantiate(chunkPrefab, new Vector3(0, 0, 0), Quaternion.identity);
             // HERE
             int chunkBiomeID = Int32.Parse(chunkStrings[address][0]);
-            newChunk.SetData(chunkBiomeID, chunkStrings[address][1]);
+            float decayLevel = (float)Double.Parse(chunkStrings[address][1]);
+            newChunk.SetData(chunkBiomeID, decayLevel, chunkStrings[address][2]);
             newChunk.transform.SetParent(this.transform);
             chunkList.Add(address, newChunk);
             if (address.Equals(activeChunkAddress))
@@ -107,13 +107,13 @@ public class Dungeon : MonoBehaviour
         Dictionary<Address, List<string>> split = new Dictionary<Address, List<string>>();
         foreach (string dungeonString in dungeonData)
         {
-            string tiles_pattern = "{chunkaddr:(-?\\d+,-?\\d+,-?\\d+),chunkBiomeID:(\\d+)}(.*)";
+            string tiles_pattern = "{chunkaddr:(-?\\d+,-?\\d+,-?\\d+),chunkBiomeID:(\\d+),chunkDecay:(\\d+\\.\\d+)}(.*)";
             Regex rg = new Regex(tiles_pattern);
             MatchCollection matches = rg.Matches(dungeonString);
 
             foreach (Match match in matches)
             {
-                split.Add(CompileAddress(match.Groups[1].Value), new List<string> { match.Groups[2].Value, match.Groups[3].Value });
+                split.Add(CompileAddress(match.Groups[1].Value), new List<string> { match.Groups[2].Value, match.Groups[3].Value, match.Groups[4].Value });
             }
         }
 

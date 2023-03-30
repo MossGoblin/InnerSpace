@@ -26,6 +26,7 @@ public class Chunk : MonoBehaviour
 
     public bool isActive = false;
     public bool isActivated = false;
+    public float decay;
 
     void Start()
     {
@@ -136,7 +137,7 @@ public class Chunk : MonoBehaviour
         return result;
     }
 
-    public void SetData(int chunkBiomeID, string chunkData)
+    public void SetData(int chunkBiomeID, float decayLevel, string chunkData)
     {
         if (tileList == null)
         {
@@ -149,6 +150,7 @@ public class Chunk : MonoBehaviour
         Regex rg = new Regex(tiles_pattern);
         MatchCollection matches = rg.Matches(chunkData);
         biomeID = chunkBiomeID;
+        decay = decayLevel;
 
         foreach (Match match in matches)
         {

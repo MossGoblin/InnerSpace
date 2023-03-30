@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class RandomDungeonGenerator : MonoBehaviour
 {
+    public int randomSeed;
     public int numberOfChunks;
     public int biomeCount;
     public int tileSetCount_00;
@@ -24,7 +25,10 @@ public class RandomDungeonGenerator : MonoBehaviour
         addressesDone = new List<Address>();
         chunkList = new Dictionary<Address, Chunk>();
         ToolBox tb = new ToolBox();
-        tb.Init(123456789);
+        if (randomSeed != 0)
+        {
+            tb.Init(randomSeed);
+        }
         // start chunk is always 0, 0
         Address startAdress = new Address(0, 0);
         addressesInWaiting.Add(startAdress);
@@ -107,7 +111,7 @@ public class RandomDungeonGenerator : MonoBehaviour
         result += $"{{activeChunkAddress:{activeChunkAddress.addrP},{activeChunkAddress.addrQ}}}\r";
         foreach (Address address in chunkList.Keys)
         {
-            result += $"{{chunkaddr:{address.ToString()},chunkBiomeID:{chunkList[address].biomeID}}}";
+            result += $"{{chunkaddr:{address.ToString()},chunkBiomeID:{chunkList[address].biomeID},chunkDecay:{chunkList[address].decay.ToString("0.00")}}}";
             result += chunkList[address].GetData();
             result += "\r";
         }
