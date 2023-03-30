@@ -10,7 +10,7 @@ public class RandomDungeonGenerator : MonoBehaviour
     public int tileSetCount_01;
     public int tileSetCount_02;
     public int tileSetCount_03;
-    private Queue<Address> addressesInWaiting;
+    private List<Address> addressesInWaiting;
     private List<Address> addressesDone;
     private Dictionary<Address, Chunk> chunkList;
     public Chunk chunkPrefab;
@@ -20,19 +20,21 @@ public class RandomDungeonGenerator : MonoBehaviour
 
     void Start()
     {
-        addressesInWaiting = new Queue<Address>();
+        addressesInWaiting = new List<Address>();
         addressesDone = new List<Address>();
         chunkList = new Dictionary<Address, Chunk>();
         ToolBox tb = new ToolBox();
         tb.Init(123456789);
         // start chunk is always 0, 0
         Address startAdress = new Address(0, 0);
-        addressesInWaiting.Enqueue(startAdress);
+        addressesInWaiting.Add(startAdress);
         int chunkCount = 1;
 
         while ((chunkCount <= numberOfChunks) && (addressesInWaiting.Count > 0))
         {
-            Address currentAddress = addressesInWaiting.Dequeue();
+            int randomAddressInWaitingIndex = tb.RandomInt(0, addressesInWaiting.Count);
+            Address currentAddress = addressesInWaiting[randomAddressInWaitingIndex];
+            addressesInWaiting.RemoveAt(randomAddressInWaitingIndex);
             List<Address> nbrs = GetNbrs(currentAddress);
             foreach (Address nbrAddress in nbrs)
             {
@@ -41,7 +43,7 @@ public class RandomDungeonGenerator : MonoBehaviour
                 }
                 else
                 {
-                    addressesInWaiting.Enqueue(nbrAddress);
+                    addressesInWaiting.Add(nbrAddress);
                 }
             }
             Chunk newChunk = Instantiate(chunkPrefab, new Vector3(0, 0, 0), Quaternion.identity);
