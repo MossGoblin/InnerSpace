@@ -61,6 +61,7 @@ public class RandomDungeonGenerator : MonoBehaviour
                 newChunk.isActivated = false;
             }
             newChunk.GenerateRandomTiles();
+            newChunk.decay = (float)tb.RandomInt(0, 101) / 100.0f;
             chunkList.Add(currentAddress, newChunk);
             addressesDone.Add(currentAddress);
             chunkCount ++;

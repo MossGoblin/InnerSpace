@@ -43,6 +43,13 @@ public class DungeonMap : MonoBehaviour
             float offsetHorizontal = (float)(tileSize * (Math.Sqrt(3) * chunkAddress.addrQ + Math.Sqrt(3) / 2 * chunkAddress.addrR));
             newMapChunk.transform.position = transform.position + new Vector3(offsetHorizontal, offsetVertical) - offset;
             newMapChunk.transform.SetParent(this.transform);
+            // TEST decay scaling
+            float scaleFactor = 1 - chunkList[chunkAddress].decay;
+            float minimumScaleFactor = 0.6f;
+            float adjustedScale = minimumScaleFactor + scaleFactor / (1 / (1 - minimumScaleFactor));
+            Vector3 newScale = new Vector3(newMapChunk.transform.localScale.x * adjustedScale, newMapChunk.transform.localScale.x * adjustedScale);
+
+            newMapChunk.transform.localScale = newScale;
         }
 
 
