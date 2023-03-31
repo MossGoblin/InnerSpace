@@ -13,6 +13,7 @@ public class DungeonMap : MonoBehaviour
     private double tileSize;
     private double tilePPU;
     private AssetManager assetManager;
+    float minimumScaleFactor = 0.6f;
 
     void Start()
     {
@@ -29,33 +30,26 @@ public class DungeonMap : MonoBehaviour
         Address activeChunkAddress = dungeon.GetActiveChunkAddress();
         float mapOffsetVertical = (float)(tileSize * activeChunkAddress.addrR * 3 / 2);
         float mapOffsetHorizontal = (float)(tileSize * (Math.Sqrt(3) * activeChunkAddress.addrQ + Math.Sqrt(3) / 2 * activeChunkAddress.addrR));
-        Vector3 offset = new Vector3(mapOffsetHorizontal, mapOffsetVertical);
+        Vector3 mapOffset = new Vector3(mapOffsetHorizontal, mapOffsetVertical);
 
         chunkList = dungeon.GetChunkList();
         foreach (Address chunkAddress in chunkList.Keys)
         {
             int chunkBiomeID = chunkList[chunkAddress].biomeID;
+
             Sprite chunkSprite = assetManager.GetChunkPrefab(chunkBiomeID);
             GameObject newMapChunk = Instantiate(mapChunkPrefab, new Vector3(chunkAddress.addrP, chunkAddress.addrQ, 0), Quaternion.identity);
-            SpriteRenderer chunkSpriteRenderer = newMapChunk.GetComponentInParent<SpriteRenderer>();
-            chunkSpriteRenderer.sprite = chunkSprite;
+
+            MapChunk newMapChunkScript = newMapChunk.GetComponent<MapChunk>();
+            newMapChunkScript.SetMinimumDecayLevel(chunkList[chunkAddress].decay);
+            newMapChunkScript.SetScaleFactor(minimumScaleFactor);
+            newMapChunkScript.SetSprite(chunkSprite);
+            newMapChunk.transform.SetParent(this.transform);
+
             float offsetVertical = (float)(tileSize * chunkAddress.addrR * 3 / 2);
             float offsetHorizontal = (float)(tileSize * (Math.Sqrt(3) * chunkAddress.addrQ + Math.Sqrt(3) / 2 * chunkAddress.addrR));
-            newMapChunk.transform.position = transform.position + new Vector3(offsetHorizontal, offsetVertical) - offset;
-            newMapChunk.transform.SetParent(this.transform);
-            // TEST decay scaling
-            float scaleFactor = 1 - chunkList[chunkAddress].decay;
-            float minimumScaleFactor = 0.6f;
-            float adjustedScale = minimumScaleFactor + scaleFactor / (1 / (1 - minimumScaleFactor));
-            Vector3 newScale = new Vector3(newMapChunk.transform.localScale.x * adjustedScale, newMapChunk.transform.localScale.x * adjustedScale);
-            newMapChunk.transform.localScale = newScale;
-            // TEST decay alpha
-            Color newColor = chunkSpriteRenderer.color;
-            newColor.a  = newColor.a * adjustedScale / 2;
-            chunkSpriteRenderer.color = newColor;
+            newMapChunk.transform.position = transform.position + new Vector3(offsetHorizontal, offsetVertical) - mapOffset;
         }
-
-
     }
 
     // Update is called once per frame
