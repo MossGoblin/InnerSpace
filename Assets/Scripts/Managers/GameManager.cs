@@ -8,7 +8,6 @@ public class GameManager : MonoBehaviour
     public ClockManager clocker;
     public ConfigManager cfgManager;
     public AssetManager assetManager;
-    public UIManager uiManager;
 
     private Scene activeScene;
     public static GameManager gmInstance { get; private set; }

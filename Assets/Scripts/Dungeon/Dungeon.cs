@@ -26,7 +26,6 @@ public class Dungeon : MonoBehaviour
         logger = gameManager.logger;
         clocker = gameManager.clocker;
         cfgManager = gameManager.cfgManager;
-        uiManager = gameManager.uiManager;
 
         chunkList = new Dictionary<Address, Chunk>();
 
