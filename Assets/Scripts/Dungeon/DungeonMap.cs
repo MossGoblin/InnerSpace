@@ -44,6 +44,8 @@ public class DungeonMap : MonoBehaviour
             newMapChunkScript.SetMinimumDecayLevel(chunkList[chunkAddress].decay);
             newMapChunkScript.SetScaleFactor(minimumScaleFactor);
             newMapChunkScript.SetSprite(chunkSprite);
+            newMapChunkScript.address = chunkAddress;
+
             newMapChunk.transform.SetParent(this.transform);
 
             float offsetVertical = (float)(tileSize * chunkAddress.addrR * 3 / 2);

@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using TMPro;
+
 
 public class MapChunk : MonoBehaviour
 {
@@ -11,13 +13,15 @@ public class MapChunk : MonoBehaviour
     private float chunkDecayLevel;
     private float chunkMinimumScaleFactor;
     private double tileSize;
-    private Address chunkAddress;
+    public Address address;
     private Vector3 mapOffset;
     private bool scaleAdjusted;
+    public TMP_Text debugText;
 
     void Start()
     {
         scaleAdjusted = false;
+        debugText.text = $"{address.addrP} / {address.addrQ} / {address.addrR}";
     }
 
     void Update()

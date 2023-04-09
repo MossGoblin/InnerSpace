@@ -14,6 +14,13 @@ public class UIManager : MonoBehaviour
     private ConfigManager cfgManager;
     [SerializeField] Camera mainCamera;
 
+    public GameObject dungeonOverlay;
+
+    [SerializeField]
+    private bool mapActive = false;
+    public int tilesLayer;
+    public int mapLayer;
+
     void Start()
     {
         uiActive = false;
@@ -23,13 +30,12 @@ public class UIManager : MonoBehaviour
         GameObject gameManagerObject = GameObject.Find("GameManager");
         GameManager gameManager = gameManagerObject.GetComponent<GameManager>();
         cfgManager = gameManager.cfgManager;
-
-        // TEST 
-        debugText.text = "DEBUG TEST";
     }
 
     void Update()
     {
+        mapActive = dungeonOverlay.activeSelf;
+
         if (cfgManager.config.persistentDungeonUI)
         {
             if (Input.GetKeyDown(KeyCode.Tab))
@@ -51,23 +57,37 @@ public class UIManager : MonoBehaviour
         gameUICanvas.enabled = uiActive;
         gameUI.gameObject.SetActive(uiActive);
 
-        MouseStuff();
+        ReadTileUnderMouse();
     }
 
-    private void MouseStuff()
+    private void ReadTileUnderMouse()
     {
-        int layerObject = 3;
-        // Mouse Works
         Vector3 mouseWorldPosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
         mouseWorldPosition.z = 0f;
-        // Debug.Log($"MP: {mouseWorldPosition}");
-        Vector2 ray = new Vector2(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, Camera.main.ScreenToWorldPoint(Input.mousePosition).y);
-        RaycastHit2D hit = Physics2D.Raycast(ray, ray, layerObject);
-        if (hit.collider != null)
+        Vector2 ray = new Vector2(mouseWorldPosition.x, mouseWorldPosition.y);
+        if (mapActive)
         {
-            SetDebugText(hit.collider.gameObject.GetComponent<Tile>().address.ToString());
-            // Debug.Log(hit.collider.gameObject.GetComponent<Tile>().address);
-            // Debug.Log($"MP: {mouseWorldPosition}");
+            RaycastHit2D hit = Physics2D.Raycast(mouseWorldPosition, ray, mapLayer);
+            if (hit.collider && hit.collider.gameObject.name=="MapHexBackground")
+            {
+                SetDebugText($"MAP: {hit.collider.gameObject.GetComponentInParent<MapChunk>().address.ToString()}");
+            }
+            else
+            {
+                SetDebugText("");
+            }
+        }
+        else
+        {
+            RaycastHit2D hit = Physics2D.Raycast(mouseWorldPosition, ray, tilesLayer);
+            if (hit.collider && hit.collider.gameObject.name=="Tile(Clone)")
+            {
+                SetDebugText($"TILE: {hit.collider.gameObject.GetComponent<Tile>().address.ToString()}");
+            }
+            else
+            {
+                SetDebugText("");
+            }
         }
 
     }

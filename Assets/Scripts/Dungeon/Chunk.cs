@@ -78,7 +78,6 @@ public class Chunk : MonoBehaviour
         clocker = gameManager.clocker;
         cfgManager = gameManager.cfgManager;
         assetManager = gameManager.assetManager;
-
     }
 
     private void SetTileSize()
