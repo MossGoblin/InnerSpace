@@ -736,7 +736,6 @@ MonoBehaviour:
   clocker: {fileID: 1668771582}
   cfgManager: {fileID: 1315270340}
   assetManager: {fileID: 1376296250}
-  uiManager: {fileID: 0}
 --- !u!4 &287761786
 Transform:
   m_ObjectHideFlags: 0
@@ -4333,7 +4332,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: stndrdth
+  m_text: st.nd.rd.th
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b2d49dddf9552e04ca64863b7eafb330, type: 2}
   m_sharedMaterial: {fileID: -1659396503165633958, guid: b2d49dddf9552e04ca64863b7eafb330,

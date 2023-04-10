@@ -1819,6 +1819,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dungeonOverlay: {fileID: 414493866}
+  dungeon: {fileID: 174322956}
 --- !u!1 &1833095820
 GameObject:
   m_ObjectHideFlags: 0
@@ -1920,6 +1921,7 @@ MonoBehaviour:
   mapActive: 0
   tilesLayer: 3
   mapLayer: 6
+  distance: 500
 --- !u!1 &1871392206
 GameObject:
   m_ObjectHideFlags: 0

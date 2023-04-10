@@ -8,8 +8,10 @@ using System;
 public class Dungeon : MonoBehaviour
 {
     private Dictionary<Address, Chunk> chunkList;
+
     [SerializeField]
     private Address activeChunkAddress;
+
     [SerializeField]
     public GameManager gameManager;
     public ConfigManager cfgManager;
@@ -29,7 +31,7 @@ public class Dungeon : MonoBehaviour
 
         chunkList = new Dictionary<Address, Chunk>();
 
-        activeChunkAddress = new Address(-1,1);
+        activeChunkAddress = new Address(-1, 1);
 
         // Test auto-load
         string dungeonData = cfgManager.LoadDungeon();
@@ -54,7 +56,8 @@ public class Dungeon : MonoBehaviour
         result += $"{{activeChunkAddress:{activeChunkAddress.addrP},{activeChunkAddress.addrQ}}}";
         foreach (Address address in chunkList.Keys)
         {
-            result += $"{{chunkaddr:{address.ToString()},chunkBiomeID:{chunkList[address].biomeID},chunkDecay:{chunkList[address].decay.ToString("0.00")}}}";
+            result +=
+                $"{{chunkaddr:{address.ToString()},chunkBiomeID:{chunkList[address].biomeID},chunkDecay:{chunkList[address].decay.ToString("0.00")}}}";
             result += chunkList[address].GetData();
         }
 
@@ -75,7 +78,7 @@ public class Dungeon : MonoBehaviour
         string[] dungeonSplit = SplitDungeonString(dungeonData); // 1
         // HERE Dungeon META in dungeonSplit[0]
         activeChunkAddress = ParseActiveChunkAddress(dungeonSplit[0]);
-        string[] dungeonStrings = dungeonSplit.Where((item, index)=>index!=0).ToArray(); // 1
+        string[] dungeonStrings = dungeonSplit.Where((item, index) => index != 0).ToArray(); // 1
         Dictionary<Address, List<string>> chunkStrings = SplitDungeonData(dungeonStrings); // 1
         foreach (Address address in chunkStrings.Keys)
         {
@@ -99,20 +102,28 @@ public class Dungeon : MonoBehaviour
         }
     }
 
-
     private Dictionary<Address, List<string>> SplitDungeonData(string[] dungeonData)
     {
         // HERE
         Dictionary<Address, List<string>> split = new Dictionary<Address, List<string>>();
         foreach (string dungeonString in dungeonData)
         {
-            string tiles_pattern = "{chunkaddr:(-?\\d+,-?\\d+,-?\\d+),chunkBiomeID:(\\d+),chunkDecay:(\\d+\\.\\d+)}(.*)";
+            string tiles_pattern =
+                "{chunkaddr:(-?\\d+,-?\\d+,-?\\d+),chunkBiomeID:(\\d+),chunkDecay:(\\d+\\.\\d+)}(.*)";
             Regex rg = new Regex(tiles_pattern);
             MatchCollection matches = rg.Matches(dungeonString);
 
             foreach (Match match in matches)
             {
-                split.Add(CompileAddress(match.Groups[1].Value), new List<string> { match.Groups[2].Value, match.Groups[3].Value, match.Groups[4].Value });
+                split.Add(
+                    CompileAddress(match.Groups[1].Value),
+                    new List<string>
+                    {
+                        match.Groups[2].Value,
+                        match.Groups[3].Value,
+                        match.Groups[4].Value
+                    }
+                );
             }
         }
 
@@ -141,6 +152,16 @@ public class Dungeon : MonoBehaviour
         chunkList[activeChunkAddress].Activate();
     }
 
+    public void DeactivateCurrentChunk()
+    {
+        chunkList[activeChunkAddress].isActivated = false;
+    }
+
+    public void ActivateCurrentChunk()
+    {
+        chunkList[activeChunkAddress].isActivated = true;
+    }
+
     public Dictionary<Address, Chunk> GetChunkList()
     {
         return chunkList;
@@ -154,6 +175,7 @@ public class Dungeon : MonoBehaviour
         Address activeChunkAddress = CompileAddress(matches[0].Groups[1].Value);
         return activeChunkAddress;
     }
+
     public Address GetActiveChunkAddress()
     {
         return activeChunkAddress;

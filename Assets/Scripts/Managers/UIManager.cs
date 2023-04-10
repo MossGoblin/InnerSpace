@@ -20,6 +20,8 @@ public class UIManager : MonoBehaviour
     private bool mapActive = false;
     public int tilesLayer;
     public int mapLayer;
+    public float distance = 500f;
+
 
     void Start()
     {
@@ -63,12 +65,14 @@ public class UIManager : MonoBehaviour
     private void ReadTileUnderMouse()
     {
         Vector3 mouseWorldPosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
-        mouseWorldPosition.z = 0f;
+        mouseWorldPosition.z = -20f;
         Vector2 ray = new Vector2(mouseWorldPosition.x, mouseWorldPosition.y);
         if (mapActive)
         {
-            RaycastHit2D hit = Physics2D.Raycast(mouseWorldPosition, ray, mapLayer);
-            if (hit.collider && hit.collider.gameObject.name=="MapHexBackground")
+            // RaycastHit2D hit = Physics2D.Raycast(origin: mouseWorldPosition, direction: ray, layerMask: mapLayer);
+            RaycastHit2D hit = Physics2D.Raycast(origin: mouseWorldPosition, direction: ray);
+            // if (hit.collider && hit.collider.gameObject.name=="MapHexBackground")
+            if (hit.collider && hit.collider.gameObject.layer == mapLayer)
             {
                 SetDebugText($"MAP: {hit.collider.gameObject.GetComponentInParent<MapChunk>().address.ToString()}");
             }
@@ -79,8 +83,9 @@ public class UIManager : MonoBehaviour
         }
         else
         {
-            RaycastHit2D hit = Physics2D.Raycast(mouseWorldPosition, ray, tilesLayer);
-            if (hit.collider && hit.collider.gameObject.name=="Tile(Clone)")
+            RaycastHit2D hit = Physics2D.Raycast(origin: mouseWorldPosition, direction: ray);
+            // if (hit.collider && hit.collider.gameObject.name=="Tile(Clone)")
+            if (hit.collider && hit.collider.gameObject.layer == tilesLayer)
             {
                 SetDebugText($"TILE: {hit.collider.gameObject.GetComponent<Tile>().address.ToString()}");
             }
@@ -89,7 +94,6 @@ public class UIManager : MonoBehaviour
                 SetDebugText("");
             }
         }
-
     }
 
     public void SetDebugText(string text)
